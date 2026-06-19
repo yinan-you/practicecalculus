@@ -1,15 +1,20 @@
-import type { CourseTag, MethodTag, Topic } from "@/lib/questions";
+import type { CourseTag, Topic } from "@/lib/questions";
+import { COURSE_TAGS } from "@/lib/questions";
 
-export const TOPICS_BY_COURSE: Record<CourseTag, Topic[]> = {
-  calc1: ["integration"],
-  calc2: ["integration"],
-  IB: ["differentiation", "integration"],
-  VCE: ["differentiation", "integration"],
-  HSC: ["differentiation", "integration"],
-  AP: ["differentiation", "integration"],
-};
+const CALC_TOPICS: Topic[] = ["differentiation", "integration"];
 
-export const METHODS_BY_TOPIC: Record<Topic, MethodTag[]> = {
+function topicsForCourse(tag: CourseTag): Topic[] {
+  if (tag === "calc1" || tag === "calc2") {
+    return ["integration"];
+  }
+  return CALC_TOPICS;
+}
+
+export const TOPICS_BY_COURSE: Record<CourseTag, Topic[]> = Object.fromEntries(
+  COURSE_TAGS.map((tag) => [tag, topicsForCourse(tag)]),
+) as Record<CourseTag, Topic[]>;
+
+export const METHODS_BY_TOPIC: Record<Topic, import("@/lib/questions").MethodTag[]> = {
   differentiation: ["powerRule", "chainRule", "productRule", "quotientRule"],
   integration: [
     "uSubstitution",

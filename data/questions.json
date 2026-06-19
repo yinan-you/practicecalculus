@@ -2,7 +2,16 @@
   {
     "id": "q1",
     "topic": "differentiation",
-    "courseTags": ["AP"],
+    "courseTags": [
+      "calc1",
+      "AP-AB",
+      "VCE-yr11",
+      "VCE-methods",
+      "HSC-yr11",
+      "HSC-advanced",
+      "QCE-yr11",
+      "QCE-methods"
+    ],
     "methodTags": ["powerRule"],
     "prompt": "Differentiate $f(x) = x^3$ using the power rule.",
     "answer": "$f'(x) = 3x^2$",
@@ -11,7 +20,15 @@
   {
     "id": "q2",
     "topic": "differentiation",
-    "courseTags": ["VCE"],
+    "courseTags": [
+      "calc1",
+      "VCE-yr12",
+      "VCE-methods",
+      "WACE-yr12",
+      "WACE-methods",
+      "SACE-yr12",
+      "SACE-methods"
+    ],
     "methodTags": ["chainRule"],
     "prompt": "This is a VCE differentiation question (chain rule).",
     "answer": "Answer placeholder for q2.",
@@ -20,7 +37,15 @@
   {
     "id": "q3",
     "topic": "differentiation",
-    "courseTags": ["HSC"],
+    "courseTags": [
+      "calc1",
+      "HSC-yr12",
+      "HSC-advanced",
+      "ACT-yr12",
+      "ACT-methods",
+      "TCE-yr12",
+      "TCE-methods"
+    ],
     "methodTags": ["productRule"],
     "prompt": "This is an HSC differentiation question (product rule).",
     "answer": "Answer placeholder for q3.",
@@ -29,7 +54,7 @@
   {
     "id": "q4",
     "topic": "differentiation",
-    "courseTags": ["IB"],
+    "courseTags": ["calc1", "IB-AA-SL-yr12", "IB-AA-HL-yr11", "VCE-methods", "HSC-advanced"],
     "methodTags": ["quotientRule"],
     "prompt": "This is an IB differentiation question (quotient rule).",
     "answer": "Answer placeholder for q4.",
@@ -38,7 +63,14 @@
   {
     "id": "q5",
     "topic": "differentiation",
-    "courseTags": ["AP"],
+    "courseTags": [
+      "calc1",
+      "AP-AB",
+      "AP-BC",
+      "IB-AA-HL-yr12",
+      "HSC-ext1",
+      "VCE-specialist"
+    ],
     "methodTags": ["chainRule"],
     "prompt": "This is an AP differentiation question (chain rule).",
     "answer": "Answer placeholder for q5.",
@@ -47,7 +79,16 @@
   {
     "id": "q6",
     "topic": "integration",
-    "courseTags": ["calc1", "VCE"],
+    "courseTags": [
+      "calc1",
+      "VCE-yr11",
+      "VCE-methods",
+      "HSC-yr11",
+      "HSC-advanced",
+      "QCE-yr11",
+      "QCE-methods",
+      "AP-AB"
+    ],
     "methodTags": ["uSubstitution"],
     "prompt": "This is a calc1 / VCE integration question (u-substitution).",
     "answer": "Answer placeholder for q6.",
@@ -56,7 +97,14 @@
   {
     "id": "q7",
     "topic": "integration",
-    "courseTags": ["calc2", "AP"],
+    "courseTags": [
+      "calc2",
+      "AP-BC",
+      "HSC-yr12",
+      "HSC-ext1",
+      "VCE-yr12",
+      "VCE-specialist"
+    ],
     "methodTags": ["uSubstitution"],
     "prompt": "This is a calc2 / AP integration question (u-substitution).",
     "answer": "Answer placeholder for q7.",
@@ -65,27 +113,50 @@
   {
     "id": "q8",
     "topic": "integration",
-    "courseTags": ["calc2", "IB"],
+    "courseTags": [
+      "calc2",
+      "IB-AA-HL-yr12",
+      "AP-BC",
+      "VCE-specialist",
+      "HSC-ext1",
+      "QCE-specialist"
+    ],
     "methodTags": ["integrationByParts"],
-    "prompt": "This is a calc2 / IB integration question (integration by parts).",
+    "prompt": "This is a calc2 / IB HL integration question (integration by parts).",
     "answer": "Answer placeholder for q8.",
     "difficulty": 3
   },
   {
     "id": "q9",
     "topic": "integration",
-    "courseTags": ["calc2", "HSC"],
+    "courseTags": [
+      "calc2",
+      "HSC-yr12",
+      "HSC-ext2",
+      "WACE-yr12",
+      "WACE-specialist",
+      "SACE-yr12",
+      "SACE-specialist"
+    ],
     "methodTags": ["partialFractions"],
-    "prompt": "This is a calc2 / HSC integration question (partial fractions).",
+    "prompt": "This is a calc2 / HSC Extension 2 integration question (partial fractions).",
     "answer": "Answer placeholder for q9.",
     "difficulty": 3
   },
   {
     "id": "q10",
     "topic": "integration",
-    "courseTags": ["calc2", "IB", "AP"],
+    "courseTags": [
+      "calc2",
+      "IB-AA-HL-yr12",
+      "AP-BC",
+      "TCE-yr12",
+      "TCE-specialised",
+      "HSC-ext2",
+      "VCE-specialist"
+    ],
     "methodTags": ["uSubstitution", "trigIdentity"],
-    "prompt": "This is a calc2 / IB / AP integration question (u-substitution + trig identity).",
+    "prompt": "This is a calc2 / IB HL / AP BC integration question (u-substitution + trig identity).",
     "answer": "Answer placeholder for q10.",
     "difficulty": 3
   }

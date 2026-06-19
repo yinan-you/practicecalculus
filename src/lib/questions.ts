@@ -1,6 +1,61 @@
 export type Topic = "differentiation" | "integration";
 
-export type CourseTag = "calc1" | "calc2" | "IB" | "VCE" | "HSC" | "AP";
+/** Generic content depth — pairs with curriculum-specific tags. */
+export type ContentLevelTag = "calc1" | "calc2";
+
+export type AustralianYearTag =
+  | "VCE-yr11"
+  | "VCE-yr12"
+  | "HSC-yr11"
+  | "HSC-yr12"
+  | "QCE-yr11"
+  | "QCE-yr12"
+  | "SACE-yr11"
+  | "SACE-yr12"
+  | "WACE-yr11"
+  | "WACE-yr12"
+  | "TCE-yr11"
+  | "TCE-yr12"
+  | "ACT-yr11"
+  | "ACT-yr12";
+
+/** Calculus-relevant subject streams. Pair with a year tag from the same state. */
+export type AustralianStreamTag =
+  | "VCE-methods"
+  | "VCE-specialist"
+  | "HSC-advanced"
+  | "HSC-ext1"
+  | "HSC-ext2"
+  | "QCE-methods"
+  | "QCE-specialist"
+  | "SACE-methods"
+  | "SACE-specialist"
+  | "WACE-methods"
+  | "WACE-specialist"
+  | "TCE-methods"
+  | "TCE-specialised"
+  | "ACT-methods"
+  | "ACT-specialist";
+
+export type AustralianCourseTag = AustralianYearTag | AustralianStreamTag;
+
+export type IBCourseTag =
+  | "IB-AA-SL-yr11"
+  | "IB-AA-SL-yr12"
+  | "IB-AA-HL-yr11"
+  | "IB-AA-HL-yr12"
+  | "IB-AI-SL-yr11"
+  | "IB-AI-SL-yr12"
+  | "IB-AI-HL-yr11"
+  | "IB-AI-HL-yr12";
+
+export type USCourseTag = "AP-AB" | "AP-BC";
+
+export type CourseTag =
+  | ContentLevelTag
+  | AustralianCourseTag
+  | IBCourseTag
+  | USCourseTag;
 
 export type MethodTag =
   | "uSubstitution"
@@ -40,13 +95,66 @@ export type Question = QuestionBankEntry & {
   solutionMeta?: SolutionMeta;
 };
 
+export const CONTENT_LEVEL_TAGS: ContentLevelTag[] = ["calc1", "calc2"];
+
+export const AUSTRALIAN_YEAR_TAGS: AustralianYearTag[] = [
+  "VCE-yr11",
+  "VCE-yr12",
+  "HSC-yr11",
+  "HSC-yr12",
+  "QCE-yr11",
+  "QCE-yr12",
+  "SACE-yr11",
+  "SACE-yr12",
+  "WACE-yr11",
+  "WACE-yr12",
+  "TCE-yr11",
+  "TCE-yr12",
+  "ACT-yr11",
+  "ACT-yr12",
+];
+
+export const AUSTRALIAN_STREAM_TAGS: AustralianStreamTag[] = [
+  "VCE-methods",
+  "VCE-specialist",
+  "HSC-advanced",
+  "HSC-ext1",
+  "HSC-ext2",
+  "QCE-methods",
+  "QCE-specialist",
+  "SACE-methods",
+  "SACE-specialist",
+  "WACE-methods",
+  "WACE-specialist",
+  "TCE-methods",
+  "TCE-specialised",
+  "ACT-methods",
+  "ACT-specialist",
+];
+
+export const AUSTRALIAN_COURSE_TAGS: AustralianCourseTag[] = [
+  ...AUSTRALIAN_YEAR_TAGS,
+  ...AUSTRALIAN_STREAM_TAGS,
+];
+
+export const IB_COURSE_TAGS: IBCourseTag[] = [
+  "IB-AA-SL-yr11",
+  "IB-AA-SL-yr12",
+  "IB-AA-HL-yr11",
+  "IB-AA-HL-yr12",
+  "IB-AI-SL-yr11",
+  "IB-AI-SL-yr12",
+  "IB-AI-HL-yr11",
+  "IB-AI-HL-yr12",
+];
+
+export const US_COURSE_TAGS: USCourseTag[] = ["AP-AB", "AP-BC"];
+
 export const COURSE_TAGS: CourseTag[] = [
-  "calc1",
-  "calc2",
-  "IB",
-  "VCE",
-  "HSC",
-  "AP",
+  ...CONTENT_LEVEL_TAGS,
+  ...AUSTRALIAN_COURSE_TAGS,
+  ...IB_COURSE_TAGS,
+  ...US_COURSE_TAGS,
 ];
 
 export const METHOD_TAGS: MethodTag[] = [
