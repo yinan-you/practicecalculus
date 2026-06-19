@@ -5,69 +5,47 @@ import {
   type CourseTag,
   type MethodTag,
   type Question,
-  type QuestionKind,
+  type Topic,
 } from "@/lib/questions";
-import { FilterControls, type Filters } from "@/components/filter-controls";
+import {
+  EMPTY_FILTERS,
+  getMatchingQuestions,
+  getVisibleMethods,
+  getVisibleTopics,
+  pruneFilters,
+  toggle,
+  type Filters,
+} from "@/lib/filters";
+import { pickNextQuestion } from "@/lib/session";
+import { FilterControls } from "@/components/filter-controls";
 import { QuestionCard } from "@/components/question-card";
 
 type PracticeSessionProps = {
   questions: Question[];
 };
 
-const EMPTY_FILTERS: Filters = {
-  kinds: [],
-  courseTags: [],
-  methodTags: [],
-};
-
-function toggle<T>(list: T[], value: T): T[] {
-  return list.includes(value)
-    ? list.filter((item) => item !== value)
-    : [...list, value];
-}
-
-function matchesFilters(question: Question, filters: Filters): boolean {
-  if (filters.kinds.length > 0 && !filters.kinds.includes(question.kind)) {
-    return false;
-  }
-  if (
-    filters.courseTags.length > 0 &&
-    !filters.courseTags.every((tag) => question.courseTags.includes(tag))
-  ) {
-    return false;
-  }
-  if (
-    filters.methodTags.length > 0 &&
-    !filters.methodTags.every((tag) => question.methodTags.includes(tag))
-  ) {
-    return false;
-  }
-  return true;
-}
-
 export function PracticeSession({ questions }: PracticeSessionProps) {
   const [filters, setFilters] = useState<Filters>(EMPTY_FILTERS);
   const [currentQuestion, setCurrentQuestion] = useState<Question | null>(null);
   const [isSolutionOpen, setIsSolutionOpen] = useState(false);
 
+  const visibleTopics = useMemo(
+    () => getVisibleTopics(filters.courseTags),
+    [filters.courseTags],
+  );
+
+  const visibleMethods = useMemo(
+    () => getVisibleMethods(filters.courseTags, filters.topics),
+    [filters.courseTags, filters.topics],
+  );
+
   const matchingQuestions = useMemo(
-    () => questions.filter((question) => matchesFilters(question, filters)),
+    () => getMatchingQuestions(questions, filters),
     [questions, filters],
   );
 
   const generateNextQuestion = useCallback(() => {
-    if (matchingQuestions.length === 0) {
-      setCurrentQuestion(null);
-      return;
-    }
-
-    // Avoid immediately repeating the current question when alternatives exist.
-    const pool =
-      matchingQuestions.length > 1 && currentQuestion
-        ? matchingQuestions.filter((q) => q.id !== currentQuestion.id)
-        : matchingQuestions;
-
-    const next = pool[Math.floor(Math.random() * pool.length)];
+    const next = pickNextQuestion(matchingQuestions, currentQuestion);
     setCurrentQuestion(next);
     setIsSolutionOpen(false);
   }, [matchingQuestions, currentQuestion]);
@@ -78,7 +56,6 @@ export function PracticeSession({ questions }: PracticeSessionProps) {
         return;
       }
       const target = event.target as HTMLElement | null;
-      // Don't hijack Enter while typing in inputs (future answer box / LLM input).
       if (
         target &&
         (target.tagName === "INPUT" ||
@@ -95,18 +72,28 @@ export function PracticeSession({ questions }: PracticeSessionProps) {
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [generateNextQuestion]);
 
-  const handleToggleKind = (kind: QuestionKind) =>
-    setFilters((prev) => ({ ...prev, kinds: toggle(prev.kinds, kind) }));
-  const handleToggleCourseTag = (tag: CourseTag) =>
-    setFilters((prev) => ({
-      ...prev,
-      courseTags: toggle(prev.courseTags, tag),
-    }));
-  const handleToggleMethodTag = (tag: MethodTag) =>
+  const handleToggleCourse = (tag: CourseTag) =>
+    setFilters((prev) =>
+      pruneFilters({
+        ...prev,
+        courseTags: toggle(prev.courseTags, tag),
+      }),
+    );
+
+  const handleToggleTopic = (topic: Topic) =>
+    setFilters((prev) =>
+      pruneFilters({
+        ...prev,
+        topics: toggle(prev.topics, topic),
+      }),
+    );
+
+  const handleToggleMethod = (tag: MethodTag) =>
     setFilters((prev) => ({
       ...prev,
       methodTags: toggle(prev.methodTags, tag),
     }));
+
   const handleClear = () => setFilters(EMPTY_FILTERS);
 
   const hasNoMatches = matchingQuestions.length === 0;
@@ -115,9 +102,11 @@ export function PracticeSession({ questions }: PracticeSessionProps) {
     <div className="w-full space-y-8">
       <FilterControls
         filters={filters}
-        onToggleKind={handleToggleKind}
-        onToggleCourseTag={handleToggleCourseTag}
-        onToggleMethodTag={handleToggleMethodTag}
+        visibleTopics={visibleTopics}
+        visibleMethods={visibleMethods}
+        onToggleCourse={handleToggleCourse}
+        onToggleTopic={handleToggleTopic}
+        onToggleMethod={handleToggleMethod}
         onClear={handleClear}
       />
 

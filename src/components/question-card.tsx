@@ -12,7 +12,7 @@ export function QuestionCard({
   onToggleSolution,
 }: QuestionCardProps) {
   const tags = [
-    question.kind,
+    question.topic,
     ...question.courseTags,
     ...question.methodTags,
   ];

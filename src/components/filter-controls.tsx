@@ -1,23 +1,13 @@
-import {
-  COURSE_TAGS,
-  METHOD_TAGS,
-  QUESTION_KINDS,
-  type CourseTag,
-  type MethodTag,
-  type QuestionKind,
-} from "@/lib/questions";
-
-export type Filters = {
-  kinds: QuestionKind[];
-  courseTags: CourseTag[];
-  methodTags: MethodTag[];
-};
+import { COURSE_TAGS, type CourseTag, type MethodTag, type Topic } from "@/lib/questions";
+import type { Filters } from "@/lib/filters";
 
 type FilterControlsProps = {
   filters: Filters;
-  onToggleKind: (kind: QuestionKind) => void;
-  onToggleCourseTag: (tag: CourseTag) => void;
-  onToggleMethodTag: (tag: MethodTag) => void;
+  visibleTopics: Topic[];
+  visibleMethods: MethodTag[];
+  onToggleCourse: (tag: CourseTag) => void;
+  onToggleTopic: (topic: Topic) => void;
+  onToggleMethod: (tag: MethodTag) => void;
   onClear: () => void;
 };
 
@@ -65,50 +55,56 @@ function FilterGroup({
 
 export function FilterControls({
   filters,
-  onToggleKind,
-  onToggleCourseTag,
-  onToggleMethodTag,
+  visibleTopics,
+  visibleMethods,
+  onToggleCourse,
+  onToggleTopic,
+  onToggleMethod,
   onClear,
 }: FilterControlsProps) {
   const hasFilters =
-    filters.kinds.length > 0 ||
     filters.courseTags.length > 0 ||
+    filters.topics.length > 0 ||
     filters.methodTags.length > 0;
 
   return (
     <div className="w-full space-y-5">
-      <FilterGroup title="Type">
-        {QUESTION_KINDS.map((kind) => (
-          <Chip
-            key={kind}
-            label={kind}
-            selected={filters.kinds.includes(kind)}
-            onClick={() => onToggleKind(kind)}
-          />
-        ))}
-      </FilterGroup>
-
       <FilterGroup title="Course">
         {COURSE_TAGS.map((tag) => (
           <Chip
             key={tag}
             label={tag}
             selected={filters.courseTags.includes(tag)}
-            onClick={() => onToggleCourseTag(tag)}
+            onClick={() => onToggleCourse(tag)}
           />
         ))}
       </FilterGroup>
 
-      <FilterGroup title="Method">
-        {METHOD_TAGS.map((tag) => (
-          <Chip
-            key={tag}
-            label={tag}
-            selected={filters.methodTags.includes(tag)}
-            onClick={() => onToggleMethodTag(tag)}
-          />
-        ))}
-      </FilterGroup>
+      {visibleTopics.length > 0 && (
+        <FilterGroup title="Topic">
+          {visibleTopics.map((topic) => (
+            <Chip
+              key={topic}
+              label={topic}
+              selected={filters.topics.includes(topic)}
+              onClick={() => onToggleTopic(topic)}
+            />
+          ))}
+        </FilterGroup>
+      )}
+
+      {visibleMethods.length > 0 && (
+        <FilterGroup title="Method">
+          {visibleMethods.map((tag) => (
+            <Chip
+              key={tag}
+              label={tag}
+              selected={filters.methodTags.includes(tag)}
+              onClick={() => onToggleMethod(tag)}
+            />
+          ))}
+        </FilterGroup>
+      )}
 
       {hasFilters && (
         <button
