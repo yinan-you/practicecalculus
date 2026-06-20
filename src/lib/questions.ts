@@ -83,6 +83,7 @@ export type QuestionBankEntry = {
   topic: Topic;
   courseTags: CourseTag[];
   methodTags: MethodTag[];
+  tags: TagMap;
   prompt: string;
   answer: string;
   difficulty?: 1 | 2 | 3;
