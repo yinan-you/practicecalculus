@@ -10,6 +10,7 @@ import {
 import {
   EMPTY_FILTERS,
   getMatchingQuestions,
+  getVisibleCourses,
   getVisibleMethods,
   getVisibleTopics,
   pruneFilters,
@@ -29,14 +30,19 @@ export function PracticeSession({ questions }: PracticeSessionProps) {
   const [currentQuestion, setCurrentQuestion] = useState<Question | null>(null);
   const [isSolutionOpen, setIsSolutionOpen] = useState(false);
 
+  const visibleCourses = useMemo(
+    () => getVisibleCourses(questions, filters),
+    [questions, filters],
+  );
+
   const visibleTopics = useMemo(
-    () => getVisibleTopics(filters.courseTags),
-    [filters.courseTags],
+    () => getVisibleTopics(questions, filters),
+    [questions, filters],
   );
 
   const visibleMethods = useMemo(
-    () => getVisibleMethods(filters.courseTags, filters.topics),
-    [filters.courseTags, filters.topics],
+    () => getVisibleMethods(questions, filters),
+    [questions, filters],
   );
 
   const matchingQuestions = useMemo(
@@ -74,7 +80,7 @@ export function PracticeSession({ questions }: PracticeSessionProps) {
 
   const handleToggleCourse = (tag: CourseTag) =>
     setFilters((prev) =>
-      pruneFilters({
+      pruneFilters(questions, {
         ...prev,
         courseTags: toggle(prev.courseTags, tag),
       }),
@@ -82,17 +88,19 @@ export function PracticeSession({ questions }: PracticeSessionProps) {
 
   const handleToggleTopic = (topic: Topic) =>
     setFilters((prev) =>
-      pruneFilters({
+      pruneFilters(questions, {
         ...prev,
         topics: toggle(prev.topics, topic),
       }),
     );
 
   const handleToggleMethod = (tag: MethodTag) =>
-    setFilters((prev) => ({
-      ...prev,
-      methodTags: toggle(prev.methodTags, tag),
-    }));
+    setFilters((prev) =>
+      pruneFilters(questions, {
+        ...prev,
+        methodTags: toggle(prev.methodTags, tag),
+      }),
+    );
 
   const handleClear = () => setFilters(EMPTY_FILTERS);
 
@@ -102,6 +110,7 @@ export function PracticeSession({ questions }: PracticeSessionProps) {
     <div className="w-full space-y-8">
       <FilterControls
         filters={filters}
+        visibleCourses={visibleCourses}
         visibleTopics={visibleTopics}
         visibleMethods={visibleMethods}
         onToggleCourse={handleToggleCourse}
