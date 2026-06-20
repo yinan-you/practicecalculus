@@ -169,3 +169,51 @@ export const METHOD_TAGS: MethodTag[] = [
 ];
 
 export const TOPICS: Topic[] = ["differentiation", "integration"];
+
+// --- Generic filter dimensions (phase 1 primitives) ---
+
+export type DimensionId = string;
+
+export type TagMap = Record<DimensionId, string[]>;
+
+export type FilterDimension = {
+  id: DimensionId;
+  label: string;
+  multi: boolean;
+  order?: string[];
+};
+
+export const CORE_DIMENSION_IDS = {
+  course: "course",
+  topic: "topic",
+  method: "method",
+} as const satisfies Record<string, DimensionId>;
+
+export type CoreDimensionId =
+  (typeof CORE_DIMENSION_IDS)[keyof typeof CORE_DIMENSION_IDS];
+
+export const FILTER_DIMENSIONS: FilterDimension[] = [
+  {
+    id: CORE_DIMENSION_IDS.course,
+    label: "Course",
+    multi: true,
+    order: COURSE_TAGS,
+  },
+  {
+    id: CORE_DIMENSION_IDS.topic,
+    label: "Topic",
+    multi: true,
+    order: TOPICS,
+  },
+  {
+    id: CORE_DIMENSION_IDS.method,
+    label: "Method",
+    multi: true,
+    order: METHOD_TAGS,
+  },
+];
+
+export const FILTER_DIMENSION_REGISTRY: Record<CoreDimensionId, FilterDimension> =
+  Object.fromEntries(
+    FILTER_DIMENSIONS.map((dimension) => [dimension.id, dimension]),
+  ) as Record<CoreDimensionId, FilterDimension>;
