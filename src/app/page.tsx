@@ -9,7 +9,7 @@ export default function Home() {
       <main className="flex w-full max-w-3xl flex-1 flex-col gap-8 px-6 py-16 sm:px-10">
         <header className="space-y-2">
           <h1 className="text-3xl font-semibold tracking-tight text-black dark:text-zinc-50">
-            Start practicing!
+            What would you like to practice today?
           </h1>
         </header>
 
