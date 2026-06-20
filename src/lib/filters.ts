@@ -1,27 +1,14 @@
 import {
-  CORE_DIMENSION_IDS,
   FILTER_DIMENSIONS,
+  FILTER_DIMENSION_REGISTRY,
   type CoreDimensionId,
-  type CourseTag,
-  type MethodTag,
-  type OriginTag,
   type Question,
-  type Topic,
 } from "@/lib/questions";
 
-export type Filters = {
-  originTags: OriginTag[];
-  courseTags: CourseTag[];
-  topics: Topic[];
-  methodTags: MethodTag[];
-};
+/** Selected values per dimension, keyed by dimension id. */
+export type Filters = Partial<Record<CoreDimensionId, string[]>>;
 
-export const EMPTY_FILTERS: Filters = {
-  originTags: [],
-  courseTags: [],
-  topics: [],
-  methodTags: [],
-};
+export const EMPTY_FILTERS: Filters = {};
 
 export function toggle<T>(list: T[], value: T): T[] {
   return list.includes(value)
@@ -29,26 +16,8 @@ export function toggle<T>(list: T[], value: T): T[] {
     : [...list, value];
 }
 
-const LEGACY_FILTER_KEY_BY_DIMENSION: Record<CoreDimensionId, keyof Filters> = {
-  [CORE_DIMENSION_IDS.origin]: "originTags",
-  [CORE_DIMENSION_IDS.course]: "courseTags",
-  [CORE_DIMENSION_IDS.topic]: "topics",
-  [CORE_DIMENSION_IDS.method]: "methodTags",
-};
-
-/** How selected filter values must relate to a question's tags for that dimension. */
-const DIMENSION_MATCH_MODE: Record<CoreDimensionId, "all" | "any"> = {
-  [CORE_DIMENSION_IDS.origin]: "any",
-  [CORE_DIMENSION_IDS.course]: "all",
-  [CORE_DIMENSION_IDS.topic]: "any",
-  [CORE_DIMENSION_IDS.method]: "all",
-};
-
-function getFilterValuesForDimension(
-  filters: Filters,
-  dimensionId: CoreDimensionId,
-): string[] {
-  return filters[LEGACY_FILTER_KEY_BY_DIMENSION[dimensionId]] as string[];
+function getSelected(filters: Filters, dimensionId: CoreDimensionId): string[] {
+  return filters[dimensionId] ?? [];
 }
 
 function dimensionMatches(
@@ -61,7 +30,7 @@ function dimensionMatches(
   }
 
   const questionTags = question.tags[dimensionId] ?? [];
-  const mode = DIMENSION_MATCH_MODE[dimensionId];
+  const mode = FILTER_DIMENSION_REGISTRY[dimensionId].matchMode;
 
   return mode === "all"
     ? selected.every((tag) => questionTags.includes(tag))
@@ -79,7 +48,7 @@ function matchesFiltersExcept(
       continue;
     }
 
-    const selected = getFilterValuesForDimension(filters, dimensionId);
+    const selected = getSelected(filters, dimensionId);
     if (!dimensionMatches(question, dimensionId, selected)) {
       return false;
     }
@@ -104,12 +73,13 @@ function uniqueInOrder<T>(canonicalOrder: T[], values: T[]): T[] {
   return canonicalOrder.filter((value) => availableValues.has(value));
 }
 
-function getVisibleValuesForDimension(
+/** Values that still yield matches for a dimension, given the other filters. */
+export function getVisibleValues(
   questions: Question[],
   filters: Filters,
   dimensionId: CoreDimensionId,
 ): string[] {
-  const dimension = FILTER_DIMENSIONS.find((entry) => entry.id === dimensionId);
+  const dimension = FILTER_DIMENSION_REGISTRY[dimensionId];
   const values = questions
     .filter((question) => matchesFiltersExcept(question, filters, dimensionId))
     .flatMap((question) => question.tags[dimensionId] ?? []);
@@ -117,48 +87,30 @@ function getVisibleValuesForDimension(
   return uniqueInOrder(dimension?.order ?? [], values);
 }
 
-export function getVisibleOrigins(
+/** Visible values for every registered dimension. */
+export function getVisibleValuesByDimension(
   questions: Question[],
   filters: Filters,
-): OriginTag[] {
-  return getVisibleValuesForDimension(
-    questions,
-    filters,
-    CORE_DIMENSION_IDS.origin,
-  ) as OriginTag[];
+): Partial<Record<CoreDimensionId, string[]>> {
+  const result: Partial<Record<CoreDimensionId, string[]>> = {};
+  for (const dimension of FILTER_DIMENSIONS) {
+    const dimensionId = dimension.id as CoreDimensionId;
+    result[dimensionId] = getVisibleValues(questions, filters, dimensionId);
+  }
+  return result;
 }
 
-export function getVisibleCourses(
+/** Toggle a value within a dimension, then drop any now-invisible selections. */
+export function toggleFilter(
   questions: Question[],
   filters: Filters,
-): CourseTag[] {
-  return getVisibleValuesForDimension(
-    questions,
-    filters,
-    CORE_DIMENSION_IDS.course,
-  ) as CourseTag[];
-}
-
-export function getVisibleTopics(
-  questions: Question[],
-  filters: Filters,
-): Topic[] {
-  return getVisibleValuesForDimension(
-    questions,
-    filters,
-    CORE_DIMENSION_IDS.topic,
-  ) as Topic[];
-}
-
-export function getVisibleMethods(
-  questions: Question[],
-  filters: Filters,
-): MethodTag[] {
-  return getVisibleValuesForDimension(
-    questions,
-    filters,
-    CORE_DIMENSION_IDS.method,
-  ) as MethodTag[];
+  dimensionId: CoreDimensionId,
+  value: string,
+): Filters {
+  return pruneFilters(questions, {
+    ...filters,
+    [dimensionId]: toggle(getSelected(filters, dimensionId), value),
+  });
 }
 
 export function pruneFilters(questions: Question[], filters: Filters): Filters {
@@ -166,12 +118,15 @@ export function pruneFilters(questions: Question[], filters: Filters): Filters {
 
   for (const dimension of FILTER_DIMENSIONS) {
     const dimensionId = dimension.id as CoreDimensionId;
-    const key = LEGACY_FILTER_KEY_BY_DIMENSION[dimensionId];
-    const visible = getVisibleValuesForDimension(questions, result, dimensionId);
+    const selected = result[dimensionId];
+    if (!selected || selected.length === 0) {
+      continue;
+    }
 
+    const visible = getVisibleValues(questions, result, dimensionId);
     result = {
       ...result,
-      [key]: (result[key] as string[]).filter((value) => visible.includes(value)),
+      [dimensionId]: selected.filter((value) => visible.includes(value)),
     };
   }
 

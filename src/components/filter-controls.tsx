@@ -1,21 +1,10 @@
-import type { CourseTag, MethodTag, OriginTag, Topic } from "@/lib/questions";
+import { FILTER_DIMENSIONS, type CoreDimensionId } from "@/lib/questions";
 import type { Filters } from "@/lib/filters";
-
-const ORIGIN_LABELS: Record<OriginTag, string> = {
-  public: "Public",
-  user: "User-added",
-};
 
 type FilterControlsProps = {
   filters: Filters;
-  visibleOrigins: OriginTag[];
-  visibleCourses: CourseTag[];
-  visibleTopics: Topic[];
-  visibleMethods: MethodTag[];
-  onToggleOrigin: (tag: OriginTag) => void;
-  onToggleCourse: (tag: CourseTag) => void;
-  onToggleTopic: (topic: Topic) => void;
-  onToggleMethod: (tag: MethodTag) => void;
+  visibleValues: Partial<Record<CoreDimensionId, string[]>>;
+  onToggle: (dimensionId: CoreDimensionId, value: string) => void;
   onClear: () => void;
 };
 
@@ -63,75 +52,38 @@ function FilterGroup({
 
 export function FilterControls({
   filters,
-  visibleOrigins,
-  visibleCourses,
-  visibleTopics,
-  visibleMethods,
-  onToggleOrigin,
-  onToggleCourse,
-  onToggleTopic,
-  onToggleMethod,
+  visibleValues,
+  onToggle,
   onClear,
 }: FilterControlsProps) {
-  const hasFilters =
-    filters.originTags.length > 0 ||
-    filters.courseTags.length > 0 ||
-    filters.topics.length > 0 ||
-    filters.methodTags.length > 0;
+  const hasFilters = Object.values(filters).some(
+    (values) => values && values.length > 0,
+  );
 
   return (
     <div className="w-full space-y-5">
-      {visibleOrigins.length > 0 && (
-        <FilterGroup title="Source">
-          {visibleOrigins.map((tag) => (
-            <Chip
-              key={tag}
-              label={ORIGIN_LABELS[tag]}
-              selected={filters.originTags.includes(tag)}
-              onClick={() => onToggleOrigin(tag)}
-            />
-          ))}
-        </FilterGroup>
-      )}
+      {FILTER_DIMENSIONS.map((dimension) => {
+        const dimensionId = dimension.id as CoreDimensionId;
+        const visible = visibleValues[dimensionId] ?? [];
+        if (visible.length === 0) {
+          return null;
+        }
 
-      {visibleCourses.length > 0 && (
-        <FilterGroup title="Course">
-          {visibleCourses.map((tag) => (
-            <Chip
-              key={tag}
-              label={tag}
-              selected={filters.courseTags.includes(tag)}
-              onClick={() => onToggleCourse(tag)}
-            />
-          ))}
-        </FilterGroup>
-      )}
+        const selected = filters[dimensionId] ?? [];
 
-      {visibleTopics.length > 0 && (
-        <FilterGroup title="Topic">
-          {visibleTopics.map((topic) => (
-            <Chip
-              key={topic}
-              label={topic}
-              selected={filters.topics.includes(topic)}
-              onClick={() => onToggleTopic(topic)}
-            />
-          ))}
-        </FilterGroup>
-      )}
-
-      {visibleMethods.length > 0 && (
-        <FilterGroup title="Method">
-          {visibleMethods.map((tag) => (
-            <Chip
-              key={tag}
-              label={tag}
-              selected={filters.methodTags.includes(tag)}
-              onClick={() => onToggleMethod(tag)}
-            />
-          ))}
-        </FilterGroup>
-      )}
+        return (
+          <FilterGroup key={dimensionId} title={dimension.label}>
+            {visible.map((value) => (
+              <Chip
+                key={value}
+                label={dimension.labels?.[value] ?? value}
+                selected={selected.includes(value)}
+                onClick={() => onToggle(dimensionId, value)}
+              />
+            ))}
+          </FilterGroup>
+        );
+      })}
 
       {hasFilters && (
         <button

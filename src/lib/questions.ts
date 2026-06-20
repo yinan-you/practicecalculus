@@ -187,7 +187,11 @@ export type FilterDimension = {
   id: DimensionId;
   label: string;
   multi: boolean;
+  /** How selected values relate to a question's tags: "all" = AND, "any" = OR. */
+  matchMode: "all" | "any";
   order?: string[];
+  /** Optional per-value display overrides (e.g. "user" → "User-added"). */
+  labels?: Record<string, string>;
 };
 
 export const CORE_DIMENSION_IDS = {
@@ -205,24 +209,32 @@ export const FILTER_DIMENSIONS: FilterDimension[] = [
     id: CORE_DIMENSION_IDS.origin,
     label: "Source",
     multi: true,
+    matchMode: "any",
     order: ORIGIN_TAGS,
+    labels: {
+      public: "Public",
+      user: "User-added",
+    },
   },
   {
     id: CORE_DIMENSION_IDS.course,
     label: "Course",
     multi: true,
+    matchMode: "all",
     order: COURSE_TAGS,
   },
   {
     id: CORE_DIMENSION_IDS.topic,
     label: "Topic",
     multi: true,
+    matchMode: "any",
     order: TOPICS,
   },
   {
     id: CORE_DIMENSION_IDS.method,
     label: "Method",
     multi: true,
+    matchMode: "all",
     order: METHOD_TAGS,
   },
 ];

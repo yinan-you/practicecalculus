@@ -1,22 +1,12 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useState } from "react";
-import {
-  type CourseTag,
-  type MethodTag,
-  type OriginTag,
-  type Question,
-  type Topic,
-} from "@/lib/questions";
+import { type CoreDimensionId, type Question } from "@/lib/questions";
 import {
   EMPTY_FILTERS,
   getMatchingQuestions,
-  getVisibleCourses,
-  getVisibleMethods,
-  getVisibleOrigins,
-  getVisibleTopics,
-  pruneFilters,
-  toggle,
+  getVisibleValuesByDimension,
+  toggleFilter,
   type Filters,
 } from "@/lib/filters";
 import { pickNextQuestion } from "@/lib/session";
@@ -32,23 +22,8 @@ export function PracticeSession({ questions }: PracticeSessionProps) {
   const [currentQuestion, setCurrentQuestion] = useState<Question | null>(null);
   const [isSolutionOpen, setIsSolutionOpen] = useState(false);
 
-  const visibleOrigins = useMemo(
-    () => getVisibleOrigins(questions, filters),
-    [questions, filters],
-  );
-
-  const visibleCourses = useMemo(
-    () => getVisibleCourses(questions, filters),
-    [questions, filters],
-  );
-
-  const visibleTopics = useMemo(
-    () => getVisibleTopics(questions, filters),
-    [questions, filters],
-  );
-
-  const visibleMethods = useMemo(
-    () => getVisibleMethods(questions, filters),
+  const visibleValues = useMemo(
+    () => getVisibleValuesByDimension(questions, filters),
     [questions, filters],
   );
 
@@ -85,37 +60,11 @@ export function PracticeSession({ questions }: PracticeSessionProps) {
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [generateNextQuestion]);
 
-  const handleToggleOrigin = (tag: OriginTag) =>
-    setFilters((prev) =>
-      pruneFilters(questions, {
-        ...prev,
-        originTags: toggle(prev.originTags, tag),
-      }),
-    );
-
-  const handleToggleCourse = (tag: CourseTag) =>
-    setFilters((prev) =>
-      pruneFilters(questions, {
-        ...prev,
-        courseTags: toggle(prev.courseTags, tag),
-      }),
-    );
-
-  const handleToggleTopic = (topic: Topic) =>
-    setFilters((prev) =>
-      pruneFilters(questions, {
-        ...prev,
-        topics: toggle(prev.topics, topic),
-      }),
-    );
-
-  const handleToggleMethod = (tag: MethodTag) =>
-    setFilters((prev) =>
-      pruneFilters(questions, {
-        ...prev,
-        methodTags: toggle(prev.methodTags, tag),
-      }),
-    );
+  const handleToggle = useCallback(
+    (dimensionId: CoreDimensionId, value: string) =>
+      setFilters((prev) => toggleFilter(questions, prev, dimensionId, value)),
+    [questions],
+  );
 
   const handleClear = () => setFilters(EMPTY_FILTERS);
 
@@ -125,14 +74,8 @@ export function PracticeSession({ questions }: PracticeSessionProps) {
     <div className="w-full space-y-8">
       <FilterControls
         filters={filters}
-        visibleOrigins={visibleOrigins}
-        visibleCourses={visibleCourses}
-        visibleTopics={visibleTopics}
-        visibleMethods={visibleMethods}
-        onToggleOrigin={handleToggleOrigin}
-        onToggleCourse={handleToggleCourse}
-        onToggleTopic={handleToggleTopic}
-        onToggleMethod={handleToggleMethod}
+        visibleValues={visibleValues}
+        onToggle={handleToggle}
         onClear={handleClear}
       />
 
