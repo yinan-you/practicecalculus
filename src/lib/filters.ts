@@ -1,7 +1,7 @@
 import {
-  COURSE_TAGS,
-  METHOD_TAGS,
-  TOPICS,
+  CORE_DIMENSION_IDS,
+  FILTER_DIMENSIONS,
+  type CoreDimensionId,
   type CourseTag,
   type MethodTag,
   type Question,
@@ -26,32 +26,60 @@ export function toggle<T>(list: T[], value: T): T[] {
     : [...list, value];
 }
 
-type IgnoredFilterGroup = keyof Filters;
+const LEGACY_FILTER_KEY_BY_DIMENSION: Record<CoreDimensionId, keyof Filters> = {
+  [CORE_DIMENSION_IDS.course]: "courseTags",
+  [CORE_DIMENSION_IDS.topic]: "topics",
+  [CORE_DIMENSION_IDS.method]: "methodTags",
+};
+
+/** How selected filter values must relate to a question's tags for that dimension. */
+const DIMENSION_MATCH_MODE: Record<CoreDimensionId, "all" | "any"> = {
+  [CORE_DIMENSION_IDS.course]: "all",
+  [CORE_DIMENSION_IDS.topic]: "any",
+  [CORE_DIMENSION_IDS.method]: "all",
+};
+
+function getFilterValuesForDimension(
+  filters: Filters,
+  dimensionId: CoreDimensionId,
+): string[] {
+  return filters[LEGACY_FILTER_KEY_BY_DIMENSION[dimensionId]] as string[];
+}
+
+function dimensionMatches(
+  question: Question,
+  dimensionId: CoreDimensionId,
+  selected: string[],
+): boolean {
+  if (selected.length === 0) {
+    return true;
+  }
+
+  const questionTags = question.tags[dimensionId] ?? [];
+  const mode = DIMENSION_MATCH_MODE[dimensionId];
+
+  return mode === "all"
+    ? selected.every((tag) => questionTags.includes(tag))
+    : selected.some((tag) => questionTags.includes(tag));
+}
 
 function matchesFiltersExcept(
   question: Question,
   filters: Filters,
-  ignoredGroup?: IgnoredFilterGroup,
+  ignoredDimensionId?: CoreDimensionId,
 ): boolean {
-  if (filters.topics.length > 0 && !filters.topics.includes(question.topic)) {
-    if (ignoredGroup !== "topics") {
+  for (const dimension of FILTER_DIMENSIONS) {
+    const dimensionId = dimension.id as CoreDimensionId;
+    if (dimensionId === ignoredDimensionId) {
+      continue;
+    }
+
+    const selected = getFilterValuesForDimension(filters, dimensionId);
+    if (!dimensionMatches(question, dimensionId, selected)) {
       return false;
     }
   }
-  if (
-    ignoredGroup !== "courseTags" &&
-    filters.courseTags.length > 0 &&
-    !filters.courseTags.every((tag) => question.courseTags.includes(tag))
-  ) {
-    return false;
-  }
-  if (
-    ignoredGroup !== "methodTags" &&
-    filters.methodTags.length > 0 &&
-    !filters.methodTags.every((tag) => question.methodTags.includes(tag))
-  ) {
-    return false;
-  }
+
   return true;
 }
 
@@ -71,54 +99,65 @@ function uniqueInOrder<T>(canonicalOrder: T[], values: T[]): T[] {
   return canonicalOrder.filter((value) => availableValues.has(value));
 }
 
+function getVisibleValuesForDimension(
+  questions: Question[],
+  filters: Filters,
+  dimensionId: CoreDimensionId,
+): string[] {
+  const dimension = FILTER_DIMENSIONS.find((entry) => entry.id === dimensionId);
+  const values = questions
+    .filter((question) => matchesFiltersExcept(question, filters, dimensionId))
+    .flatMap((question) => question.tags[dimensionId] ?? []);
+
+  return uniqueInOrder(dimension?.order ?? [], values);
+}
+
 export function getVisibleCourses(
   questions: Question[],
   filters: Filters,
 ): CourseTag[] {
-  const courseTags = questions
-    .filter((question) => matchesFiltersExcept(question, filters, "courseTags"))
-    .flatMap((question) => question.courseTags);
-
-  return uniqueInOrder(COURSE_TAGS, courseTags);
+  return getVisibleValuesForDimension(
+    questions,
+    filters,
+    CORE_DIMENSION_IDS.course,
+  ) as CourseTag[];
 }
 
 export function getVisibleTopics(
   questions: Question[],
   filters: Filters,
 ): Topic[] {
-  const topics = questions
-    .filter((question) => matchesFiltersExcept(question, filters, "topics"))
-    .map((question) => question.topic);
-
-  return uniqueInOrder(TOPICS, topics);
+  return getVisibleValuesForDimension(
+    questions,
+    filters,
+    CORE_DIMENSION_IDS.topic,
+  ) as Topic[];
 }
 
 export function getVisibleMethods(
   questions: Question[],
   filters: Filters,
 ): MethodTag[] {
-  const methodTags = questions
-    .filter((question) => matchesFiltersExcept(question, filters, "methodTags"))
-    .flatMap((question) => question.methodTags);
-
-  return uniqueInOrder(METHOD_TAGS, methodTags);
+  return getVisibleValuesForDimension(
+    questions,
+    filters,
+    CORE_DIMENSION_IDS.method,
+  ) as MethodTag[];
 }
 
 export function pruneFilters(questions: Question[], filters: Filters): Filters {
-  const visibleCourses = getVisibleCourses(questions, filters);
-  const courseTags = filters.courseTags.filter((tag) =>
-    visibleCourses.includes(tag),
-  );
-  const filtersWithCourses = { ...filters, courseTags };
+  let result: Filters = { ...filters };
 
-  const visibleTopics = getVisibleTopics(questions, filtersWithCourses);
-  const topics = filters.topics.filter((topic) => visibleTopics.includes(topic));
-  const filtersWithTopics = { ...filtersWithCourses, topics };
+  for (const dimension of FILTER_DIMENSIONS) {
+    const dimensionId = dimension.id as CoreDimensionId;
+    const key = LEGACY_FILTER_KEY_BY_DIMENSION[dimensionId];
+    const visible = getVisibleValuesForDimension(questions, result, dimensionId);
 
-  const visibleMethods = getVisibleMethods(questions, filtersWithTopics);
-  const methodTags = filters.methodTags.filter((tag) =>
-    visibleMethods.includes(tag),
-  );
+    result = {
+      ...result,
+      [key]: (result[key] as string[]).filter((value) => visible.includes(value)),
+    };
+  }
 
-  return { ...filtersWithTopics, methodTags };
+  return result;
 }
