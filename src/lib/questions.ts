@@ -171,6 +171,12 @@ export const METHOD_TAGS: MethodTag[] = [
 
 export const TOPICS: Topic[] = ["differentiation", "integration"];
 
+export type OriginTag = "public" | "user";
+
+export const ORIGIN_TAGS: OriginTag[] = ["public", "user"];
+
+export const DEFAULT_ORIGIN_TAGS: OriginTag[] = ["public"];
+
 // --- Generic filter dimensions (phase 1 primitives) ---
 
 export type DimensionId = string;
@@ -185,6 +191,7 @@ export type FilterDimension = {
 };
 
 export const CORE_DIMENSION_IDS = {
+  origin: "origin",
   course: "course",
   topic: "topic",
   method: "method",
@@ -194,6 +201,12 @@ export type CoreDimensionId =
   (typeof CORE_DIMENSION_IDS)[keyof typeof CORE_DIMENSION_IDS];
 
 export const FILTER_DIMENSIONS: FilterDimension[] = [
+  {
+    id: CORE_DIMENSION_IDS.origin,
+    label: "Source",
+    multi: true,
+    order: ORIGIN_TAGS,
+  },
   {
     id: CORE_DIMENSION_IDS.course,
     label: "Course",

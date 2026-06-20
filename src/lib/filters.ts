@@ -4,17 +4,20 @@ import {
   type CoreDimensionId,
   type CourseTag,
   type MethodTag,
+  type OriginTag,
   type Question,
   type Topic,
 } from "@/lib/questions";
 
 export type Filters = {
+  originTags: OriginTag[];
   courseTags: CourseTag[];
   topics: Topic[];
   methodTags: MethodTag[];
 };
 
 export const EMPTY_FILTERS: Filters = {
+  originTags: [],
   courseTags: [],
   topics: [],
   methodTags: [],
@@ -27,6 +30,7 @@ export function toggle<T>(list: T[], value: T): T[] {
 }
 
 const LEGACY_FILTER_KEY_BY_DIMENSION: Record<CoreDimensionId, keyof Filters> = {
+  [CORE_DIMENSION_IDS.origin]: "originTags",
   [CORE_DIMENSION_IDS.course]: "courseTags",
   [CORE_DIMENSION_IDS.topic]: "topics",
   [CORE_DIMENSION_IDS.method]: "methodTags",
@@ -34,6 +38,7 @@ const LEGACY_FILTER_KEY_BY_DIMENSION: Record<CoreDimensionId, keyof Filters> = {
 
 /** How selected filter values must relate to a question's tags for that dimension. */
 const DIMENSION_MATCH_MODE: Record<CoreDimensionId, "all" | "any"> = {
+  [CORE_DIMENSION_IDS.origin]: "any",
   [CORE_DIMENSION_IDS.course]: "all",
   [CORE_DIMENSION_IDS.topic]: "any",
   [CORE_DIMENSION_IDS.method]: "all",
@@ -110,6 +115,17 @@ function getVisibleValuesForDimension(
     .flatMap((question) => question.tags[dimensionId] ?? []);
 
   return uniqueInOrder(dimension?.order ?? [], values);
+}
+
+export function getVisibleOrigins(
+  questions: Question[],
+  filters: Filters,
+): OriginTag[] {
+  return getVisibleValuesForDimension(
+    questions,
+    filters,
+    CORE_DIMENSION_IDS.origin,
+  ) as OriginTag[];
 }
 
 export function getVisibleCourses(

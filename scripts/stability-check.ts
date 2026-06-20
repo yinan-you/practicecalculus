@@ -5,9 +5,11 @@
 import {
   COURSE_TAGS,
   METHOD_TAGS,
+  ORIGIN_TAGS,
   TOPICS,
   type CourseTag,
   type MethodTag,
+  type OriginTag,
   type Question,
   type Topic,
 } from "@/lib/questions";
@@ -17,6 +19,7 @@ import {
   getMatchingQuestions,
   getVisibleCourses,
   getVisibleMethods,
+  getVisibleOrigins,
   getVisibleTopics,
   pruneFilters,
   toggle,
@@ -32,6 +35,13 @@ function legacyMatchesFiltersExcept(
   filters: Filters,
   ignoredGroup?: IgnoredFilterGroup,
 ): boolean {
+  if (
+    ignoredGroup !== "originTags" &&
+    filters.originTags.length > 0 &&
+    !filters.originTags.some((tag) => (question.tags.origin ?? []).includes(tag))
+  ) {
+    return false;
+  }
   if (filters.topics.length > 0 && !filters.topics.includes(question.topic)) {
     if (ignoredGroup !== "topics") {
       return false;
@@ -66,6 +76,18 @@ function legacyGetMatchingQuestions(
 function uniqueInOrder<T>(canonicalOrder: T[], values: T[]): T[] {
   const availableValues = new Set(values);
   return canonicalOrder.filter((value) => availableValues.has(value));
+}
+
+function legacyGetVisibleOrigins(
+  questions: Question[],
+  filters: Filters,
+): OriginTag[] {
+  const originTags = questions
+    .filter((question) =>
+      legacyMatchesFiltersExcept(question, filters, "originTags"),
+    )
+    .flatMap((question) => question.tags.origin ?? []);
+  return uniqueInOrder(ORIGIN_TAGS, originTags) as OriginTag[];
 }
 
 function legacyGetVisibleCourses(
@@ -108,11 +130,17 @@ function legacyPruneFilters(
   questions: Question[],
   filters: Filters,
 ): Filters {
-  const visibleCourses = legacyGetVisibleCourses(questions, filters);
-  const courseTags = filters.courseTags.filter((tag) =>
+  const visibleOrigins = legacyGetVisibleOrigins(questions, filters);
+  const originTags = filters.originTags.filter((tag) =>
+    visibleOrigins.includes(tag),
+  );
+  const filtersWithOrigins = { ...filters, originTags };
+
+  const visibleCourses = legacyGetVisibleCourses(questions, filtersWithOrigins);
+  const courseTags = filtersWithOrigins.courseTags.filter((tag) =>
     visibleCourses.includes(tag),
   );
-  const filtersWithCourses = { ...filters, courseTags };
+  const filtersWithCourses = { ...filtersWithOrigins, courseTags };
 
   const visibleTopics = legacyGetVisibleTopics(questions, filtersWithCourses);
   const topics = filtersWithCourses.topics.filter((topic) =>
@@ -128,14 +156,13 @@ function legacyPruneFilters(
   return { ...filtersWithTopics, methodTags };
 }
 
-// Fix typo in legacyPruneFilters - I made an error. Let me fix when writing.
-
 function arraysEqual<T>(a: T[], b: T[]): boolean {
   return a.length === b.length && a.every((value, index) => value === b[index]);
 }
 
 function filtersEqual(a: Filters, b: Filters): boolean {
   return (
+    arraysEqual(a.originTags, b.originTags) &&
     arraysEqual(a.courseTags, b.courseTags) &&
     arraysEqual(a.topics, b.topics) &&
     arraysEqual(a.methodTags, b.methodTags)
@@ -173,6 +200,11 @@ function compareAtState(
     legacy: string[];
     current: string[];
   }> = [
+    {
+      name: "origins",
+      legacy: legacyGetVisibleOrigins(questions, filters),
+      current: getVisibleOrigins(questions, filters),
+    },
     {
       name: "courses",
       legacy: legacyGetVisibleCourses(questions, filters),
@@ -215,10 +247,19 @@ function assertChipStateParity(
   label: string,
   failures: Failure[],
 ): void {
+  const visibleOrigins = getVisibleOrigins(questions, filters);
   const visibleCourses = getVisibleCourses(questions, filters);
   const visibleTopics = getVisibleTopics(questions, filters);
   const visibleMethods = getVisibleMethods(questions, filters);
 
+  for (const tag of filters.originTags) {
+    if (!visibleOrigins.includes(tag)) {
+      failures.push({
+        label,
+        detail: `chip parity: selected origin "${tag}" not in visible origins`,
+      });
+    }
+  }
   for (const tag of filters.courseTags) {
     if (!visibleCourses.includes(tag)) {
       failures.push({
@@ -240,6 +281,15 @@ function assertChipStateParity(
       failures.push({
         label,
         detail: `chip parity: selected method "${tag}" not in visible methods`,
+      });
+    }
+  }
+
+  for (const tag of visibleOrigins) {
+    if (filters.originTags.includes(tag) !== filters.originTags.includes(tag)) {
+      failures.push({
+        label,
+        detail: `chip parity: origin "${tag}" selected state inconsistent`,
       });
     }
   }
@@ -318,7 +368,11 @@ function main(): void {
 
   // Single-toggle states from empty
   let current = EMPTY_FILTERS;
-  for (const tag of getVisibleCourses(questions, current)) {
+  for (const tag of getVisibleOrigins(questions, current)) {
+    current = simulateUiToggle(questions, EMPTY_FILTERS, "originTags", tag);
+    states.push({ label: `toggle origin:${tag}`, filters: current });
+  }
+  for (const tag of getVisibleCourses(questions, EMPTY_FILTERS)) {
     current = simulateUiToggle(questions, EMPTY_FILTERS, "courseTags", tag);
     states.push({ label: `toggle course:${tag}`, filters: current });
   }
@@ -382,6 +436,7 @@ function main(): void {
 
   // Initial UI snapshot (empty filters)
   const initialMatchCount = getMatchingQuestions(questions, EMPTY_FILTERS).length;
+  const initialOrigins = getVisibleOrigins(questions, EMPTY_FILTERS);
   const initialCourses = getVisibleCourses(questions, EMPTY_FILTERS);
   const initialTopics = getVisibleTopics(questions, EMPTY_FILTERS);
   const initialMethods = getVisibleMethods(questions, EMPTY_FILTERS);
@@ -390,6 +445,7 @@ function main(): void {
   console.log(`Questions loaded: ${questions.length}`);
   console.log(`Filter states exercised: ${states.length}`);
   console.log(`Initial matching count: ${initialMatchCount}`);
+  console.log(`Initial visible origins: ${initialOrigins.join(", ")}`);
   console.log(`Initial visible courses: ${initialCourses.length}`);
   console.log(`Initial visible topics: ${initialTopics.join(", ")}`);
   console.log(`Initial visible methods: ${initialMethods.length}`);

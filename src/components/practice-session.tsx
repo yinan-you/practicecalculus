@@ -4,6 +4,7 @@ import { useCallback, useEffect, useMemo, useState } from "react";
 import {
   type CourseTag,
   type MethodTag,
+  type OriginTag,
   type Question,
   type Topic,
 } from "@/lib/questions";
@@ -12,6 +13,7 @@ import {
   getMatchingQuestions,
   getVisibleCourses,
   getVisibleMethods,
+  getVisibleOrigins,
   getVisibleTopics,
   pruneFilters,
   toggle,
@@ -29,6 +31,11 @@ export function PracticeSession({ questions }: PracticeSessionProps) {
   const [filters, setFilters] = useState<Filters>(EMPTY_FILTERS);
   const [currentQuestion, setCurrentQuestion] = useState<Question | null>(null);
   const [isSolutionOpen, setIsSolutionOpen] = useState(false);
+
+  const visibleOrigins = useMemo(
+    () => getVisibleOrigins(questions, filters),
+    [questions, filters],
+  );
 
   const visibleCourses = useMemo(
     () => getVisibleCourses(questions, filters),
@@ -78,6 +85,14 @@ export function PracticeSession({ questions }: PracticeSessionProps) {
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [generateNextQuestion]);
 
+  const handleToggleOrigin = (tag: OriginTag) =>
+    setFilters((prev) =>
+      pruneFilters(questions, {
+        ...prev,
+        originTags: toggle(prev.originTags, tag),
+      }),
+    );
+
   const handleToggleCourse = (tag: CourseTag) =>
     setFilters((prev) =>
       pruneFilters(questions, {
@@ -110,9 +125,11 @@ export function PracticeSession({ questions }: PracticeSessionProps) {
     <div className="w-full space-y-8">
       <FilterControls
         filters={filters}
+        visibleOrigins={visibleOrigins}
         visibleCourses={visibleCourses}
         visibleTopics={visibleTopics}
         visibleMethods={visibleMethods}
+        onToggleOrigin={handleToggleOrigin}
         onToggleCourse={handleToggleCourse}
         onToggleTopic={handleToggleTopic}
         onToggleMethod={handleToggleMethod}

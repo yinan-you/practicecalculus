@@ -3,6 +3,7 @@ import path from "node:path";
 import matter from "gray-matter";
 import {
   CORE_DIMENSION_IDS,
+  DEFAULT_ORIGIN_TAGS,
   type CourseTag,
   type MethodTag,
   type Question,
@@ -13,10 +14,6 @@ import {
 } from "@/lib/questions";
 
 const DATA_DIR = path.join(process.cwd(), "data");
-
-/** Future dimension — not exposed in UI during phase 1. */
-const ORIGIN_DIMENSION_ID = "origin";
-const DEFAULT_ORIGIN_TAGS = ["public"];
 
 /** JSON records may use legacy fields, native tags, or a mix during migration. */
 type RawQuestionBankEntry = {
@@ -53,8 +50,8 @@ function normalizeQuestionEntry(raw: RawQuestionBankEntry): QuestionBankEntry {
     [CORE_DIMENSION_IDS.course]: [...courseTags],
     [CORE_DIMENSION_IDS.topic]: [topic],
     [CORE_DIMENSION_IDS.method]: [...methodTags],
-    [ORIGIN_DIMENSION_ID]:
-      raw.tags?.[ORIGIN_DIMENSION_ID] ?? [...DEFAULT_ORIGIN_TAGS],
+    [CORE_DIMENSION_IDS.origin]:
+      raw.tags?.[CORE_DIMENSION_IDS.origin] ?? [...DEFAULT_ORIGIN_TAGS],
   };
 
   return {
