@@ -159,5 +159,17 @@
     "prompt": "This is a calc2 / IB HL / AP BC integration question (u-substitution + trig identity).",
     "answer": "Answer placeholder for q10.",
     "difficulty": 3
+  },
+  {
+    "id": "q11",
+    "prompt": "User-added: differentiate $g(x) = 5x^4$.",
+    "answer": "$g'(x) = 20x^3$",
+    "difficulty": 1,
+    "tags": {
+      "course": ["calc1", "AP-AB"],
+      "topic": ["differentiation"],
+      "method": ["powerRule"],
+      "origin": ["user"]
+    }
   }
 ]
