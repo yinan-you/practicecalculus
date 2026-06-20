@@ -1,8 +1,9 @@
-import { COURSE_TAGS, type CourseTag, type MethodTag, type Topic } from "@/lib/questions";
+import type { CourseTag, MethodTag, Topic } from "@/lib/questions";
 import type { Filters } from "@/lib/filters";
 
 type FilterControlsProps = {
   filters: Filters;
+  visibleCourses: CourseTag[];
   visibleTopics: Topic[];
   visibleMethods: MethodTag[];
   onToggleCourse: (tag: CourseTag) => void;
@@ -55,6 +56,7 @@ function FilterGroup({
 
 export function FilterControls({
   filters,
+  visibleCourses,
   visibleTopics,
   visibleMethods,
   onToggleCourse,
@@ -69,16 +71,18 @@ export function FilterControls({
 
   return (
     <div className="w-full space-y-5">
-      <FilterGroup title="Course">
-        {COURSE_TAGS.map((tag) => (
-          <Chip
-            key={tag}
-            label={tag}
-            selected={filters.courseTags.includes(tag)}
-            onClick={() => onToggleCourse(tag)}
-          />
-        ))}
-      </FilterGroup>
+      {visibleCourses.length > 0 && (
+        <FilterGroup title="Course">
+          {visibleCourses.map((tag) => (
+            <Chip
+              key={tag}
+              label={tag}
+              selected={filters.courseTags.includes(tag)}
+              onClick={() => onToggleCourse(tag)}
+            />
+          ))}
+        </FilterGroup>
+      )}
 
       {visibleTopics.length > 0 && (
         <FilterGroup title="Topic">
