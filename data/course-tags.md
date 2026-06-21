@@ -1,126 +1,360 @@
-# Course tags
+# Course Tagging Reference
 
-Tags describe **who** a question is for. A question can carry multiple tags.
+**specVersion: 1**
 
-Use **content tags** (`calc1`, `calc2`) for topic depth that cuts across curricula. Add **year** and **stream** tags when a question matches a specific certificate and subject.
+This document is the authoritative guide for assigning `course` tags to questions in the public bank. It covers Phase 1 in-scope curricula in full detail; deferred curricula are stubbed at the bottom.
 
-## Content level (generic)
+**Scope:** differentiation and integration *techniques* only. Applications (optimisation, related rates, kinematics, area/volume), differential equations, and Maclaurin/Taylor series are out of scope for Phase 1 question population even where they appear in the syllabus.
 
-| Tag | Meaning |
-| --- | --- |
-| `calc1` | First-semester calculus: limits, derivatives, basic integrals |
-| `calc2` | Second-semester calculus: advanced integration, series, parametric/polar |
+---
 
-These align loosely with university Calculus I / II and are useful when a question fits many programs.
+## How course tags work
 
-## Australia — year tags
+Course tags live on `tags.course` and use `matchMode: "all"` (AND semantics). A student filtering on `["VCE-yr12", "VCE-methods"]` will only see questions carrying **both** tags.
 
-| State / territory | Certificate | Year 11 tag | Year 12 tag | Notes |
-| --- | --- | --- | --- | --- |
-| Victoria | VCE | `VCE-yr11` | `VCE-yr12` | Units 1–2 ≈ yr11, Units 3–4 ≈ yr12 |
-| New South Wales | HSC | `HSC-yr11` | `HSC-yr12` | Preliminary vs HSC year |
-| Queensland | QCE | `QCE-yr11` | `QCE-yr12` | General (ATAR) subjects |
-| South Australia | SACE | `SACE-yr11` | `SACE-yr12` | Stage 1 / Stage 2 |
-| Northern Territory | NTCET | `SACE-yr11` | `SACE-yr12` | Same structure as SACE |
-| Western Australia | WACE | `WACE-yr11` | `WACE-yr12` | ATAR maths courses |
-| Tasmania | TCE | `TCE-yr11` | `TCE-yr12` | TASC administers TCE |
-| ACT | BSSS / ACT SSC | `ACT-yr11` | `ACT-yr12` | ACT senior secondary certificate |
+**Always pair year + stream** from the same system. A question tagged `VCE-yr12` alone is not useful — it should also carry `VCE-methods` or `VCE-specialist` (or both if appropriate).
 
-## Australia — subject stream tags
+**Always include a content level** (`calc1` or `calc2`) alongside curriculum tags. This lets students without a specific curriculum context still filter meaningfully.
 
-Stream tags name the **calculus-relevant** maths subject. Pair them with a year tag from the same state (e.g. `VCE-yr12` + `VCE-methods`).
+**Multi-tag generously across equivalent curricula.** A standard chain rule question suits VCE Methods, HSC Advanced, IB AA SL, and calc1 simultaneously — tag all of them. Students in different systems find the same question; no duplication needed.
 
-Elementary streams (General Mathematics, HSC Standard, Mathematical Applications) are omitted — they contain little or no calculus.
+**Tag the highest stream the question targets, then add lower streams it also suits.** A question requiring integration by parts (HSC Ext 1 / IB AA HL) should carry `HSC-ext1` but not `HSC-advanced` unless it genuinely suits Advanced students too.
 
-### Cross-state equivalence
+---
 
-| Stream tag | Official subject name | Rough equivalent |
-| --- | --- | --- |
-| `VCE-methods` | Mathematical Methods | HSC Advanced, QCE/SACE/WACE/ACT Methods |
-| `VCE-specialist` | Specialist Mathematics | HSC Ext 1 + Ext 2 combined |
-| `HSC-advanced` | Mathematics Advanced | VCE Methods |
-| `HSC-ext1` | Mathematics Extension 1 | Part of VCE Specialist; requires Advanced |
-| `HSC-ext2` | Mathematics Extension 2 | Top tier; requires Ext 1 + Advanced |
-| `QCE-methods` | Mathematical Methods | VCE Methods |
-| `QCE-specialist` | Specialist Mathematics | VCE Specialist |
-| `SACE-methods` | Mathematical Methods | VCE Methods |
-| `SACE-specialist` | Specialist Mathematics | VCE Specialist |
-| `WACE-methods` | Mathematics Methods ATAR | VCE Methods |
-| `WACE-specialist` | Mathematics Specialist ATAR | VCE Specialist |
-| `TCE-methods` | Mathematics Methods | VCE Methods |
-| `TCE-specialised` | Mathematics Specialised | VCE Specialist (Tasmania spells it "Specialised") |
-| `ACT-methods` | Mathematical Methods | VCE Methods |
-| `ACT-specialist` | Specialist Mathematics | VCE Specialist |
+## Content levels
 
-### HSC prerequisite chain
+### `calc1` — Introductory calculus
 
-```
-HSC-advanced  →  HSC-ext1  →  HSC-ext2
-```
+Questions at this level assume only basic polynomial, exponential, and simple trigonometric differentiation and integration. The student knows the power rule, basic chain rule with linear inner functions, and standard integrals.
 
-Extension 1 requires Advanced; Extension 2 requires both. Tag the **highest** stream a question is aimed at, plus any lower streams it also suits.
+**Differentiation techniques in scope at calc1:**
+- Power rule: $\frac{d}{dx}[x^n] = nx^{n-1}$
+- Sum/difference rule
+- Constant multiple rule
+- Chain rule with linear inner function: $\frac{d}{dx}[(ax+b)^n]$
+- Derivatives of $e^x$, $\ln x$, $\sin x$, $\cos x$, $\tan x$ (standard results, no proof required)
+- Product rule (straightforward cases)
+- Quotient rule (straightforward cases)
 
-### VCE / QCE / SACE / WACE specialist note
+**Integration techniques in scope at calc1:**
+- Reverse power rule
+- Standard integrals: $\int e^x\,dx$, $\int \frac{1}{x}\,dx$, $\int \sin x\,dx$, $\int \cos x\,dx$
+- Integration of $(ax+b)^n$ by inspection / linear substitution
+- Simple definite integrals
 
-Specialist Mathematics (or equivalent) is taken **alongside** Methods, not instead of it. A Specialist question often also suits Methods students in yr12.
+**Not at calc1:** u-substitution with non-linear substitutions, integration by parts, partial fractions, trig identities in integration, inverse trig integrals.
+
+---
+
+### `calc2` — Intermediate/advanced calculus
+
+Questions at this level require techniques beyond calc1. Use `calc2` for questions involving u-substitution with non-trivial substitutions, integration by parts, partial fractions, trig identities, or inverse trig integrals.
+
+**Additional differentiation techniques at calc2:**
+- Chain rule with non-linear compositions: $\frac{d}{dx}[f(g(x))]$ where $g$ is non-linear
+- Product rule with exponential/trig/log combinations
+- Quotient rule in complex settings
+- Implicit differentiation
+- Derivatives of inverse trig functions: $\frac{d}{dx}[\arcsin x]$, $\frac{d}{dx}[\arctan x]$
+
+**Additional integration techniques at calc2:**
+- u-substitution with non-linear substitutions
+- Integration by parts: $\int u\,dv = uv - \int v\,du$
+- Partial fractions
+- Trig identity integrals: using $\sin^2 x + \cos^2 x = 1$, double angle formulas
+- Integrals of the form $\int \frac{1}{a^2+x^2}\,dx = \frac{1}{a}\arctan\frac{x}{a} + C$
+- Integrals of the form $\int \frac{1}{\sqrt{a^2-x^2}}\,dx = \arcsin\frac{x}{a} + C$
+- Reduction formulae (Specialist / Ext 2 / IB AA HL)
+
+---
+
+## Australia — Phase 1 in-scope curricula
+
+### Victoria (VCE)
+
+VCE Mathematics splits into two subjects: **Mathematical Methods** and **Specialist Mathematics**. Both span Units 1–4 across Year 11 (Units 1 & 2) and Year 12 (Units 3 & 4). Most students taking Specialist also take Methods concurrently; Specialist assumes Methods knowledge.
+
+#### Tag pairing rules
+
+| Year | Subject | Tags to apply |
+|------|---------|---------------|
+| Year 11 | Methods Units 1 & 2 | `VCE-yr11` + `VCE-methods` |
+| Year 12 | Methods Units 3 & 4 | `VCE-yr12` + `VCE-methods` |
+| Year 11 | Specialist Units 1 & 2 | `VCE-yr11` + `VCE-specialist` |
+| Year 12 | Specialist Units 3 & 4 | `VCE-yr12` + `VCE-specialist` |
+
+A question suitable for both Methods and Specialist in Year 12 should carry all four: `VCE-yr12`, `VCE-methods`, `VCE-specialist` (and `calc1` or `calc2`).
+
+#### VCE Mathematical Methods — calculus techniques scope
+
+**Units 1 & 2 (Year 11) — `VCE-yr11` + `VCE-methods`:**
+- Power rule, sum rule, constant multiple
+- Chain rule: polynomial and simple exponential inner functions
+- Product and quotient rule (introduced)
+- Derivatives of $e^x$, $\ln x$, $\sin x$, $\cos x$, $\tan x$
+- Antidifferentiation by recognition (reverse chain rule with linear inner function)
+- Standard integrals as above
+
+**Units 3 & 4 (Year 12) — `VCE-yr12` + `VCE-methods`:**
+All of the above, plus:
+- Chain rule in more complex compositions
+- Product and quotient rule fluency
+- $\int \frac{f'(x)}{f(x)}\,dx = \ln|f(x)| + C$ by recognition
+- Definite integrals (technique, not application)
+
+*Out of scope for Methods:* integration by parts, partial fractions, trig identity integration, inverse trig derivatives/integrals — these belong to Specialist.
+
+#### VCE Specialist Mathematics — calculus techniques scope
+
+Specialist Mathematics Units 1 & 2 (Year 11) do **not** include calculus — calculus first appears in Specialist Units 3 & 4. However, students will have concurrent Methods Units 3 & 4 content.
+
+**Units 3 & 4 (Year 12) — `VCE-yr12` + `VCE-specialist`:**
+All Methods content, plus:
+- Derivatives of $\arcsin x$, $\arccos x$, $\arctan x$
+- Integration by parts
+- Partial fractions (linear and irreducible quadratic denominators)
+- Trig identity integration: $\sin^2 x$, $\cos^2 x$ via double angle; $\sec^2 x$
+- Integrals of the form $\int \frac{1}{a^2+x^2}\,dx$, $\int \frac{1}{\sqrt{a^2-x^2}}\,dx$
+- Reduction formulae (e.g. $\int \sin^n x\,dx$ — may appear in Logic & Proof context)
+- Implicit differentiation
+
+**Note:** The VCAA study design explicitly lists trigonometric identities (including Pythagorean, double angle) as required for integration in Specialist Units 3 & 4.
+
+#### VCE content level mapping
+
+| Technique | calc level | VCE tags |
+|-----------|-----------|----------|
+| Power rule, basic chain rule | calc1 | `VCE-yr11` + `VCE-methods` |
+| Product/quotient rule, standard integrals | calc1 | `VCE-yr11` + `VCE-methods` or `VCE-yr12` + `VCE-methods` |
+| Complex chain rule, $\ln|f(x)|$ integral | calc1–calc2 | `VCE-yr12` + `VCE-methods` |
+| Integration by parts | calc2 | `VCE-yr12` + `VCE-specialist` |
+| Partial fractions | calc2 | `VCE-yr12` + `VCE-specialist` |
+| Trig identity integrals | calc2 | `VCE-yr12` + `VCE-specialist` |
+| Inverse trig derivatives/integrals | calc2 | `VCE-yr12` + `VCE-specialist` |
+
+---
+
+### New South Wales (HSC)
+
+NSW HSC Mathematics has three calculus-relevant streams: **Advanced**, **Extension 1**, and **Extension 2**. Each is a separate subject. Extension 1 assumes Advanced; Extension 2 assumes Extension 1.
+
+The HSC is Year 12 only. Year 11 content (Preliminary) uses the same stream structure but is tagged `HSC-yr11`.
+
+#### Tag pairing rules
+
+| Year | Stream | Tags to apply |
+|------|--------|---------------|
+| Year 11 (Preliminary) | Advanced | `HSC-yr11` + `HSC-advanced` |
+| Year 12 | Advanced | `HSC-yr12` + `HSC-advanced` |
+| Year 11 (Preliminary) | Extension 1 | `HSC-yr11` + `HSC-ext1` |
+| Year 12 | Extension 1 | `HSC-yr12` + `HSC-ext1` |
+| Year 12 only | Extension 2 | `HSC-yr12` + `HSC-ext2` |
+
+Extension 2 is Year 12 only (no Preliminary equivalent). When tagging an Ext 2 question, also add `HSC-ext1` and `HSC-advanced` if the technique is also accessible at those levels. Usually it isn't — Ext 2 techniques are genuinely beyond Ext 1.
+
+#### HSC Advanced — calculus techniques scope
+
+**Year 11 / Preliminary (`HSC-yr11` + `HSC-advanced`):**
+- Derivatives of polynomials, $e^x$, $\ln x$, $\sin x$, $\cos x$, $\tan x$
+- Chain, product, quotient rules
+- Antidifferentiation by recognition; standard integrals
+- Definite integrals
+
+**Year 12 (`HSC-yr12` + `HSC-advanced`):**
+All Year 11 content plus:
+- Derivatives of $e^{f(x)}$, $\ln(f(x))$, $\sin(f(x))$ etc. via chain rule
+- $\int f'(x)e^{f(x)}\,dx$, $\int \frac{f'(x)}{f(x)}\,dx$ by reverse chain rule
+
+*Out of scope for Advanced:* integration by substitution (non-trivial), integration by parts, partial fractions, inverse trig — these are Ext 1 or Ext 2.
+
+#### HSC Extension 1 — calculus techniques scope
+
+Extension 1 adds to Advanced content:
+
+**Year 11 (`HSC-yr11` + `HSC-ext1`):**
+- All Advanced Year 11 content
+- Introduction to inverse trig functions and their derivatives: $\frac{d}{dx}[\sin^{-1}(x/a)]$, $\frac{d}{dx}[\tan^{-1}(x/a)]$
+- Integrals of the form $\int \frac{1}{\sqrt{a^2-x^2}}\,dx$, $\int \frac{1}{a^2+x^2}\,dx$
+
+**Year 12 (`HSC-yr12` + `HSC-ext1`):**
+All Year 11 Ext 1 content plus:
+- Integration by substitution (u-substitution, non-trivial)
+- Trig identity integrals using $\cos 2x$ double angle identity for $\sin^2 x$, $\cos^2 x$
+- Integration by parts (introduced at Ext 1 level in current NESA syllabus)
+
+#### HSC Extension 2 — calculus techniques scope
+
+Extension 2 is Year 12 only. The calculus content (MEX-C topic) includes:
+
+- Integration by parts (advanced cases, including reduction formulae)
+- Partial fractions (including irreducible quadratics in denominator)
+- Trig substitution
+- Further substitution techniques
+- Integrals reducible to standard forms via completing the square
+
+Extension 2 also involves proof by induction applied to calculus results (e.g. proving $\frac{d}{dx}[x^n] = nx^{n-1}$) — these are technique questions in scope if phrased as differentiation exercises.
+
+#### HSC content level mapping
+
+| Technique | calc level | HSC tags |
+|-----------|-----------|----------|
+| Power/chain/product/quotient rule | calc1 | `HSC-yr11` + `HSC-advanced` |
+| Reverse chain rule, standard integrals | calc1 | `HSC-yr11` + `HSC-advanced` |
+| Inverse trig derivatives/integrals | calc2 | `HSC-yr11` + `HSC-ext1` |
+| u-substitution | calc2 | `HSC-yr12` + `HSC-ext1` |
+| Trig identity integrals | calc2 | `HSC-yr12` + `HSC-ext1` |
+| Integration by parts (standard) | calc2 | `HSC-yr12` + `HSC-ext1` |
+| Integration by parts (advanced/reduction) | calc2 | `HSC-yr12` + `HSC-ext2` |
+| Partial fractions | calc2 | `HSC-yr12` + `HSC-ext2` |
+| Trig substitution | calc2 | `HSC-yr12` + `HSC-ext2` |
+
+---
 
 ## IB Diploma Programme
 
-IB maths is a **two-year** course (typically grades 11–12). There are two subjects, each at **SL** or **HL**:
+IB DP Mathematics has two courses: **Analysis & Approaches (AA)** and **Applications & Interpretation (AI)**, each at **Standard Level (SL)** or **Higher Level (HL)**. Both span two years (Year 11 = Year 1, Year 12 = Year 2).
 
-- **AA** — Analysis & Approaches (primary calculus pathway; use for most questions here)
-- **AI** — Applications & Interpretation (less calculus, especially at SL)
+### Tags
 
-| Tag | Typical cohort |
-| --- | --- |
-| `IB-AA-SL-yr11` | Math AA SL, first year |
-| `IB-AA-SL-yr12` | Math AA SL, second year / exam year |
-| `IB-AA-HL-yr11` | Math AA HL, first year |
-| `IB-AA-HL-yr12` | Math AA HL, second year / exam year |
-| `IB-AI-SL-yr11` | Math AI SL, first year |
-| `IB-AI-SL-yr12` | Math AI SL, second year |
-| `IB-AI-HL-yr11` | Math AI HL, first year |
-| `IB-AI-HL-yr12` | Math AI HL, second year |
+| Course | Year | Tags |
+|--------|------|------|
+| AA SL | Year 11 | `IB-AA-SL-yr11` |
+| AA SL | Year 12 | `IB-AA-SL-yr12` |
+| AA HL | Year 11 | `IB-AA-HL-yr11` |
+| AA HL | Year 12 | `IB-AA-HL-yr12` |
+| AI SL | Year 11 | `IB-AI-SL-yr11` |
+| AI SL | Year 12 | `IB-AI-SL-yr12` |
+| AI HL | Year 11 | `IB-AI-HL-yr11` |
+| AI HL | Year 12 | `IB-AI-HL-yr12` |
 
-HL covers more calculus depth (e.g. integration by parts, series) than SL.
+### AA vs AI calculus emphasis
 
-## United States
+**AA** is the more algebraic/theoretical course and covers integration and differentiation techniques in depth. **AI** emphasises modelling and technology; its calculus is shallower — techniques are introduced but the focus is on interpretation, not symbolic manipulation. For Phase 1 technique questions, AI tags will rarely appear alone; most technique questions suit AA first.
 
-There is **no national** high-school calculus syllabus. Most calculus-aligned students take **College Board AP** courses:
+**HL vs SL:** HL extends SL content with additional techniques (integration by parts, further substitution, inverse trig, reduction formulae). SL students are not expected to know integration by parts.
 
-| Tag | Meaning |
-| --- | --- |
-| `AP-AB` | AP Calculus AB — ~one semester of college calculus (`calc1` content) |
-| `AP-BC` | AP Calculus BC — AB content **plus** series, parametric/polar, etc. (`calc1` + `calc2`) |
+### IB AA — calculus techniques scope
 
-**AP Calculus AB and BC are parallel one-year courses**, not a sequence — students pick one. BC contains all AB topics.
+#### AA SL — Year 1 (`IB-AA-SL-yr11`)
+- Derivatives of $x^n$, $\sin x$, $\cos x$, $e^x$, $\ln x$
+- Chain rule, product rule, quotient rule (introduced)
+- Antidifferentiation: $\int x^n\,dx$, $\int \sin x\,dx$, $\int \cos x\,dx$, $\int e^x\,dx$, $\int \frac{1}{x}\,dx$
+- Integration of $(ax+b)^n$ and similar by inspection
 
-Other US paths (not separate tags yet, but useful context):
+#### AA SL — Year 2 (`IB-AA-SL-yr12`)
+All Year 1 content plus:
+- Chain rule fluency across exponential, trig, log compositions
+- $\int \frac{f'(x)}{f(x)}\,dx$, $\int f'(x)e^{f(x)}\,dx$ by inspection / reverse chain rule
+- Simple u-substitution
 
-- **AP Precalculus** — functions and modelling; little or no calculus
-- **Honors / regular Calculus** — school-specific; often tracks AB or BC
-- **Dual enrollment** — college calc at a high school; content usually matches `calc1` / `calc2`
+#### AA HL — Year 1 (`IB-AA-HL-yr11`)
+All AA SL Year 1 content plus:
+- Implicit differentiation
+- Derivatives of inverse trig: $\arcsin x$, $\arctan x$
+- Integrals of $\frac{1}{a^2+x^2}$, $\frac{1}{\sqrt{a^2-x^2}}$
 
-US year labels are inconsistent (9th–12th grade); we use content tags (`calc1`, `AP-AB`) rather than `yr11`/`yr12` for America.
+#### AA HL — Year 2 (`IB-AA-HL-yr12`)
+All AA HL Year 1 content plus:
+- Integration by parts
+- Further u-substitution (non-linear, definite integrals with change of limits)
+- Trig identity integrals: using $\cos 2x$ for $\sin^2 x$, $\cos^2 x$; $\tan^2 x = \sec^2 x - 1$
+- Mixed quotient integrals via inverse trig forms
+- Reduction formulae
 
-## Tagging examples
+The IB AA HL bootcamp (Revision Village) explicitly identifies these sub-topics within the HL integration syllabus: mixed quotients (inverse trig forms), trig integrals (substitution + identities), integration by parts, substitution with definite integrals.
 
-Introductory derivative, Methods / Advanced yr11:
+### IB AI — calculus techniques scope
 
-```json
-{ "tags": { "course": ["calc1", "VCE-yr11", "VCE-methods", "HSC-yr11", "HSC-advanced"] } }
-```
+AI SL and AI HL include calculus, but the emphasis is on GDC-assisted evaluation and interpretation. Symbolic technique questions at AI level are limited.
 
-Harder integral, Specialist / Ext 2 yr12:
+#### AI SL (`IB-AI-SL-yr11`, `IB-AI-SL-yr12`)
+- Power rule differentiation; derivatives of $e^x$, $\ln x$, $\sin x$, $\cos x$
+- Simple antidifferentiation; definite integrals (mainly GDC in exams)
+- Chain rule (simple cases)
 
-```json
-{ "tags": { "course": ["calc2", "VCE-yr12", "VCE-specialist", "HSC-yr12", "HSC-ext2", "AP-BC"] } }
-```
+#### AI HL (`IB-AI-HL-yr11`, `IB-AI-HL-yr12`)
+All AI SL content plus:
+- Product and quotient rule
+- Integration by substitution (basic)
+- No integration by parts at AI HL
 
-IB HL integration by parts:
+*AI questions should only be tagged if the technique is genuinely within AI scope without a GDC. If the question requires a symbolic technique beyond AI's by-hand expectation, do not tag AI.*
 
-```json
-{ "tags": { "course": ["calc2", "IB-AA-HL-yr12", "VCE-yr12", "VCE-specialist"] } }
-```
+### IB content level mapping
 
-Prefer **specific** curriculum tags when you know the audience; add **content** tags when the maths level is the main signal.
+| Technique | calc level | IB tags |
+|-----------|-----------|---------|
+| Power rule, standard derivatives | calc1 | `IB-AA-SL-yr11`, `IB-AI-SL-yr11` |
+| Chain/product/quotient rule | calc1 | `IB-AA-SL-yr11` |
+| Standard antidifferentiation | calc1 | `IB-AA-SL-yr11`, `IB-AI-SL-yr11` |
+| Reverse chain rule / $f'/f$ integrals | calc1–calc2 | `IB-AA-SL-yr12` |
+| Inverse trig derivatives/integrals | calc2 | `IB-AA-HL-yr11` |
+| u-substitution (simple) | calc2 | `IB-AA-SL-yr12` |
+| Integration by parts | calc2 | `IB-AA-HL-yr12` |
+| Trig identity integrals | calc2 | `IB-AA-HL-yr12` |
+| Reduction formulae | calc2 | `IB-AA-HL-yr12` |
+| Mixed quotient / inverse trig integrals | calc2 | `IB-AA-HL-yr12` |
+
+---
+
+## Cross-curriculum equivalence table
+
+For technique questions, the following curriculum levels are broadly equivalent and should be multi-tagged:
+
+| Technique | VCE | HSC | IB | calc |
+|-----------|-----|-----|----|------|
+| Power rule | Meth yr11 | Adv yr11 | AA-SL-yr11, AI-SL-yr11 | calc1 |
+| Chain rule (linear inner) | Meth yr11 | Adv yr11 | AA-SL-yr11 | calc1 |
+| Product / quotient rule | Meth yr11 | Adv yr11 | AA-SL-yr11 | calc1 |
+| Standard integrals | Meth yr11 | Adv yr11 | AA-SL-yr11 | calc1 |
+| Complex chain rule, $\ln|f|$ | Meth yr12 | Adv yr12 | AA-SL-yr12 | calc1–2 |
+| Inverse trig derivatives | Spec yr12 | Ext1 yr11 | AA-HL-yr11 | calc2 |
+| Inverse trig integrals | Spec yr12 | Ext1 yr11 | AA-HL-yr11 | calc2 |
+| u-substitution | Spec yr12 | Ext1 yr12 | AA-SL-yr12 | calc2 |
+| Trig identity integrals | Spec yr12 | Ext1 yr12 | AA-HL-yr12 | calc2 |
+| Integration by parts | Spec yr12 | Ext1 yr12 | AA-HL-yr12 | calc2 |
+| Partial fractions | Spec yr12 | Ext2 yr12 | AA-HL-yr12 | calc2 |
+| Reduction formulae | Spec yr12 | Ext2 yr12 | AA-HL-yr12 | calc2 |
+
+---
+
+## Deferred curricula (specVersion 1 stubs)
+
+The following course tags exist in the `COURSE_TAGS` enum and **must not be removed**, but have not been researched for Phase 1. Do not assign these tags in Phase 1 imports. Do not make syllabus claims about them in this document.
+
+### QCE (Queensland)
+Tags: `QCE-yr11`, `QCE-yr12`, `QCE-methods`, `QCE-specialist`
+Not researched in specVersion 1.
+
+### SACE / NT (South Australia / Northern Territory)
+Tags: `SACE-yr11`, `SACE-yr12`, `SACE-methods`, `SACE-specialist`
+Not researched in specVersion 1.
+
+### WACE (Western Australia)
+Tags: `WACE-yr11`, `WACE-yr12`, `WACE-methods`, `WACE-specialist`
+Not researched in specVersion 1.
+
+### TCE (Tasmania)
+Tags: `TCE-yr11`, `TCE-yr12`, `TCE-methods`, `TCE-specialised`
+Not researched in specVersion 1.
+
+### ACT
+Tags: `ACT-yr11`, `ACT-yr12`, `ACT-methods`, `ACT-specialist`
+Not researched in specVersion 1.
+
+### US AP Calculus
+Tags: `AP-AB`, `AP-BC`
+Not researched in specVersion 1. Existing seed questions (q1–q13) may carry these tags as early placeholders; treat them as approximate only.
+
+---
+
+## Human review checklist
+
+Before approving `course-tags.md`:
+
+- [ ] Every **in-scope** tag (`calc1`, `calc2`, `VCE-yr11`, `VCE-yr12`, `VCE-methods`, `VCE-specialist`, `HSC-yr11`, `HSC-yr12`, `HSC-advanced`, `HSC-ext1`, `HSC-ext2`, all 8 `IB-*` tags) has a full calculus techniques description
+- [ ] Every **deferred** tag has an honest stub — no invented syllabus detail
+- [ ] The cross-curriculum equivalence table covers all 8 method tags: `powerRule`, `chainRule`, `productRule`, `quotientRule`, `uSubstitution`, `integrationByParts`, `partialFractions`, `trigIdentity`
+- [ ] No applications, differential equations, or kinematics content has crept into technique descriptions
+- [ ] Primary sources (VCAA study design, NESA syllabus, IB subject guide) are consistent with the technique scope described
