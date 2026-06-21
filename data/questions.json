@@ -227,5 +227,41 @@
       "origin": ["public"],
       "worksheet": ["ws-int-01"]
     }
+  },
+  {
+    "id": "q14",
+    "stem": "Let $f(x) = x^2 e^x$.",
+    "parts": [
+      {
+        "id": "a",
+        "prompt": "Find $f'(x)$.",
+        "answer": "$f'(x) = e^x(x^2 + 2x)$",
+        "tags": {
+          "topic": ["differentiation"],
+          "method": ["productRule"]
+        }
+      },
+      {
+        "id": "b",
+        "prompt": "Hence evaluate $\\int_0^1 f'(x)\\,dx$.",
+        "answer": "$f(1) - f(0) = e - 0 = e$",
+        "tags": {
+          "topic": ["integration"],
+          "method": ["uSubstitution"]
+        }
+      }
+    ],
+    "difficulty": 2,
+    "source": "multipart exemplar",
+    "tags": {
+      "course": [
+        "calc2",
+        "HSC-yr12",
+        "HSC-ext1",
+        "IB-AA-HL-yr12",
+        "AP-BC"
+      ],
+      "origin": ["public"]
+    }
   }
 ]

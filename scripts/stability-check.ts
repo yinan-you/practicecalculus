@@ -212,6 +212,129 @@ function assertChipStateParity(
   }
 }
 
+function makeMultipartFixture(): Question {
+  return {
+    id: "fixture-multipart",
+    stem: "Shared stem.",
+    parts: [
+      {
+        id: "a",
+        prompt: "Differentiate.",
+        answer: "A",
+        topic: "differentiation",
+        methodTags: ["chainRule"],
+      },
+      {
+        id: "b",
+        prompt: "Integrate.",
+        answer: "B",
+        topic: "integration",
+        methodTags: ["productRule"],
+      },
+    ],
+    topic: "differentiation",
+    courseTags: ["HSC-yr12", "HSC-ext1"],
+    methodTags: ["chainRule", "productRule"],
+    tags: {
+      course: ["HSC-yr12", "HSC-ext1"],
+      origin: ["public"],
+      topic: ["differentiation", "integration"],
+      method: ["chainRule", "productRule"],
+    },
+    prompt: "Differentiate.",
+    answer: "A",
+  };
+}
+
+function assertMatches(
+  questions: Question[],
+  filters: Filters,
+  expectedIds: string[],
+  label: string,
+  failures: Failure[],
+): void {
+  const matches = getMatchingQuestions(questions, filters);
+  const ids = matches.map((q) => q.id).sort().join(",");
+  const expected = [...expectedIds].sort().join(",");
+  if (ids !== expected) {
+    failures.push({
+      label,
+      detail: `expected [${expected}] got [${ids}]`,
+    });
+  }
+}
+
+function runMultipartTests(failures: Failure[]): void {
+  const multipart = makeMultipartFixture();
+  const pool = [multipart];
+
+  assertMatches(
+    pool,
+    { topic: ["differentiation"] },
+    ["fixture-multipart"],
+    "multipart matches topic differentiation",
+    failures,
+  );
+  assertMatches(
+    pool,
+    { topic: ["integration"] },
+    ["fixture-multipart"],
+    "multipart matches topic integration",
+    failures,
+  );
+  assertMatches(
+    pool,
+    { method: ["chainRule", "productRule"] },
+    ["fixture-multipart"],
+    "multipart matches split methods (union AND)",
+    failures,
+  );
+  assertMatches(
+    pool,
+    { method: ["chainRule", "powerRule"] },
+    [],
+    "multipart rejects method not on any part",
+    failures,
+  );
+  assertMatches(
+    pool,
+    { course: ["HSC-yr12", "HSC-ext1"] },
+    ["fixture-multipart"],
+    "multipart matches parent course tags",
+    failures,
+  );
+  assertMatches(
+    pool,
+    { course: ["HSC-yr12", "VCE-methods"] },
+    [],
+    "multipart rejects incompatible course combo",
+    failures,
+  );
+
+  const flat = loadQuestions().find((q) => q.id === "q1");
+  if (!flat) {
+    failures.push({
+      label: "flat normalization",
+      detail: "q1 not found in bank",
+    });
+    return;
+  }
+
+  if (flat.parts.length !== 1 || flat.parts[0]?.id !== "main") {
+    failures.push({
+      label: "flat normalization",
+      detail: `expected single part id main, got ${JSON.stringify(flat.parts.map((p) => p.id))}`,
+    });
+  }
+
+  if (flat.tags.topic?.join(",") !== "differentiation") {
+    failures.push({
+      label: "flat normalization",
+      detail: `expected topic differentiation, got ${flat.tags.topic?.join(",")}`,
+    });
+  }
+}
+
 function main(): void {
   const questions = loadQuestions();
   const failures: Failure[] = [];
@@ -282,6 +405,8 @@ function main(): void {
   // Clearing filters restores initial chip visibility and full match pool
   compareAtState(questions, EMPTY_FILTERS, "clear restores initial", failures);
 
+  runMultipartTests(failures);
+
   // Initial UI snapshot (empty filters)
   const initialMatchCount = getMatchingQuestions(questions, EMPTY_FILTERS).length;
 
@@ -303,7 +428,7 @@ function main(): void {
   }
 
   console.log(
-    "\nPASSED: matching counts, visibility, prune, and chip state parity all match the reference implementation.",
+    "\nPASSED: matching counts, visibility, prune, chip state parity, and multipart semantics.",
   );
 }
 

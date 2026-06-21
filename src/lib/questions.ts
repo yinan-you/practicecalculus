@@ -77,14 +77,32 @@ export type SolutionMeta = {
   templateVersion?: number;
 };
 
-/** Imported question record — no solution body. See data/questions.json. */
+export type QuestionPart = {
+  id: string;
+  prompt: string;
+  answer: string;
+  topic: Topic;
+  methodTags: MethodTag[];
+};
+
+/** Tags on a single part in the raw bank JSON. */
+export type QuestionPartTags = {
+  topic: Topic[];
+  method?: MethodTag[];
+};
+
+/** Normalized question record — no solution body. See data/questions.json. */
 export type QuestionBankEntry = {
   id: string;
+  stem?: string;
+  parts: QuestionPart[];
   topic: Topic;
   courseTags: CourseTag[];
   methodTags: MethodTag[];
   tags: TagMap;
+  /** First part prompt (legacy convenience). */
   prompt: string;
+  /** First part answer (legacy convenience). */
   answer: string;
   difficulty?: 1 | 2 | 3;
   source?: string;

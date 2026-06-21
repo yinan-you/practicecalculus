@@ -55,7 +55,7 @@ data/course-tags.md (docs)   ─┘         ▲
 
 | Path | Purpose |
 | --- | --- |
-| `data/questions.json` | Question bank: prompt, answer, tags, optional difficulty/source |
+| `data/questions.json` | Question bank: flat or multipart entries, tags, optional difficulty/source |
 | `data/solutions/` | Optional markdown solutions keyed by `questionId` in frontmatter |
 | `data/course-tags.md` | Human guide for **course** tagging (curricula, examples) |
 | `src/lib/questions.ts` | Types, tag enums, `FILTER_DIMENSIONS` registry |
@@ -64,7 +64,7 @@ data/course-tags.md (docs)   ─┘         ▲
 | `src/lib/session.ts` | Question selection logic |
 | `src/components/practice-session.tsx` | Main client UI: filters + question loop |
 | `src/components/filter-controls.tsx` | Renders filter chip groups per dimension |
-| `src/components/question-card.tsx` | Prompt, answer, solution display |
+| `src/components/question-card.tsx` | Stem, parts, answer, solution display |
 | `src/components/markdown-math.tsx` | Markdown + LaTeX rendering |
 | `scripts/stability-check.ts` | Compares filter engine vs hardcoded reference impl |
 
@@ -74,7 +74,9 @@ data/course-tags.md (docs)   ─┘         ▲
 
 ### Question bank entry (`data/questions.json`)
 
-Each entry is a flat JSON object:
+Each entry is either **flat** (single part) or **multipart** (shared stem + labeled parts). Provide one shape, not both.
+
+**Flat (single-part):**
 
 ```json
 {
@@ -93,15 +95,61 @@ Each entry is a flat JSON object:
 }
 ```
 
-**Required:** `id`, `prompt`, `answer`, `tags.topic` (exactly one topic per question today).
+**Multipart:**
 
-**Defaults applied at load time:** if `tags.origin` is missing, it becomes `["public"]`.
+```json
+{
+  "id": "q14",
+  "stem": "Let $f(x) = x^2 e^x$.",
+  "parts": [
+    {
+      "id": "a",
+      "prompt": "Find $f'(x)$.",
+      "answer": "$f'(x) = e^x(x^2 + 2x)$",
+      "tags": { "topic": ["differentiation"], "method": ["productRule"] }
+    },
+    {
+      "id": "b",
+      "prompt": "Hence evaluate $\\int_0^1 f'(x)\\,dx$.",
+      "answer": "$e$",
+      "tags": { "topic": ["integration"], "method": ["uSubstitution"] }
+    }
+  ],
+  "tags": {
+    "course": ["calc2", "HSC-yr12", "HSC-ext1"],
+    "origin": ["public"]
+  }
+}
+```
+
+**Validation (loader throws on violation):**
+
+- Flat: requires `prompt`, `answer`, and `tags.topic` (exactly one topic).
+- Multipart: requires `parts` (length ≥ 1); parent `tags` must **not** include `topic` or `method`.
+- Each part: `tags.topic` with exactly one value; part `id` values unique within the question.
+- Mutually exclusive: do not provide both `(prompt + answer)` and `parts`.
+
+**Tag ownership:**
+
+| Dimension | Flat entry | Multipart parent | Multipart part |
+| --- | --- | --- | --- |
+| `course`, `origin`, `worksheet` | on entry | on parent | — |
+| `topic`, `method` | on entry | — | on each part |
+
+**Filter semantics for multipart:** at load time, part `topic` and `method` tags are merged into effective `question.tags` (union). A question matches topic filters if **any** part's topic is selected. Method filters use **AND** against the union — each selected method must appear on at least one part. One random pick = the whole item (stem + all parts).
+
+**Defaults applied at load time:** if `tags.origin` is missing, it becomes `["public"]`. Flat entries normalize to a single implicit part `{ id: "main", ... }`.
+
+**Images:** not supported in v1 (text + LaTeX only).
 
 ### Runtime `Question` type
 
 After loading, entries become `Question` (`src/lib/questions.ts`):
 
-- Denormalized fields: `topic`, `courseTags`, `methodTags` (copied from `tags`).
+- Always has `parts: QuestionPart[]` (min length 1).
+- Optional `stem` for shared context (multipart).
+- `tags` holds **effective merged tags** used by the filter engine.
+- Denormalized fields: `topic`, `courseTags`, `methodTags`, `prompt`, `answer` (legacy convenience from first part).
 - Optional `solution` (markdown body) and `solutionMeta` (from solution frontmatter).
 
 Bank records intentionally **do not** embed solution bodies — solutions live in `data/solutions/`.
@@ -120,7 +168,7 @@ templateVersion: 1      # optional
 ---
 ```
 
-Body uses standard markdown headings (`## Approach`, `## Steps`, `## Answer`) and `$...$` / `$$...$$` LaTeX.
+Body uses standard markdown headings (`## Approach`, `## Steps`, `## Answer`) and `$...$` / `$$...$$` LaTeX. For multipart questions, use per-part headings such as `## Part (a)` and `## Part (b)`.
 
 ---
 
@@ -195,7 +243,7 @@ Client component owning filter state (`useState<Filters>`). Wires filters → ma
 
 ## Adding or editing questions
 
-1. Add entry to `data/questions.json` with unique `id`, valid tags from closed vocabularies, LaTeX in `prompt` / `answer`.
+1. Add entry to `data/questions.json` with unique `id`, valid tags from closed vocabularies, LaTeX in prompts/answers (flat or multipart shape).
 2. Optionally add `data/solutions/{id}.md` with matching `questionId` frontmatter.
 3. Run `npx tsx scripts/stability-check.ts` to verify filter behavior.
 4. Confirm new course/method chips appear in the UI only when questions carry those tags.

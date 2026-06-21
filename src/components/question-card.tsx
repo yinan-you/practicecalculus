@@ -10,18 +10,23 @@ type QuestionCardProps = {
 const proseBase =
   "prose prose-zinc dark:prose-invert max-w-none prose-p:my-0 prose-headings:mb-2 prose-headings:mt-4 prose-headings:first:mt-0";
 
+function formatPartLabel(partId: string): string {
+  return partId === "main" ? "" : `(${partId})`;
+}
+
 export function QuestionCard({
   question,
   isSolutionOpen,
   onToggleSolution,
 }: QuestionCardProps) {
   const tags = [
-    question.topic,
-    ...question.courseTags,
-    ...question.methodTags,
+    ...(question.tags.topic ?? []),
+    ...(question.tags.course ?? []),
+    ...(question.tags.method ?? []),
   ];
 
   const hasSolution = Boolean(question.solution);
+  const isMultipart = question.parts.length > 1 || question.parts[0]?.id !== "main";
 
   return (
     <div className="w-full rounded-2xl border border-black/[.08] bg-white p-6 shadow-sm dark:border-white/[.145] dark:bg-zinc-950">
@@ -36,9 +41,29 @@ export function QuestionCard({
         ))}
       </div>
 
-      <MarkdownMath className={`${proseBase} text-lg leading-8`}>
-        {question.prompt}
-      </MarkdownMath>
+      {question.stem && (
+        <MarkdownMath className={`${proseBase} text-lg leading-8`}>
+          {question.stem}
+        </MarkdownMath>
+      )}
+
+      <div className={question.stem ? "mt-4 space-y-4" : "space-y-4"}>
+        {question.parts.map((part) => {
+          const label = formatPartLabel(part.id);
+          return (
+            <div key={part.id}>
+              {isMultipart && label && (
+                <p className="mb-1 text-sm font-semibold text-zinc-600 dark:text-zinc-400">
+                  Part {label}
+                </p>
+              )}
+              <MarkdownMath className={`${proseBase} text-lg leading-8`}>
+                {part.prompt}
+              </MarkdownMath>
+            </div>
+          );
+        })}
+      </div>
 
       <div className="mt-6 border-t border-black/[.06] pt-4 dark:border-white/[.1]">
         <button
@@ -52,14 +77,19 @@ export function QuestionCard({
 
         {isSolutionOpen && hasSolution && (
           <div className="mt-4 space-y-4">
-            <div>
-              <h3 className="text-xs font-semibold uppercase tracking-wide text-zinc-500">
-                Answer
-              </h3>
-              <MarkdownMath className={`${proseBase} mt-1 text-base`}>
-                {question.answer}
-              </MarkdownMath>
-            </div>
+            {question.parts.map((part) => {
+              const label = formatPartLabel(part.id);
+              return (
+                <div key={part.id}>
+                  <h3 className="text-xs font-semibold uppercase tracking-wide text-zinc-500">
+                    {isMultipart && label ? `Answer ${label}` : "Answer"}
+                  </h3>
+                  <MarkdownMath className={`${proseBase} mt-1 text-base`}>
+                    {part.answer}
+                  </MarkdownMath>
+                </div>
+              );
+            })}
             <div>
               <h3 className="text-xs font-semibold uppercase tracking-wide text-zinc-500">
                 Solution
