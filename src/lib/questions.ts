@@ -177,6 +177,10 @@ export const ORIGIN_TAGS: OriginTag[] = ["public", "user"];
 
 export const DEFAULT_ORIGIN_TAGS: OriginTag[] = ["public"];
 
+export type WorksheetTag = "ws-diff-01" | "ws-int-01";
+
+export const WORKSHEET_TAGS: WorksheetTag[] = ["ws-diff-01", "ws-int-01"];
+
 // --- Generic filter dimensions (phase 1 primitives) ---
 
 export type DimensionId = string;
@@ -199,6 +203,7 @@ export const CORE_DIMENSION_IDS = {
   course: "course",
   topic: "topic",
   method: "method",
+  worksheet: "worksheet",
 } as const satisfies Record<string, DimensionId>;
 
 export type CoreDimensionId =
@@ -236,6 +241,17 @@ export const FILTER_DIMENSIONS: FilterDimension[] = [
     multi: true,
     matchMode: "all",
     order: METHOD_TAGS,
+  },
+  {
+    id: CORE_DIMENSION_IDS.worksheet,
+    label: "Worksheet",
+    multi: true,
+    matchMode: "all",
+    order: WORKSHEET_TAGS,
+    labels: {
+      "ws-diff-01": "Differentiation WS 01",
+      "ws-int-01": "Integration WS 01",
+    },
   },
 ];
 

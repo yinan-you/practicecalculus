@@ -171,5 +171,31 @@
       "method": ["powerRule"],
       "origin": ["user"]
     }
+  },
+  {
+    "id": "q12",
+    "prompt": "Worksheet: differentiate $h(x) = 2x^5$ using the power rule.",
+    "answer": "$h'(x) = 10x^4$",
+    "difficulty": 1,
+    "tags": {
+      "course": ["calc1", "AP-AB"],
+      "topic": ["differentiation"],
+      "method": ["powerRule"],
+      "origin": ["public"],
+      "worksheet": ["ws-diff-01"]
+    }
+  },
+  {
+    "id": "q13",
+    "prompt": "Worksheet: evaluate $\\int 3x^2 \\, dx$ using basic integration.",
+    "answer": "$x^3 + C$",
+    "difficulty": 1,
+    "tags": {
+      "course": ["calc2", "AP-BC"],
+      "topic": ["integration"],
+      "method": ["uSubstitution"],
+      "origin": ["public"],
+      "worksheet": ["ws-int-01"]
+    }
   }
 ]
