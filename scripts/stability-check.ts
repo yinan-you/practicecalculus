@@ -216,28 +216,6 @@ function main(): void {
   const questions = loadQuestions();
   const failures: Failure[] = [];
 
-  // Tag normalization: legacy fields must mirror tags for core dimensions
-  for (const question of questions) {
-    if (question.topic !== question.tags.topic?.[0]) {
-      failures.push({
-        label: `normalize:${question.id}`,
-        detail: `topic mismatch: legacy=${question.topic} tags=${question.tags.topic?.[0]}`,
-      });
-    }
-    if (!arraysEqual(question.courseTags, question.tags.course ?? [])) {
-      failures.push({
-        label: `normalize:${question.id}`,
-        detail: `courseTags mismatch`,
-      });
-    }
-    if (!arraysEqual(question.methodTags, question.tags.method ?? [])) {
-      failures.push({
-        label: `normalize:${question.id}`,
-        detail: `methodTags mismatch`,
-      });
-    }
-  }
-
   const states: Array<{ label: string; filters: Filters }> = [
     { label: "empty", filters: EMPTY_FILTERS },
   ];

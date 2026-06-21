@@ -108,19 +108,19 @@ US year labels are inconsistent (9th–12th grade); we use content tags (`calc1`
 Introductory derivative, Methods / Advanced yr11:
 
 ```json
-{ "courseTags": ["calc1", "VCE-yr11", "VCE-methods", "HSC-yr11", "HSC-advanced"] }
+{ "tags": { "course": ["calc1", "VCE-yr11", "VCE-methods", "HSC-yr11", "HSC-advanced"] } }
 ```
 
 Harder integral, Specialist / Ext 2 yr12:
 
 ```json
-{ "courseTags": ["calc2", "VCE-yr12", "VCE-specialist", "HSC-yr12", "HSC-ext2", "AP-BC"] }
+{ "tags": { "course": ["calc2", "VCE-yr12", "VCE-specialist", "HSC-yr12", "HSC-ext2", "AP-BC"] } }
 ```
 
 IB HL integration by parts:
 
 ```json
-{ "courseTags": ["calc2", "IB-AA-HL-yr12", "VCE-yr12", "VCE-specialist"] }
+{ "tags": { "course": ["calc2", "IB-AA-HL-yr12", "VCE-yr12", "VCE-specialist"] } }
 ```
 
 Prefer **specific** curriculum tags when you know the audience; add **content** tags when the maths level is the main signal.

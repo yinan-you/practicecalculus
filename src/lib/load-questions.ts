@@ -2,7 +2,6 @@ import fs from "node:fs";
 import path from "node:path";
 import matter from "gray-matter";
 import {
-  CORE_DIMENSION_IDS,
   DEFAULT_ORIGIN_TAGS,
   type CourseTag,
   type MethodTag,
@@ -15,43 +14,24 @@ import {
 
 const DATA_DIR = path.join(process.cwd(), "data");
 
-/** JSON records may use legacy fields, native tags, or a mix during migration. */
 type RawQuestionBankEntry = {
   id: string;
   prompt: string;
   answer: string;
-  topic?: Topic;
-  courseTags?: CourseTag[];
-  methodTags?: MethodTag[];
-  tags?: TagMap;
+  tags: TagMap;
   difficulty?: 1 | 2 | 3;
   source?: string;
 };
 
 function normalizeQuestionEntry(raw: RawQuestionBankEntry): QuestionBankEntry {
-  const courseTags =
-    raw.courseTags ??
-    (raw.tags?.[CORE_DIMENSION_IDS.course] as CourseTag[] | undefined) ??
-    [];
-  const methodTags =
-    raw.methodTags ??
-    (raw.tags?.[CORE_DIMENSION_IDS.method] as MethodTag[] | undefined) ??
-    [];
-  const topic =
-    raw.topic ??
-    (raw.tags?.[CORE_DIMENSION_IDS.topic]?.[0] as Topic | undefined);
-
+  const topic = raw.tags.topic?.[0] as Topic | undefined;
   if (!topic) {
-    throw new Error(`Question ${raw.id} is missing a topic.`);
+    throw new Error(`Question ${raw.id} is missing tags.topic.`);
   }
 
   const tags: TagMap = {
-    ...(raw.tags ?? {}),
-    [CORE_DIMENSION_IDS.course]: [...courseTags],
-    [CORE_DIMENSION_IDS.topic]: [topic],
-    [CORE_DIMENSION_IDS.method]: [...methodTags],
-    [CORE_DIMENSION_IDS.origin]:
-      raw.tags?.[CORE_DIMENSION_IDS.origin] ?? [...DEFAULT_ORIGIN_TAGS],
+    ...raw.tags,
+    origin: raw.tags.origin ?? [...DEFAULT_ORIGIN_TAGS],
   };
 
   return {
@@ -61,8 +41,8 @@ function normalizeQuestionEntry(raw: RawQuestionBankEntry): QuestionBankEntry {
     difficulty: raw.difficulty,
     source: raw.source,
     topic,
-    courseTags: [...courseTags],
-    methodTags: [...methodTags],
+    courseTags: [...((tags.course ?? []) as CourseTag[])],
+    methodTags: [...((tags.method ?? []) as MethodTag[])],
     tags,
   };
 }
