@@ -90,7 +90,6 @@ Each entry is either **flat** (single part) or **multipart** (shared stem + labe
     "course": ["calc1", "AP-AB", "VCE-yr11", "VCE-methods"],
     "method": ["powerRule"],
     "origin": ["public"],
-    "worksheet": ["ws-diff-01"]
   }
 }
 ```
@@ -133,7 +132,7 @@ Each entry is either **flat** (single part) or **multipart** (shared stem + labe
 
 | Dimension | Flat entry | Multipart parent | Multipart part |
 | --- | --- | --- | --- |
-| `course`, `origin`, `worksheet` | on entry | on parent | — |
+| `course`, `origin` | on entry | on parent | — |
 | `topic`, `method` | on entry | — | on each part |
 
 **Filter semantics for multipart:** at load time, part `topic` and `method` tags are merged into effective `question.tags` (union). A question matches topic filters if **any** part's topic is selected. Method filters use **AND** against the union — each selected method must appear on at least one part. One random pick = the whole item (stem + all parts).
@@ -182,7 +181,6 @@ Tags are grouped into **dimensions** (`TagMap = Record<string, string[]>`). Each
 | Course | `course` | **all** (AND) | Curriculum / level tags — see below |
 | Topic | `topic` | **any** (OR) | `differentiation` \| `integration` |
 | Method | `method` | **all** (AND) | Technique tags (e.g. `chainRule`, `uSubstitution`) |
-| Worksheet | `worksheet` | **all** (AND) | Curated worksheet collections |
 
 **Match semantics:** When a dimension has selected chips, a question must satisfy that dimension's match mode. Across dimensions, requirements are **AND**ed together.
 
@@ -193,7 +191,6 @@ Tags are grouped into **dimensions** (`TagMap = Record<string, string[]>`). Each
 - **Topics:** `differentiation`, `integration`
 - **Methods:** `powerRule`, `chainRule`, `productRule`, `quotientRule`, `uSubstitution`, `integrationByParts`, `partialFractions`, `trigIdentity`
 - **Origin:** `public`, `user`
-- **Worksheets:** `ws-diff-01`, `ws-int-01`
 - **Course tags:** content levels (`calc1`, `calc2`), Australian year/stream tags, IB tags, US AP tags — full lists in `COURSE_TAGS` and documented in `data/course-tags.md`
 
 Adding a **new canonical tag** requires updating `src/lib/questions.ts` (and usually `data/course-tags.md`). The TypeScript unions are intentionally closed for data quality.

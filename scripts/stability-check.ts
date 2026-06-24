@@ -8,7 +8,6 @@ import {
   METHOD_TAGS,
   ORIGIN_TAGS,
   TOPICS,
-  WORKSHEET_TAGS,
   type CoreDimensionId,
   type Question,
 } from "@/lib/questions";
@@ -29,7 +28,6 @@ const DIMENSION_IDS: CoreDimensionId[] = [
   "course",
   "topic",
   "method",
-  "worksheet",
 ];
 
 function sel(filters: Filters, dimensionId: CoreDimensionId): string[] {
@@ -73,15 +71,6 @@ function legacyMatchesFiltersExcept(
   ) {
     return false;
   }
-  if (
-    ignored !== "worksheet" &&
-    sel(filters, "worksheet").length > 0 &&
-    !sel(filters, "worksheet").every((tag) =>
-      tagsOf(question, "worksheet").includes(tag),
-    )
-  ) {
-    return false;
-  }
   return true;
 }
 
@@ -104,7 +93,6 @@ const CANONICAL_ORDER: Record<CoreDimensionId, string[]> = {
   course: COURSE_TAGS,
   topic: TOPICS,
   method: METHOD_TAGS,
-  worksheet: WORKSHEET_TAGS,
 };
 
 function legacyGetVisibleValues(

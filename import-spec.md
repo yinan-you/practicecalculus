@@ -34,7 +34,7 @@ A single prompt with a single answer. Use for standalone technique questions.
 
 **Required fields:** `id`, `prompt`, `answer`, `tags.topic` (exactly one value), `tags.origin`.
 
-**Optional fields:** `difficulty` (1 | 2 | 3), `source` (provenance string), `tags.course`, `tags.method`, `tags.worksheet`.
+**Optional fields:** `difficulty` (1 | 2 | 3), `source` (provenance string), `tags.course`, `tags.method`.
 
 ### Multipart question
 
@@ -79,7 +79,6 @@ A shared stem with labeled parts, each having its own topic and method tags. Use
 |-----------|-----------|-----------------|----------------|
 | `course` | on entry | on parent | — |
 | `origin` | on entry | on parent | — |
-| `worksheet` | on entry | on parent | — |
 | `topic` | on entry (exactly 1) | **forbidden** | on each part (exactly 1) |
 | `method` | on entry (≥ 0) | **forbidden** | on each part (≥ 0) |
 
@@ -166,7 +165,7 @@ Understanding how filters work helps you tag accurately.
 
 **Method filter (AND):** Selected methods must **all** appear in the question's effective method tags. For multipart, the union of all parts' method tags is checked.
 
-**Effective tags for multipart:** at load time, `topic` and `method` are merged across all parts into `question.tags`. The parent's `course`, `origin`, `worksheet` tags are preserved. Authors should ensure the parent course tags reflect the question as a whole.
+**Effective tags for multipart:** at load time, `topic` and `method` are merged across all parts into `question.tags`. The parent's `course` and `origin` tags are preserved. Authors should ensure the parent course tags reflect the question as a whole.
 
 ---
 
@@ -403,7 +402,7 @@ A formal JSON Schema will be added in Phase 2. For now, treat this as the normat
 ```
 required: id, prompt, answer, tags
 tags.required: topic (array, exactly 1 value), origin
-tags.optional: course (array of CourseTag), method (array of MethodTag), worksheet
+tags.optional: course (array of CourseTag), method (array of MethodTag)
 optional: stem (ignored), difficulty (1|2|3), source (string)
 forbidden in tags: none
 ```
@@ -412,7 +411,7 @@ forbidden in tags: none
 ```
 required: id, parts (array, length ≥ 1), tags
 tags.required: origin
-tags.optional: course (array of CourseTag), worksheet
+tags.optional: course (array of CourseTag)
 tags.forbidden: topic, method
 parts[i].required: id (string, unique within question), prompt, answer, tags
 parts[i].tags.required: topic (array, exactly 1 value)
