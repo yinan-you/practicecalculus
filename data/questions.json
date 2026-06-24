@@ -1,267 +1,1346 @@
 [
   {
-    "id": "q1",
-    "prompt": "Differentiate $f(x) = x^3$ using the power rule.",
-    "answer": "$f'(x) = 3x^2$",
-    "difficulty": 1,
-    "tags": {
-      "course": [
-        "calc1",
-        "AP-AB",
-        "VCE-yr11",
-        "VCE-methods",
-        "HSC-yr11",
-        "HSC-advanced",
-        "QCE-yr11",
-        "QCE-methods"
-      ],
-      "topic": ["differentiation"],
-      "method": ["powerRule"],
-      "origin": ["public"]
-    }
-  },
-  {
-    "id": "q2",
-    "prompt": "This is a VCE differentiation question (chain rule).",
-    "answer": "Answer placeholder for q2.",
+    "id": "q-batch-01",
+    "prompt": "Evaluate $\\int e^{x}(2+e^{x})^{4} \\, \\mathrm{d}x$.",
+    "answer": "$\\frac{1}{5}(2+e^{x})^{5} + C$",
     "difficulty": 2,
     "tags": {
-      "course": [
-        "calc1",
-        "VCE-yr12",
-        "VCE-methods",
-        "WACE-yr12",
-        "WACE-methods",
-        "SACE-yr12",
-        "SACE-methods"
-      ],
-      "topic": ["differentiation"],
-      "method": ["chainRule"],
+      "topic": ["integration"],
+      "course": ["calc2", "VCE-yr12", "VCE-specialist", "HSC-yr12", "HSC-ext2", "IB-AA-HL-yr12"],
+      "method": ["substitution"],
       "origin": ["public"]
     }
   },
   {
-    "id": "q3",
-    "prompt": "This is an HSC differentiation question (product rule).",
-    "answer": "Answer placeholder for q3.",
+    "id": "q-batch-02",
+    "prompt": "Evaluate $\\int \\frac{1}{\\sqrt{x}(1+\\sqrt{x})^{2}} \\, \\mathrm{d}x$.",
+    "answer": "$-\\frac{2}{1+\\sqrt{x}} + C$",
     "difficulty": 2,
     "tags": {
-      "course": [
-        "calc1",
-        "HSC-yr12",
-        "HSC-advanced",
-        "ACT-yr12",
-        "ACT-methods",
-        "TCE-yr12",
-        "TCE-methods"
-      ],
-      "topic": ["differentiation"],
-      "method": ["productRule"],
+      "topic": ["integration"],
+      "course": ["calc2", "VCE-yr12", "VCE-specialist", "HSC-yr12", "HSC-ext2", "IB-AA-HL-yr12"],
+      "method": ["substitution"],
       "origin": ["public"]
     }
   },
   {
-    "id": "q4",
-    "prompt": "This is an IB differentiation question (quotient rule).",
-    "answer": "Answer placeholder for q4.",
+    "id": "q-batch-03",
+    "prompt": "Evaluate $\\int x\\sqrt{2x-1} \\, \\mathrm{d}x$.",
+    "answer": "$\\frac{1}{10}(2x-1)^{\\frac{5}{2}} + \\frac{1}{6}(2x-1)^{\\frac{3}{2}} + C$",
     "difficulty": 2,
     "tags": {
-      "course": ["calc1", "IB-AA-SL-yr12", "IB-AA-HL-yr11", "VCE-methods", "HSC-advanced"],
-      "topic": ["differentiation"],
-      "method": ["quotientRule"],
-      "origin": ["public"]
-    }
-  },
-  {
-    "id": "q5",
-    "prompt": "This is an AP differentiation question (chain rule).",
-    "answer": "Answer placeholder for q5.",
-    "difficulty": 3,
-    "tags": {
-      "course": [
-        "calc1",
-        "AP-AB",
-        "AP-BC",
-        "IB-AA-HL-yr12",
-        "HSC-ext1",
-        "VCE-specialist"
-      ],
-      "topic": ["differentiation"],
-      "method": ["chainRule"],
-      "origin": ["public"]
-    }
-  },
-  {
-    "id": "q6",
-    "prompt": "This is a calc1 / VCE integration question (u-substitution).",
-    "answer": "Answer placeholder for q6.",
-    "difficulty": 1,
-    "tags": {
-      "course": [
-        "calc1",
-        "VCE-yr11",
-        "VCE-methods",
-        "HSC-yr11",
-        "HSC-advanced",
-        "QCE-yr11",
-        "QCE-methods",
-        "AP-AB"
-      ],
       "topic": ["integration"],
-      "method": ["uSubstitution"],
+      "course": ["calc2", "VCE-yr12", "VCE-specialist", "HSC-yr12", "HSC-ext2", "IB-AA-HL-yr12"],
+      "method": ["substitution"],
       "origin": ["public"]
     }
   },
   {
-    "id": "q7",
-    "prompt": "This is a calc2 / AP integration question (u-substitution).",
-    "answer": "Answer placeholder for q7.",
+    "id": "q-batch-04",
+    "prompt": "Evaluate $\\int \\cos^{3}(x)\\sin^{2}(x) \\, \\mathrm{d}x$.",
+    "answer": "$\\frac{1}{3}\\sin^{3}(x) - \\frac{1}{5}\\sin^{5}(x) + C$",
     "difficulty": 2,
     "tags": {
-      "course": [
-        "calc2",
-        "AP-BC",
-        "HSC-yr12",
-        "HSC-ext1",
-        "VCE-yr12",
-        "VCE-specialist"
-      ],
       "topic": ["integration"],
-      "method": ["uSubstitution"],
+      "course": ["calc2", "VCE-yr12", "VCE-specialist", "HSC-yr12", "HSC-ext2", "IB-AA-HL-yr12"],
+      "method": ["trigIdentity", "substitution"],
       "origin": ["public"]
     }
   },
   {
-    "id": "q8",
-    "prompt": "This is a calc2 / IB HL integration question (integration by parts).",
-    "answer": "Answer placeholder for q8.",
-    "difficulty": 3,
+    "id": "q-batch-05",
+    "prompt": "Evaluate $\\int x^{2}e^{-x} \\, \\mathrm{d}x$.",
+    "answer": "$-e^{-x}(x^{2} + 2x + 2) + C$",
+    "difficulty": 2,
     "tags": {
-      "course": [
-        "calc2",
-        "IB-AA-HL-yr12",
-        "AP-BC",
-        "VCE-specialist",
-        "HSC-ext1",
-        "QCE-specialist"
-      ],
       "topic": ["integration"],
-      "method": ["integrationByParts"],
+      "course": ["calc2", "HSC-yr12", "HSC-ext2", "IB-AA-HL-yr12"],
+      "method": ["byParts"],
       "origin": ["public"]
     }
   },
   {
-    "id": "q9",
-    "prompt": "This is a calc2 / HSC Extension 2 integration question (partial fractions).",
-    "answer": "Answer placeholder for q9.",
-    "difficulty": 3,
+    "id": "q-batch-06",
+    "prompt": "Evaluate $\\int \\frac{3x-1}{(x-2)(x+3)} \\, \\mathrm{d}x$.",
+    "answer": "$\\ln|x-2| + 2\\ln|x+3| + C$",
+    "difficulty": 2,
     "tags": {
-      "course": [
-        "calc2",
-        "HSC-yr12",
-        "HSC-ext2",
-        "WACE-yr12",
-        "WACE-specialist",
-        "SACE-yr12",
-        "SACE-specialist"
-      ],
       "topic": ["integration"],
+      "course": ["calc2", "VCE-yr12", "VCE-specialist", "HSC-yr12", "HSC-ext2", "IB-AA-HL-yr12"],
       "method": ["partialFractions"],
       "origin": ["public"]
     }
   },
   {
-    "id": "q10",
-    "prompt": "This is a calc2 / IB HL / AP BC integration question (u-substitution + trig identity).",
-    "answer": "Answer placeholder for q10.",
-    "difficulty": 3,
+    "id": "q-batch-07",
+    "prompt": "Evaluate $\\frac{\\mathrm{d}}{\\mathrm{d}x} \\left[ \\ln(\\sec(x) + \\tan(x)) \\right]$.",
+    "answer": "$\\sec(x)$",
+    "difficulty": 2,
     "tags": {
-      "course": [
-        "calc2",
-        "IB-AA-HL-yr12",
-        "AP-BC",
-        "TCE-yr12",
-        "TCE-specialised",
-        "HSC-ext2",
-        "VCE-specialist"
-      ],
-      "topic": ["integration"],
-      "method": ["uSubstitution", "trigIdentity"],
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr12", "VCE-methods", "VCE-specialist", "HSC-yr12", "HSC-advanced", "HSC-ext1", "IB-AA-SL-yr12", "IB-AA-HL-yr12"],
+      "method": ["chainRule", "trigRule"],
       "origin": ["public"]
     }
   },
   {
-    "id": "q11",
-    "prompt": "User-added: differentiate $g(x) = 5x^4$.",
-    "answer": "$g'(x) = 20x^3$",
-    "difficulty": 1,
+    "id": "q-batch-08",
+    "prompt": "Evaluate $\\int \\sec(x) \\, \\mathrm{d}x$.",
+    "answer": "$\\ln|\\sec(x) + \\tan(x)| + C$",
+    "difficulty": 2,
     "tags": {
-      "course": ["calc1", "AP-AB"],
-      "topic": ["differentiation"],
-      "method": ["powerRule"],
-      "origin": ["user"]
-    }
-  },
-  {
-    "id": "q12",
-    "prompt": "Worksheet: differentiate $h(x) = 2x^5$ using the power rule.",
-    "answer": "$h'(x) = 10x^4$",
-    "difficulty": 1,
-    "tags": {
-      "course": ["calc1", "AP-AB"],
-      "topic": ["differentiation"],
-      "method": ["powerRule"],
-      "origin": ["public"],
-      "worksheet": ["ws-diff-01"]
-    }
-  },
-  {
-    "id": "q13",
-    "prompt": "Worksheet: evaluate $\\int 3x^2 \\, dx$ using basic integration.",
-    "answer": "$x^3 + C$",
-    "difficulty": 1,
-    "tags": {
-      "course": ["calc2", "AP-BC"],
       "topic": ["integration"],
-      "method": ["uSubstitution"],
-      "origin": ["public"],
-      "worksheet": ["ws-int-01"]
+      "course": ["calc2", "VCE-yr12", "VCE-specialist", "HSC-yr12", "HSC-ext2", "IB-AA-HL-yr12"],
+      "method": ["trigIdentity", "substitution"],
+      "origin": ["public"]
     }
   },
   {
-    "id": "q14",
-    "stem": "Let $f(x) = x^2 e^x$.",
-    "parts": [
+    "id": "q-batch-09",
+    "prompt": "Evaluate $\\int \\sin^{5}(x) \\, \\mathrm{d}x$.",
+    "answer": "$-\\cos(x) + \\frac{2}{3}\\cos^{3}(x) - \\frac{1}{5}\\cos^{5}(x) + C$",
+    "difficulty": 2,
+    "tags": {
+      "topic": ["integration"],
+      "course": ["calc2", "VCE-yr12", "VCE-specialist", "HSC-yr12", "HSC-ext2", "IB-AA-HL-yr12"],
+      "method": ["trigIdentity", "substitution"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "q-batch-10",
+    "prompt": "Evaluate $\\int \\sin^{2}(x)\\cos^{4}(x) \\, \\mathrm{d}x$.",
+    "answer": "$\\frac{1}{16}x - \\frac{1}{64}\\sin(4x) + \\frac{1}{48}\\sin^{3}(2x) + C$",
+    "difficulty": 3,
+    "tags": {
+      "topic": ["integration"],
+      "course": ["calc2", "HSC-yr12", "HSC-ext2", "IB-AA-HL-yr12"],
+      "method": ["trigIdentity"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "q-batch-11",
+    "prompt": "Evaluate $\\int \\sin(3x)\\cos(2x) \\, \\mathrm{d}x$.",
+    "answer": "$-\\frac{1}{10}\\cos(5x) - \\frac{1}{2}\\cos(x) + C$",
+    "difficulty": 2,
+    "tags": {
+      "topic": ["integration"],
+      "course": ["calc2", "VCE-yr12", "VCE-specialist", "HSC-yr12", "HSC-ext2", "IB-AA-HL-yr12"],
+      "method": ["trigIdentity"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "q-batch-12",
+    "prompt": "Evaluate $\\int \\frac{1}{x^{2}-9} \\, \\mathrm{d}x$.",
+    "answer": "$\\frac{1}{6}\\ln\\left|\\frac{x-3}{x+3}\\right| + C$",
+    "difficulty": 2,
+    "tags": {
+      "topic": ["integration"],
+      "course": ["calc2", "VCE-yr12", "VCE-specialist", "HSC-yr12", "HSC-ext2", "IB-AA-HL-yr12"],
+      "method": ["partialFractions"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "q-batch-13",
+    "prompt": "Evaluate $\\int \\frac{x^{2}+x-2}{x^{2}-4x+3} \\, \\mathrm{d}x$.",
+    "answer": "$x + 5\\ln|x-3| + C$",
+    "difficulty": 2,
+    "tags": {
+      "topic": ["integration"],
+      "course": ["calc2", "VCE-yr12", "VCE-specialist", "HSC-yr12", "HSC-ext2", "IB-AA-HL-yr12"],
+      "method": ["partialFractions"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "q-batch-14",
+    "prompt": "Evaluate $\\int \\frac{5x^{2}+3x-2}{x^{3}-x^{2}} \\, \\mathrm{d}x$.",
+    "answer": "$-\\frac{2}{x} + 3\\ln|x| + 2\\ln|x-1| + C$",
+    "difficulty": 3,
+    "tags": {
+      "topic": ["integration"],
+      "course": ["calc2", "VCE-yr12", "VCE-specialist", "HSC-yr12", "HSC-ext2", "IB-AA-HL-yr12"],
+      "method": ["partialFractions"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "q-batch-15",
+    "prompt": "Evaluate $\\int x\\sin(x) \\, \\mathrm{d}x$.",
+    "answer": "$-x\\cos(x) + \\sin(x) + C$",
+    "difficulty": 2,
+    "tags": {
+      "topic": ["integration"],
+      "course": ["calc2", "HSC-yr12", "HSC-ext2", "IB-AA-HL-yr12"],
+      "method": ["byParts"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "q-batch-16",
+    "prompt": "Evaluate $\\int \\ln(x) \\, \\mathrm{d}x$.",
+    "answer": "$x\\ln(x) - x + C$",
+    "difficulty": 2,
+    "tags": {
+      "topic": ["integration"],
+      "course": ["calc2", "HSC-yr12", "HSC-ext2", "IB-AA-HL-yr12"],
+      "method": ["byParts"],
+      "origin": ["public"]
+    }
+  },
+    {
+      "id": "q-batch-17",
+      "prompt": "Evaluate $\\int \\frac{1}{x\\ln(x)} \\, \\mathrm{d}x$.",
+      "answer": "$\\ln|\\ln(x)| + C$",
+      "difficulty": 2,
+      "tags": {
+        "topic": ["integration"],
+        "course": ["calc2", "VCE-yr12", "VCE-specialist", "HSC-yr12", "HSC-ext2", "IB-AA-HL-yr12"],
+        "method": ["substitution"],
+        "origin": ["public"]
+      }
+    },
+    {
+      "id": "q-batch-18",
+      "prompt": "Evaluate $\\int \\frac{x}{\\sqrt{x^2+1}} \\, \\mathrm{d}x$.",
+      "answer": "$\\sqrt{x^2+1} + C$",
+      "difficulty": 1,
+      "tags": {
+        "topic": ["integration"],
+        "course": ["calc1", "VCE-yr12", "VCE-methods", "VCE-specialist", "HSC-yr12", "HSC-advanced", "HSC-ext1", "IB-AA-SL-yr12", "IB-AA-HL-yr12"],
+        "method": ["substitution"],
+        "origin": ["public"]
+      }
+    },
+    {
+      "id": "q-batch-19",
+      "prompt": "Evaluate $\\int \\cot(x) \\, \\mathrm{d}x$.",
+      "answer": "$\\ln|\\sin(x)| + C$",
+      "difficulty": 1,
+      "tags": {
+        "topic": ["integration"],
+        "course": ["calc2", "VCE-yr12", "VCE-specialist", "HSC-yr12", "HSC-ext2", "IB-AA-HL-yr12"],
+        "method": ["substitution"],
+        "origin": ["public"]
+      }
+    },
+    {
+      "id": "q-batch-20",
+      "prompt": "Evaluate $\\int \\tan^{3}(x)\\sec^{2}(x) \\, \\mathrm{d}x$.",
+      "answer": "$\\frac{1}{4}\\tan^{4}(x) + C$",
+      "difficulty": 2,
+      "tags": {
+        "topic": ["integration"],
+        "course": ["calc2", "VCE-yr12", "VCE-specialist", "HSC-yr12", "HSC-ext2", "IB-AA-HL-yr12"],
+        "method": ["substitution"],
+        "origin": ["public"]
+      }
+    },
+    {
+      "id": "q-batch-21",
+      "prompt": "Evaluate $\\int \\sec^{4}(x) \\, \\mathrm{d}x$.",
+      "answer": "$\\tan(x) + \\frac{1}{3}\\tan^{3}(x) + C$",
+      "difficulty": 2,
+      "tags": {
+        "topic": ["integration"],
+        "course": ["calc2", "VCE-yr12", "VCE-specialist", "HSC-yr12", "HSC-ext2", "IB-AA-HL-yr12"],
+        "method": ["trigIdentity", "substitution"],
+        "origin": ["public"]
+      }
+    },
+    {
+      "id": "q-batch-22",
+      "prompt": "Evaluate $\\int \\cos(4x)\\cos(3x) \\, \\mathrm{d}x$.",
+      "answer": "$\\frac{1}{14}\\sin(7x) + \\frac{1}{2}\\sin(x) + C$",
+      "difficulty": 2,
+      "tags": {
+        "topic": ["integration"],
+        "course": ["calc2", "VCE-yr12", "VCE-specialist", "HSC-yr12", "HSC-ext2", "IB-AA-HL-yr12"],
+        "method": ["trigIdentity"],
+        "origin": ["public"]
+      }
+    },
+    {
+      "id": "q-batch-23",
+      "prompt": "Evaluate $\\int \\sin(5x)\\sin(2x) \\, \\mathrm{d}x$.",
+      "answer": "$\\frac{1}{6}\\sin(3x) - \\frac{1}{14}\\sin(7x) + C$",
+      "difficulty": 2,
+      "tags": {
+        "topic": ["integration"],
+        "course": ["calc2", "VCE-yr12", "VCE-specialist", "HSC-yr12", "HSC-ext2", "IB-AA-HL-yr12"],
+        "method": ["trigIdentity"],
+        "origin": ["public"]
+      }
+    },
+    {
+      "id": "q-batch-24",
+      "prompt": "Evaluate $\\int \\frac{x+3}{x^{2}-1} \\, \\mathrm{d}x$.",
+      "answer": "$2\\ln|x-1| - \\ln|x+1| + C$",
+      "difficulty": 2,
+      "tags": {
+        "topic": ["integration"],
+        "course": ["calc2", "VCE-yr12", "VCE-specialist", "HSC-yr12", "HSC-ext2", "IB-AA-HL-yr12"],
+        "method": ["partialFractions"],
+        "origin": ["public"]
+      }
+    },
+    {
+      "id": "q-batch-25",
+      "prompt": "Evaluate $\\int \\frac{2x+3}{(x+1)^{2}} \\, \\mathrm{d}x$.",
+      "answer": "$2\\ln|x+1| - \\frac{1}{x+1} + C$",
+      "difficulty": 2,
+      "tags": {
+        "topic": ["integration"],
+        "course": ["calc2", "VCE-yr12", "VCE-specialist", "HSC-yr12", "HSC-ext2", "IB-AA-HL-yr12"],
+        "method": ["partialFractions"],
+        "origin": ["public"]
+      }
+    },
+    {
+      "id": "q-batch-26",
+      "prompt": "Evaluate $\\int \\frac{1}{x^{2}+4x+3} \\, \\mathrm{d}x$.",
+      "answer": "$\\frac{1}{2}\\ln\\left|\\frac{x+1}{x+3}\\right| + C$",
+      "difficulty": 2,
+      "tags": {
+        "topic": ["integration"],
+        "course": ["calc2", "VCE-yr12", "VCE-specialist", "HSC-yr12", "HSC-ext2", "IB-AA-HL-yr12"],
+        "method": ["partialFractions"],
+        "origin": ["public"]
+      }
+    },
+    {
+      "id": "q-batch-27",
+      "prompt": "Evaluate $\\int x^{2}\\ln(x) \\, \\mathrm{d}x$.",
+      "answer": "$\\frac{1}{3}x^{3}\\ln(x) - \\frac{1}{9}x^{3} + C$",
+      "difficulty": 2,
+      "tags": {
+        "topic": ["integration"],
+        "course": ["calc2", "HSC-yr12", "HSC-ext2", "IB-AA-HL-yr12"],
+        "method": ["byParts"],
+        "origin": ["public"]
+      }
+    },
+    {
+      "id": "q-batch-28",
+      "prompt": "Evaluate $\\int e^{x}\\sin(x) \\, \\mathrm{d}x$.",
+      "answer": "$\\frac{1}{2}e^{x}(\\sin(x) - \\cos(x)) + C$",
+      "difficulty": 3,
+      "tags": {
+        "topic": ["integration"],
+        "course": ["calc2", "HSC-yr12", "HSC-ext2", "IB-AA-HL-yr12"],
+        "method": ["byParts"],
+        "origin": ["public"]
+      }
+    },
+    {
+      "id": "q-batch-29",
+      "prompt": "Evaluate $\\frac{\\mathrm{d}}{\\mathrm{d}x} \\left[ x\\arctan(x) \\right]$.",
+      "answer": "$\\arctan(x) + \\frac{x}{1+x^2}$",
+      "difficulty": 2,
+      "tags": {
+        "topic": ["differentiation"],
+        "course": ["calc1", "VCE-yr12", "VCE-specialist", "HSC-yr12", "HSC-ext1", "HSC-ext2", "IB-AA-HL-yr12"],
+        "method": ["productRule", "inverseTrigRule"],
+        "origin": ["public"]
+      }
+    },
+    {
+      "id": "q-batch-30",
+      "prompt": "Evaluate $\\int \\arctan(x) \\, \\mathrm{d}x$.",
+      "answer": "$x\\arctan(x) - \\frac{1}{2}\\ln(1+x^2) + C$",
+      "difficulty": 3,
+      "tags": {
+        "topic": ["integration"],
+        "course": ["calc2", "HSC-yr12", "HSC-ext2", "IB-AA-HL-yr12"],
+        "method": ["byParts"],
+        "origin": ["public"]
+      }
+    },
       {
-        "id": "a",
-        "prompt": "Find $f'(x)$.",
-        "answer": "$f'(x) = e^x(x^2 + 2x)$",
+        "id": "q-batch-31",
+        "prompt": "Evaluate $\\int \\frac{e^{2x}}{e^x + 1} \\, \\mathrm{d}x$.",
+        "answer": "$e^x - \\ln(e^x + 1) + C$",
+        "difficulty": 2,
         "tags": {
-          "topic": ["differentiation"],
-          "method": ["productRule"]
+          "topic": ["integration"],
+          "course": ["calc2", "VCE-yr12", "VCE-specialist", "HSC-yr12", "HSC-ext2", "IB-AA-HL-yr12"],
+          "method": ["substitution"],
+          "origin": ["public"]
         }
       },
       {
-        "id": "b",
-        "prompt": "Hence evaluate $\\int_0^1 f'(x)\\,dx$.",
-        "answer": "$f(1) - f(0) = e - 0 = e$",
+        "id": "q-batch-32",
+        "prompt": "Evaluate $\\int \\frac{\\sin(x)}{(1 + \\cos(x))^3} \\, \\mathrm{d}x$.",
+        "answer": "$\\frac{1}{2(1 + \\cos(x))^2} + C$",
+        "difficulty": 1,
         "tags": {
           "topic": ["integration"],
-          "method": ["uSubstitution"]
+          "course": ["calc1", "VCE-yr12", "VCE-methods", "VCE-specialist", "HSC-yr12", "HSC-advanced", "HSC-ext1", "IB-AA-SL-yr12", "IB-AA-HL-yr12"],
+          "method": ["substitution"],
+          "origin": ["public"]
         }
-      }
-    ],
-    "difficulty": 2,
-    "source": "multipart exemplar",
-    "tags": {
-      "course": [
-        "calc2",
-        "HSC-yr12",
-        "HSC-ext1",
-        "IB-AA-HL-yr12",
-        "AP-BC"
-      ],
-      "origin": ["public"]
-    }
-  }
+      },
+      {
+        "id": "q-batch-33",
+        "prompt": "Evaluate $\\int x^3 \\sqrt{x^2 + 1} \\, \\mathrm{d}x$.",
+        "answer": "$\\frac{1}{5}(x^2 + 1)^{\\frac{5}{2}} - \\frac{1}{3}(x^2 + 1)^{\\frac{3}{2}} + C$",
+        "difficulty": 2,
+        "tags": {
+          "topic": ["integration"],
+          "course": ["calc2", "VCE-yr12", "VCE-specialist", "HSC-yr12", "HSC-ext2", "IB-AA-HL-yr12"],
+          "method": ["substitution"],
+          "origin": ["public"]
+        }
+      },
+      {
+        "id": "q-batch-34",
+        "prompt": "Evaluate $\\int \\sec^3(x)\\tan^3(x) \\, \\mathrm{d}x$.",
+        "answer": "$\\frac{1}{5}\\sec^5(x) - \\frac{1}{3}\\sec^3(x) + C$",
+        "difficulty": 2,
+        "tags": {
+          "topic": ["integration"],
+          "course": ["calc2", "VCE-yr12", "VCE-specialist", "HSC-yr12", "HSC-ext2", "IB-AA-HL-yr12"],
+          "method": ["trigIdentity", "substitution"],
+          "origin": ["public"]
+        }
+      },
+      {
+        "id": "q-batch-35",
+        "prompt": "Evaluate $\\int \\cos^4(x) \\, \\mathrm{d}x$.",
+        "answer": "$\\frac{3}{8}x + \\frac{1}{4}\\sin(2x) + \\frac{1}{32}\\sin(4x) + C$",
+        "difficulty": 2,
+        "tags": {
+          "topic": ["integration"],
+          "course": ["calc2", "VCE-yr12", "VCE-specialist", "HSC-yr12", "HSC-ext2", "IB-AA-HL-yr12"],
+          "method": ["trigIdentity"],
+          "origin": ["public"]
+        }
+      },
+      {
+        "id": "q-batch-36",
+        "prompt": "Evaluate $\\int \\sin(4x)\\sin(x) \\, \\mathrm{d}x$.",
+        "answer": "$\\frac{1}{6}\\sin(3x) - \\frac{1}{10}\\sin(5x) + C$",
+        "difficulty": 2,
+        "tags": {
+          "topic": ["integration"],
+          "course": ["calc2", "VCE-yr12", "VCE-specialist", "HSC-yr12", "HSC-ext2", "IB-AA-HL-yr12"],
+          "method": ["trigIdentity"],
+          "origin": ["public"]
+        }
+      },
+      {
+        "id": "q-batch-37",
+        "prompt": "Evaluate $\\int \\frac{1}{x^2 - x - 2} \\, \\mathrm{d}x$.",
+        "answer": "$\\frac{1}{3}\\ln\\left|\\frac{x-2}{x+1}\\right| + C$",
+        "difficulty": 2,
+        "tags": {
+          "topic": ["integration"],
+          "course": ["calc2", "VCE-yr12", "VCE-specialist", "HSC-yr12", "HSC-ext2", "IB-AA-HL-yr12"],
+          "method": ["partialFractions"],
+          "origin": ["public"]
+        }
+      },
+      {
+        "id": "q-batch-38",
+        "prompt": "Evaluate $\\int \\frac{x^2}{(x-1)(x-2)} \\, \\mathrm{d}x$.",
+        "answer": "$x - \\ln|x-1| + 4\\ln|x-2| + C$",
+        "difficulty": 2,
+        "tags": {
+          "topic": ["integration"],
+          "course": ["calc2", "VCE-yr12", "VCE-specialist", "HSC-yr12", "HSC-ext2", "IB-AA-HL-yr12"],
+          "method": ["partialFractions"],
+          "origin": ["public"]
+        }
+      },
+      {
+        "id": "q-batch-39",
+        "prompt": "Evaluate $\\int \\frac{x^2 - 2x + 3}{(x-1)^2} \\, \\mathrm{d}x$.",
+        "answer": "$x - \\frac{2}{x-1} + C$",
+        "difficulty": 2,
+        "tags": {
+          "topic": ["integration"],
+          "course": ["calc2", "VCE-yr12", "VCE-specialist", "HSC-yr12", "HSC-ext2", "IB-AA-HL-yr12"],
+          "method": ["partialFractions"],
+          "origin": ["public"]
+        }
+      },
+      {
+        "id": "q-batch-40",
+        "prompt": "Evaluate $\\int x^2 \\cos(x) \\, \\mathrm{d}x$.",
+        "answer": "$x^2\\sin(x) + 2x\\cos(x) - 2\\sin(x) + C$",
+        "difficulty": 2,
+        "tags": {
+          "topic": ["integration"],
+          "course": ["calc2", "HSC-yr12", "HSC-ext2", "IB-AA-HL-yr12"],
+          "method": ["byParts"],
+          "origin": ["public"]
+        }
+      },
+      {
+        "id": "q-batch-41",
+        "prompt": "Evaluate $\\int e^{-x}\\cos(2x) \\, \\mathrm{d}x$.",
+        "answer": "$\\frac{1}{5}e^{-x}(2\\sin(2x) - \\cos(2x)) + C$",
+        "difficulty": 3,
+        "tags": {
+          "topic": ["integration"],
+          "course": ["calc2", "HSC-yr12", "HSC-ext2", "IB-AA-HL-yr12"],
+          "method": ["byParts"],
+          "origin": ["public"]
+        }
+      },
+      {
+        "id": "q-batch-42",
+        "prompt": "Evaluate $\\frac{\\mathrm{d}}{\\mathrm{d}x} \\left[ x\\arcsin(x) \\right]$.",
+        "answer": "$\\arcsin(x) + \\frac{x}{\\sqrt{1-x^2}}$",
+        "difficulty": 2,
+        "tags": {
+          "topic": ["differentiation"],
+          "course": ["calc1", "VCE-yr12", "VCE-specialist", "HSC-yr12", "HSC-ext1", "HSC-ext2", "IB-AA-HL-yr12"],
+          "method": ["productRule", "inverseTrigRule"],
+          "origin": ["public"]
+        }
+      },
+      {
+        "id": "q-batch-43",
+        "prompt": "Evaluate $\\int \\arcsin(x) \\, \\mathrm{d}x$.",
+        "answer": "$x\\arcsin(x) + \\sqrt{1-x^2} + C$",
+        "difficulty": 3,
+        "tags": {
+          "topic": ["integration"],
+          "course": ["calc2", "HSC-yr12", "HSC-ext2", "IB-AA-HL-yr12"],
+          "method": ["byParts"],
+          "origin": ["public"]
+        }
+      },
+        {
+          "id": "q-batch-44",
+          "prompt": "Evaluate $\\int e^x \\sqrt{1 + e^x} \\, \\mathrm{d}x$.",
+          "answer": "$\\frac{2}{3}(1 + e^x)^{\\frac{3}{2}} + C$",
+          "difficulty": 1,
+          "tags": {
+            "topic": ["integration"],
+            "course": ["calc1", "VCE-yr12", "VCE-methods", "VCE-specialist", "HSC-yr12", "HSC-advanced", "HSC-ext1", "IB-AA-SL-yr12", "IB-AA-HL-yr12"],
+            "method": ["substitution"],
+            "origin": ["public"]
+          }
+        },
+        {
+          "id": "q-batch-45",
+          "prompt": "Evaluate $\\int \\frac{x^3}{x^4 + 1} \\, \\mathrm{d}x$.",
+          "answer": "$\\frac{1}{4}\\ln(x^4 + 1) + C$",
+          "difficulty": 1,
+          "tags": {
+            "topic": ["integration"],
+            "course": ["calc1", "VCE-yr12", "VCE-methods", "VCE-specialist", "HSC-yr12", "HSC-advanced", "HSC-ext1", "IB-AA-SL-yr12", "IB-AA-HL-yr12"],
+            "method": ["substitution"],
+            "origin": ["public"]
+          }
+        },
+        {
+          "id": "q-batch-46",
+          "prompt": "Evaluate $\\int \\tan(x) \\, \\mathrm{d}x$.",
+          "answer": "$\\ln|\\sec(x)| + C$",
+          "difficulty": 1,
+          "tags": {
+            "topic": ["integration"],
+            "course": ["calc1", "VCE-yr12", "VCE-methods", "VCE-specialist", "HSC-yr12", "HSC-advanced", "HSC-ext1", "IB-AA-SL-yr12", "IB-AA-HL-yr12"],
+            "method": ["substitution"],
+            "origin": ["public"]
+          }
+        },
+        {
+          "id": "q-batch-47",
+          "prompt": "Evaluate $\\int \\frac{\\sec^2(x)}{\\sqrt{1 - \\tan^2(x)}} \\, \\mathrm{d}x$.",
+          "answer": "$\\arcsin(\\tan(x)) + C$",
+          "difficulty": 2,
+          "tags": {
+            "topic": ["integration"],
+            "course": ["calc2", "VCE-yr12", "VCE-specialist", "HSC-yr12", "HSC-ext1", "HSC-ext2", "IB-AA-HL-yr12"],
+            "method": ["substitution", "inverseTrigRule"],
+            "origin": ["public"]
+          }
+        },
+        {
+          "id": "q-batch-48",
+          "prompt": "Evaluate $\\int \\sin^3(x) \\, \\mathrm{d}x$.",
+          "answer": "$-\\cos(x) + \\frac{1}{3}\\cos^3(x) + C$",
+          "difficulty": 2,
+          "tags": {
+            "topic": ["integration"],
+            "course": ["calc2", "VCE-yr12", "VCE-specialist", "HSC-yr12", "HSC-ext2", "IB-AA-HL-yr12"],
+            "method": ["trigIdentity", "substitution"],
+            "origin": ["public"]
+          }
+        },
+        {
+          "id": "q-batch-49",
+          "prompt": "Evaluate $\\int \\cos^2(x) \\, \\mathrm{d}x$.",
+          "answer": "$\\frac{1}{2}x + \\frac{1}{4}\\sin(2x) + C$",
+          "difficulty": 1,
+          "tags": {
+            "topic": ["integration"],
+            "course": ["calc2", "VCE-yr12", "VCE-specialist", "HSC-yr12", "HSC-ext2", "IB-AA-HL-yr12"],
+            "method": ["trigIdentity"],
+            "origin": ["public"]
+          }
+        },
+        {
+          "id": "q-batch-50",
+          "prompt": "Evaluate $\\int \\sin^2(x) \\, \\mathrm{d}x$.",
+          "answer": "$\\frac{1}{2}x - \\frac{1}{4}\\sin(2x) + C$",
+          "difficulty": 1,
+          "tags": {
+            "topic": ["integration"],
+            "course": ["calc2", "VCE-yr12", "VCE-specialist", "HSC-yr12", "HSC-ext2", "IB-AA-HL-yr12"],
+            "method": ["trigIdentity"],
+            "origin": ["public"]
+          }
+        },
+        {
+          "id": "q-batch-51",
+          "prompt": "Evaluate $\\int \\sin(5x)\\cos(3x) \\, \\mathrm{d}x$.",
+          "answer": "$-\\frac{1}{16}\\cos(8x) - \\frac{1}{4}\\cos(2x) + C$",
+          "difficulty": 2,
+          "tags": {
+            "topic": ["integration"],
+            "course": ["calc2", "VCE-yr12", "VCE-specialist", "HSC-yr12", "HSC-ext2", "IB-AA-HL-yr12"],
+            "method": ["trigIdentity"],
+            "origin": ["public"]
+          }
+        },
+        {
+          "id": "q-batch-52",
+          "prompt": "Evaluate $\\int \\frac{x}{(x-1)(x-2)(x-3)} \\, \\mathrm{d}x$.",
+          "answer": "$\\frac{1}{2}\\ln|x-1| - 2\\ln|x-2| + \\frac{3}{2}\\ln|x-3| + C$",
+          "difficulty": 3,
+          "tags": {
+            "topic": ["integration"],
+            "course": ["calc2", "VCE-yr12", "VCE-specialist", "HSC-yr12", "HSC-ext2", "IB-AA-HL-yr12"],
+            "method": ["partialFractions"],
+            "origin": ["public"]
+          }
+        },
+        {
+          "id": "q-batch-53",
+          "prompt": "Evaluate $\\int \\frac{x^4}{x^2-1} \\, \\mathrm{d}x$.",
+          "answer": "$\\frac{1}{3}x^3 + x + \\frac{1}{2}\\ln\\left|\\frac{x-1}{x+1}\\right| + C$",
+          "difficulty": 2,
+          "tags": {
+            "topic": ["integration"],
+            "course": ["calc2", "VCE-yr12", "VCE-specialist", "HSC-yr12", "HSC-ext2", "IB-AA-HL-yr12"],
+            "method": ["partialFractions"],
+            "origin": ["public"]
+          }
+        },
+        {
+          "id": "q-batch-54",
+          "prompt": "Evaluate $\\int \\frac{1}{x(x^2+1)} \\, \\mathrm{d}x$.",
+          "answer": "$\\ln|x| - \\frac{1}{2}\\ln(x^2+1) + C$",
+          "difficulty": 3,
+          "tags": {
+            "topic": ["integration"],
+            "course": ["calc2", "VCE-yr12", "VCE-specialist", "HSC-yr12", "HSC-ext2", "IB-AA-HL-yr12"],
+            "method": ["partialFractions"],
+            "origin": ["public"]
+          }
+        },
+        {
+          "id": "q-batch-55",
+          "prompt": "Evaluate $\\int x e^{2x} \\, \\mathrm{d}x$.",
+          "answer": "$\\frac{1}{2}x e^{2x} - \\frac{1}{4}e^{2x} + C$",
+          "difficulty": 2,
+          "tags": {
+            "topic": ["integration"],
+            "course": ["calc2", "HSC-yr12", "HSC-ext2", "IB-AA-HL-yr12"],
+            "method": ["byParts"],
+            "origin": ["public"]
+          }
+        },
+        {
+          "id": "q-batch-56",
+          "prompt": "Evaluate $\\int x^2 \\sin(2x) \\, \\mathrm{d}x$.",
+          "answer": "$-\\frac{1}{2}x^2\\cos(2x) + \\frac{1}{2}x\\sin(2x) + \\frac{1}{4}\\cos(2x) + C$",
+          "difficulty": 2,
+          "tags": {
+            "topic": ["integration"],
+            "course": ["calc2", "HSC-yr12", "HSC-ext2", "IB-AA-HL-yr12"],
+            "method": ["byParts"],
+            "origin": ["public"]
+          }
+        },
+          {
+            "id": "q-batch-57",
+            "prompt": "Evaluate $\\int \\frac{\\ln(x)}{x} \\, \\mathrm{d}x$.",
+            "answer": "$\\frac{1}{2}(\\ln(x))^2 + C$",
+            "difficulty": 1,
+            "tags": {
+              "topic": ["integration"],
+              "course": ["calc1", "VCE-yr12", "VCE-methods", "VCE-specialist", "HSC-yr12", "HSC-advanced", "HSC-ext1", "IB-AA-SL-yr12", "IB-AA-HL-yr12"],
+              "method": ["substitution"],
+              "origin": ["public"]
+            }
+          },
+          {
+            "id": "q-batch-58",
+            "prompt": "Evaluate $\\int \\frac{1}{x\\sqrt{x^2-1}} \\, \\mathrm{d}x$.",
+            "answer": "$\\sec^{-1}|x| + C$",
+            "difficulty": 2,
+            "tags": {
+              "topic": ["integration"],
+              "course": ["calc2", "VCE-yr12", "VCE-specialist", "HSC-yr12", "HSC-ext1", "HSC-ext2", "IB-AA-HL-yr12"],
+              "method": ["inverseTrigRule"],
+              "origin": ["public"]
+            }
+          },
+          {
+            "id": "q-batch-59",
+            "prompt": "Evaluate $\\int \\frac{1}{x^2+2x+5} \\, \\mathrm{d}x$.",
+            "answer": "$\\frac{1}{2}\\arctan\\left(\\frac{x+1}{2}\\right) + C$",
+            "difficulty": 2,
+            "tags": {
+              "topic": ["integration"],
+              "course": ["calc2", "VCE-yr12", "VCE-specialist", "HSC-yr12", "HSC-ext1", "HSC-ext2", "IB-AA-HL-yr12"],
+              "method": ["inverseTrigRule"],
+              "origin": ["public"]
+            }
+          },
+          {
+            "id": "q-batch-60",
+            "prompt": "Evaluate $\\int \\tan^2(x) \\, \\mathrm{d}x$.",
+            "answer": "$\\tan(x) - x + C$",
+            "difficulty": 1,
+            "tags": {
+              "topic": ["integration"],
+              "course": ["calc1", "VCE-yr12", "VCE-methods", "VCE-specialist", "HSC-yr12", "HSC-advanced", "HSC-ext1", "IB-AA-SL-yr12", "IB-AA-HL-yr12"],
+              "method": ["trigIdentity"],
+              "origin": ["public"]
+            }
+          },
+          {
+            "id": "q-batch-61",
+            "prompt": "Evaluate $\\int \\cot^2(x) \\, \\mathrm{d}x$.",
+            "answer": "$-\\cot(x) - x + C$",
+            "difficulty": 1,
+            "tags": {
+              "topic": ["integration"],
+              "course": ["calc2", "VCE-yr12", "VCE-specialist", "HSC-yr12", "HSC-ext2", "IB-AA-HL-yr12"],
+              "method": ["trigIdentity"],
+              "origin": ["public"]
+            }
+          },
+          {
+            "id": "q-batch-62",
+            "prompt": "Evaluate $\\int \\sec^2(x)\\tan(x) \\, \\mathrm{d}x$.",
+            "answer": "$\\frac{1}{2}\\tan^2(x) + C$",
+            "difficulty": 1,
+            "tags": {
+              "topic": ["integration"],
+              "course": ["calc1", "VCE-yr12", "VCE-methods", "VCE-specialist", "HSC-yr12", "HSC-advanced", "HSC-ext1", "IB-AA-SL-yr12", "IB-AA-HL-yr12"],
+              "method": ["substitution"],
+              "origin": ["public"]
+            }
+          },
+          {
+            "id": "q-batch-63",
+            "prompt": "Evaluate $\\int \\csc(x) \\, \\mathrm{d}x$.",
+            "answer": "$-\\ln|\\csc(x) + \\cot(x)| + C$",
+            "difficulty": 2,
+            "tags": {
+              "topic": ["integration"],
+              "course": ["calc2", "VCE-yr12", "VCE-specialist", "HSC-yr12", "HSC-ext2", "IB-AA-HL-yr12"],
+              "method": ["trigIdentity", "substitution"],
+              "origin": ["public"]
+            }
+          },
+          {
+            "id": "q-batch-64",
+            "prompt": "Evaluate $\\int \\frac{x}{(x+1)^2} \\, \\mathrm{d}x$.",
+            "answer": "$\\ln|x+1| + \\frac{1}{x+1} + C$",
+            "difficulty": 2,
+            "tags": {
+              "topic": ["integration"],
+              "course": ["calc2", "VCE-yr12", "VCE-specialist", "HSC-yr12", "HSC-ext2", "IB-AA-HL-yr12"],
+              "method": ["partialFractions"],
+              "origin": ["public"]
+            }
+          },
+          {
+            "id": "q-batch-65",
+            "prompt": "Evaluate $\\int \\frac{1}{(x-1)^2(x+1)} \\, \\mathrm{d}x$.",
+            "answer": "$-\\frac{1}{2(x-1)} - \\frac{1}{4}\\ln|x-1| + \\frac{1}{4}\\ln|x+1| + C$",
+            "difficulty": 3,
+            "tags": {
+              "topic": ["integration"],
+              "course": ["calc2", "VCE-yr12", "VCE-specialist", "HSC-yr12", "HSC-ext2", "IB-AA-HL-yr12"],
+              "method": ["partialFractions"],
+              "origin": ["public"]
+            }
+          },
+          {
+            "id": "q-batch-66",
+            "prompt": "Evaluate $\\int \\frac{1}{x^3+x} \\, \\mathrm{d}x$.",
+            "answer": "$\\ln|x| - \\frac{1}{2}\\ln(x^2+1) + C$",
+            "difficulty": 2,
+            "tags": {
+              "topic": ["integration"],
+              "course": ["calc2", "VCE-yr12", "VCE-specialist", "HSC-yr12", "HSC-ext2", "IB-AA-HL-yr12"],
+              "method": ["partialFractions"],
+              "origin": ["public"]
+            }
+          },
+          {
+            "id": "q-batch-67",
+            "prompt": "Evaluate $\\int x^3 e^{x^2} \\, \\mathrm{d}x$.",
+            "answer": "$\\frac{1}{2}e^{x^2}(x^2 - 1) + C$",
+            "difficulty": 3,
+            "tags": {
+              "topic": ["integration"],
+              "course": ["calc2", "HSC-yr12", "HSC-ext2", "IB-AA-HL-yr12"],
+              "method": ["substitution", "byParts"],
+              "origin": ["public"]
+            }
+          },
+          {
+            "id": "q-batch-68",
+            "prompt": "Evaluate $\\int \\cos(\\ln(x)) \\, \\mathrm{d}x$.",
+            "answer": "$\\frac{x}{2}(\\cos(\\ln(x)) + \\sin(\\ln(x))) + C$",
+            "difficulty": 3,
+            "tags": {
+              "topic": ["integration"],
+              "course": ["calc2", "HSC-yr12", "HSC-ext2", "IB-AA-HL-yr12"],
+              "method": ["byParts"],
+              "origin": ["public"]
+            }
+          },
+            {
+              "id": "q-batch-69",
+              "prompt": "Evaluate $\\int \\frac{e^x}{2 + e^x} \\, \\mathrm{d}x$.",
+              "answer": "$\\ln(2 + e^x) + C$",
+              "difficulty": 1,
+              "tags": {
+                "topic": ["integration"],
+                "course": ["calc1", "VCE-yr12", "VCE-methods", "VCE-specialist", "HSC-yr12", "HSC-advanced", "HSC-ext1", "IB-AA-SL-yr12", "IB-AA-HL-yr12"],
+                "method": ["substitution"],
+                "origin": ["public"]
+              }
+            },
+            {
+              "id": "q-batch-70",
+              "prompt": "Evaluate $\\int \\frac{\\sec^2(x)}{1 + \\tan(x)} \\, \\mathrm{d}x$.",
+              "answer": "$\\ln|1 + \\tan(x)| + C$",
+              "difficulty": 1,
+              "tags": {
+                "topic": ["integration"],
+                "course": ["calc1", "VCE-yr12", "VCE-methods", "VCE-specialist", "HSC-yr12", "HSC-advanced", "HSC-ext1", "IB-AA-SL-yr12", "IB-AA-HL-yr12"],
+                "method": ["substitution"],
+                "origin": ["public"]
+              }
+            },
+            {
+              "id": "q-batch-71",
+              "prompt": "Evaluate $\\int \\frac{x^2}{\\sqrt{1 - x^6}} \\, \\mathrm{d}x$.",
+              "answer": "$\\frac{1}{3}\\arcsin(x^3) + C$",
+              "difficulty": 2,
+              "tags": {
+                "topic": ["integration"],
+                "course": ["calc2", "VCE-yr12", "VCE-specialist", "HSC-yr12", "HSC-ext1", "HSC-ext2", "IB-AA-HL-yr12"],
+                "method": ["substitution", "inverseTrigRule"],
+                "origin": ["public"]
+              }
+            },
+            {
+              "id": "q-batch-72",
+              "prompt": "Evaluate $\\int \\frac{1}{x\\sqrt{1 - \\ln^2(x)}} \\, \\mathrm{d}x$.",
+              "answer": "$\\arcsin(\\ln(x)) + C$",
+              "difficulty": 2,
+              "tags": {
+                "topic": ["integration"],
+                "course": ["calc2", "VCE-yr12", "VCE-specialist", "HSC-yr12", "HSC-ext1", "HSC-ext2", "IB-AA-HL-yr12"],
+                "method": ["substitution", "inverseTrigRule"],
+                "origin": ["public"]
+              }
+            },
+            {
+              "id": "q-batch-73",
+              "prompt": "Evaluate $\\int \\cos^5(x) \\, \\mathrm{d}x$.",
+              "answer": "$\\sin(x) - \\frac{2}{3}\\sin^3(x) + \\frac{1}{5}\\sin^5(x) + C$",
+              "difficulty": 2,
+              "tags": {
+                "topic": ["integration"],
+                "course": ["calc2", "VCE-yr12", "VCE-specialist", "HSC-yr12", "HSC-ext2", "IB-AA-HL-yr12"],
+                "method": ["trigIdentity", "substitution"],
+                "origin": ["public"]
+              }
+            },
+            {
+              "id": "q-batch-74",
+              "prompt": "Evaluate $\\int \\cos^2(3x) \\, \\mathrm{d}x$.",
+              "answer": "$\\frac{1}{2}x + \\frac{1}{12}\\sin(6x) + C$",
+              "difficulty": 1,
+              "tags": {
+                "topic": ["integration"],
+                "course": ["calc2", "VCE-yr12", "VCE-specialist", "HSC-yr12", "HSC-ext2", "IB-AA-HL-yr12"],
+                "method": ["trigIdentity"],
+                "origin": ["public"]
+              }
+            },
+            {
+              "id": "q-batch-75",
+              "prompt": "Evaluate $\\int \\sin^2(2x) \\, \\mathrm{d}x$.",
+              "answer": "$\\frac{1}{2}x - \\frac{1}{8}\\sin(4x) + C$",
+              "difficulty": 1,
+              "tags": {
+                "topic": ["integration"],
+                "course": ["calc2", "VCE-yr12", "VCE-specialist", "HSC-yr12", "HSC-ext2", "IB-AA-HL-yr12"],
+                "method": ["trigIdentity"],
+                "origin": ["public"]
+              }
+            },
+            {
+              "id": "q-batch-76",
+              "prompt": "Evaluate $\\int \\cos(5x)\\cos(x) \\, \\mathrm{d}x$.",
+              "answer": "$\\frac{1}{12}\\sin(6x) + \\frac{1}{8}\\sin(4x) + C$",
+              "difficulty": 2,
+              "tags": {
+                "topic": ["integration"],
+                "course": ["calc2", "VCE-yr12", "VCE-specialist", "HSC-yr12", "HSC-ext2", "IB-AA-HL-yr12"],
+                "method": ["trigIdentity"],
+                "origin": ["public"]
+              }
+            },
+            {
+              "id": "q-batch-77",
+              "prompt": "Evaluate $\\int \\frac{1}{x^2 - 5x + 6} \\, \\mathrm{d}x$.",
+              "answer": "$\\ln\\left|\\frac{x-3}{x-2}\\right| + C$",
+              "difficulty": 2,
+              "tags": {
+                "topic": ["integration"],
+                "course": ["calc2", "VCE-yr12", "VCE-specialist", "HSC-yr12", "HSC-ext2", "IB-AA-HL-yr12"],
+                "method": ["partialFractions"],
+                "origin": ["public"]
+              }
+            },
+            {
+              "id": "q-batch-78",
+              "prompt": "Evaluate $\\int \\frac{1}{(x-2)^2} \\, \\mathrm{d}x$.",
+              "answer": "$-\\frac{1}{x-2} + C$",
+              "difficulty": 1,
+              "tags": {
+                "topic": ["integration"],
+                "course": ["calc1", "VCE-yr12", "VCE-methods", "VCE-specialist", "HSC-yr12", "HSC-advanced", "HSC-ext1", "IB-AA-SL-yr12", "IB-AA-HL-yr12"],
+                "method": ["powerRule"],
+                "origin": ["public"]
+              }
+            },
+            {
+              "id": "q-batch-79",
+              "prompt": "Evaluate $\\int \\frac{1}{x(x+1)^2} \\, \\mathrm{d}x$.",
+              "answer": "$\\ln|x| - \\ln|x+1| - \\frac{1}{x+1} + C$",
+              "difficulty": 3,
+              "tags": {
+                "topic": ["integration"],
+                "course": ["calc2", "VCE-yr12", "VCE-specialist", "HSC-yr12", "HSC-ext2", "IB-AA-HL-yr12"],
+                "method": ["partialFractions"],
+                "origin": ["public"]
+              }
+            },
+            {
+              "id": "q-batch-80",
+              "prompt": "Evaluate $\\int x^3 \\ln(x) \\, \\mathrm{d}x$.",
+              "answer": "$\\frac{1}{4}x^4\\ln(x) - \\frac{1}{16}x^4 + C$",
+              "difficulty": 2,
+              "tags": {
+                "topic": ["integration"],
+                "course": ["calc2", "HSC-yr12", "HSC-ext2", "IB-AA-HL-yr12"],
+                "method": ["byParts"],
+                "origin": ["public"]
+              }
+            },
+              {
+                "id": "q-batch-81",
+                "prompt": "Evaluate $\\int \\frac{e^{x}}{1 + e^{2x}} \\, \\mathrm{d}x$.",
+                "answer": "$\\arctan(e^{x}) + C$",
+                "difficulty": 2,
+                "tags": {
+                  "topic": ["integration"],
+                  "course": ["calc2", "VCE-yr12", "VCE-specialist", "HSC-yr12", "HSC-ext1", "HSC-ext2", "IB-AA-HL-yr12"],
+                  "method": ["substitution", "inverseTrigRule"],
+                  "origin": ["public"]
+                }
+              },
+              {
+                "id": "q-batch-82",
+                "prompt": "Evaluate $\\int \\frac{x^2}{1 + x^2} \\, \\mathrm{d}x$.",
+                "answer": "$x - \\arctan(x) + C$",
+                "difficulty": 2,
+                "tags": {
+                  "topic": ["integration"],
+                  "course": ["calc2", "VCE-yr12", "VCE-specialist", "HSC-yr12", "HSC-ext1", "HSC-ext2", "IB-AA-HL-yr12"],
+                  "method": ["algebraicManipulation", "inverseTrigRule"],
+                  "origin": ["public"]
+                }
+              },
+              {
+                "id": "q-batch-83",
+                "prompt": "Evaluate $\\int \\cot^{4}(x) \\, \\mathrm{d}x$.",
+                "answer": "$-\\frac{1}{3}\\cot^{3}(x) + \\cot(x) + x + C$",
+                "difficulty": 3,
+                "tags": {
+                  "topic": ["integration"],
+                  "course": ["calc2", "VCE-yr12", "VCE-specialist", "HSC-yr12", "HSC-ext2", "IB-AA-HL-yr12"],
+                  "method": ["trigIdentity", "substitution"],
+                  "origin": ["public"]
+                }
+              },
+              {
+                "id": "q-batch-84",
+                "prompt": "Evaluate $\\int \\sec^{6}(x) \\, \\mathrm{d}x$.",
+                "answer": "$\\tan(x) + \\frac{2}{3}\\tan^{3}(x) + \\frac{1}{5}\\tan^{5}(x) + C$",
+                "difficulty": 3,
+                "tags": {
+                  "topic": ["integration"],
+                  "course": ["calc2", "VCE-yr12", "VCE-specialist", "HSC-yr12", "HSC-ext2", "IB-AA-HL-yr12"],
+                  "method": ["trigIdentity", "substitution"],
+                  "origin": ["public"]
+                }
+              },
+              {
+                "id": "q-batch-85",
+                "prompt": "Evaluate $\\int \\tan^{5}(x) \\, \\mathrm{d}x$.",
+                "answer": "$\\frac{1}{4}\\tan^{4}(x) - \\frac{1}{2}\\tan^{2}(x) + \\ln|\\sec(x)| + C$",
+                "difficulty": 3,
+                "tags": {
+                  "topic": ["integration"],
+                  "course": ["calc2", "VCE-yr12", "VCE-specialist", "HSC-yr12", "HSC-ext2", "IB-AA-HL-yr12"],
+                  "method": ["trigIdentity", "substitution"],
+                  "origin": ["public"]
+                }
+              },
+              {
+                "id": "q-batch-86",
+                "prompt": "Evaluate $\\int \\csc^{3}(x) \\, \\mathrm{d}x$.",
+                "answer": "$-\\frac{1}{2}\\csc(x)\\cot(x) - \\frac{1}{2}\\ln|\\csc(x) + \\cot(x)| + C$",
+                "difficulty": 3,
+                "tags": {
+                  "topic": ["integration"],
+                  "course": ["calc2", "HSC-yr12", "HSC-ext2", "IB-AA-HL-yr12"],
+                  "method": ["byParts", "trigIdentity"],
+                  "origin": ["public"]
+                }
+              },
+              {
+                "id": "q-batch-87",
+                "prompt": "Evaluate $\\int \\frac{x^4-2x^2+4x+1}{x^3-x^2-x+1} \\, \\mathrm{d}x$.",
+                "answer": "$\\frac{1}{2}x^2 + x + \\ln|x-1| - \\frac{2}{x-1} + C$",
+                "difficulty": 3,
+                "tags": {
+                  "topic": ["integration"],
+                  "course": ["calc2", "VCE-yr12", "VCE-specialist", "HSC-yr12", "HSC-ext2", "IB-AA-HL-yr12"],
+                  "method": ["partialFractions"],
+                  "origin": ["public"]
+                }
+              },
+              {
+                "id": "q-batch-88",
+                "prompt": "Evaluate $\\int \\frac{2x^2+3}{(x^2+1)^2} \\, \\mathrm{d}x$.",
+                "answer": "$\\arctan(x) + \\frac{x}{2(x^2+1)} + \\frac{1}{2}\\arctan(x) + C = \\frac{3}{2}\\arctan(x) + \\frac{x}{2(x^2+1)} + C$",
+                "difficulty": 3,
+                "tags": {
+                  "topic": ["integration"],
+                  "course": ["calc2", "HSC-yr12", "HSC-ext2", "IB-AA-HL-yr12"],
+                  "method": ["substitution", "trigIdentity"],
+                  "origin": ["public"]
+                }
+              },
+              {
+                "id": "q-batch-89",
+                "prompt": "Evaluate $\\int x^2 e^{3x} \\, \\mathrm{d}x$.",
+                "answer": "$\\frac{1}{3}x^2 e^{3x} - \\frac{2}{9}x e^{3x} + \\frac{2}{27}e^{3x} + C$",
+                "difficulty": 2,
+                "tags": {
+                  "topic": ["integration"],
+                  "course": ["calc2", "HSC-yr12", "HSC-ext2", "IB-AA-HL-yr12"],
+                  "method": ["byParts"],
+                  "origin": ["public"]
+                }
+              },
+              {
+                "id": "q-batch-90",
+                "prompt": "Evaluate $\\int x^3 \\cos(x^2) \\, \\mathrm{d}x$.",
+                "answer": "$\\frac{1}{2}x^2\\sin(x^2) + \\frac{1}{2}\\cos(x^2) + C$",
+                "difficulty": 3,
+                "tags": {
+                  "topic": ["integration"],
+                  "course": ["calc2", "HSC-yr12", "HSC-ext2", "IB-AA-HL-yr12"],
+                  "method": ["substitution", "byParts"],
+                  "origin": ["public"]
+                }
+              },
+              {
+                "id": "q-batch-91",
+                "prompt": "Evaluate $\\int e^{2x}\\sin(3x) \\, \\mathrm{d}x$.",
+                "answer": "$\\frac{1}{13}e^{2x}(2\\sin(3x) - 3\\cos(3x)) + C$",
+                "difficulty": 3,
+                "tags": {
+                  "topic": ["integration"],
+                  "course": ["calc2", "HSC-yr12", "HSC-ext2", "IB-AA-HL-yr12"],
+                  "method": ["byParts"],
+                  "origin": ["public"]
+                }
+              },
+              {
+                "id": "q-batch-92",
+                "prompt": "Evaluate $\\int \\sec^{3}(x) \\, \\mathrm{d}x$.",
+                "answer": "$\\frac{1}{2}\\sec(x)\\tan(x) + \\frac{1}{2}\\ln|\\sec(x) + \\tan(x)| + C$",
+                "difficulty": 3,
+                "tags": {
+                  "topic": ["integration"],
+                  "course": ["calc2", "HSC-yr12", "HSC-ext2", "IB-AA-HL-yr12"],
+                  "method": ["byParts", "trigIdentity"],
+                  "origin": ["public"]
+                }
+              },
+                {
+                  "id": "q-batch-93",
+                  "prompt": "Evaluate $\\int \\frac{2x+3}{x^2+3x-10} \\, \\mathrm{d}x$.",
+                  "answer": "$\\ln|x^2+3x-10| + C$",
+                  "difficulty": 1,
+                  "tags": {
+                    "topic": ["integration"],
+                    "course": ["calc1", "VCE-yr12", "VCE-methods", "VCE-specialist", "HSC-yr12", "HSC-advanced", "HSC-ext1", "IB-AA-SL-yr12", "IB-AA-HL-yr12"],
+                    "method": ["substitution"],
+                    "origin": ["public"]
+                  }
+                },
+                {
+                  "id": "q-batch-94",
+                  "prompt": "Evaluate $\\int \\frac{x^2+1}{x(x^2-1)} \\, \\mathrm{d}x$.",
+                  "answer": "$-\\ln|x| + \\ln|x-1| + \\ln|x+1| + C = \\ln\\left|\\frac{x^2-1}{x}\\right| + C$",
+                  "difficulty": 2,
+                  "tags": {
+                    "topic": ["integration"],
+                    "course": ["calc2", "VCE-yr12", "VCE-specialist", "HSC-yr12", "HSC-ext2", "IB-AA-HL-yr12"],
+                    "method": ["partialFractions"],
+                    "origin": ["public"]
+                  }
+                },
+                {
+                  "id": "q-batch-95",
+                  "prompt": "Evaluate $\\int x^5 e^{x^3} \\, \\mathrm{d}x$.",
+                  "answer": "$\\frac{1}{3}e^{x^3}(x^3 - 1) + C$",
+                  "difficulty": 3,
+                  "tags": {
+                    "topic": ["integration"],
+                    "course": ["calc2", "HSC-yr12", "HSC-ext2", "IB-AA-HL-yr12"],
+                    "method": ["substitution", "byParts"],
+                    "origin": ["public"]
+                  }
+                },
+                {
+                  "id": "q-batch-96",
+                  "prompt": "Evaluate $\\int \\frac{\\arcsin(x)}{\\sqrt{1-x^2}} \\, \\mathrm{d}x$.",
+                  "answer": "$\\frac{1}{2}(\\arcsin(x))^2 + C$",
+                  "difficulty": 1,
+                  "tags": {
+                    "topic": ["integration"],
+                    "course": ["calc1", "VCE-yr12", "VCE-specialist", "HSC-yr12", "HSC-ext1", "HSC-ext2", "IB-AA-SL-yr12", "IB-AA-HL-yr12"],
+                    "method": ["substitution"],
+                    "origin": ["public"]
+                  }
+                },
+                {
+                  "id": "q-batch-97",
+                  "prompt": "Evaluate $\\int \\frac{x}{\\sqrt{1-x^4}} \\, \\mathrm{d}x$.",
+                  "answer": "$\\frac{1}{2}\\arcsin(x^2) + C$",
+                  "difficulty": 2,
+                  "tags": {
+                    "topic": ["integration"],
+                    "course": ["calc2", "VCE-yr12", "VCE-specialist", "HSC-yr12", "HSC-ext1", "HSC-ext2", "IB-AA-HL-yr12"],
+                    "method": ["substitution", "inverseTrigRule"],
+                    "origin": ["public"]
+                  }
+                },
+                {
+                  "id": "q-batch-98",
+                  "prompt": "Evaluate $\\int \\sec^5(x)\\tan(x) \\, \\mathrm{d}x$.",
+                  "answer": "$\\frac{1}{5}\\sec^5(x) + C$",
+                  "difficulty": 1,
+                  "tags": {
+                    "topic": ["integration"],
+                    "course": ["calc1", "VCE-yr12", "VCE-methods", "VCE-specialist", "HSC-yr12", "HSC-advanced", "HSC-ext1", "IB-AA-SL-yr12", "IB-AA-HL-yr12"],
+                    "method": ["substitution"],
+                    "origin": ["public"]
+                  }
+                },
+                {
+                  "id": "q-batch-99",
+                  "prompt": "Evaluate $\\int \\frac{x^3-2x^2+4x-4}{x^2(x^2+4)} \\, \\mathrm{d}x$.",
+                  "answer": "$\\ln|x^2+4| + \\frac{1}{x} - \\frac{1}{2}\\arctan\\left(\\frac{x}{2}\\right) + C$",
+                  "difficulty": 3,
+                  "tags": {
+                    "topic": ["integration"],
+                    "course": ["calc2", "HSC-yr12", "HSC-ext2", "IB-AA-HL-yr12"],
+                    "method": ["partialFractions"],
+                    "origin": ["public"]
+                  }
+                },
+                {
+                  "id": "q-batch-100",
+                  "prompt": "Evaluate $\\int \\frac{1}{1-\\cos(x)} \\, \\mathrm{d}x$.",
+                  "answer": "$-\\cot\\left(\\frac{x}{2}\\right) + C$",
+                  "difficulty": 3,
+                  "tags": {
+                    "topic": ["integration"],
+                    "course": ["calc2", "VCE-yr12", "VCE-specialist", "HSC-yr12", "HSC-ext2", "IB-AA-HL-yr12"],
+                    "method": ["trigIdentity", "substitution"],
+                    "origin": ["public"]
+                  }
+                },
+                {
+                  "id": "q-batch-101",
+                  "prompt": "Evaluate $\\int \\frac{x+4}{x^2+2x+5} \\, \\mathrm{d}x$.",
+                  "answer": "$\\frac{1}{2}\\ln(x^2+2x+5) + \\frac{3}{2}\\arctan\\left(\\frac{x+1}{2}\\right) + C$",
+                  "difficulty": 3,
+                  "tags": {
+                    "topic": ["integration"],
+                    "course": ["calc2", "VCE-yr12", "VCE-specialist", "HSC-yr12", "HSC-ext1", "HSC-ext2", "IB-AA-HL-yr12"],
+                    "method": ["algebraicManipulation", "inverseTrigRule"],
+                    "origin": ["public"]
+                  }
+                },
+                  {
+                    "id": "q-batch-102",
+                    "prompt": "Evaluate $\\int \\frac{\\sec^2(x)}{\\tan^3(x)} \\, \\mathrm{d}x$.",
+                    "answer": "$-\\frac{1}{2\\tan^2(x)} + C$",
+                    "difficulty": 1,
+                    "tags": {
+                      "topic": ["integration"],
+                      "course": ["calc1", "VCE-yr12", "VCE-methods", "VCE-specialist", "HSC-yr12", "HSC-advanced", "HSC-ext1", "IB-AA-SL-yr12", "IB-AA-HL-yr12"],
+                      "method": ["substitution"],
+                      "origin": ["public"]
+                    }
+                  },
+                  {
+                    "id": "q-batch-103",
+                    "prompt": "Evaluate $\\int \\frac{x^2+5x+2}{(x+1)(x+2)^2} \\, \\mathrm{d}x$.",
+                    "answer": "$2\\ln|x+1| - \\ln|x+2| - \\frac{4}{x+2} + C$",
+                    "difficulty": 3,
+                    "tags": {
+                      "topic": ["integration"],
+                      "course": ["calc2", "VCE-yr12", "VCE-specialist", "HSC-yr12", "HSC-ext2", "IB-AA-HL-yr12"],
+                      "method": ["partialFractions"],
+                      "origin": ["public"]
+                    }
+                  },
+                  {
+                    "id": "q-batch-104",
+                    "prompt": "Evaluate $\\int e^{x}\\cos(x) \\, \\mathrm{d}x$.",
+                    "answer": "$\\frac{1}{2}e^{x}(\\sin(x) + \\cos(x)) + C$",
+                    "difficulty": 3,
+                    "tags": {
+                      "topic": ["integration"],
+                      "course": ["calc2", "HSC-yr12", "HSC-ext2", "IB-AA-HL-yr12"],
+                      "method": ["byParts"],
+                      "origin": ["public"]
+                    }
+                  },
+                  {
+                    "id": "q-batch-105",
+                    "prompt": "Evaluate $\\int \\frac{x}{\\sqrt{1-x^2}} \\, \\mathrm{d}x$.",
+                    "answer": "$-\\sqrt{1-x^2} + C$",
+                    "difficulty": 1,
+                    "tags": {
+                      "topic": ["integration"],
+                      "course": ["calc1", "VCE-yr12", "VCE-methods", "VCE-specialist", "HSC-yr12", "HSC-advanced", "HSC-ext1", "IB-AA-SL-yr12", "IB-AA-HL-yr12"],
+                      "method": ["substitution"],
+                      "origin": ["public"]
+                    }
+                  },
+                  {
+                    "id": "q-batch-106",
+                    "prompt": "Evaluate $\\int \\sin^{4}(x) \\, \\mathrm{d}x$.",
+                    "answer": "$\\frac{3}{8}x - \\frac{1}{4}\\sin(2x) + \\frac{1}{32}\\sin(4x) + C$",
+                    "difficulty": 2,
+                    "tags": {
+                      "topic": ["integration"],
+                      "course": ["calc2", "VCE-yr12", "VCE-specialist", "HSC-yr12", "HSC-ext2", "IB-AA-HL-yr12"],
+                      "method": ["trigIdentity"],
+                      "origin": ["public"]
+                    }
+                  },
+                  {
+                    "id": "q-batch-107",
+                    "prompt": "Evaluate $\\int \\frac{x^3}{x-1} \\, \\mathrm{d}x$.",
+                    "answer": "$\\frac{1}{3}x^3 + \\frac{1}{2}x^2 + x + \\ln|x-1| + C$",
+                    "difficulty": 2,
+                    "tags": {
+                      "topic": ["integration"],
+                      "course": ["calc2", "VCE-yr12", "VCE-specialist", "HSC-yr12", "HSC-ext2", "IB-AA-HL-yr12"],
+                      "method": ["algebraicManipulation", "partialFractions"],
+                      "origin": ["public"]
+                    }
+                  },
+                  {
+                    "id": "q-batch-108",
+                    "prompt": "Evaluate $\\int x^2 \\ln(2x) \\, \\mathrm{d}x$.",
+                    "answer": "$\\frac{1}{3}x^3\\ln(2x) - \\frac{1}{9}x^3 + C$",
+                    "difficulty": 2,
+                    "tags": {
+                      "topic": ["integration"],
+                      "course": ["calc2", "HSC-yr12", "HSC-ext2", "IB-AA-HL-yr12"],
+                      "method": ["byParts"],
+                      "origin": ["public"]
+                    }
+                  },
+                  {
+                    "id": "q-batch-109",
+                    "prompt": "Evaluate $\\int \\frac{1}{x^2+9} \\, \\mathrm{d}x$.",
+                    "answer": "$\\frac{1}{3}\\arctan\\left(\\frac{x}{3}\\right) + C$",
+                    "difficulty": 1,
+                    "tags": {
+                      "topic": ["integration"],
+                      "course": ["calc2", "VCE-yr12", "VCE-specialist", "HSC-yr12", "HSC-ext1", "HSC-ext2", "IB-AA-HL-yr12"],
+                      "method": ["inverseTrigRule"],
+                      "origin": ["public"]
+                    }
+                  },
+                  {
+                    "id": "q-batch-110",
+                    "prompt": "Evaluate $\\int \\frac{1}{\\sqrt{9-x^2}} \\, \\mathrm{d}x$.",
+                    "answer": "$\\arcsin\\left(\\frac{x}{3}\\right) + C$",
+                    "difficulty": 1,
+                    "tags": {
+                      "topic": ["integration"],
+                      "course": ["calc2", "VCE-yr12", "VCE-specialist", "HSC-yr12", "HSC-ext1", "HSC-ext2", "IB-AA-HL-yr12"],
+                      "method": ["inverseTrigRule"],
+                      "origin": ["public"]
+                    }
+                  },
+                  {
+                    "id": "q-batch-111",
+                    "prompt": "Evaluate $\\int \\frac{x^4+1}{x^3-x} \\, \\mathrm{d}x$.",
+                    "answer": "$\\frac{1}{2}x^2 - \\ln|x| + \\ln|x-1| + \\ln|x+1| + C$",
+                    "difficulty": 3,
+                    "tags": {
+                      "topic": ["integration"],
+                      "course": ["calc2", "VCE-yr12", "VCE-specialist", "HSC-yr12", "HSC-ext2", "IB-AA-HL-yr12"],
+                      "method": ["partialFractions"],
+                      "origin": ["public"]
+                    }
+                  },
+                  {
+                    "id": "q-batch-112",
+                    "prompt": "Evaluate $\\int \\arcsin(2x) \\, \\mathrm{d}x$.",
+                    "answer": "$x\\arcsin(2x) + \\frac{1}{2}\\sqrt{1-4x^2} + C$",
+                    "difficulty": 3,
+                    "tags": {
+                      "topic": ["integration"],
+                      "course": ["calc2", "HSC-yr12", "HSC-ext2", "IB-AA-HL-yr12"],
+                      "method": ["byParts"],
+                      "origin": ["public"]
+                    }
+                  }
 ]
