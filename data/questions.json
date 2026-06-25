@@ -1,266 +1,37 @@
 [
   {
-    "id": "q1",
-    "prompt": "Differentiate $f(x) = x^3$ using the power rule.",
-    "answer": "$f'(x) = 3x^2$",
-    "difficulty": 1,
+    "id": "2025-mm1-q1a",
+    "prompt": "Let $y = 2x \\cos(x)$. Find $\\frac{dy}{dx}$.",
+    "answer": "$2\\cos(x) - 2x\\sin(x)$",
+    "source": "VCE 2025 Mathematical Methods Exam 1, Q1a",
     "tags": {
-      "course": [
-        "calc1",
-        "AP-AB",
-        "VCE-yr11",
-        "VCE-methods",
-        "HSC-yr11",
-        "HSC-advanced",
-        "QCE-yr11",
-        "QCE-methods"
-      ],
       "topic": ["differentiation"],
-      "method": ["powerRule"],
-      "origin": ["public"]
-    }
-  },
-  {
-    "id": "q2",
-    "prompt": "This is a VCE differentiation question (chain rule).",
-    "answer": "Answer placeholder for q2.",
-    "difficulty": 2,
-    "tags": {
-      "course": [
-        "calc1",
-        "VCE-yr12",
-        "VCE-methods",
-        "WACE-yr12",
-        "WACE-methods",
-        "SACE-yr12",
-        "SACE-methods"
-      ],
-      "topic": ["differentiation"],
-      "method": ["chainRule"],
-      "origin": ["public"]
-    }
-  },
-  {
-    "id": "q3",
-    "prompt": "This is an HSC differentiation question (product rule).",
-    "answer": "Answer placeholder for q3.",
-    "difficulty": 2,
-    "tags": {
-      "course": [
-        "calc1",
-        "HSC-yr12",
-        "HSC-advanced",
-        "ACT-yr12",
-        "ACT-methods",
-        "TCE-yr12",
-        "TCE-methods"
-      ],
-      "topic": ["differentiation"],
+      "course": ["VCE-yr12", "VCE-methods"],
       "method": ["productRule"],
       "origin": ["public"]
     }
   },
   {
-    "id": "q4",
-    "prompt": "This is an IB differentiation question (quotient rule).",
-    "answer": "Answer placeholder for q4.",
-    "difficulty": 2,
+    "id": "2025-mm1-q1b",
+    "prompt": "Let $f(x) = \\sqrt{6x - 15}$. Find the gradient of the tangent to $y = f(x)$ at $x = 8$.",
+    "answer": "$1$",
+    "source": "VCE 2025 Mathematical Methods Exam 1, Q1b",
     "tags": {
-      "course": ["calc1", "IB-AA-SL-yr12", "IB-AA-HL-yr11", "VCE-methods", "HSC-advanced"],
       "topic": ["differentiation"],
-      "method": ["quotientRule"],
-      "origin": ["public"]
-    }
-  },
-  {
-    "id": "q5",
-    "prompt": "This is an AP differentiation question (chain rule).",
-    "answer": "Answer placeholder for q5.",
-    "difficulty": 3,
-    "tags": {
-      "course": [
-        "calc1",
-        "AP-AB",
-        "AP-BC",
-        "IB-AA-HL-yr12",
-        "HSC-ext1",
-        "VCE-specialist"
-      ],
-      "topic": ["differentiation"],
+      "course": ["VCE-yr12", "VCE-methods"],
       "method": ["chainRule"],
       "origin": ["public"]
     }
   },
   {
-    "id": "q6",
-    "prompt": "This is a calc1 / VCE integration question (u-substitution).",
-    "answer": "Answer placeholder for q6.",
-    "difficulty": 1,
+    "id": "2025-mm1-q2",
+    "prompt": "Let $g(x)$ be a function defined for $x > \\frac{3}{2}$ such that $g'(x) = \\frac{1}{2x - 3}$ and $g(2) = 0$. Find $g(x)$.",
+    "answer": "$g(x) = \\frac{1}{2} \\ln(2x - 3)$",
+    "source": "VCE 2025 Mathematical Methods Exam 1, Q2",
     "tags": {
-      "course": [
-        "calc1",
-        "VCE-yr11",
-        "VCE-methods",
-        "HSC-yr11",
-        "HSC-advanced",
-        "QCE-yr11",
-        "QCE-methods",
-        "AP-AB"
-      ],
       "topic": ["integration"],
-      "method": ["uSubstitution"],
-      "origin": ["public"]
-    }
-  },
-  {
-    "id": "q7",
-    "prompt": "This is a calc2 / AP integration question (u-substitution).",
-    "answer": "Answer placeholder for q7.",
-    "difficulty": 2,
-    "tags": {
-      "course": [
-        "calc2",
-        "AP-BC",
-        "HSC-yr12",
-        "HSC-ext1",
-        "VCE-yr12",
-        "VCE-specialist"
-      ],
-      "topic": ["integration"],
-      "method": ["uSubstitution"],
-      "origin": ["public"]
-    }
-  },
-  {
-    "id": "q8",
-    "prompt": "This is a calc2 / IB HL integration question (integration by parts).",
-    "answer": "Answer placeholder for q8.",
-    "difficulty": 3,
-    "tags": {
-      "course": [
-        "calc2",
-        "IB-AA-HL-yr12",
-        "AP-BC",
-        "VCE-specialist",
-        "HSC-ext1",
-        "QCE-specialist"
-      ],
-      "topic": ["integration"],
-      "method": ["integrationByParts"],
-      "origin": ["public"]
-    }
-  },
-  {
-    "id": "q9",
-    "prompt": "This is a calc2 / HSC Extension 2 integration question (partial fractions).",
-    "answer": "Answer placeholder for q9.",
-    "difficulty": 3,
-    "tags": {
-      "course": [
-        "calc2",
-        "HSC-yr12",
-        "HSC-ext2",
-        "WACE-yr12",
-        "WACE-specialist",
-        "SACE-yr12",
-        "SACE-specialist"
-      ],
-      "topic": ["integration"],
-      "method": ["partialFractions"],
-      "origin": ["public"]
-    }
-  },
-  {
-    "id": "q10",
-    "prompt": "This is a calc2 / IB HL / AP BC integration question (u-substitution + trig identity).",
-    "answer": "Answer placeholder for q10.",
-    "difficulty": 3,
-    "tags": {
-      "course": [
-        "calc2",
-        "IB-AA-HL-yr12",
-        "AP-BC",
-        "TCE-yr12",
-        "TCE-specialised",
-        "HSC-ext2",
-        "VCE-specialist"
-      ],
-      "topic": ["integration"],
-      "method": ["uSubstitution", "trigIdentity"],
-      "origin": ["public"]
-    }
-  },
-  {
-    "id": "q11",
-    "prompt": "User-added: differentiate $g(x) = 5x^4$.",
-    "answer": "$g'(x) = 20x^3$",
-    "difficulty": 1,
-    "tags": {
-      "course": ["calc1", "AP-AB"],
-      "topic": ["differentiation"],
+      "course": ["VCE-yr12", "VCE-methods"],
       "method": ["powerRule"],
-      "origin": ["user"]
-    }
-  },
-  {
-    "id": "q12",
-    "prompt": "Worksheet: differentiate $h(x) = 2x^5$ using the power rule.",
-    "answer": "$h'(x) = 10x^4$",
-    "difficulty": 1,
-    "tags": {
-      "course": ["calc1", "AP-AB"],
-      "topic": ["differentiation"],
-      "method": ["powerRule"],
-      "origin": ["public"],
-      "worksheet": ["ws-diff-01"]
-    }
-  },
-  {
-    "id": "q13",
-    "prompt": "Worksheet: evaluate $\\int 3x^2 \\, dx$ using basic integration.",
-    "answer": "$x^3 + C$",
-    "difficulty": 1,
-    "tags": {
-      "course": ["calc2", "AP-BC"],
-      "topic": ["integration"],
-      "method": ["uSubstitution"],
-      "origin": ["public"],
-      "worksheet": ["ws-int-01"]
-    }
-  },
-  {
-    "id": "q14",
-    "stem": "Let $f(x) = x^2 e^x$.",
-    "parts": [
-      {
-        "id": "a",
-        "prompt": "Find $f'(x)$.",
-        "answer": "$f'(x) = e^x(x^2 + 2x)$",
-        "tags": {
-          "topic": ["differentiation"],
-          "method": ["productRule"]
-        }
-      },
-      {
-        "id": "b",
-        "prompt": "Hence evaluate $\\int_0^1 f'(x)\\,dx$.",
-        "answer": "$f(1) - f(0) = e - 0 = e$",
-        "tags": {
-          "topic": ["integration"],
-          "method": ["uSubstitution"]
-        }
-      }
-    ],
-    "difficulty": 2,
-    "source": "multipart exemplar",
-    "tags": {
-      "course": [
-        "calc2",
-        "HSC-yr12",
-        "HSC-ext1",
-        "IB-AA-HL-yr12",
-        "AP-BC"
-      ],
       "origin": ["public"]
     }
   }

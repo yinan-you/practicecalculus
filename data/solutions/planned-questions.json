@@ -1,0 +1,56 @@
+[
+    {
+      "id": "2025-mm1-q1a",
+      "shape": "flat",
+      "content": {
+        "prompt": "Let $y = 2x \\cos(x)$. Find $\\frac{dy}{dx}$.",
+        "answer": "$2\\cos(x) - 2x\\sin(x)$"
+      },
+      "manualTags": {
+        "topic": ["differentiation"],
+        "course": ["VCE-yr12", "VCE-methods"],
+        "method": ["productRule"]
+      },
+      "meta": {
+        "origin": "public",
+        "source": "VCE 2025 Mathematical Methods Exam 1, Q1a",
+        "difficulty": null
+      }
+    },
+    {
+      "id": "2025-mm1-q1b",
+      "shape": "flat",
+      "content": {
+        "prompt": "Let $f(x) = \\sqrt{6x - 15}$. Find the gradient of the tangent to $y = f(x)$ at $x = 8$.",
+        "answer": "$1$"
+      },
+      "manualTags": {
+        "topic": ["differentiation"],
+        "course": ["VCE-yr12", "VCE-methods"],
+        "method": ["chainRule"]
+      },
+      "meta": {
+        "origin": "public",
+        "source": "VCE 2025 Mathematical Methods Exam 1, Q1b",
+        "difficulty": null
+      }
+    },
+    {
+      "id": "2025-mm1-q2",
+      "shape": "flat",
+      "content": {
+        "prompt": "Let $g(x)$ be a function defined for $x > \\frac{3}{2}$ such that $g'(x) = \\frac{1}{2x - 3}$ and $g(2) = 0$. Find $g(x)$.",
+        "answer": "$g(x) = \\frac{1}{2} \\ln(2x - 3)$"
+      },
+      "manualTags": {
+        "topic": ["integration"],
+        "course": ["VCE-yr12", "VCE-methods"],
+        "method": ["powerRule"]
+      },
+      "meta": {
+        "origin": "public",
+        "source": "VCE 2025 Mathematical Methods Exam 1, Q2",
+        "difficulty": null
+      }
+    }
+  ]
