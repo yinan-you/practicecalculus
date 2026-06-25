@@ -27,7 +27,7 @@
       "manualTags": {
         "topic": ["differentiation"],
         "course": ["VCE-yr12", "VCE-methods"],
-        "method": ["chainRule"]
+        "method": ["simpleChainRule"]
       },
       "meta": {
         "origin": "public",
@@ -45,7 +45,7 @@
       "manualTags": {
         "topic": ["integration"],
         "course": ["VCE-yr12", "VCE-methods"],
-        "method": ["powerRule"]
+        "method": ["simpleUSub"]
       },
       "meta": {
         "origin": "public",

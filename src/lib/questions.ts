@@ -58,14 +58,17 @@ export type CourseTag =
   | USCourseTag;
 
 export type MethodTag =
-  | "uSubstitution"
-  | "trigIdentity"
+  | "powerRule"
+  | "simpleChainRule"
   | "chainRule"
   | "productRule"
   | "quotientRule"
+  | "simpleUSub"
+  | "uSubstitution"
   | "integrationByParts"
   | "partialFractions"
-  | "powerRule";
+  | "trigIdentity"
+  | "other";
 
 export type SolutionSource = "manual" | "ai";
 
@@ -178,13 +181,16 @@ export const COURSE_TAGS: CourseTag[] = [
 
 export const METHOD_TAGS: MethodTag[] = [
   "powerRule",
+  "simpleChainRule",
   "chainRule",
   "productRule",
   "quotientRule",
+  "simpleUSub",
   "uSubstitution",
   "integrationByParts",
   "partialFractions",
   "trigIdentity",
+  "other",
 ];
 
 export const TOPICS: Topic[] = ["differentiation", "integration"];
@@ -254,6 +260,19 @@ export const FILTER_DIMENSIONS: FilterDimension[] = [
     multi: true,
     matchMode: "all",
     order: METHOD_TAGS,
+    labels: {
+      powerRule: "Power rule",
+      simpleChainRule: "Simple chain rule",
+      chainRule: "Chain rule",
+      productRule: "Product rule",
+      quotientRule: "Quotient rule",
+      simpleUSub: "Simple u-sub",
+      uSubstitution: "u-substitution",
+      integrationByParts: "Integration by parts",
+      partialFractions: "Partial fractions",
+      trigIdentity: "Trig identity",
+      other: "Other",
+    },
   },
 ];
 
