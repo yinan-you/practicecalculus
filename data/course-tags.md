@@ -22,11 +22,39 @@ Course tags live on `tags.course` and use `matchMode: "all"` (AND semantics). A 
 
 ---
 
+## Method tags
+
+Method tags live on `tags.method` (flat entry or each multipart part). They are independent of `course` tags — assign both dimensions. Method filter uses AND semantics within the dimension; across dimensions, filters are ANDed with `topic`, `course`, etc.
+
+**Full tagging rules:** `data/import-specv2.md` § Method tagging conventions.
+
+### Canonical method vocabulary
+
+| Tag | Topic | Meaning |
+|-----|-------|---------|
+| `powerRule` | differentiation | polynomials, $x^n$ |
+| `simpleChainRule` | differentiation | $f(g(x))$ where inner $g(x)=ax+b$ (linear) |
+| `chainRule` | differentiation | chain rule with **non-linear** inner function |
+| `productRule` | differentiation | product of two functions |
+| `quotientRule` | differentiation | quotient of two functions |
+| `simpleUSub` | integration | $f(ax+b)$ or $u=ax+b$ with straightforward $\frac{1}{a}$ adjustment |
+| `uSubstitution` | integration | non-obvious substitution or derivative-factor spotting |
+| `integrationByParts` | integration | $\int u\,dv$ |
+| `partialFractions` | integration | rational functions via partial fractions |
+| `trigIdentity` | integration | trig identity rewrite before integrating |
+| `other` | both | standard derivative/antiderivative recall (sin, cos, exp, log, etc.) |
+
+**Simple vs full:** *Simple* chain rule and u-sub mean the inner function is linear ($g(x)=ax+b$). Use `simpleChainRule` / `simpleUSub` for these — not `chainRule` / `uSubstitution`. Examples: $\frac{d}{dx}\sin(3x)$ → `simpleChainRule`; $\frac{d}{dx}\sin(x^2)$ → `chainRule`; $\int\cos(3x)\,dx$ → `simpleUSub`; $\int 2x\cos(x^2)\,dx$ → `uSubstitution`.
+
+**`other`:** Use when the student solves the problem primarily from memory of standard forms (e.g. $\frac{d}{dx}e^x$, $\int\sin x\,dx$). Pair with the appropriate `topic` tag.
+
+---
+
 ## Content levels
 
 ### `calc1` — Introductory calculus
 
-Questions at this level assume only basic polynomial, exponential, and simple trigonometric differentiation and integration. The student knows the power rule, basic chain rule with linear inner functions, and standard integrals.
+Questions at this level assume only basic polynomial, exponential, and simple trigonometric differentiation and integration. The student knows the power rule, chain rule with linear inner functions (`simpleChainRule`, `simpleUSub`), and standard derivatives/integrals (`other`).
 
 **Differentiation techniques in scope at calc1:**
 - Power rule: $\frac{d}{dx}[x^n] = nx^{n-1}$
@@ -43,13 +71,13 @@ Questions at this level assume only basic polynomial, exponential, and simple tr
 - Integration of $(ax+b)^n$ by inspection / linear substitution
 - Simple definite integrals
 
-**Not at calc1:** u-substitution with non-linear substitutions, integration by parts, partial fractions, trig identities in integration, inverse trig integrals.
+**Not at calc1:** u-substitution with non-linear substitutions (`uSubstitution`), integration by parts, partial fractions, trig identities in integration, inverse trig integrals.
 
 ---
 
 ### `calc2` — Intermediate/advanced calculus
 
-Questions at this level require techniques beyond calc1. Use `calc2` for questions involving u-substitution with non-trivial substitutions, integration by parts, partial fractions, trig identities, or inverse trig integrals.
+Questions at this level require techniques beyond calc1. Use `calc2` for questions involving `chainRule`, `uSubstitution`, `integrationByParts`, `partialFractions`, `trigIdentity`, or inverse trig integrals.
 
 **Additional differentiation techniques at calc2:**
 - Chain rule with non-linear compositions: $\frac{d}{dx}[f(g(x))]$ where $g$ is non-linear
@@ -125,9 +153,9 @@ All Methods content, plus:
 
 | Technique | calc level | VCE tags |
 |-----------|-----------|----------|
-| Power rule, basic chain rule | calc1 | `VCE-yr11` + `VCE-methods` |
-| Product/quotient rule, standard integrals | calc1 | `VCE-yr11` + `VCE-methods` or `VCE-yr12` + `VCE-methods` |
-| Complex chain rule, $\ln|f(x)|$ integral | calc1–calc2 | `VCE-yr12` + `VCE-methods` |
+| `powerRule`, `simpleChainRule` | calc1 | `VCE-yr11` + `VCE-methods` |
+| `productRule`, `quotientRule`, `other` | calc1 | `VCE-yr11` + `VCE-methods` or `VCE-yr12` + `VCE-methods` |
+| `chainRule`, `simpleUSub`, $\ln|f(x)|$ recognition | calc1–calc2 | `VCE-yr12` + `VCE-methods` |
 | Integration by parts | calc2 | `VCE-yr12` + `VCE-specialist` |
 | Partial fractions | calc2 | `VCE-yr12` + `VCE-specialist` |
 | Trig identity integrals | calc2 | `VCE-yr12` + `VCE-specialist` |
@@ -199,10 +227,11 @@ Extension 2 also involves proof by induction applied to calculus results (e.g. p
 
 | Technique | calc level | HSC tags |
 |-----------|-----------|----------|
-| Power/chain/product/quotient rule | calc1 | `HSC-yr11` + `HSC-advanced` |
-| Reverse chain rule, standard integrals | calc1 | `HSC-yr11` + `HSC-advanced` |
+| `powerRule`, `simpleChainRule`, `productRule`, `quotientRule` | calc1 | `HSC-yr11` + `HSC-advanced` |
+| `other`, `simpleUSub` (recognition / standard integrals) | calc1 | `HSC-yr11` + `HSC-advanced` |
+| `chainRule`, $\ln|f|$ recognition | calc1–calc2 | `HSC-yr12` + `HSC-advanced` |
 | Inverse trig derivatives/integrals | calc2 | `HSC-yr11` + `HSC-ext1` |
-| u-substitution | calc2 | `HSC-yr12` + `HSC-ext1` |
+| `uSubstitution` | calc2 | `HSC-yr12` + `HSC-ext1` |
 | Trig identity integrals | calc2 | `HSC-yr12` + `HSC-ext1` |
 | Integration by parts (standard) | calc2 | `HSC-yr12` + `HSC-ext1` |
 | Integration by parts (advanced/reduction) | calc2 | `HSC-yr12` + `HSC-ext2` |
@@ -285,12 +314,12 @@ All AI SL content plus:
 
 | Technique | calc level | IB tags |
 |-----------|-----------|---------|
-| Power rule, standard derivatives | calc1 | `IB-AA-SL-yr11`, `IB-AI-SL-yr11` |
-| Chain/product/quotient rule | calc1 | `IB-AA-SL-yr11` |
-| Standard antidifferentiation | calc1 | `IB-AA-SL-yr11`, `IB-AI-SL-yr11` |
-| Reverse chain rule / $f'/f$ integrals | calc1–calc2 | `IB-AA-SL-yr12` |
+| `powerRule`, standard derivatives (`other`) | calc1 | `IB-AA-SL-yr11`, `IB-AI-SL-yr11` |
+| `simpleChainRule`, `productRule`, `quotientRule` | calc1 | `IB-AA-SL-yr11` |
+| Standard antidifferentiation (`other`, `simpleUSub`) | calc1 | `IB-AA-SL-yr11`, `IB-AI-SL-yr11` |
+| Reverse chain rule / $f'/f$ integrals (`simpleUSub`) | calc1–calc2 | `IB-AA-SL-yr12` |
 | Inverse trig derivatives/integrals | calc2 | `IB-AA-HL-yr11` |
-| u-substitution (simple) | calc2 | `IB-AA-SL-yr12` |
+| `uSubstitution` | calc2 | `IB-AA-SL-yr12`, `IB-AA-HL-yr12` |
 | Integration by parts | calc2 | `IB-AA-HL-yr12` |
 | Trig identity integrals | calc2 | `IB-AA-HL-yr12` |
 | Reduction formulae | calc2 | `IB-AA-HL-yr12` |
@@ -300,21 +329,22 @@ All AI SL content plus:
 
 ## Cross-curriculum equivalence table
 
-For technique questions, the following curriculum levels are broadly equivalent and should be multi-tagged:
+For technique questions, the following curriculum levels are broadly equivalent and should be multi-tagged. Rows use canonical `method` tag names from `src/lib/questions.ts`.
 
-| Technique | VCE | HSC | IB | calc |
-|-----------|-----|-----|----|------|
-| Power rule | Meth yr11 | Adv yr11 | AA-SL-yr11, AI-SL-yr11 | calc1 |
-| Chain rule (linear inner) | Meth yr11 | Adv yr11 | AA-SL-yr11 | calc1 |
-| Product / quotient rule | Meth yr11 | Adv yr11 | AA-SL-yr11 | calc1 |
-| Standard integrals | Meth yr11 | Adv yr11 | AA-SL-yr11 | calc1 |
-| Complex chain rule, $\ln|f|$ | Meth yr12 | Adv yr12 | AA-SL-yr12 | calc1–2 |
+| Method tag | VCE | HSC | IB | calc |
+|------------|-----|-----|----|------|
+| `powerRule` | Meth yr11 | Adv yr11 | AA-SL-yr11, AI-SL-yr11 | calc1 |
+| `simpleChainRule` | Meth yr11 | Adv yr11 | AA-SL-yr11 | calc1 |
+| `productRule`, `quotientRule` | Meth yr11 | Adv yr11 | AA-SL-yr11 | calc1 |
+| `other` (standard derivatives/integrals) | Meth yr11 | Adv yr11 | AA-SL-yr11, AI-SL-yr11 | calc1 |
+| `simpleUSub` (linear argument / recognition) | Meth yr11–12 | Adv yr11–12 | AA-SL-yr11–12 | calc1 |
+| `chainRule` (non-linear inner) | Meth yr12 | Adv yr12 | AA-SL-yr12 | calc1–2 |
+| `uSubstitution` | Spec yr12 | Ext1 yr12 | AA-SL-yr12, AA-HL-yr12 | calc2 |
 | Inverse trig derivatives | Spec yr12 | Ext1 yr11 | AA-HL-yr11 | calc2 |
 | Inverse trig integrals | Spec yr12 | Ext1 yr11 | AA-HL-yr11 | calc2 |
-| u-substitution | Spec yr12 | Ext1 yr12 | AA-SL-yr12 | calc2 |
-| Trig identity integrals | Spec yr12 | Ext1 yr12 | AA-HL-yr12 | calc2 |
-| Integration by parts | Spec yr12 | Ext1 yr12 | AA-HL-yr12 | calc2 |
-| Partial fractions | Spec yr12 | Ext2 yr12 | AA-HL-yr12 | calc2 |
+| `trigIdentity` | Spec yr12 | Ext1 yr12 | AA-HL-yr12 | calc2 |
+| `integrationByParts` | Spec yr12 | Ext1 yr12 | AA-HL-yr12 | calc2 |
+| `partialFractions` | Spec yr12 | Ext2 yr12 | AA-HL-yr12 | calc2 |
 | Reduction formulae | Spec yr12 | Ext2 yr12 | AA-HL-yr12 | calc2 |
 
 ---
@@ -355,6 +385,6 @@ Before approving `course-tags.md`:
 
 - [ ] Every **in-scope** tag (`calc1`, `calc2`, `VCE-yr11`, `VCE-yr12`, `VCE-methods`, `VCE-specialist`, `HSC-yr11`, `HSC-yr12`, `HSC-advanced`, `HSC-ext1`, `HSC-ext2`, all 8 `IB-*` tags) has a full calculus techniques description
 - [ ] Every **deferred** tag has an honest stub — no invented syllabus detail
-- [ ] The cross-curriculum equivalence table covers all 8 method tags: `powerRule`, `chainRule`, `productRule`, `quotientRule`, `uSubstitution`, `integrationByParts`, `partialFractions`, `trigIdentity`
+- [ ] The cross-curriculum equivalence table covers all 11 method tags: `powerRule`, `simpleChainRule`, `chainRule`, `productRule`, `quotientRule`, `simpleUSub`, `uSubstitution`, `integrationByParts`, `partialFractions`, `trigIdentity`, `other`
 - [ ] No applications, differential equations, or kinematics content has crept into technique descriptions
 - [ ] Primary sources (VCAA study design, NESA syllabus, IB subject guide) are consistent with the technique scope described

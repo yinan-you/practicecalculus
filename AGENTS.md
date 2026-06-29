@@ -189,11 +189,21 @@ Tags are grouped into **dimensions** (`TagMap = Record<string, string[]>`). Each
 ### Closed vocabularies (defined in `src/lib/questions.ts`)
 
 - **Topics:** `differentiation`, `integration`
-- **Methods:** `powerRule`, `chainRule`, `productRule`, `quotientRule`, `uSubstitution`, `integrationByParts`, `partialFractions`, `trigIdentity`
+- **Methods:** `powerRule`, `simpleChainRule`, `chainRule`, `productRule`, `quotientRule`, `simpleUSub`, `uSubstitution`, `integrationByParts`, `partialFractions`, `trigIdentity`, `other`
 - **Origin:** `public`, `user`
 - **Course tags:** content levels (`calc1`, `calc2`), Australian year/stream tags, IB tags, US AP tags — full lists in `COURSE_TAGS` and documented in `data/course-tags.md`
 
 Adding a **new canonical tag** requires updating `src/lib/questions.ts` (and usually `data/course-tags.md`). The TypeScript unions are intentionally closed for data quality.
+
+### Method tagging conventions
+
+Full tagging guide for importers: `data/import-specv2.md` § Method tagging conventions. Summary:
+
+- **`simpleChainRule` / `simpleUSub`** — inner function is linear ($g(x)=ax+b$). Often taught without naming substitution (e.g. $\frac{d}{dx}\sin(3x)$, $\int\cos(3x)\,dx$).
+- **`chainRule` / `uSubstitution`** — same techniques when the inner function is **not** linear or the substitution is non-obvious.
+- **`other`** — standard derivative/antiderivative recall (sin, cos, exp, log, etc.); pair with the appropriate `topic`. Prefer over an empty `method` array.
+
+Do not use the full-rule tags when the simple variant applies.
 
 ### Course tagging conventions
 

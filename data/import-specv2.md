@@ -165,7 +165,7 @@ After validation, publish into the existing app shape.
 Required:
 - `manualTags.topic` exactly one value
 - `manualTags.course` one or more values
-- `manualTags.method` present (may be an empty array if intentionally no named method)
+- `manualTags.method` present (prefer `other` when no named technique applies; empty array allowed only if deliberately untagged)
 - `meta.origin` (`public` or `user`)
 
 ### Multipart candidates
@@ -173,7 +173,7 @@ Required:
 Required:
 - parent `manualTags.course` one or more values
 - each part has `manualTags.topic` exactly one value
-- each part has `manualTags.method` present (may be empty)
+- each part has `manualTags.method` present (prefer `other` when no named technique applies)
 - `meta.origin` (`public` or `user`)
 
 ---
@@ -209,11 +209,51 @@ Forbidden:
 Use only canonical tags from `src/lib/questions.ts`:
 
 - **topic:** `differentiation`, `integration`
-- **method:** `powerRule`, `chainRule`, `productRule`, `quotientRule`, `uSubstitution`, `integrationByParts`, `partialFractions`, `trigIdentity`
+- **method:** `powerRule`, `simpleChainRule`, `chainRule`, `productRule`, `quotientRule`, `simpleUSub`, `uSubstitution`, `integrationByParts`, `partialFractions`, `trigIdentity`, `other`
 - **origin:** `public`, `user`
 - **course:** values from `COURSE_TAGS` and policy in `data/course-tags.md`
 
 Do not invent new tag strings in import or publish output.
+
+---
+
+## Method tagging conventions
+
+Tag the **primary** technique a student is expected to use. A question may carry multiple method tags when it genuinely requires more than one named technique.
+
+### Simple vs full chain rule / u-sub
+
+**Simple** means the inner function is **linear** ($g(x)=ax+b$). These are often taught without explicitly naming substitution, but they are still chain-rule or u-sub problems in disguise.
+
+| Tag | Topic | Use when | Examples |
+|-----|-------|----------|----------|
+| `simpleChainRule` | differentiation | $f(g(x))$ with linear $g$ | $\frac{d}{dx}\sin(3x)$, $\frac{d}{dx}e^{2x+1}$, $\frac{d}{dx}\sqrt{6x-15}$ |
+| `chainRule` | differentiation | chain rule with **non-linear** inner | $\frac{d}{dx}\sin(x^2)$, $\frac{d}{dx}\ln(x^2+1)$ |
+| `simpleUSub` | integration | $f(ax+b)$ or $u=ax+b$ with a straightforward $\frac{1}{a}$ adjustment | $\int\cos(3x)\,dx$, $\int e^{2x}\,dx$, $\int\frac{1}{2x-3}\,dx$ |
+| `uSubstitution` | integration | non-obvious $u$ or need to spot a derivative factor | $\int 2x\cos(x^2)\,dx$, $\int x\sqrt{x^2+1}\,dx$ |
+
+Do **not** use `chainRule` when `simpleChainRule` applies, or `uSubstitution` when `simpleUSub` applies.
+
+### Standard formulas (`other`)
+
+Use `other` when the question is solved primarily by recalling a standard derivative or antiderivative — no named rule beyond memory. The same tag applies on both topics; pair it with `topic: differentiation` or `topic: integration` as appropriate.
+
+Examples:
+- differentiation: $\frac{d}{dx}\sin x$, $\frac{d}{dx}e^x$, $\frac{d}{dx}\ln x$
+- integration: $\int\sin x\,dx$, $\int e^x\,dx$, $\int\frac{1}{x}\,dx$
+
+Prefer `other` over an empty `method` array for these cases.
+
+### Other named methods
+
+| Tag | Topic | Use when |
+|-----|-------|----------|
+| `powerRule` | differentiation | polynomials, $x^n$ |
+| `productRule` | differentiation | product of two functions |
+| `quotientRule` | differentiation | quotient of two functions |
+| `integrationByParts` | integration | $\int u\,dv$ |
+| `partialFractions` | integration | rational functions decomposed into partial fractions |
+| `trigIdentity` | integration | trig identity rewrite before integrating |
 
 ---
 
