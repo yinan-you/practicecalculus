@@ -211,7 +211,7 @@ Forbidden:
 Use only canonical tags from `src/lib/questions.ts`:
 
 - **topic:** `differentiation`, `integration`
-- **method:** `simple`, `polynomial`, `powerRule`, `exp`, `log`, `trig`, `inverseTrig`, `linearity`, `simpleChainRule`, `chainRule`, `productRule`, `quotientRule`, `simpleUSub`, `uSubstitution`, `integrationByParts`, `partialFractions`, `trigIdentity`
+- **method:** `simple`, `polynomial`, `powerRule`, `exp`, `log`, `trig`, `inverseTrig`, `hyperbolic`, `inverseHyperbolic`, `linearity`, `simpleChainRule`, `chainRule`, `productRule`, `quotientRule`, `simpleUSub`, `uSubstitution`, `integrationByParts`, `partialFractions`, `trigIdentity`
 - **origin:** `public`, `user`
 - **course:** values from `COURSE_TAGS` and policy in `data/course-tags.md`
 
@@ -227,7 +227,7 @@ Method tags describe the expression families, structures, and techniques a stude
 |------|------|------|
 | Descriptor | `simple` | Direct recall or a single standard form; no composition, product, quotient, substitution, or multi-term structure required |
 | Descriptor | `polynomial` | The whole expression being differentiated or integrated is a polynomial |
-| Elementary family | `powerRule`, `exp`, `log`, `trig`, `inverseTrig` | Tag whenever that family appears, even if another technique also applies |
+| Elementary family | `powerRule`, `exp`, `log`, `trig`, `inverseTrig`, `hyperbolic`, `inverseHyperbolic` | Tag whenever that family appears, even if another technique also applies |
 | Structure | `linearity` | Two or more terms are combined term-by-term by sum/difference or constant multiple rules |
 | Technique | `simpleChainRule`, `chainRule`, `productRule`, `quotientRule`, `simpleUSub`, `uSubstitution`, `integrationByParts`, `partialFractions`, `trigIdentity` | Tag when that named technique is required |
 
@@ -238,10 +238,12 @@ Tag `simple` when the question is solved by **direct recall** of a standard deri
 Examples:
 - $\frac{d}{dx}\ln x$ → `log`, `simple`
 - $\int\sin x\,dx$ → `trig`, `simple`
+- $\frac{d}{dx}\sinh x$ → `hyperbolic`, `simple`
 - $\frac{d}{dx}[x^3]$ → `polynomial`, `powerRule`, `simple`
 
 Do **not** tag `simple` when any compound technique applies:
 - $\frac{d}{dx}\sin(3x)$ → `trig`, `simpleChainRule` (no `simple`)
+- $\frac{d}{dx}\sinh(3x)$ → `hyperbolic`, `simpleChainRule` (no `simple`)
 - $\frac{d}{dx}[2\ln x + 1]$ → `linearity`, `log` (no `simple`)
 - $\frac{d}{dx}[x^2 e^x]$ → `productRule`, `powerRule`, `exp` (no `simple`)
 
@@ -255,7 +257,7 @@ Tag `polynomial` when the **entire** expression being differentiated or integrat
 
 ### Family and technique tags
 
-Use elementary family tags whenever the family appears: `exp` for exponential functions, `log` for logarithmic forms including $\frac{1}{x}$ / $\ln|x|$, `trig` for trigonometric functions, and `inverseTrig` for inverse trig derivatives or integrals. `powerRule` applies to powers $x^n$ and power-form antiderivatives.
+Use elementary family tags whenever the family appears: `exp` for exponential functions, `log` for logarithmic forms including $\frac{1}{x}$ / $\ln|x|$, `trig` for trigonometric functions, `inverseTrig` for inverse trig derivatives or integrals, `hyperbolic` for hyperbolic functions such as $\sinh x$, $\cosh x$, $\tanh x$, and `inverseHyperbolic` for inverse hyperbolic derivatives or integrals. `powerRule` applies to powers $x^n$ and power-form antiderivatives.
 
 Use `simpleChainRule` / `simpleUSub` when the inner function or substitution is linear ($g(x)=ax+b$). Use `chainRule` / `uSubstitution` for non-linear inner functions or non-obvious substitutions. Do **not** use the full-rule tag when the simple variant applies.
 

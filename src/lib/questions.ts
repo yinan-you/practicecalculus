@@ -65,6 +65,8 @@ export type MethodTag =
   | "log"
   | "trig"
   | "inverseTrig"
+  | "hyperbolic"
+  | "inverseHyperbolic"
   | "linearity"
   | "simpleChainRule"
   | "chainRule"
@@ -193,6 +195,8 @@ export const METHOD_TAGS: MethodTag[] = [
   "log",
   "trig",
   "inverseTrig",
+  "hyperbolic",
+  "inverseHyperbolic",
   "linearity",
   "simpleChainRule",
   "chainRule",
@@ -280,6 +284,8 @@ export const FILTER_DIMENSIONS: FilterDimension[] = [
       log: "Logarithmic",
       trig: "Trigonometric",
       inverseTrig: "Inverse trig",
+      hyperbolic: "Hyperbolic",
+      inverseHyperbolic: "Inverse hyperbolic",
       linearity: "Linearity",
       simpleChainRule: "Simple chain rule",
       chainRule: "Chain rule",

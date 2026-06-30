@@ -115,6 +115,8 @@ Choose from the closed vocabulary:
 | `log` | Logarithmic forms, including $\ln x$, $\frac{1}{x}$, and $\ln|f(x)|$ |
 | `trig` | Trigonometric functions such as $\sin x$, $\cos x$, $\tan x$ |
 | `inverseTrig` | Inverse trig derivatives or integrals |
+| `hyperbolic` | Hyperbolic functions such as $\sinh x$, $\cosh x$, $\tanh x$ |
+| `inverseHyperbolic` | Inverse hyperbolic derivatives or integrals |
 | `linearity` | Two or more terms handled term-by-term |
 | `simpleChainRule` | Differentiating $f(g(x))$ where inner $g(x)=ax+b$ is linear |
 | `chainRule` | Differentiating a composition with a non-linear inner function |

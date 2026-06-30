@@ -39,6 +39,8 @@ Method tags live on `tags.method` (flat entry or each multipart part). They are 
 | `log` | both | logarithmic forms, including $\ln x$, $\frac{1}{x}$, and $\ln|f(x)|$ |
 | `trig` | both | trigonometric functions such as $\sin x$, $\cos x$, $\tan x$ |
 | `inverseTrig` | both | inverse trig derivatives or integrals |
+| `hyperbolic` | both | hyperbolic functions such as $\sinh x$, $\cosh x$, $\tanh x$ |
+| `inverseHyperbolic` | both | inverse hyperbolic derivatives or integrals |
 | `linearity` | both | two or more terms handled term-by-term |
 | `simpleChainRule` | differentiation | $f(g(x))$ where inner $g(x)=ax+b$ (linear) |
 | `chainRule` | differentiation | chain rule with **non-linear** inner function |
@@ -54,7 +56,7 @@ Method tags live on `tags.method` (flat entry or each multipart part). They are 
 
 **`polynomial`:** Use only when the whole expression is a polynomial. A single monomial usually carries `polynomial`, `powerRule`, and `simple`; a multi-term polynomial carries `polynomial`, `powerRule`, and `linearity`.
 
-**Simple vs full:** *Simple* chain rule and u-sub mean the inner function is linear ($g(x)=ax+b$). Use `simpleChainRule` / `simpleUSub` for these — not `chainRule` / `uSubstitution`. Examples: $\frac{d}{dx}\sin(3x)$ → `trig`, `simpleChainRule`; $\frac{d}{dx}\sin(x^2)$ → `trig`, `chainRule`; $\int\cos(3x)\,dx$ → `trig`, `simpleUSub`; $\int 2x\cos(x^2)\,dx$ → `trig`, `uSubstitution`.
+**Simple vs full:** *Simple* chain rule and u-sub mean the inner function is linear ($g(x)=ax+b$). Use `simpleChainRule` / `simpleUSub` for these — not `chainRule` / `uSubstitution`. Examples: $\frac{d}{dx}\sin(3x)$ → `trig`, `simpleChainRule`; $\frac{d}{dx}\sin(x^2)$ → `trig`, `chainRule`; $\int\cos(3x)\,dx$ → `trig`, `simpleUSub`; $\int 2x\cos(x^2)\,dx$ → `trig`, `uSubstitution`; $\frac{d}{dx}\sinh(3x)$ → `hyperbolic`, `simpleChainRule`; $\int\cosh(2x)\,dx$ → `hyperbolic`, `simpleUSub`.
 
 ---
 
@@ -79,13 +81,13 @@ Questions at this level assume only basic polynomial, exponential, logarithmic, 
 - Integration of $(ax+b)^n$ by inspection / linear substitution
 - Simple definite integrals
 
-**Not at calc1:** u-substitution with non-linear substitutions (`uSubstitution`), integration by parts, partial fractions, trig identities in integration, inverse trig integrals.
+**Not at calc1:** u-substitution with non-linear substitutions (`uSubstitution`), integration by parts, partial fractions, trig identities in integration, inverse trig integrals, hyperbolic and inverse hyperbolic derivatives/integrals.
 
 ---
 
 ### `calc2` — Intermediate/advanced calculus
 
-Questions at this level require techniques beyond calc1. Use `calc2` for questions involving `chainRule`, `uSubstitution`, `integrationByParts`, `partialFractions`, `trigIdentity`, or inverse trig integrals.
+Questions at this level require techniques beyond calc1. Use `calc2` for questions involving `chainRule`, `uSubstitution`, `integrationByParts`, `partialFractions`, `trigIdentity`, inverse trig integrals, or hyperbolic / inverse hyperbolic derivatives and integrals.
 
 **Additional differentiation techniques at calc2:**
 - Chain rule with non-linear compositions: $\frac{d}{dx}[f(g(x))]$ where $g$ is non-linear
@@ -93,6 +95,8 @@ Questions at this level require techniques beyond calc1. Use `calc2` for questio
 - Quotient rule in complex settings
 - Implicit differentiation
 - Derivatives of inverse trig functions: $\frac{d}{dx}[\arcsin x]$, $\frac{d}{dx}[\arctan x]$
+- Derivatives of hyperbolic functions: $\frac{d}{dx}[\sinh x]$, $\frac{d}{dx}[\cosh x]$, $\frac{d}{dx}[\tanh x]$
+- Derivatives of inverse hyperbolic functions: $\frac{d}{dx}[\sinh^{-1} x]$, $\frac{d}{dx}[\tanh^{-1} x]$
 
 **Additional integration techniques at calc2:**
 - u-substitution with non-linear substitutions
@@ -101,6 +105,7 @@ Questions at this level require techniques beyond calc1. Use `calc2` for questio
 - Trig identity integrals: using $\sin^2 x + \cos^2 x = 1$, double angle formulas
 - Integrals of the form $\int \frac{1}{a^2+x^2}\,dx = \frac{1}{a}\arctan\frac{x}{a} + C$
 - Integrals of the form $\int \frac{1}{\sqrt{a^2-x^2}}\,dx = \arcsin\frac{x}{a} + C$
+- Standard hyperbolic integrals: $\int \sinh x\,dx$, $\int \cosh x\,dx$, $\int \frac{1}{\sqrt{x^2+1}}\,dx$ (inverse hyperbolic forms)
 - Reduction formulae (Specialist / Ext 2 / IB AA HL)
 
 ---
@@ -139,7 +144,7 @@ All of the above, plus:
 - $\int \frac{f'(x)}{f(x)}\,dx = \ln|f(x)| + C$ by recognition
 - Definite integrals (technique, not application)
 
-*Out of scope for Methods:* integration by parts, partial fractions, trig identity integration, inverse trig derivatives/integrals — these belong to Specialist.
+*Out of scope for Methods:* integration by parts, partial fractions, trig identity integration, inverse trig derivatives/integrals — these belong to Specialist. Hyperbolic and inverse hyperbolic techniques are also out of scope for both Methods and Specialist.
 
 #### VCE Specialist Mathematics — calculus techniques scope
 
@@ -168,6 +173,8 @@ All Methods content, plus:
 | Partial fractions | calc2 | `VCE-yr12` + `VCE-specialist` |
 | Trig identity integrals | calc2 | `VCE-yr12` + `VCE-specialist` |
 | Inverse trig derivatives/integrals | calc2 | `VCE-yr12` + `VCE-specialist` |
+| `hyperbolic` derivatives/integrals | calc2 | `calc2` only (not VCE) |
+| `inverseHyperbolic` derivatives/integrals | calc2 | `calc2` only (not VCE) |
 
 ---
 
@@ -352,6 +359,9 @@ For technique questions, the following curriculum levels are broadly equivalent 
 | `uSubstitution` | Spec yr12 | Ext1 yr12 | AA-SL-yr12, AA-HL-yr12 | calc2 |
 | `inverseTrig` derivatives | Spec yr12 | Ext1 yr11 | AA-HL-yr11 | calc2 |
 | `inverseTrig` integrals | Spec yr12 | Ext1 yr11 | AA-HL-yr11 | calc2 |
+| `hyperbolic` (standard derivatives/integrals) | — | — | — | calc2 |
+| `inverseHyperbolic` derivatives | — | — | — | calc2 |
+| `inverseHyperbolic` integrals | — | — | — | calc2 |
 | `trigIdentity` | Spec yr12 | Ext1 yr12 | AA-HL-yr12 | calc2 |
 | `integrationByParts` | Spec yr12 | Ext1 yr12 | AA-HL-yr12 | calc2 |
 | `partialFractions` | Spec yr12 | Ext2 yr12 | AA-HL-yr12 | calc2 |
@@ -395,6 +405,6 @@ Before approving `course-tags.md`:
 
 - [ ] Every **in-scope** tag (`calc1`, `calc2`, `VCE-yr11`, `VCE-yr12`, `VCE-methods`, `VCE-specialist`, `HSC-yr11`, `HSC-yr12`, `HSC-advanced`, `HSC-ext1`, `HSC-ext2`, all 8 `IB-*` tags) has a full calculus techniques description
 - [ ] Every **deferred** tag has an honest stub — no invented syllabus detail
-- [ ] The cross-curriculum equivalence table covers the method vocabulary: `simple`, `polynomial`, `powerRule`, `exp`, `log`, `trig`, `inverseTrig`, `linearity`, `simpleChainRule`, `chainRule`, `productRule`, `quotientRule`, `simpleUSub`, `uSubstitution`, `integrationByParts`, `partialFractions`, `trigIdentity`
+- [ ] The cross-curriculum equivalence table covers the method vocabulary: `simple`, `polynomial`, `powerRule`, `exp`, `log`, `trig`, `inverseTrig`, `hyperbolic`, `inverseHyperbolic`, `linearity`, `simpleChainRule`, `chainRule`, `productRule`, `quotientRule`, `simpleUSub`, `uSubstitution`, `integrationByParts`, `partialFractions`, `trigIdentity`
 - [ ] No applications, differential equations, or kinematics content has crept into technique descriptions
 - [ ] Primary sources (VCAA study design, NESA syllabus, IB subject guide) are consistent with the technique scope described
