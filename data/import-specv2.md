@@ -2,7 +2,7 @@
 
 **specVersion: 2**
 
-This document defines the canonical import workflow for populating `data/questions.json` using a **manual-tagged** process.
+This document defines the canonical import workflow for populating `data/questions.json` using a **curator-reviewed tagged** process.
 
 Primary goal: preserve reliable ground-truth labels for future expansion of taxonomy/classes.
 
@@ -12,10 +12,10 @@ Phase 1 scope: differentiation and integration **techniques** only. No applicati
 
 ## Design principles
 
-1. **Manual tags are authoritative.**
-   All classification tags (`course`, `topic`, `method`) are provided by a human.
-2. **No model-based tag prediction.**
-   LLMs are not used to infer or suggest tags.
+1. **Curated tags are authoritative.**
+   All classification tags (`course`, `topic`, `method`) are reviewed before publish.
+2. **LLM-assigned tags are allowed only as curated input.**
+   LLMs may draft tags during import, but published tags must follow this spec and closed vocabularies.
 3. **Canonical output remains stable.**
    Published records in `data/questions.json` keep the existing runtime shape expected by `loadQuestions()`.
 4. **Import and publish contracts are explicit.**
@@ -27,7 +27,7 @@ Phase 1 scope: differentiation and integration **techniques** only. No applicati
 
 1. **Extract** raw question content (e.g., textbook, past exam, teacher notes).
 2. **Structure** into flat/multipart candidate shape.
-3. **Assign manual tags** (`course`, `topic`, `method`) in correct ownership locations.
+3. **Assign and review tags** (`course`, `topic`, `method`) in correct ownership locations.
 4. **Validate** shape, ownership, and vocabulary rules.
 5. **Publish** canonical entries to `data/questions.json`.
 
@@ -57,7 +57,7 @@ Each candidate is either `flat` or `multipart`.
   "manualTags": {
     "topic": ["differentiation"],
     "course": ["calc1", "VCE-yr11", "VCE-methods"],
-    "method": ["powerRule"]
+    "method": ["polynomial", "powerRule", "simple"]
   },
   "meta": {
     "origin": "public",
@@ -82,7 +82,7 @@ Each candidate is either `flat` or `multipart`.
         "answer": "$e^x(x^2+2x)$",
         "manualTags": {
           "topic": ["differentiation"],
-          "method": ["productRule"]
+          "method": ["powerRule", "exp", "productRule"]
         }
       },
       {
@@ -91,7 +91,7 @@ Each candidate is either `flat` or `multipart`.
         "answer": "$e-1$",
         "manualTags": {
           "topic": ["integration"],
-          "method": ["uSubstitution"]
+          "method": ["powerRule", "exp", "uSubstitution"]
         }
       }
     ]
@@ -123,7 +123,7 @@ After validation, publish into the existing app shape.
   "tags": {
     "topic": ["differentiation"],
     "course": ["calc1", "VCE-yr11", "VCE-methods"],
-    "method": ["powerRule"],
+    "method": ["polynomial", "powerRule", "simple"],
     "origin": ["public"]
   }
 }
@@ -140,13 +140,13 @@ After validation, publish into the existing app shape.
       "id": "a",
       "prompt": "Find $f'(x)$.",
       "answer": "$f'(x) = e^x(x^2 + 2x)$",
-      "tags": { "topic": ["differentiation"], "method": ["productRule"] }
+      "tags": { "topic": ["differentiation"], "method": ["powerRule", "exp", "productRule"] }
     },
     {
       "id": "b",
       "prompt": "Hence evaluate $\\int_0^1 f'(x)\\,dx$.",
       "answer": "$e - 1$",
-      "tags": { "topic": ["integration"], "method": ["uSubstitution"] }
+      "tags": { "topic": ["integration"], "method": ["powerRule", "exp", "uSubstitution"] }
     }
   ],
   "tags": {
@@ -158,14 +158,14 @@ After validation, publish into the existing app shape.
 
 ---
 
-## Manual tag requirements
+## Tag requirements
 
 ### Flat candidates
 
 Required:
 - `manualTags.topic` exactly one value
 - `manualTags.course` one or more values
-- `manualTags.method` present (prefer `other` when no named technique applies; empty array allowed only if deliberately untagged)
+- `manualTags.method` present (use family tags plus `simple` for direct standard-form recall; empty array allowed only if deliberately untagged)
 - `meta.origin` (`public` or `user`)
 
 ### Multipart candidates
@@ -173,7 +173,7 @@ Required:
 Required:
 - parent `manualTags.course` one or more values
 - each part has `manualTags.topic` exactly one value
-- each part has `manualTags.method` present (prefer `other` when no named technique applies)
+- each part has `manualTags.method` present (use family tags plus `simple` for direct standard-form recall)
 - `meta.origin` (`public` or `user`)
 
 ---
@@ -191,16 +191,18 @@ Required:
 
 ## LLM usage boundary
 
-LLMs may be used for formatting or structuring assistance only.
+LLMs may be used for formatting, structuring, and draft tag assignment.
 
 Allowed:
 - convert source text to structured prompt/answer/parts JSON
 - normalize formatting and LaTeX escaping
+- assign or suggest `course`, `topic`, and `method` tags from the closed vocabularies
 - draft optional human-facing notes
 
 Forbidden:
-- assigning, suggesting, or editing `course`, `topic`, or `method`
-- changing shape decisions (`flat` vs `multipart`) after manual curation
+- publishing unreviewed LLM tags as ground truth
+- inventing tag strings outside the closed vocabularies
+- changing shape decisions (`flat` vs `multipart`) after curation without review
 
 ---
 
@@ -209,7 +211,7 @@ Forbidden:
 Use only canonical tags from `src/lib/questions.ts`:
 
 - **topic:** `differentiation`, `integration`
-- **method:** `powerRule`, `simpleChainRule`, `chainRule`, `productRule`, `quotientRule`, `simpleUSub`, `uSubstitution`, `integrationByParts`, `partialFractions`, `trigIdentity`, `other`
+- **method:** `simple`, `polynomial`, `powerRule`, `exp`, `log`, `trig`, `inverseTrig`, `linearity`, `simpleChainRule`, `chainRule`, `productRule`, `quotientRule`, `simpleUSub`, `uSubstitution`, `integrationByParts`, `partialFractions`, `trigIdentity`
 - **origin:** `public`, `user`
 - **course:** values from `COURSE_TAGS` and policy in `data/course-tags.md`
 
@@ -219,41 +221,43 @@ Do not invent new tag strings in import or publish output.
 
 ## Method tagging conventions
 
-Tag the **primary** technique a student is expected to use. A question may carry multiple method tags when it genuinely requires more than one named technique.
+Method tags describe the expression families, structures, and techniques a student must recognize. A question may carry multiple method tags; tag conservatively but completely so AND filters behave usefully.
 
-### Simple vs full chain rule / u-sub
+| Kind | Tags | Rule |
+|------|------|------|
+| Descriptor | `simple` | Direct recall or a single standard form; no composition, product, quotient, substitution, or multi-term structure required |
+| Descriptor | `polynomial` | The whole expression being differentiated or integrated is a polynomial |
+| Elementary family | `powerRule`, `exp`, `log`, `trig`, `inverseTrig` | Tag whenever that family appears, even if another technique also applies |
+| Structure | `linearity` | Two or more terms are combined term-by-term by sum/difference or constant multiple rules |
+| Technique | `simpleChainRule`, `chainRule`, `productRule`, `quotientRule`, `simpleUSub`, `uSubstitution`, `integrationByParts`, `partialFractions`, `trigIdentity` | Tag when that named technique is required |
 
-**Simple** means the inner function is **linear** ($g(x)=ax+b$). These are often taught without explicitly naming substitution, but they are still chain-rule or u-sub problems in disguise.
+### `simple`
 
-| Tag | Topic | Use when | Examples |
-|-----|-------|----------|----------|
-| `simpleChainRule` | differentiation | $f(g(x))$ with linear $g$ | $\frac{d}{dx}\sin(3x)$, $\frac{d}{dx}e^{2x+1}$, $\frac{d}{dx}\sqrt{6x-15}$ |
-| `chainRule` | differentiation | chain rule with **non-linear** inner | $\frac{d}{dx}\sin(x^2)$, $\frac{d}{dx}\ln(x^2+1)$ |
-| `simpleUSub` | integration | $f(ax+b)$ or $u=ax+b$ with a straightforward $\frac{1}{a}$ adjustment | $\int\cos(3x)\,dx$, $\int e^{2x}\,dx$, $\int\frac{1}{2x-3}\,dx$ |
-| `uSubstitution` | integration | non-obvious $u$ or need to spot a derivative factor | $\int 2x\cos(x^2)\,dx$, $\int x\sqrt{x^2+1}\,dx$ |
-
-Do **not** use `chainRule` when `simpleChainRule` applies, or `uSubstitution` when `simpleUSub` applies.
-
-### Standard formulas (`other`)
-
-Use `other` when the question is solved primarily by recalling a standard derivative or antiderivative — no named rule beyond memory. The same tag applies on both topics; pair it with `topic: differentiation` or `topic: integration` as appropriate.
+Tag `simple` when the question is solved by **direct recall** of a standard derivative or antiderivative, with no named composition/structural technique beyond the family tag itself.
 
 Examples:
-- differentiation: $\frac{d}{dx}\sin x$, $\frac{d}{dx}e^x$, $\frac{d}{dx}\ln x$
-- integration: $\int\sin x\,dx$, $\int e^x\,dx$, $\int\frac{1}{x}\,dx$
+- $\frac{d}{dx}\ln x$ → `log`, `simple`
+- $\int\sin x\,dx$ → `trig`, `simple`
+- $\frac{d}{dx}[x^3]$ → `polynomial`, `powerRule`, `simple`
 
-Prefer `other` over an empty `method` array for these cases.
+Do **not** tag `simple` when any compound technique applies:
+- $\frac{d}{dx}\sin(3x)$ → `trig`, `simpleChainRule` (no `simple`)
+- $\frac{d}{dx}[2\ln x + 1]$ → `linearity`, `log` (no `simple`)
+- $\frac{d}{dx}[x^2 e^x]$ → `productRule`, `powerRule`, `exp` (no `simple`)
 
-### Other named methods
+### `polynomial`
 
-| Tag | Topic | Use when |
-|-----|-------|----------|
-| `powerRule` | differentiation | polynomials, $x^n$ |
-| `productRule` | differentiation | product of two functions |
-| `quotientRule` | differentiation | quotient of two functions |
-| `integrationByParts` | integration | $\int u\,dv$ |
-| `partialFractions` | integration | rational functions decomposed into partial fractions |
-| `trigIdentity` | integration | trig identity rewrite before integrating |
+Tag `polynomial` when the **entire** expression being differentiated or integrated is a polynomial, not when a polynomial appears only as a factor or inner function.
+
+- Single monomial $cx^n$ → `polynomial`, `powerRule` (+ `simple` if appropriate)
+- Multi-term polynomial → `polynomial`, `powerRule`, `linearity`
+- $(2x+1)^5$, $\sqrt{6x-15}$ → `powerRule` plus chain/substitution tag, **no** `polynomial`
+
+### Family and technique tags
+
+Use elementary family tags whenever the family appears: `exp` for exponential functions, `log` for logarithmic forms including $\frac{1}{x}$ / $\ln|x|$, `trig` for trigonometric functions, and `inverseTrig` for inverse trig derivatives or integrals. `powerRule` applies to powers $x^n$ and power-form antiderivatives.
+
+Use `simpleChainRule` / `simpleUSub` when the inner function or substitution is linear ($g(x)=ax+b$). Use `chainRule` / `uSubstitution` for non-linear inner functions or non-obvious substitutions. Do **not** use the full-rule tag when the simple variant applies.
 
 ---
 

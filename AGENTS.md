@@ -189,7 +189,7 @@ Tags are grouped into **dimensions** (`TagMap = Record<string, string[]>`). Each
 ### Closed vocabularies (defined in `src/lib/questions.ts`)
 
 - **Topics:** `differentiation`, `integration`
-- **Methods:** `powerRule`, `simpleChainRule`, `chainRule`, `productRule`, `quotientRule`, `simpleUSub`, `uSubstitution`, `integrationByParts`, `partialFractions`, `trigIdentity`, `other`
+- **Methods:** `simple`, `polynomial`, `powerRule`, `exp`, `log`, `trig`, `inverseTrig`, `linearity`, `simpleChainRule`, `chainRule`, `productRule`, `quotientRule`, `simpleUSub`, `uSubstitution`, `integrationByParts`, `partialFractions`, `trigIdentity`
 - **Origin:** `public`, `user`
 - **Course tags:** content levels (`calc1`, `calc2`), Australian year/stream tags, IB tags, US AP tags — full lists in `COURSE_TAGS` and documented in `data/course-tags.md`
 
@@ -199,11 +199,14 @@ Adding a **new canonical tag** requires updating `src/lib/questions.ts` (and usu
 
 Full tagging guide for importers: `data/import-specv2.md` § Method tagging conventions. Summary:
 
+- **`simple`** — direct recall or a single standard form with no composition or multi-term structure (e.g. $\frac{d}{dx}\ln x$, $\int\sin x\,dx$, $\frac{d}{dx}[x^3]$).
+- **`polynomial`** — the whole expression is a polynomial; pair with `powerRule` and usually `linearity` for multi-term polynomials.
+- **Family tags** — `powerRule`, `exp`, `log`, `trig`, `inverseTrig`; assign whenever that family appears, even if another technique also applies.
+- **`linearity`** — two or more terms handled term-by-term.
 - **`simpleChainRule` / `simpleUSub`** — inner function is linear ($g(x)=ax+b$). Often taught without naming substitution (e.g. $\frac{d}{dx}\sin(3x)$, $\int\cos(3x)\,dx$).
 - **`chainRule` / `uSubstitution`** — same techniques when the inner function is **not** linear or the substitution is non-obvious.
-- **`other`** — standard derivative/antiderivative recall (sin, cos, exp, log, etc.); pair with the appropriate `topic`. Prefer over an empty `method` array.
 
-Do not use the full-rule tags when the simple variant applies.
+Do not use `simple` when a compound technique applies, and do not use the full-rule tags when the simple variant applies. `simple` and `polynomial` are stored method tags assigned by humans or LLM importers; they are not derived at runtime.
 
 ### Course tagging conventions
 

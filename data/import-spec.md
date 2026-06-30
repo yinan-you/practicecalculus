@@ -26,7 +26,7 @@ A single prompt with a single answer. Use for standalone technique questions.
   "tags": {
     "topic": ["differentiation"],
     "course": ["calc1", "VCE-yr11", "VCE-methods", "HSC-yr11", "HSC-advanced", "IB-AA-SL-yr11"],
-    "method": ["powerRule"],
+    "method": ["polynomial", "powerRule", "simple"],
     "origin": ["public"]
   }
 }
@@ -49,13 +49,13 @@ A shared stem with labeled parts, each having its own topic and method tags. Use
       "id": "a",
       "prompt": "Find $f'(x)$.",
       "answer": "$f'(x) = e^x(x^2 + 2x)$",
-      "tags": { "topic": ["differentiation"], "method": ["productRule"] }
+      "tags": { "topic": ["differentiation"], "method": ["powerRule", "exp", "productRule"] }
     },
     {
       "id": "b",
       "prompt": "Hence evaluate $\\int_0^1 f'(x)\\,dx$.",
       "answer": "$e - 1$",
-      "tags": { "topic": ["integration"], "method": ["uSubstitution"] }
+      "tags": { "topic": ["integration"], "method": ["powerRule", "exp", "uSubstitution"] }
     }
   ],
   "tags": {
@@ -108,16 +108,27 @@ Choose from the closed vocabulary:
 
 | Tag | When to use |
 |-----|-------------|
-| `powerRule` | Differentiating $x^n$ directly; includes negative and fractional powers |
-| `chainRule` | Differentiating a composition $f(g(x))$; includes any nested function |
+| `simple` | Direct recall or a single standard form; no composition, product, quotient, substitution, or multi-term structure required |
+| `polynomial` | The whole expression being differentiated or integrated is a polynomial |
+| `powerRule` | Powers $x^n$ and power-form antiderivatives, including negative and fractional powers |
+| `exp` | Exponential functions such as $e^x$ or $e^{g(x)}$ |
+| `log` | Logarithmic forms, including $\ln x$, $\frac{1}{x}$, and $\ln|f(x)|$ |
+| `trig` | Trigonometric functions such as $\sin x$, $\cos x$, $\tan x$ |
+| `inverseTrig` | Inverse trig derivatives or integrals |
+| `linearity` | Two or more terms handled term-by-term |
+| `simpleChainRule` | Differentiating $f(g(x))$ where inner $g(x)=ax+b$ is linear |
+| `chainRule` | Differentiating a composition with a non-linear inner function |
 | `productRule` | Differentiating a product $u \cdot v$ |
 | `quotientRule` | Differentiating a quotient $u/v$ |
-| `uSubstitution` | Integration by substitution (including definite integrals with changed limits) |
+| `simpleUSub` | Integrating $f(ax+b)$ with a straightforward $\frac{1}{a}$ adjustment |
+| `uSubstitution` | Integration by non-linear or non-obvious substitution |
 | `integrationByParts` | $\int u\,dv = uv - \int v\,du$ |
 | `partialFractions` | Decomposing rational functions before integrating |
-| `trigIdentity` | Using trig identities (Pythagorean, double angle, etc.) to simplify before differentiating or integrating |
+| `trigIdentity` | Using trig identities (Pythagorean, double angle, etc.) to simplify before integrating |
 
-A question may require multiple methods. Tag all that apply. A question requiring neither of the above named methods (e.g. a basic $\int e^x\,dx$) may have an empty `method` array or omit the field.
+A question may require multiple methods. Tag all that apply, including family tags. Use `simple` for direct standard-form recall such as $\frac{d}{dx}\ln x$, $\int\sin x\,dx$, or $\frac{d}{dx}[x^3]$; do not use `simple` when a compound technique such as `linearity`, `simpleChainRule`, `productRule`, or substitution applies.
+
+Use `polynomial` only when the whole expression is a polynomial. A single monomial $cx^n$ usually carries `polynomial`, `powerRule`, and `simple`; a multi-term polynomial carries `polynomial`, `powerRule`, and `linearity`.
 
 Do not invent tags outside this vocabulary. If a technique is not captured, omit the method tag and note it in the `source` field.
 
@@ -210,7 +221,7 @@ Power rule question suitable for introductory students across all in-scope curri
       "HSC-yr11", "HSC-advanced",
       "IB-AA-SL-yr11", "IB-AI-SL-yr11"
     ],
-    "method": ["powerRule"],
+    "method": ["polynomial", "powerRule", "linearity"],
     "origin": ["public"]
   }
 }
@@ -234,7 +245,7 @@ Integration by parts — above Methods/Advanced/SL level.
       "HSC-yr12", "HSC-ext1",
       "IB-AA-HL-yr12"
     ],
-    "method": ["integrationByParts"],
+    "method": ["exp", "integrationByParts"],
     "origin": ["public"]
   }
 }
@@ -253,7 +264,7 @@ A question a user has added from their own study notes. Fewer course tags; origi
   "tags": {
     "topic": ["differentiation"],
     "course": ["calc2", "VCE-yr12", "VCE-methods"],
-    "method": ["chainRule"],
+    "method": ["log", "trig", "chainRule"],
     "origin": ["user"]
   }
 }
@@ -272,13 +283,13 @@ A question where part (a) is differentiation and part (b) uses that result to se
       "id": "a",
       "prompt": "Find $f'(x)$.",
       "answer": "$f'(x) = e^x(x^2 + 2x)$",
-      "tags": { "topic": ["differentiation"], "method": ["productRule"] }
+      "tags": { "topic": ["differentiation"], "method": ["powerRule", "exp", "productRule"] }
     },
     {
       "id": "b",
       "prompt": "Hence evaluate $\\int_0^1 e^x(x^2 + 2x)\\,dx$.",
       "answer": "$e - 1$",
-      "tags": { "topic": ["integration"], "method": ["uSubstitution"] }
+      "tags": { "topic": ["integration"], "method": ["powerRule", "exp", "uSubstitution"] }
     }
   ],
   "difficulty": 2,
@@ -313,7 +324,7 @@ Both parts are integration, but the second part extends the technique.
       "id": "b",
       "prompt": "Hence find $I$.",
       "answer": "$\\ln|x+2| + \\ln|x-1| + C$",
-      "tags": { "topic": ["integration"], "method": ["partialFractions"] }
+      "tags": { "topic": ["integration"], "method": ["log", "partialFractions"] }
     }
   ],
   "difficulty": 3,
@@ -356,7 +367,7 @@ Both parts are integration, but the second part extends the technique.
   ],
   "tags": {
     "topic": ["differentiation"],
-    "method": ["chainRule"],
+    "method": ["trig", "chainRule"],
     "origin": ["public"]
   }
 }
@@ -385,7 +396,7 @@ Both parts are integration, but the second part extends the technique.
   "tags": {
     "topic": ["differentiation"],
     "course": ["calc1", "AP-AB", "QCE-yr11", "QCE-methods"],
-    "method": ["powerRule"],
+    "method": ["polynomial", "powerRule", "simple"],
     "origin": ["public"]
   }
 }
