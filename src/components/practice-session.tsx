@@ -32,6 +32,11 @@ export function PracticeSession({ questions }: PracticeSessionProps) {
     [questions, filters],
   );
 
+  useEffect(() => {
+    setCurrentQuestion(null);
+    setIsSolutionOpen(false);
+  }, [filters]);
+
   const generateNextQuestion = useCallback(() => {
     const next = pickNextQuestion(matchingQuestions, currentQuestion);
     setCurrentQuestion(next);
