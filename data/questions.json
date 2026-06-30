@@ -34,5 +34,149 @@
       "method": ["simpleUSub"],
       "origin": ["public"]
     }
+  },
+  {
+    "id": "2023-mm1-q1a",
+    "prompt": "Let $y = \\dfrac{x^2 - x}{e^x}$. Find and simplify $\\dfrac{dy}{dx}$.",
+    "answer": "$\\dfrac{-x^2 + 3x - 1}{e^x}$",
+    "source": "VCE 2023 Mathematical Methods Exam 1, Q1a",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["VCE-yr12", "VCE-methods"],
+      "method": ["quotientRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "2023-mm1-q1b",
+    "prompt": "Let $f(x) = \\sin(x)\\,e^{2x}$. Find $f'\\!\\left(\\dfrac{\\pi}{4}\\right)$.",
+    "answer": "$\\dfrac{3e^{\\pi/2}}{\\sqrt{2}}$",
+    "source": "VCE 2023 Mathematical Methods Exam 1, Q1b",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["VCE-yr12", "VCE-methods"],
+      "method": ["productRule", "simpleChainRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "2023-mm1-q5a",
+    "prompt": "Evaluate $\\displaystyle\\int_0^{\\pi/3} \\sin(x)\\,dx$.",
+    "answer": "$\\dfrac{1}{2}$",
+    "source": "VCE 2023 Mathematical Methods Exam 1, Q5a",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-methods"],
+      "method": ["other"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "2024-nht-mm1-q1a",
+    "prompt": "Let $y = xe^{x^2+1}$. Find and factorise $\\dfrac{dy}{dx}$.",
+    "answer": "$e^{x^2+1}(1 + 2x^2)$",
+    "source": "VCE (NHT) 2024 Mathematical Methods Exam 1, Q1a",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["VCE-yr12", "VCE-methods"],
+      "method": ["productRule", "chainRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "2024-nht-mm1-q1b",
+    "prompt": "Let $f(x) = \\dfrac{x^3}{\\log_e(x)}$. Evaluate $f'(x)$ at $x = e$.",
+    "answer": "$2e^2$",
+    "source": "VCE (NHT) 2024 Mathematical Methods Exam 1, Q1b",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["VCE-yr12", "VCE-methods"],
+      "method": ["quotientRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "2024-nht-mm1-q8a",
+    "prompt": "Let $f\\colon\\!\\left(-\\tfrac{1}{3},\\infty\\right)\\to\\mathbb{R}$, $f(x) = \\dfrac{1}{\\sqrt{3x+1}}$. Find an anti-derivative for $f(x)$.",
+    "answer": "$\\dfrac{2}{3}\\sqrt{3x+1} + c$",
+    "source": "VCE (NHT) 2024 Mathematical Methods Exam 1, Q8a",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-methods"],
+      "method": ["simpleUSub"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "2024-mm1-q1a",
+    "prompt": "Let $y = e^x\\cos(3x)$. Find $\\dfrac{dy}{dx}$.",
+    "answer": "$e^x\\cos(3x) - 3e^x\\sin(3x)$",
+    "source": "VCE 2024 Mathematical Methods Exam 1, Q1a",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["VCE-yr12", "VCE-methods"],
+      "method": ["productRule", "simpleChainRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "2024-mm1-q1b",
+    "prompt": "Let $f(x) = \\log_e\\!\\left(x^3 - 3x + 2\\right)$. Find $f'(3)$.",
+    "answer": "$\\dfrac{6}{5}$",
+    "source": "VCE 2024 Mathematical Methods Exam 1, Q1b",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["VCE-yr12", "VCE-methods"],
+      "method": ["chainRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "2026-nht-mm1-q1a",
+    "prompt": "Let $y = x^3 \\log_e(5x)$. Find $\\dfrac{dy}{dx}$.",
+    "answer": "$x^2\\bigl(3\\log_e(5x) + 1\\bigr)$",
+    "source": "VCE (NHT) 2026 Mathematical Methods Exam 1, Q1a",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["VCE-yr12", "VCE-methods"],
+      "method": ["productRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "2026-nht-mm1-q1b",
+    "prompt": "Let $f'(x) = (x-2)^3$. Find $f(x)$, where $f(1) = 1$.",
+    "answer": "$f(x) = \\dfrac{(x-2)^4}{4} + \\dfrac{3}{4}$",
+    "source": "VCE (NHT) 2026 Mathematical Methods Exam 1, Q1b",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-methods"],
+      "method": ["simpleUSub"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "2026-nht-mm1-q5b",
+    "prompt": "Consider the function $f(x) = \\tan(2x) + 2$ with maximal domain. Determine $f'(x)$.",
+    "answer": "$2\\sec^2(2x)$",
+    "source": "VCE (NHT) 2026 Mathematical Methods Exam 1, Q5b",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["VCE-yr12", "VCE-methods"],
+      "method": ["simpleChainRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "2026-nht-mm1-q5c",
+    "prompt": "For $f(x) = \\tan(2x) + 2$, find the area of the region bounded by the curve $y = f'(x)$, the line $x = \\dfrac{\\pi}{12}$, the line $x = \\dfrac{\\pi}{6}$ and the $x$-axis.",
+    "answer": "$\\dfrac{2\\sqrt{3}}{3}$",
+    "source": "VCE (NHT) 2026 Mathematical Methods Exam 1, Q5c",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-methods"],
+      "method": ["other"],
+      "origin": ["public"]
+    }
   }
 ]
