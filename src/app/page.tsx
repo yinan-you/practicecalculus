@@ -1,4 +1,5 @@
 import { PracticeSession } from "@/components/practice-session";
+import { SiteFooter } from "@/components/site-footer";
 import { loadQuestions } from "@/lib/load-questions";
 
 export default function Home() {
@@ -15,6 +16,8 @@ export default function Home() {
 
         <PracticeSession questions={questions} />
       </main>
+
+      <SiteFooter />
     </div>
   );
 }
