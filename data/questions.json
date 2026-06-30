@@ -7,7 +7,7 @@
     "tags": {
       "topic": ["differentiation"],
       "course": ["VCE-yr12", "VCE-methods"],
-      "method": ["productRule"],
+      "method": ["productRule", "trig"],
       "origin": ["public"]
     }
   },
@@ -19,7 +19,7 @@
     "tags": {
       "topic": ["differentiation"],
       "course": ["VCE-yr12", "VCE-methods"],
-      "method": ["simpleChainRule"],
+      "method": ["powerRule", "simpleChainRule"],
       "origin": ["public"]
     }
   },
@@ -31,7 +31,7 @@
     "tags": {
       "topic": ["integration"],
       "course": ["VCE-yr12", "VCE-methods"],
-      "method": ["simpleUSub"],
+      "method": ["log", "simpleUSub"],
       "origin": ["public"]
     }
   },
@@ -43,7 +43,7 @@
     "tags": {
       "topic": ["differentiation"],
       "course": ["VCE-yr12", "VCE-methods"],
-      "method": ["quotientRule"],
+      "method": ["quotientRule", "powerRule", "exp"],
       "origin": ["public"]
     }
   },
@@ -55,7 +55,7 @@
     "tags": {
       "topic": ["differentiation"],
       "course": ["VCE-yr12", "VCE-methods"],
-      "method": ["productRule", "simpleChainRule"],
+      "method": ["productRule", "simpleChainRule", "trig", "exp"],
       "origin": ["public"]
     }
   },
@@ -67,7 +67,7 @@
     "tags": {
       "topic": ["integration"],
       "course": ["VCE-yr12", "VCE-methods"],
-      "method": ["other"],
+      "method": ["trig", "simple"],
       "origin": ["public"]
     }
   },
@@ -79,7 +79,7 @@
     "tags": {
       "topic": ["differentiation"],
       "course": ["VCE-yr12", "VCE-methods"],
-      "method": ["productRule", "chainRule"],
+      "method": ["productRule", "chainRule", "exp"],
       "origin": ["public"]
     }
   },
@@ -91,7 +91,7 @@
     "tags": {
       "topic": ["differentiation"],
       "course": ["VCE-yr12", "VCE-methods"],
-      "method": ["quotientRule"],
+      "method": ["quotientRule", "powerRule", "log"],
       "origin": ["public"]
     }
   },
@@ -103,7 +103,7 @@
     "tags": {
       "topic": ["integration"],
       "course": ["VCE-yr12", "VCE-methods"],
-      "method": ["simpleUSub"],
+      "method": ["powerRule", "simpleUSub"],
       "origin": ["public"]
     }
   },
@@ -115,7 +115,7 @@
     "tags": {
       "topic": ["differentiation"],
       "course": ["VCE-yr12", "VCE-methods"],
-      "method": ["productRule", "simpleChainRule"],
+      "method": ["productRule", "simpleChainRule", "exp", "trig"],
       "origin": ["public"]
     }
   },
@@ -127,7 +127,7 @@
     "tags": {
       "topic": ["differentiation"],
       "course": ["VCE-yr12", "VCE-methods"],
-      "method": ["chainRule"],
+      "method": ["log", "chainRule"],
       "origin": ["public"]
     }
   },
@@ -139,7 +139,7 @@
     "tags": {
       "topic": ["differentiation"],
       "course": ["VCE-yr12", "VCE-methods"],
-      "method": ["productRule"],
+      "method": ["productRule", "powerRule", "log"],
       "origin": ["public"]
     }
   },
@@ -151,7 +151,7 @@
     "tags": {
       "topic": ["integration"],
       "course": ["VCE-yr12", "VCE-methods"],
-      "method": ["simpleUSub"],
+      "method": ["powerRule", "simpleUSub"],
       "origin": ["public"]
     }
   },
@@ -163,7 +163,7 @@
     "tags": {
       "topic": ["differentiation"],
       "course": ["VCE-yr12", "VCE-methods"],
-      "method": ["simpleChainRule"],
+      "method": ["trig", "simpleChainRule"],
       "origin": ["public"]
     }
   },
@@ -175,7 +175,7 @@
     "tags": {
       "topic": ["integration"],
       "course": ["VCE-yr12", "VCE-methods"],
-      "method": ["other"],
+      "method": ["trig", "simpleUSub"],
       "origin": ["public"]
     }
   }
