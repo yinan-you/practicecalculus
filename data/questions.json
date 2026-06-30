@@ -178,5 +178,1799 @@
       "method": ["trig", "simpleUSub", "definiteIntegral"],
       "origin": ["public"]
     }
+  },
+  {
+    "id": "cam-9a-1a",
+    "prompt": "Find an antiderivative of $\\sin\\left(2x+\\frac{\\pi}{4}\\right)$.",
+    "answer": "$-\\frac{1}{2}\\cos\\left(2x+\\frac{\\pi}{4}\\right)+C$",
+    "difficulty": 1,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9A Q1a",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-methods", "VCE-specialist"],
+      "method": ["trig", "simpleUSub", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9a-1b",
+    "prompt": "Find an antiderivative of $\\cos(\\pi x)$.",
+    "answer": "$\\frac{1}{\\pi}\\sin(\\pi x)+C$",
+    "difficulty": 1,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9A Q1b",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-methods", "VCE-specialist"],
+      "method": ["trig", "simpleUSub", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9a-1c",
+    "prompt": "Find an antiderivative of $\\sin\\left(\\frac{2\\pi x}{3}\\right)$.",
+    "answer": "$-\\frac{3}{2\\pi}\\cos\\left(\\frac{2\\pi x}{3}\\right)+C$",
+    "difficulty": 1,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9A Q1c",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-methods", "VCE-specialist"],
+      "method": ["trig", "simpleUSub", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9a-1d",
+    "prompt": "Find an antiderivative of $e^{3x+1}$.",
+    "answer": "$\\frac{1}{3}e^{3x+1}+C$",
+    "difficulty": 1,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9A Q1d",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-methods", "VCE-specialist"],
+      "method": ["exp", "simpleUSub", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9a-1e",
+    "prompt": "Find an antiderivative of $e^{5(x+4)}$.",
+    "answer": "$\\frac{1}{5}e^{5(x+4)}+C$",
+    "difficulty": 1,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9A Q1e",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-methods", "VCE-specialist"],
+      "method": ["exp", "simpleUSub", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9a-1f",
+    "prompt": "Find an antiderivative of $\\frac{3}{2x^2}$.",
+    "answer": "$-\\frac{3}{2x}+C$",
+    "difficulty": 1,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9A Q1f",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-methods", "VCE-specialist"],
+      "method": ["powerRule", "simple", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9a-1g",
+    "prompt": "Find an antiderivative of $6x^3-2x^2+4x+1$.",
+    "answer": "$\\frac{3}{2}x^4-\\frac{2}{3}x^3+2x^2+x+C$",
+    "difficulty": 1,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9A Q1g",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-methods", "VCE-specialist"],
+      "method": ["polynomial", "powerRule", "linearity", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9a-2a",
+    "prompt": "Evaluate $\\displaystyle\\int_{-1}^{1} e^x-e^{-x}\\,dx$.",
+    "answer": "$0$",
+    "difficulty": 1,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9A Q2a",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-methods", "VCE-specialist"],
+      "method": ["exp", "linearity", "definiteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9a-2b",
+    "prompt": "Evaluate $\\displaystyle\\int_{0}^{2} 3x^2+2x+4\\,dx$.",
+    "answer": "$20$",
+    "difficulty": 1,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9A Q2b",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-methods", "VCE-specialist"],
+      "method": ["polynomial", "powerRule", "linearity", "definiteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9a-2c",
+    "prompt": "Evaluate $\\displaystyle\\int_{0}^{\\frac{\\pi}{2}} \\sin(2x)\\,dx$.",
+    "answer": "$1$",
+    "difficulty": 1,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9A Q2c",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-methods", "VCE-specialist"],
+      "method": ["trig", "simpleUSub", "definiteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9a-2d",
+    "prompt": "Evaluate $\\displaystyle\\int_{2}^{3} \\frac{3}{x^3}\\,dx$.",
+    "answer": "$\\frac{5}{24}$",
+    "difficulty": 1,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9A Q2d",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-methods", "VCE-specialist"],
+      "method": ["powerRule", "simple", "definiteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9a-2e",
+    "prompt": "Evaluate $\\displaystyle\\int_{0}^{\\frac{\\pi}{4}} \\cos(x)+2x\\,dx$.",
+    "answer": "$\\frac{\\sqrt2}{2}+\\frac{\\pi^2}{16}$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9A Q2e",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-methods", "VCE-specialist"],
+      "method": ["trig", "powerRule", "linearity", "definiteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9a-2f",
+    "prompt": "Evaluate $\\displaystyle\\int_{0}^{1} e^{3x}+x\\,dx$.",
+    "answer": "$\\frac{1}{3}e^3+\\frac{1}{6}$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9A Q2f",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-methods", "VCE-specialist"],
+      "method": ["exp", "simpleUSub", "powerRule", "linearity", "definiteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9a-2g",
+    "prompt": "Evaluate $\\displaystyle\\int_{0}^{\\frac{\\pi}{2}} \\cos(4x)\\,dx$.",
+    "answer": "$0$",
+    "difficulty": 1,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9A Q2g",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-methods", "VCE-specialist"],
+      "method": ["trig", "simpleUSub", "definiteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9a-2h",
+    "prompt": "Evaluate $\\displaystyle\\int_{-\\frac{\\pi}{2}}^{\\frac{\\pi}{2}} \\sin\\left(\\frac{x}{2}\\right)\\,dx$.",
+    "answer": "$0$",
+    "difficulty": 1,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9A Q2h",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-methods", "VCE-specialist"],
+      "method": ["trig", "simpleUSub", "definiteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9a-2i",
+    "prompt": "Evaluate $\\displaystyle\\int_{0}^{\\frac{\\pi}{4}} \\sec^2 x\\,dx$.",
+    "answer": "$1$",
+    "difficulty": 1,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9A Q2i",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-methods", "VCE-specialist"],
+      "method": ["trig", "simple", "definiteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9a-3a",
+    "prompt": "Find an antiderivative of $\\frac{1}{2x-5}$.",
+    "answer": "$\\frac{1}{2}\\ln|2x-5|+C$",
+    "difficulty": 1,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9A Q3a",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-methods", "VCE-specialist"],
+      "method": ["log", "simpleUSub", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9a-3b",
+    "prompt": "Evaluate $\\displaystyle\\int_{0}^{1} \\frac{1}{2x-5}\\,dx$.",
+    "answer": "$\\frac{1}{2}\\ln\\left(\\frac{3}{5}\\right)$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9A Q3b",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-methods", "VCE-specialist"],
+      "method": ["log", "simpleUSub", "definiteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9a-3c",
+    "prompt": "Evaluate $\\displaystyle\\int_{-2}^{-1} \\frac{1}{2x-5}\\,dx$.",
+    "answer": "$\\frac{1}{2}\\ln\\left(\\frac{7}{9}\\right)$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9A Q3c",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-methods", "VCE-specialist"],
+      "method": ["log", "simpleUSub", "definiteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9a-4a",
+    "prompt": "Evaluate $\\displaystyle\\int_{0}^{1} \\frac{1}{3x+2}\\,dx$.",
+    "answer": "$\\frac{1}{3}\\ln\\left(\\frac{5}{2}\\right)$",
+    "difficulty": 1,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9A Q4a",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-methods", "VCE-specialist"],
+      "method": ["log", "simpleUSub", "definiteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9a-4b",
+    "prompt": "Evaluate $\\displaystyle\\int_{-3}^{-1} \\frac{1}{3x-2}\\,dx$.",
+    "answer": "$\\frac{1}{3}\\ln\\left(\\frac{5}{11}\\right)$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9A Q4b",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-methods", "VCE-specialist"],
+      "method": ["log", "simpleUSub", "definiteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9a-4c",
+    "prompt": "Evaluate $\\displaystyle\\int_{-1}^{0} \\frac{1}{4-3x}\\,dx$.",
+    "answer": "$\\frac{1}{3}\\ln\\left(\\frac{7}{4}\\right)$",
+    "difficulty": 1,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9A Q4c",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-methods", "VCE-specialist"],
+      "method": ["log", "simpleUSub", "definiteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9a-5a",
+    "prompt": "Find an antiderivative of $(3x+2)^5$.",
+    "answer": "$\\frac{1}{18}(3x+2)^6+C$",
+    "difficulty": 1,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9A Q5a",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-methods", "VCE-specialist"],
+      "method": ["powerRule", "simpleUSub", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9a-5b",
+    "prompt": "Find an antiderivative of $\\frac{1}{3x-2}$.",
+    "answer": "$\\frac{1}{3}\\ln|3x-2|+C$",
+    "difficulty": 1,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9A Q5b",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-methods", "VCE-specialist"],
+      "method": ["log", "simpleUSub", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9a-5c",
+    "prompt": "Find an antiderivative of $\\sqrt{3x+2}$.",
+    "answer": "$\\frac{2}{9}(3x+2)^{3/2}+C$",
+    "difficulty": 1,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9A Q5c",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-methods", "VCE-specialist"],
+      "method": ["powerRule", "simpleUSub", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9a-5d",
+    "prompt": "Find an antiderivative of $\\frac{1}{(3x+2)^2}$.",
+    "answer": "$-\\frac{1}{3(3x+2)}+C$",
+    "difficulty": 1,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9A Q5d",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-methods", "VCE-specialist"],
+      "method": ["powerRule", "simpleUSub", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9a-5e",
+    "prompt": "Find an antiderivative of $\\frac{3x+1}{x+1}$.",
+    "answer": "$3x-2\\ln|x+1|+C$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9A Q5e",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-methods", "VCE-specialist"],
+      "method": ["log", "linearity", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9a-5f",
+    "prompt": "Find an antiderivative of $\\cos\\left(\\frac{3x}{2}\\right)$.",
+    "answer": "$\\frac{2}{3}\\sin\\left(\\frac{3x}{2}\\right)+C$",
+    "difficulty": 1,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9A Q5f",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-methods", "VCE-specialist"],
+      "method": ["trig", "simpleUSub", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9a-5g",
+    "prompt": "Find an antiderivative of $(5x-1)^{1/3}$.",
+    "answer": "$\\frac{3}{20}(5x-1)^{4/3}+C$",
+    "difficulty": 1,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9A Q5g",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-methods", "VCE-specialist"],
+      "method": ["powerRule", "simpleUSub", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9a-5h",
+    "prompt": "Find an antiderivative of $\\frac{2x+1}{x+3}$.",
+    "answer": "$2x-5\\ln|x+3|+C$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9A Q5h",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-methods", "VCE-specialist"],
+      "method": ["log", "linearity", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9b-1a",
+    "prompt": "Find $\\displaystyle\\int \\frac{1}{\\sqrt{9-x^2}}\\,dx$.",
+    "answer": "$\\arcsin\\left(\\frac{x}{3}\\right)+C$",
+    "difficulty": 1,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9B Q1a",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["inverseTrig", "simple", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9b-1b",
+    "prompt": "Find $\\displaystyle\\int \\frac{1}{5+x^2}\\,dx$.",
+    "answer": "$\\frac{1}{\\sqrt5}\\arctan\\left(\\frac{x}{\\sqrt5}\\right)+C$",
+    "difficulty": 1,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9B Q1b",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["inverseTrig", "simple", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9b-1c",
+    "prompt": "Find $\\displaystyle\\int \\frac{1}{1+t^2}\\,dt$.",
+    "answer": "$\\arctan(t)+C$",
+    "difficulty": 1,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9B Q1c",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["inverseTrig", "simple", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9b-1d",
+    "prompt": "Find $\\displaystyle\\int \\frac{5}{\\sqrt{5-x^2}}\\,dx$.",
+    "answer": "$5\\arcsin\\left(\\frac{x}{\\sqrt5}\\right)+C$",
+    "difficulty": 1,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9B Q1d",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["inverseTrig", "simple", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9b-1e",
+    "prompt": "Find $\\displaystyle\\int \\frac{3}{16+x^2}\\,dx$.",
+    "answer": "$\\frac{3}{4}\\arctan\\left(\\frac{x}{4}\\right)+C$",
+    "difficulty": 1,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9B Q1e",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["inverseTrig", "simple", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9b-1f",
+    "prompt": "Find $\\displaystyle\\int \\frac{1}{\\sqrt{16-4x^2}}\\,dx$.",
+    "answer": "$\\frac{1}{2}\\arcsin\\left(\\frac{x}{2}\\right)+C$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9B Q1f",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["inverseTrig", "simpleUSub", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9b-1g",
+    "prompt": "Find $\\displaystyle\\int \\frac{10}{\\sqrt{10-t^2}}\\,dt$.",
+    "answer": "$10\\arcsin\\left(\\frac{t}{\\sqrt{10}}\\right)+C$",
+    "difficulty": 1,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9B Q1g",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["inverseTrig", "simple", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9b-1h",
+    "prompt": "Find $\\displaystyle\\int \\frac{1}{9+16t^2}\\,dt$.",
+    "answer": "$\\frac{1}{12}\\arctan\\left(\\frac{4t}{3}\\right)+C$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9B Q1h",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["inverseTrig", "simpleUSub", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9b-1i",
+    "prompt": "Find $\\displaystyle\\int \\frac{1}{\\sqrt{5-2x^2}}\\,dx$.",
+    "answer": "$\\frac{1}{\\sqrt2}\\arcsin\\left(\\sqrt{\\frac{2}{5}}\\,x\\right)+C$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9B Q1i",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["inverseTrig", "simpleUSub", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9b-1j",
+    "prompt": "Find $\\displaystyle\\int \\frac{7}{3+y^2}\\,dy$.",
+    "answer": "$\\frac{7}{\\sqrt3}\\arctan\\left(\\frac{y}{\\sqrt3}\\right)+C$",
+    "difficulty": 1,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9B Q1j",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["inverseTrig", "simple", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9b-2a",
+    "prompt": "Evaluate $\\displaystyle\\int_{0}^{1} \\frac{2}{1+x^2}\\,dx$.",
+    "answer": "$\\frac{\\pi}{2}$",
+    "difficulty": 1,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9B Q2a",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["inverseTrig", "simple", "definiteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9b-2b",
+    "prompt": "Evaluate $\\displaystyle\\int_{0}^{\\frac{1}{2}} \\frac{3}{\\sqrt{1-x^2}}\\,dx$.",
+    "answer": "$\\frac{\\pi}{2}$",
+    "difficulty": 1,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9B Q2b",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["inverseTrig", "simple", "definiteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9b-2c",
+    "prompt": "Evaluate $\\displaystyle\\int_{0}^{1} \\frac{5}{\\sqrt{4-x^2}}\\,dx$.",
+    "answer": "$\\frac{5\\pi}{6}$",
+    "difficulty": 1,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9B Q2c",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["inverseTrig", "simple", "definiteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9b-2d",
+    "prompt": "Evaluate $\\displaystyle\\int_{0}^{5} \\frac{6}{25+x^2}\\,dx$.",
+    "answer": "$\\frac{3\\pi}{10}$",
+    "difficulty": 1,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9B Q2d",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["inverseTrig", "simple", "definiteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9b-2e",
+    "prompt": "Evaluate $\\displaystyle\\int_{0}^{\\frac{3}{2}} \\frac{3}{9+4x^2}\\,dx$.",
+    "answer": "$\\frac{\\pi}{8}$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9B Q2e",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["inverseTrig", "simpleUSub", "definiteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9b-2f",
+    "prompt": "Evaluate $\\displaystyle\\int_{0}^{2} \\frac{1}{8+2x^2}\\,dx$.",
+    "answer": "$\\frac{\\pi}{16}$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9B Q2f",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["inverseTrig", "simpleUSub", "definiteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9b-2g",
+    "prompt": "Evaluate $\\displaystyle\\int_{0}^{\\frac{3}{2}} \\frac{1}{\\sqrt{9-x^2}}\\,dx$.",
+    "answer": "$\\frac{\\pi}{6}$",
+    "difficulty": 1,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9B Q2g",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["inverseTrig", "simple", "definiteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9b-2h",
+    "prompt": "Evaluate $\\displaystyle\\int_{0}^{\\frac{3\\sqrt2}{4}} \\frac{1}{\\sqrt{9-4x^2}}\\,dx$.",
+    "answer": "$\\frac{\\pi}{8}$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9B Q2h",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["inverseTrig", "simpleUSub", "definiteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9b-2i",
+    "prompt": "Evaluate $\\displaystyle\\int_{0}^{\\frac{1}{3}} \\frac{3}{\\sqrt{1-9y^2}}\\,dy$.",
+    "answer": "$\\frac{\\pi}{2}$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9B Q2i",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["inverseTrig", "simpleUSub", "definiteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9b-2j",
+    "prompt": "Evaluate $\\displaystyle\\int_{0}^{2} \\frac{1}{1+3x^2}\\,dx$.",
+    "answer": "$\\frac{1}{\\sqrt3}\\arctan(2\\sqrt3)$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9B Q2j",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["inverseTrig", "simpleUSub", "definiteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9c-1a",
+    "prompt": "Find $\\displaystyle\\int 2x(x^2+1)^3\\,dx$.",
+    "answer": "$\\frac{1}{4}(x^2+1)^4+C$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9C Q1a",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["powerRule", "uSubstitution", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9c-1b",
+    "prompt": "Find $\\displaystyle\\int \\frac{x}{(x^2+1)^2}\\,dx$.",
+    "answer": "$-\\frac{1}{2(x^2+1)}+C$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9C Q1b",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["powerRule", "uSubstitution", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9c-1c",
+    "prompt": "Find $\\displaystyle\\int \\cos x\\sin^3 x\\,dx$.",
+    "answer": "$\\frac{1}{4}\\sin^4 x+C$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9C Q1c",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["trig", "uSubstitution", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9c-1d",
+    "prompt": "Find $\\displaystyle\\int \\frac{\\cos x}{\\sin^2 x}\\,dx$.",
+    "answer": "$-\\frac{1}{\\sin x}+C$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9C Q1d",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["trig", "uSubstitution", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9c-1e",
+    "prompt": "Find $\\displaystyle\\int (2x+1)^5\\,dx$.",
+    "answer": "$\\frac{1}{12}(2x+1)^6+C$",
+    "difficulty": 1,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9C Q1e",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["powerRule", "simpleUSub", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9c-1f",
+    "prompt": "Find $\\displaystyle\\int 5x\\sqrt{9+x^2}\\,dx$.",
+    "answer": "$\\frac{5}{3}(x^2+9)^{3/2}+C$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9C Q1f",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["powerRule", "uSubstitution", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9c-1g",
+    "prompt": "Find $\\displaystyle\\int x(x^2-3)^5\\,dx$.",
+    "answer": "$\\frac{1}{12}(x^2-3)^6+C$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9C Q1g",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["powerRule", "uSubstitution", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9c-1h",
+    "prompt": "Find $\\displaystyle\\int \\frac{x+1}{(x^2+2x)^3}\\,dx$.",
+    "answer": "$-\\frac{1}{4(x^2+2x)^2}+C$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9C Q1h",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["powerRule", "uSubstitution", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9c-1i",
+    "prompt": "Find $\\displaystyle\\int \\frac{2}{(3x+1)^3}\\,dx$.",
+    "answer": "$-\\frac{1}{3(3x+1)^2}+C$",
+    "difficulty": 1,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9C Q1i",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["powerRule", "simpleUSub", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9c-1j",
+    "prompt": "Find $\\displaystyle\\int \\frac{1}{\\sqrt{1+x}}\\,dx$.",
+    "answer": "$2\\sqrt{1+x}+C$",
+    "difficulty": 1,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9C Q1j",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["powerRule", "simple", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9c-1k",
+    "prompt": "Find $\\displaystyle\\int (x^2-2x)(x^3-3x^2+1)^4\\,dx$.",
+    "answer": "$\\frac{1}{15}(x^3-3x^2+1)^5+C$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9C Q1k",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["powerRule", "uSubstitution", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9c-1l",
+    "prompt": "Find $\\displaystyle\\int \\frac{3x}{x^2+1}\\,dx$.",
+    "answer": "$\\frac{3}{2}\\ln(x^2+1)+C$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9C Q1l",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["log", "uSubstitution", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9c-1m",
+    "prompt": "Find $\\displaystyle\\int \\frac{3x}{2-x^2}\\,dx$.",
+    "answer": "$-\\frac{3}{2}\\ln|2-x^2|+C$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9C Q1m",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["log", "uSubstitution", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9c-1n",
+    "prompt": "Find $\\displaystyle\\int \\frac{\\log_e x}{x}\\,dx$.",
+    "answer": "$\\frac{1}{2}(\\ln x)^2+C$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9C Q1n",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["log", "uSubstitution", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9c-1o",
+    "prompt": "Find $\\displaystyle\\int xe^{-4x^2}\\,dx$.",
+    "answer": "$-\\frac{1}{8}e^{-4x^2}+C$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9C Q1o",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["exp", "uSubstitution", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9c-2a",
+    "prompt": "Find an antiderivative of $\\frac{1}{x^2+2x+2}$.",
+    "answer": "$\\arctan(x+1)+C$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9C Q2a",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["inverseTrig", "uSubstitution", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9c-2b",
+    "prompt": "Find an antiderivative of $\\frac{1}{x^2-x+1}$.",
+    "answer": "$\\frac{2}{\\sqrt3}\\arctan\\left(\\frac{2x-1}{\\sqrt3}\\right)+C$",
+    "difficulty": 3,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9C Q2b",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["inverseTrig", "uSubstitution", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9c-2c",
+    "prompt": "Find an antiderivative of $\\frac{1}{\\sqrt{21-4x-x^2}}$.",
+    "answer": "$\\arcsin\\left(\\frac{x+2}{5}\\right)+C$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9C Q2c",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["inverseTrig", "uSubstitution", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9c-2d",
+    "prompt": "Find an antiderivative of $\\frac{1}{\\sqrt{10x-x^2-24}}$.",
+    "answer": "$\\arcsin(x-5)+C$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9C Q2d",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["inverseTrig", "uSubstitution", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9c-2e",
+    "prompt": "Find an antiderivative of $\\frac{1}{\\sqrt{40-x^2-6x}}$.",
+    "answer": "$\\arcsin\\left(\\frac{x+3}{7}\\right)+C$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9C Q2e",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["inverseTrig", "uSubstitution", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9c-2f",
+    "prompt": "Find an antiderivative of $\\frac{1}{3x^2+6x+7}$.",
+    "answer": "$\\frac{\\sqrt3}{6}\\arctan\\left(\\frac{\\sqrt3(x+1)}{2}\\right)+C$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9C Q2f",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["inverseTrig", "uSubstitution", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9c-4a",
+    "prompt": "Find an antiderivative of $x\\sqrt{2x+3}$.",
+    "answer": "$\\frac{1}{5}(2x^2+x-3)\\sqrt{2x+3}+C$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9C Q4a",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["powerRule", "uSubstitution", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9c-4b",
+    "prompt": "Find an antiderivative of $x\\sqrt{1-x}$.",
+    "answer": "$\\frac{2}{15}(3x^2-x-2)\\sqrt{1-x}+C$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9C Q4b",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["powerRule", "uSubstitution", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9c-4c",
+    "prompt": "Find an antiderivative of $6x(3x-7)^{-1/2}$.",
+    "answer": "$\\frac{4}{9}(3x+14)\\sqrt{3x-7}+C$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9C Q4c",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["powerRule", "uSubstitution", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9c-4d",
+    "prompt": "Find an antiderivative of $(2x+1)\\sqrt{3x-1}$.",
+    "answer": "$\\frac{2}{135}(54x^2+39x-19)\\sqrt{3x-1}+C$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9C Q4d",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["powerRule", "uSubstitution", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9c-4e",
+    "prompt": "Find an antiderivative of $\\frac{2x-1}{(x-1)^2}$.",
+    "answer": "$2\\ln|x-1|-\\frac{1}{x-1}+C$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9C Q4e",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["log", "powerRule", "partialFractions", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9c-4f",
+    "prompt": "Find an antiderivative of $(x+3)\\sqrt{3x+1}$.",
+    "answer": "$\\frac{2}{135}(27x^2+138x+43)\\sqrt{3x+1}+C$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9C Q4f",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["powerRule", "uSubstitution", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9c-4g",
+    "prompt": "Find an antiderivative of $(x+2)(x+3)^{1/3}$.",
+    "answer": "$\\frac{3}{28}(4x+5)(x+3)^{4/3}+C$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9C Q4g",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["powerRule", "uSubstitution", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9c-4h",
+    "prompt": "Find an antiderivative of $\\frac{5x-1}{(2x+1)^2}$.",
+    "answer": "$\\frac{5}{4}\\ln|2x+1|+\\frac{7}{4(2x+1)}+C$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9C Q4h",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["log", "powerRule", "partialFractions", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9c-4i",
+    "prompt": "Find an antiderivative of $x^2\\sqrt{x-1}$.",
+    "answer": "$\\frac{2}{105}(15x^2+12x+8)(x-1)^{3/2}+C$",
+    "difficulty": 3,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9C Q4i",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["powerRule", "uSubstitution", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9c-4j",
+    "prompt": "Find an antiderivative of $\\frac{x^2}{\\sqrt{x-1}}$.",
+    "answer": "$\\frac{2}{15}(3x^2+4x+8)\\sqrt{x-1}+C$",
+    "difficulty": 3,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9C Q4j",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["powerRule", "uSubstitution", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9d-1a",
+    "prompt": "Evaluate $\\displaystyle\\int_{0}^{3} x\\sqrt{x^2+16}\\,dx$.",
+    "answer": "$\\frac{61}{3}$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9D Q1a",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["powerRule", "uSubstitution", "definiteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9d-1b",
+    "prompt": "Evaluate $\\displaystyle\\int_{0}^{\\frac{\\pi}{4}} \\cos x\\sin^3 x\\,dx$.",
+    "answer": "$\\frac{1}{16}$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9D Q1b",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["trig", "uSubstitution", "definiteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9d-1c",
+    "prompt": "Evaluate $\\displaystyle\\int_{0}^{\\frac{\\pi}{2}} \\sin x\\cos^2 x\\,dx$.",
+    "answer": "$\\frac{1}{3}$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9D Q1c",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["trig", "uSubstitution", "definiteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9d-1d",
+    "prompt": "Evaluate $\\displaystyle\\int_{3}^{4} x(x-3)^{17}\\,dx$.",
+    "answer": "$\\frac{25}{114}$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9D Q1d",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["powerRule", "uSubstitution", "definiteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9d-1e",
+    "prompt": "Evaluate $\\displaystyle\\int_{0}^{1} x\\sqrt{1-x}\\,dx$.",
+    "answer": "$\\frac{4}{15}$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9D Q1e",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["powerRule", "uSubstitution", "definiteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9d-1f",
+    "prompt": "Evaluate $\\displaystyle\\int_{e}^{e^2} \\frac{1}{x\\log_e x}\\,dx$.",
+    "answer": "$\\ln 2$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9D Q1f",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["log", "uSubstitution", "definiteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9d-1g",
+    "prompt": "Evaluate $\\displaystyle\\int_{0}^{4} \\frac{1}{\\sqrt{3x+4}}\\,dx$.",
+    "answer": "$\\frac{4}{3}$",
+    "difficulty": 1,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9D Q1g",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["powerRule", "simpleUSub", "definiteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9d-1h",
+    "prompt": "Evaluate $\\displaystyle\\int_{-1}^{1} \\frac{e^x}{e^x+1}\\,dx$.",
+    "answer": "$1$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9D Q1h",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["exp", "uSubstitution", "definiteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9d-1i",
+    "prompt": "Evaluate $\\displaystyle\\int_{0}^{\\frac{\\pi}{4}} \\frac{\\sin x}{\\cos^3 x}\\,dx$.",
+    "answer": "$\\frac{1}{2}$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9D Q1i",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["trig", "uSubstitution", "definiteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9d-1j",
+    "prompt": "Evaluate $\\displaystyle\\int_{0}^{1} \\frac{2x+3}{x^2+3x+4}\\,dx$.",
+    "answer": "$\\ln 2$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9D Q1j",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["log", "uSubstitution", "definiteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9d-1k",
+    "prompt": "Evaluate $\\displaystyle\\int_{\\frac{\\pi}{4}}^{\\frac{\\pi}{3}} \\frac{\\cos x}{\\sin x}\\,dx$.",
+    "answer": "$\\frac{1}{2}\\ln\\left(\\frac{3}{2}\\right)$",
+    "difficulty": 1,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9D Q1k",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["trig", "uSubstitution", "definiteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9d-1l",
+    "prompt": "Evaluate $\\displaystyle\\int_{-4}^{-3} \\frac{2x}{1-x^2}\\,dx$.",
+    "answer": "$\\ln\\left(\\frac{15}{8}\\right)$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9D Q1l",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["log", "uSubstitution", "definiteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9d-1m",
+    "prompt": "Evaluate $\\displaystyle\\int_{-2}^{-1} \\frac{e^x}{1-e^x}\\,dx$.",
+    "answer": "$\\ln(1+e)-1$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9D Q1m",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["exp", "uSubstitution", "definiteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9d-2",
+    "prompt": "By using $\\tan x = \\dfrac{\\sin x}{\\cos x}$, evaluate $\\displaystyle\\int_0^{\\pi/3} \\tan x\\,dx$.",
+    "answer": "$\\ln 2$",
+    "difficulty": 1,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9D Q2",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["trig", "uSubstitution", "definiteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9e-1a",
+    "prompt": "Find an antiderivative of $\\sin^2 x$.",
+    "answer": "$\\frac{x}{2}-\\frac{1}{4}\\sin(2x)+C$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9E Q1a",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["trig", "trigIdentity", "simpleUSub", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9e-1b",
+    "prompt": "Find an antiderivative of $\\sin^4 x$.",
+    "answer": "$\\frac{3}{8}x-\\frac{1}{4}\\sin(2x)+\\frac{1}{32}\\sin(4x)+C$",
+    "difficulty": 3,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9E Q1b",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["trig", "trigIdentity", "simpleUSub", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9e-1c",
+    "prompt": "Find an antiderivative of $2\\tan^2 x$.",
+    "answer": "$2\\tan x-2x+C$",
+    "difficulty": 1,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9E Q1c",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["trig", "trigIdentity", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9e-1d",
+    "prompt": "Find an antiderivative of $2\\sin(3x)\\cos(3x)$.",
+    "answer": "$-\\frac{1}{6}\\cos(6x)+C$",
+    "difficulty": 1,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9E Q1d",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["trig", "trigIdentity", "simpleUSub", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9e-1e",
+    "prompt": "Find an antiderivative of $\\sin^2(2x)$.",
+    "answer": "$\\frac{x}{2}-\\frac{1}{8}\\sin(4x)+C$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9E Q1e",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["trig", "trigIdentity", "simpleUSub", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9e-1f",
+    "prompt": "Find an antiderivative of $\\tan^2(2x)$.",
+    "answer": "$\\frac{1}{2}\\tan(2x)-x+C$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9E Q1f",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["trig", "trigIdentity", "simpleUSub", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9e-1g",
+    "prompt": "Find an antiderivative of $\\sin^2 x\\cos^2 x$.",
+    "answer": "$\\frac{x}{8}-\\frac{1}{32}\\sin(4x)+C$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9E Q1g",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["trig", "trigIdentity", "simpleUSub", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9e-1h",
+    "prompt": "Find an antiderivative of $\\cos^2 x-\\sin^2 x$.",
+    "answer": "$\\frac{1}{2}\\sin(2x)+C$",
+    "difficulty": 1,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9E Q1h",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["trig", "trigIdentity", "simpleUSub", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9e-1i",
+    "prompt": "Find an antiderivative of $\\cot^2 x$.",
+    "answer": "$-\\cot x-x+C$",
+    "difficulty": 1,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9E Q1i",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["trig", "trigIdentity", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9e-1j",
+    "prompt": "Find an antiderivative of $\\cos^3(2x)$.",
+    "answer": "$\\frac{1}{2}\\sin(2x)-\\frac{1}{6}\\sin^3(2x)+C$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9E Q1j",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["trig", "uSubstitution", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9e-2a",
+    "prompt": "Find an antiderivative of $\\sec^2 x$.",
+    "answer": "$\\tan x+C$",
+    "difficulty": 1,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9E Q2a",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["trig", "simple", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9e-2b",
+    "prompt": "Find an antiderivative of $\\sec^2(2x)$.",
+    "answer": "$\\frac{1}{2}\\tan(2x)+C$",
+    "difficulty": 1,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9E Q2b",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["trig", "simpleUSub", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9e-2c",
+    "prompt": "Find an antiderivative of $\\sec^2\\left(\\frac{1}{2}x\\right)$.",
+    "answer": "$2\\tan\\left(\\frac{x}{2}\\right)+C$",
+    "difficulty": 1,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9E Q2c",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["trig", "simpleUSub", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9e-2d",
+    "prompt": "Find an antiderivative of $\\sec^2(kx)$.",
+    "answer": "$\\frac{1}{k}\\tan(kx)+C$",
+    "difficulty": 1,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9E Q2d",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["trig", "simpleUSub", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9e-2e",
+    "prompt": "Find an antiderivative of $\\tan^2(3x)$.",
+    "answer": "$\\frac{1}{3}\\tan(3x)-x+C$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9E Q2e",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["trig", "trigIdentity", "simpleUSub", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9e-2f",
+    "prompt": "Find an antiderivative of $1-\\tan^2 x$.",
+    "answer": "$2x-\\tan x+C$",
+    "difficulty": 1,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9E Q2f",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["trig", "trigIdentity", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9e-2g",
+    "prompt": "Find an antiderivative of $\\tan^2 x-\\sec^2 x$.",
+    "answer": "$-x+C$",
+    "difficulty": 1,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9E Q2g",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["trig", "trigIdentity", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9e-2h",
+    "prompt": "Find an antiderivative of $\\operatorname{cosec}^2\\left(x-\\frac{\\pi}{2}\\right)$.",
+    "answer": "$-\\cot\\left(x-\\frac{\\pi}{2}\\right)+C$",
+    "difficulty": 1,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9E Q2h",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["trig", "simple", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9e-3a",
+    "prompt": "Evaluate $\\displaystyle\\int_{0}^{\\frac{\\pi}{2}} \\sin^2 x\\,dx$.",
+    "answer": "$\\frac{\\pi}{4}$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9E Q3a",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["trig", "trigIdentity", "simpleUSub", "definiteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9e-3b",
+    "prompt": "Evaluate $\\displaystyle\\int_{0}^{\\frac{\\pi}{4}} \\tan^3 x\\,dx$.",
+    "answer": "$\\frac{1}{2}-\\frac{1}{2}\\ln 2$",
+    "difficulty": 3,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9E Q3b",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["trig", "trigIdentity", "uSubstitution", "definiteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9e-3c",
+    "prompt": "Evaluate $\\displaystyle\\int_{0}^{\\frac{\\pi}{2}} \\sin^2 x\\cos x\\,dx$.",
+    "answer": "$\\frac{1}{3}$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9E Q3c",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["trig", "uSubstitution", "definiteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9e-3d",
+    "prompt": "Evaluate $\\displaystyle\\int_{0}^{\\frac{\\pi}{4}} \\cos^4 x\\,dx$.",
+    "answer": "$\\frac{1}{4}+\\frac{3\\pi}{32}$",
+    "difficulty": 3,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9E Q3d",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["trig", "trigIdentity", "simpleUSub", "definiteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9e-3e",
+    "prompt": "Evaluate $\\displaystyle\\int_{0}^{\\pi} \\sin^3 x\\,dx$.",
+    "answer": "$\\frac{4}{3}$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9E Q3e",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["trig", "uSubstitution", "definiteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9e-3f",
+    "prompt": "Evaluate $\\displaystyle\\int_{0}^{\\frac{\\pi}{2}} \\sin^2(2x)\\,dx$.",
+    "answer": "$\\frac{\\pi}{4}$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9E Q3f",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["trig", "trigIdentity", "simpleUSub", "definiteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9e-3g",
+    "prompt": "Evaluate $\\displaystyle\\int_{0}^{\\frac{\\pi}{3}} \\sin^2 x\\cos^2 x\\,dx$.",
+    "answer": "$\\frac{\\pi}{24}+\\frac{\\sqrt3}{64}$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9E Q3g",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["trig", "trigIdentity", "simpleUSub", "definiteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9e-3h",
+    "prompt": "Evaluate $\\displaystyle\\int_{0}^{1} \\sin^2 x+\\cos^2 x\\,dx$.",
+    "answer": "$1$",
+    "difficulty": 1,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9E Q3h",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["trig", "trigIdentity", "definiteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9e-4a",
+    "prompt": "Find an antiderivative of $\\cos^3 x$.",
+    "answer": "$\\sin x-\\frac{1}{3}\\sin^3 x+C$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9E Q4a",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["trig", "uSubstitution", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9e-4b",
+    "prompt": "Find an antiderivative of $\\sin^3\\left(\\frac{x}{4}\\right)$.",
+    "answer": "$\\frac{4}{3}\\cos^3\\left(\\frac{x}{4}\\right)-4\\cos\\left(\\frac{x}{4}\\right)+C$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9E Q4b",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["trig", "uSubstitution", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9e-4c",
+    "prompt": "Find an antiderivative of $\\cos^2(4\\pi x)$.",
+    "answer": "$\\frac{x}{2}+\\frac{1}{16\\pi}\\sin(8\\pi x)+C$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9E Q4c",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["trig", "trigIdentity", "simpleUSub", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9e-4d",
+    "prompt": "Find an antiderivative of $7\\cos^7 t$.",
+    "answer": "$7\\sin t-7\\sin^3 t+\\frac{21}{5}\\sin^5 t-\\sin^7 t+C$",
+    "difficulty": 3,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9E Q4d",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["trig", "uSubstitution", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9e-4e",
+    "prompt": "Find an antiderivative of $\\cos^3(5x)$.",
+    "answer": "$\\frac{1}{5}\\sin(5x)-\\frac{1}{15}\\sin^3(5x)+C$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9E Q4e",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["trig", "uSubstitution", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9e-4f",
+    "prompt": "Find an antiderivative of $8\\sin^4 x$.",
+    "answer": "$3x-2\\sin(2x)+\\frac{1}{4}\\sin(4x)+C$",
+    "difficulty": 3,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9E Q4f",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["trig", "trigIdentity", "simpleUSub", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9e-4g",
+    "prompt": "Find an antiderivative of $\\sin^2 x\\cos^4 x$.",
+    "answer": "$\\frac{x}{16}-\\frac{1}{64}\\sin(4x)+\\frac{1}{48}\\sin^3(2x)+C$",
+    "difficulty": 3,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9E Q4g",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["trig", "trigIdentity", "simpleUSub", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9e-4h",
+    "prompt": "Find an antiderivative of $\\cos^5 x$.",
+    "answer": "$\\sin x-\\frac{2}{3}\\sin^3 x+\\frac{1}{5}\\sin^5 x+C$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9E Q4h",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["trig", "uSubstitution", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9e-5a",
+    "prompt": "Find an antiderivative of $\\sin(4x)\\sin(2x)$.",
+    "answer": "$\\frac{1}{4}\\sin(2x)-\\frac{1}{12}\\sin(6x)+C$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9E Q5a",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["trig", "trigIdentity", "simpleUSub", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9e-5b",
+    "prompt": "Find an antiderivative of $\\cos(4x)\\cos(2x)$.",
+    "answer": "$\\frac{1}{4}\\sin(2x)+\\frac{1}{12}\\sin(6x)+C$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9E Q5b",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["trig", "trigIdentity", "simpleUSub", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9e-5c",
+    "prompt": "Find an antiderivative of $\\sin(4x)\\cos(2x)$.",
+    "answer": "$-\\frac{1}{4}\\cos(2x)-\\frac{1}{12}\\cos(6x)+C$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9E Q5c",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["trig", "trigIdentity", "simpleUSub", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9e-5d",
+    "prompt": "Find an antiderivative of $\\sin\\left(\\frac{3x}{2}\\right)\\cos\\left(\\frac{x}{2}\\right)$.",
+    "answer": "$-\\frac{1}{2}\\cos x-\\frac{1}{4}\\cos(2x)+C$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9E Q5d",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["trig", "trigIdentity", "simpleUSub", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9e-5e",
+    "prompt": "Find an antiderivative of $\\cos\\left(\\frac{3x}{2}\\right)\\cos\\left(\\frac{x}{2}\\right)$.",
+    "answer": "$\\frac{1}{2}\\sin x+\\frac{1}{4}\\sin(2x)+C$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9E Q5e",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["trig", "trigIdentity", "simpleUSub", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9e-5f",
+    "prompt": "Find an antiderivative of $\\sin\\left(\\frac{3x}{2}\\right)\\sin\\left(\\frac{x}{2}\\right)$.",
+    "answer": "$\\frac{1}{2}\\sin x-\\frac{1}{4}\\sin(2x)+C$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9E Q5f",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["trig", "trigIdentity", "simpleUSub", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9e-6a",
+    "prompt": "Evaluate $\\displaystyle\\int_{0}^{\\pi} \\cos(2x)\\cos\\left(\\frac{x}{2}\\right)\\,dx$.",
+    "answer": "$-\\frac{2}{15}$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9E Q6a",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["trig", "trigIdentity", "simpleUSub", "definiteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9e-6b",
+    "prompt": "Evaluate $\\displaystyle\\int_{0}^{\\frac{\\pi}{2}} \\sin(2x)\\cos(6x)\\,dx$.",
+    "answer": "$0$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9E Q6b",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["trig", "trigIdentity", "simpleUSub", "definiteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9e-6c",
+    "prompt": "Evaluate $\\displaystyle\\int_{0}^{\\frac{\\pi}{2}} \\sin(8x)\\cos(10x)\\,dx$.",
+    "answer": "$-\\frac{4}{9}$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9E Q6c",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["trig", "trigIdentity", "simpleUSub", "definiteIntegral"],
+      "origin": ["public"]
+    }
   }
 ]
