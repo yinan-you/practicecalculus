@@ -31,7 +31,7 @@
     "tags": {
       "topic": ["integration"],
       "course": ["VCE-yr12", "VCE-methods"],
-      "method": ["log", "simpleUSub"],
+      "method": ["log", "simpleUSub", "indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -67,7 +67,7 @@
     "tags": {
       "topic": ["integration"],
       "course": ["VCE-yr12", "VCE-methods"],
-      "method": ["trig", "simple"],
+      "method": ["trig", "simple", "definiteIntegral"],
       "origin": ["public"]
     }
   },
@@ -103,7 +103,7 @@
     "tags": {
       "topic": ["integration"],
       "course": ["VCE-yr12", "VCE-methods"],
-      "method": ["powerRule", "simpleUSub"],
+      "method": ["powerRule", "simpleUSub", "indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -151,7 +151,7 @@
     "tags": {
       "topic": ["integration"],
       "course": ["VCE-yr12", "VCE-methods"],
-      "method": ["powerRule", "simpleUSub"],
+      "method": ["powerRule", "simpleUSub", "indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -175,7 +175,7 @@
     "tags": {
       "topic": ["integration"],
       "course": ["VCE-yr12", "VCE-methods"],
-      "method": ["trig", "simpleUSub"],
+      "method": ["trig", "simpleUSub", "definiteIntegral"],
       "origin": ["public"]
     }
   }
