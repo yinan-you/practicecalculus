@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import { FILTER_DIMENSIONS, type CoreDimensionId } from "@/lib/questions";
 import type { Filters } from "@/lib/filters";
 
@@ -33,19 +36,53 @@ function Chip({
   );
 }
 
+function Chevron({ expanded }: { expanded: boolean }) {
+  return (
+    <svg
+      aria-hidden
+      viewBox="0 0 16 16"
+      className={`h-3.5 w-3.5 shrink-0 text-zinc-400 transition-transform ${expanded ? "rotate-90" : ""}`}
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="M6 4l4 4-4 4" />
+    </svg>
+  );
+}
+
 function FilterGroup({
   title,
+  selectedCount,
   children,
 }: {
   title: string;
+  selectedCount: number;
   children: React.ReactNode;
 }) {
+  const [expanded, setExpanded] = useState(true);
+
   return (
     <div>
-      <h2 className="mb-2 text-xs font-semibold uppercase tracking-wide text-zinc-500">
-        {title}
-      </h2>
-      <div className="flex flex-wrap gap-2">{children}</div>
+      <button
+        type="button"
+        onClick={() => setExpanded((open) => !open)}
+        aria-expanded={expanded}
+        className="mb-2 flex w-full items-center gap-1.5 text-left"
+      >
+        <Chevron expanded={expanded} />
+        <span className="text-xs font-semibold uppercase tracking-wide text-zinc-500">
+          {title}
+        </span>
+        {!expanded && selectedCount > 0 && (
+          <span className="text-xs font-medium text-zinc-400">
+            · {selectedCount} selected
+          </span>
+        )}
+      </button>
+      {expanded && <div className="flex flex-wrap gap-2 pl-5">{children}</div>}
     </div>
   );
 }
@@ -72,7 +109,11 @@ export function FilterControls({
         const selected = filters[dimensionId] ?? [];
 
         return (
-          <FilterGroup key={dimensionId} title={dimension.label}>
+          <FilterGroup
+            key={dimensionId}
+            title={dimension.label}
+            selectedCount={selected.length}
+          >
             {visible.map((value) => (
               <Chip
                 key={value}
