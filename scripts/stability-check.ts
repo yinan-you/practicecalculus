@@ -299,11 +299,11 @@ function runMultipartTests(failures: Failure[]): void {
     failures,
   );
 
-  const flat = loadQuestions().find((q) => q.id === "q1");
+  const flat = loadQuestions().find((q) => q.id === "2025-mm1-q1a");
   if (!flat) {
     failures.push({
       label: "flat normalization",
-      detail: "q1 not found in bank",
+      detail: "2025-mm1-q1a not found in bank",
     });
     return;
   }
