@@ -58,7 +58,14 @@ export type CourseTag =
   | USCourseTag;
 
 export type MethodTag =
+  | "simple"
+  | "polynomial"
   | "powerRule"
+  | "exp"
+  | "log"
+  | "trig"
+  | "inverseTrig"
+  | "linearity"
   | "simpleChainRule"
   | "chainRule"
   | "productRule"
@@ -67,8 +74,7 @@ export type MethodTag =
   | "uSubstitution"
   | "integrationByParts"
   | "partialFractions"
-  | "trigIdentity"
-  | "other";
+  | "trigIdentity";
 
 export type SolutionSource = "manual" | "ai";
 
@@ -180,7 +186,14 @@ export const COURSE_TAGS: CourseTag[] = [
 ];
 
 export const METHOD_TAGS: MethodTag[] = [
+  "simple",
+  "polynomial",
   "powerRule",
+  "exp",
+  "log",
+  "trig",
+  "inverseTrig",
+  "linearity",
   "simpleChainRule",
   "chainRule",
   "productRule",
@@ -190,7 +203,6 @@ export const METHOD_TAGS: MethodTag[] = [
   "integrationByParts",
   "partialFractions",
   "trigIdentity",
-  "other",
 ];
 
 export const TOPICS: Topic[] = ["differentiation", "integration"];
@@ -261,7 +273,14 @@ export const FILTER_DIMENSIONS: FilterDimension[] = [
     matchMode: "all",
     order: METHOD_TAGS,
     labels: {
+      simple: "Simple",
+      polynomial: "Polynomial",
       powerRule: "Power rule",
+      exp: "Exponential",
+      log: "Logarithmic",
+      trig: "Trigonometric",
+      inverseTrig: "Inverse trig",
+      linearity: "Linearity",
       simpleChainRule: "Simple chain rule",
       chainRule: "Chain rule",
       productRule: "Product rule",
@@ -271,7 +290,6 @@ export const FILTER_DIMENSIONS: FilterDimension[] = [
       integrationByParts: "Integration by parts",
       partialFractions: "Partial fractions",
       trigIdentity: "Trig identity",
-      other: "Other",
     },
   },
 ];
