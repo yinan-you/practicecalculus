@@ -45,9 +45,6 @@ export function PracticeSession({ questions }: PracticeSessionProps) {
 
   useEffect(() => {
     function handleKeyDown(event: KeyboardEvent) {
-      if (event.key !== "Enter") {
-        return;
-      }
       const target = event.target as HTMLElement | null;
       if (
         target &&
@@ -57,13 +54,28 @@ export function PracticeSession({ questions }: PracticeSessionProps) {
       ) {
         return;
       }
-      event.preventDefault();
-      generateNextQuestion();
+
+      if (event.key === "Enter") {
+        event.preventDefault();
+        generateNextQuestion();
+        return;
+      }
+
+      if (
+        event.key.toLowerCase() === "s" &&
+        !event.ctrlKey &&
+        !event.metaKey &&
+        !event.altKey &&
+        currentQuestion?.solution
+      ) {
+        event.preventDefault();
+        setIsSolutionOpen((open) => !open);
+      }
     }
 
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [generateNextQuestion]);
+  }, [generateNextQuestion, currentQuestion]);
 
   const handleToggle = useCallback(
     (dimensionId: CoreDimensionId, value: string) =>
@@ -95,6 +107,7 @@ export function PracticeSession({ questions }: PracticeSessionProps) {
         </button>
         <span className="text-sm text-zinc-500">
           {matchingQuestions.length} matching · press Enter
+          {currentQuestion?.solution ? " · S solution" : ""}
         </span>
       </div>
 
