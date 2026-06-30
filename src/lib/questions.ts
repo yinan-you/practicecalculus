@@ -76,7 +76,9 @@ export type MethodTag =
   | "uSubstitution"
   | "integrationByParts"
   | "partialFractions"
-  | "trigIdentity";
+  | "trigIdentity"
+  | "definiteIntegral"
+  | "indefiniteIntegral";
 
 export type SolutionSource = "manual" | "ai";
 
@@ -207,6 +209,8 @@ export const METHOD_TAGS: MethodTag[] = [
   "integrationByParts",
   "partialFractions",
   "trigIdentity",
+  "definiteIntegral",
+  "indefiniteIntegral",
 ];
 
 export const TOPICS: Topic[] = ["differentiation", "integration"];
@@ -296,6 +300,8 @@ export const FILTER_DIMENSIONS: FilterDimension[] = [
       integrationByParts: "Integration by parts",
       partialFractions: "Partial fractions",
       trigIdentity: "Trig identity",
+      definiteIntegral: "Definite integral",
+      indefiniteIntegral: "Indefinite integral",
     },
   },
 ];

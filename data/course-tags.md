@@ -51,10 +51,14 @@ Method tags live on `tags.method` (flat entry or each multipart part). They are 
 | `integrationByParts` | integration | $\int u\,dv$ |
 | `partialFractions` | integration | rational functions via partial fractions |
 | `trigIdentity` | integration | trig identity rewrite before integrating |
+| `definiteIntegral` | integration | bounded limits; evaluate the integral over an interval |
+| `indefiniteIntegral` | integration | find an antiderivative (include $+C$ where appropriate) |
 
 **`simple`:** Use for direct standard-form recall such as $\frac{d}{dx}e^x$, $\int\sin x\,dx$, or $\frac{d}{dx}[x^3]$. Do not add `simple` when a compound technique applies, including `linearity`, `simpleChainRule`, `productRule`, or substitution.
 
 **`polynomial`:** Use only when the whole expression is a polynomial. A single monomial usually carries `polynomial`, `powerRule`, and `simple`; a multi-term polynomial carries `polynomial`, `powerRule`, and `linearity`.
+
+**Definite vs indefinite:** Every integration question carries exactly one of `definiteIntegral` or `indefiniteIntegral` — tag the form the student is asked to produce, not just the integrand family. Examples: $\int_0^1 x^2\,dx$ → `definiteIntegral`, `powerRule`, `simple`; $\int x^2\,dx$ → `indefiniteIntegral`, `powerRule`, `simple`. Do not use either tag on differentiation questions.
 
 **Simple vs full:** *Simple* chain rule and u-sub mean the inner function is linear ($g(x)=ax+b$). Use `simpleChainRule` / `simpleUSub` for these — not `chainRule` / `uSubstitution`. Examples: $\frac{d}{dx}\sin(3x)$ → `trig`, `simpleChainRule`; $\frac{d}{dx}\sin(x^2)$ → `trig`, `chainRule`; $\int\cos(3x)\,dx$ → `trig`, `simpleUSub`; $\int 2x\cos(x^2)\,dx$ → `trig`, `uSubstitution`; $\frac{d}{dx}\sinh(3x)$ → `hyperbolic`, `simpleChainRule`; $\int\cosh(2x)\,dx$ → `hyperbolic`, `simpleUSub`.
 
@@ -363,6 +367,8 @@ For technique questions, the following curriculum levels are broadly equivalent 
 | `inverseHyperbolic` derivatives | — | — | — | calc2 |
 | `inverseHyperbolic` integrals | — | — | — | calc2 |
 | `trigIdentity` | Spec yr12 | Ext1 yr12 | AA-HL-yr12 | calc2 |
+| `definiteIntegral` | Meth yr11–12 | Adv yr11–12 | AA-SL-yr11–12, AA-HL-yr11–12 | calc1–calc2 |
+| `indefiniteIntegral` | Meth yr11–12 | Adv yr11–12 | AA-SL-yr11–12, AA-HL-yr11–12 | calc1–calc2 |
 | `integrationByParts` | Spec yr12 | Ext1 yr12 | AA-HL-yr12 | calc2 |
 | `partialFractions` | Spec yr12 | Ext2 yr12 | AA-HL-yr12 | calc2 |
 | Reduction formulae | Spec yr12 | Ext2 yr12 | AA-HL-yr12 | calc2 |
@@ -405,6 +411,6 @@ Before approving `course-tags.md`:
 
 - [ ] Every **in-scope** tag (`calc1`, `calc2`, `VCE-yr11`, `VCE-yr12`, `VCE-methods`, `VCE-specialist`, `HSC-yr11`, `HSC-yr12`, `HSC-advanced`, `HSC-ext1`, `HSC-ext2`, all 8 `IB-*` tags) has a full calculus techniques description
 - [ ] Every **deferred** tag has an honest stub — no invented syllabus detail
-- [ ] The cross-curriculum equivalence table covers the method vocabulary: `simple`, `polynomial`, `powerRule`, `exp`, `log`, `trig`, `inverseTrig`, `hyperbolic`, `inverseHyperbolic`, `linearity`, `simpleChainRule`, `chainRule`, `productRule`, `quotientRule`, `simpleUSub`, `uSubstitution`, `integrationByParts`, `partialFractions`, `trigIdentity`
+- [ ] The cross-curriculum equivalence table covers the method vocabulary: `simple`, `polynomial`, `powerRule`, `exp`, `log`, `trig`, `inverseTrig`, `hyperbolic`, `inverseHyperbolic`, `linearity`, `simpleChainRule`, `chainRule`, `productRule`, `quotientRule`, `simpleUSub`, `uSubstitution`, `integrationByParts`, `partialFractions`, `trigIdentity`, `definiteIntegral`, `indefiniteIntegral`
 - [ ] No applications, differential equations, or kinematics content has crept into technique descriptions
 - [ ] Primary sources (VCAA study design, NESA syllabus, IB subject guide) are consistent with the technique scope described

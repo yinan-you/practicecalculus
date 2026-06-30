@@ -189,7 +189,7 @@ Tags are grouped into **dimensions** (`TagMap = Record<string, string[]>`). Each
 ### Closed vocabularies (defined in `src/lib/questions.ts`)
 
 - **Topics:** `differentiation`, `integration`
-- **Methods:** `simple`, `polynomial`, `powerRule`, `exp`, `log`, `trig`, `inverseTrig`, `hyperbolic`, `inverseHyperbolic`, `linearity`, `simpleChainRule`, `chainRule`, `productRule`, `quotientRule`, `simpleUSub`, `uSubstitution`, `integrationByParts`, `partialFractions`, `trigIdentity`
+- **Methods:** `simple`, `polynomial`, `powerRule`, `exp`, `log`, `trig`, `inverseTrig`, `hyperbolic`, `inverseHyperbolic`, `linearity`, `simpleChainRule`, `chainRule`, `productRule`, `quotientRule`, `simpleUSub`, `uSubstitution`, `integrationByParts`, `partialFractions`, `trigIdentity`, `definiteIntegral`, `indefiniteIntegral`
 - **Origin:** `public`, `user`
 - **Course tags:** content levels (`calc1`, `calc2`), Australian year/stream tags, IB tags, US AP tags — full lists in `COURSE_TAGS` and documented in `data/course-tags.md`
 
@@ -205,6 +205,7 @@ Full tagging guide for importers: `data/import-specv2.md` § Method tagging conv
 - **`linearity`** — two or more terms handled term-by-term.
 - **`simpleChainRule` / `simpleUSub`** — inner function is linear ($g(x)=ax+b$). Often taught without naming substitution (e.g. $\frac{d}{dx}\sin(3x)$, $\int\cos(3x)\,dx$).
 - **`chainRule` / `uSubstitution`** — same techniques when the inner function is **not** linear or the substitution is non-obvious.
+- **`definiteIntegral` / `indefiniteIntegral`** — tag exactly one on every integration question; do not use on differentiation.
 
 Do not use `simple` when a compound technique applies, and do not use the full-rule tags when the simple variant applies. `simple` and `polynomial` are stored method tags assigned by humans or LLM importers; they are not derived at runtime.
 

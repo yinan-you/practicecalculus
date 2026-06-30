@@ -211,7 +211,7 @@ Forbidden:
 Use only canonical tags from `src/lib/questions.ts`:
 
 - **topic:** `differentiation`, `integration`
-- **method:** `simple`, `polynomial`, `powerRule`, `exp`, `log`, `trig`, `inverseTrig`, `hyperbolic`, `inverseHyperbolic`, `linearity`, `simpleChainRule`, `chainRule`, `productRule`, `quotientRule`, `simpleUSub`, `uSubstitution`, `integrationByParts`, `partialFractions`, `trigIdentity`
+- **method:** `simple`, `polynomial`, `powerRule`, `exp`, `log`, `trig`, `inverseTrig`, `hyperbolic`, `inverseHyperbolic`, `linearity`, `simpleChainRule`, `chainRule`, `productRule`, `quotientRule`, `simpleUSub`, `uSubstitution`, `integrationByParts`, `partialFractions`, `trigIdentity`, `definiteIntegral`, `indefiniteIntegral`
 - **origin:** `public`, `user`
 - **course:** values from `COURSE_TAGS` and policy in `data/course-tags.md`
 
@@ -230,6 +230,7 @@ Method tags describe the expression families, structures, and techniques a stude
 | Elementary family | `powerRule`, `exp`, `log`, `trig`, `inverseTrig`, `hyperbolic`, `inverseHyperbolic` | Tag whenever that family appears, even if another technique also applies |
 | Structure | `linearity` | Two or more terms are combined term-by-term by sum/difference or constant multiple rules |
 | Technique | `simpleChainRule`, `chainRule`, `productRule`, `quotientRule`, `simpleUSub`, `uSubstitution`, `integrationByParts`, `partialFractions`, `trigIdentity` | Tag when that named technique is required |
+| Form | `definiteIntegral`, `indefiniteIntegral` | Tag exactly one on every integration question; do not use on differentiation |
 
 ### `simple`
 
@@ -260,6 +261,8 @@ Tag `polynomial` when the **entire** expression being differentiated or integrat
 Use elementary family tags whenever the family appears: `exp` for exponential functions, `log` for logarithmic forms including $\frac{1}{x}$ / $\ln|x|$, `trig` for trigonometric functions, `inverseTrig` for inverse trig derivatives or integrals, `hyperbolic` for hyperbolic functions such as $\sinh x$, $\cosh x$, $\tanh x$, and `inverseHyperbolic` for inverse hyperbolic derivatives or integrals. `powerRule` applies to powers $x^n$ and power-form antiderivatives.
 
 Use `simpleChainRule` / `simpleUSub` when the inner function or substitution is linear ($g(x)=ax+b$). Use `chainRule` / `uSubstitution` for non-linear inner functions or non-obvious substitutions. Do **not** use the full-rule tag when the simple variant applies.
+
+On integration questions, tag exactly one of `definiteIntegral` (bounded limits) or `indefiniteIntegral` (antiderivative with $+C$). Examples: $\int_0^{\pi/2}\sin x\,dx$ → `definiteIntegral`, `trig`, `simple`; $\int\sin x\,dx$ → `indefiniteIntegral`, `trig`, `simple`.
 
 ---
 

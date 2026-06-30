@@ -127,8 +127,10 @@ Choose from the closed vocabulary:
 | `integrationByParts` | $\int u\,dv = uv - \int v\,du$ |
 | `partialFractions` | Decomposing rational functions before integrating |
 | `trigIdentity` | Using trig identities (Pythagorean, double angle, etc.) to simplify before integrating |
+| `definiteIntegral` | Bounded limits; evaluate the integral over an interval |
+| `indefiniteIntegral` | Find an antiderivative (include $+C$ where appropriate) |
 
-A question may require multiple methods. Tag all that apply, including family tags. Use `simple` for direct standard-form recall such as $\frac{d}{dx}\ln x$, $\int\sin x\,dx$, or $\frac{d}{dx}[x^3]$; do not use `simple` when a compound technique such as `linearity`, `simpleChainRule`, `productRule`, or substitution applies.
+A question may require multiple methods. Tag all that apply, including family tags. Every integration question carries exactly one of `definiteIntegral` or `indefiniteIntegral`. Use `simple` for direct standard-form recall such as $\frac{d}{dx}\ln x$, $\int\sin x\,dx$, or $\frac{d}{dx}[x^3]$; do not use `simple` when a compound technique such as `linearity`, `simpleChainRule`, `productRule`, or substitution applies.
 
 Use `polynomial` only when the whole expression is a polynomial. A single monomial $cx^n$ usually carries `polynomial`, `powerRule`, and `simple`; a multi-term polynomial carries `polynomial`, `powerRule`, and `linearity`.
 
