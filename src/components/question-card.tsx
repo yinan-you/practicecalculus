@@ -1,5 +1,6 @@
 import type { Question } from "@/lib/questions";
 import { MarkdownMath } from "@/components/markdown-math";
+import { QuestionIdCopy } from "@/components/question-id-copy";
 
 type QuestionCardProps = {
   question: Question;
@@ -29,8 +30,12 @@ export function QuestionCard({
   const isMultipart = question.parts.length > 1 || question.parts[0]?.id !== "main";
 
   return (
-    <div className="w-full rounded-2xl border border-black/[.08] bg-white p-6 shadow-sm dark:border-white/[.145] dark:bg-zinc-950">
-      <div className="mb-4 flex flex-wrap gap-2">
+    <div className="group/card relative w-full rounded-2xl border border-black/[.08] bg-white p-6 shadow-sm dark:border-white/[.145] dark:bg-zinc-950">
+      <div className="absolute right-4 top-4 opacity-0 transition-opacity group-hover/card:opacity-100 has-[:focus-visible]:opacity-100">
+        <QuestionIdCopy questionId={question.id} />
+      </div>
+
+      <div className="mb-4 flex flex-wrap gap-2 pr-8">
         {tags.map((tag) => (
           <span
             key={tag}
