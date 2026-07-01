@@ -1972,5 +1972,863 @@
       "method": ["trig", "trigIdentity", "simpleUSub", "definiteIntegral"],
       "origin": ["public"]
     }
+  },
+  {
+    "id": "cam-9f-q9a",
+    "prompt": "$\\displaystyle\\int \\frac{7}{(x-2)(x+5)}\\,dx$",
+    "answer": "$\\ln|x-2| - \\ln|x+5| + C$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9F Q9a",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["partialFractions", "log", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9f-q9b",
+    "prompt": "$\\displaystyle\\int \\frac{x+3}{x^2-3x+2}\\,dx$",
+    "answer": "$5\\ln|x-2| - 4\\ln|x-1| + C$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9F Q9b",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["partialFractions", "log", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9f-q9c",
+    "prompt": "$\\displaystyle\\int \\frac{2x+1}{(x+1)(x-1)}\\,dx$",
+    "answer": "$\\frac{3}{2}\\ln|x-1| + \\frac{1}{2}\\ln|x+1| + C$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9F Q9c",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["partialFractions", "log", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9f-q9d",
+    "prompt": "$\\displaystyle\\int \\frac{2x^2}{x^2-1}\\,dx$",
+    "answer": "$2x + \\ln|x-1| - \\ln|x+1| + C$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9F Q9d",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["partialFractions", "log", "linearity", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9f-q9e",
+    "prompt": "$\\displaystyle\\int \\frac{2x+1}{(x+2)^2}\\,dx$",
+    "answer": "$2\\ln|x+2| + \\dfrac{3}{x+2} + C$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9F Q9e",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["partialFractions", "log", "powerRule", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9f-q9f",
+    "prompt": "$\\displaystyle\\int \\frac{4x-2}{(x-2)(x+4)}\\,dx$",
+    "answer": "$\\ln|x-2| + 3\\ln|x+4| + C$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9F Q9f",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["partialFractions", "log", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9f-q10a",
+    "prompt": "$\\displaystyle\\int \\frac{2x-3}{x^2-5x+6}\\,dx$",
+    "answer": "$3\\ln|x-3| - \\ln|x-2| + C$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9F Q10a",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["partialFractions", "log", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9f-q10b",
+    "prompt": "$\\displaystyle\\int \\frac{5x+1}{(x-1)(x+2)}\\,dx$",
+    "answer": "$2\\ln|x-1| + 3\\ln|x+2| + C$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9F Q10b",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["partialFractions", "log", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9f-q10c",
+    "prompt": "$\\displaystyle\\int \\frac{x^3-2x^2-3x+9}{x^2-4}\\,dx$",
+    "answer": "$\\dfrac{x^2}{2} - 2x + \\dfrac{3}{4}\\ln|x-2| + \\dfrac{1}{4}\\ln|x+2| + C$",
+    "difficulty": 3,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9F Q10c",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["partialFractions", "log", "polynomial", "linearity", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9f-q10d",
+    "prompt": "$\\displaystyle\\int \\frac{4x+10}{x^2+5x+4}\\,dx$",
+    "answer": "$2\\ln|x+1| + 2\\ln|x+4| + C$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9F Q10d",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["partialFractions", "log", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9f-q10e",
+    "prompt": "$\\displaystyle\\int \\frac{x^3+x^2-3x+3}{x+2}\\,dx$",
+    "answer": "$\\dfrac{x^3}{3} - \\dfrac{x^2}{2} - x + 5\\ln|x+2| + C$",
+    "difficulty": 3,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9F Q10e",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["partialFractions", "log", "polynomial", "linearity", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9f-q10f",
+    "prompt": "$\\displaystyle\\int \\frac{x^3+3}{x^2-x}\\,dx$",
+    "answer": "$\\dfrac{x^2}{2} + x - 3\\ln|x| + 4\\ln|x-1| + C$",
+    "difficulty": 3,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9F Q10f",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["partialFractions", "log", "polynomial", "linearity", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9g-q11a",
+    "prompt": "$\\displaystyle\\int \\frac{3x}{(x+1)(x^2+2)}\\,dx$",
+    "answer": "$-\\ln|x+1| + \\dfrac{1}{2}\\ln(x^2+2) + \\sqrt{2}\\arctan\\!\\left(\\dfrac{x}{\\sqrt{2}}\\right) + C$",
+    "difficulty": 3,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9G Q11a",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["partialFractions", "log", "inverseTrig", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9g-q11b",
+    "prompt": "$\\displaystyle\\int \\frac{2}{(x+1)^2(x^2+1)}\\,dx$",
+    "answer": "$\\ln|x+1| - \\dfrac{1}{x+1} - \\dfrac{1}{2}\\ln(x^2+1) + C$",
+    "difficulty": 3,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9G Q11b",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["partialFractions", "log", "powerRule", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9g-q11c",
+    "prompt": "$\\displaystyle\\int \\frac{5x^3}{(x-1)(x^2+4)}\\,dx$",
+    "answer": "$5x + \\ln|x-1| + 2\\ln(x^2+4) - 8\\arctan\\!\\left(\\dfrac{x}{2}\\right) + C$",
+    "difficulty": 3,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9G Q11c",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["partialFractions", "log", "inverseTrig", "linearity", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9g-q11d",
+    "prompt": "$\\displaystyle\\int \\frac{16(4x+1)}{(x-2)^2(x^2+4)}\\,dx$",
+    "answer": "$-\\ln|x-2| - \\dfrac{18}{x-2} + \\dfrac{1}{2}\\ln(x^2+4) - 8\\arctan\\!\\left(\\dfrac{x}{2}\\right) + C$",
+    "difficulty": 3,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9G Q11d",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["partialFractions", "log", "inverseTrig", "powerRule", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9g-q11e",
+    "prompt": "$\\displaystyle\\int \\frac{24(x+2)}{(x+2)^2(x^2+2)}\\,dx$",
+    "answer": "$4\\ln|x+2| - 2\\ln(x^2+2) + 4\\sqrt{2}\\arctan\\!\\left(\\dfrac{x}{\\sqrt{2}}\\right) + C$",
+    "difficulty": 3,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9G Q11e",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["partialFractions", "log", "inverseTrig", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9g-q11f",
+    "prompt": "$\\displaystyle\\int \\frac{8}{(x+1)^3(x^2-1)}\\,dx$",
+    "answer": "$\\dfrac{1}{2}\\ln|x-1| - \\dfrac{1}{2}\\ln|x+1| - \\dfrac{1}{x+1} - \\dfrac{2}{(x+1)^2} - \\dfrac{4}{3(x+1)^3} + C$",
+    "difficulty": 3,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9G Q11f",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["partialFractions", "log", "powerRule", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9g-q12a",
+    "prompt": "$\\displaystyle\\int_{1}^{2} \\frac{1}{x(x+1)}\\,dx$",
+    "answer": "$\\ln\\!\\left(\\dfrac{4}{3}\\right)$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9G Q12a",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["partialFractions", "log", "definiteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9g-q12b",
+    "prompt": "$\\displaystyle\\int_{0}^{1} \\frac{1}{(x+1)(x+2)}\\,dx$",
+    "answer": "$\\ln\\!\\left(\\dfrac{4}{3}\\right)$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9G Q12b",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["partialFractions", "log", "definiteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9g-q12c",
+    "prompt": "$\\displaystyle\\int_{2}^{3} \\frac{x-2}{(x-1)(x+2)}\\,dx$",
+    "answer": "$\\dfrac{4}{3}\\ln 5 - \\ln 8$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9G Q12c",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["partialFractions", "log", "definiteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9g-q12d",
+    "prompt": "$\\displaystyle\\int_{0}^{1} \\frac{x^2}{x^2+3x+2}\\,dx$",
+    "answer": "$1 + \\ln\\!\\left(\\dfrac{32}{81}\\right)$",
+    "difficulty": 3,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9G Q12d",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["partialFractions", "log", "linearity", "definiteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9g-q12e",
+    "prompt": "$\\displaystyle\\int_{2}^{3} \\frac{x+7}{(x+3)(x-1)}\\,dx$",
+    "answer": "$\\ln\\!\\left(\\dfrac{10}{3}\\right)$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9G Q12e",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["partialFractions", "log", "definiteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9g-q12f",
+    "prompt": "$\\displaystyle\\int_{2}^{3} \\frac{2x+6}{(x-1)^2}\\,dx$",
+    "answer": "$2\\ln 2 + 4$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9G Q12f",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["partialFractions", "log", "powerRule", "definiteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9g-q12g",
+    "prompt": "$\\displaystyle\\int_{2}^{3} \\frac{x+2}{x(x+4)}\\,dx$",
+    "answer": "$\\dfrac{1}{2}\\ln\\!\\left(\\dfrac{7}{4}\\right)$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9G Q12g",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["partialFractions", "log", "definiteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9g-q12h",
+    "prompt": "$\\displaystyle\\int_{0}^{1} \\frac{1-4x}{3+x-2x^2}\\,dx$",
+    "answer": "$\\ln\\!\\left(\\dfrac{2}{3}\\right)$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9G Q12h",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["partialFractions", "log", "definiteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9g-q12i",
+    "prompt": "$\\displaystyle\\int_{1}^{2} \\frac{1}{x(x-4)}\\,dx$",
+    "answer": "$-\\dfrac{1}{4}\\ln 3$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9G Q12i",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["partialFractions", "log", "definiteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9g-q12j",
+    "prompt": "$\\displaystyle\\int_{-3}^{-2} \\frac{1-4x}{(x+6)(x+1)}\\,dx$",
+    "answer": "$\\ln\\!\\left(\\dfrac{243}{2048}\\right)$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9G Q12j",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["partialFractions", "log", "definiteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9g-q12k",
+    "prompt": "$\\displaystyle\\int_{0}^{1} \\frac{3x^4+4x^3+16x^2+20x+9}{(x+2)(x^2+3)^2}\\,dx$",
+    "answer": "$\\dfrac{1}{6} + \\ln 2$",
+    "difficulty": 3,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9G Q12k",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["partialFractions", "log", "inverseTrig", "definiteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9g-q13a",
+    "prompt": "$\\displaystyle\\int_{0}^{1} \\frac{10x}{(x+1)(x^2+1)}\\,dx$",
+    "answer": "$\\dfrac{5\\pi}{4} - \\dfrac{5}{2}\\ln 2$",
+    "difficulty": 3,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9G Q13a",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["partialFractions", "log", "inverseTrig", "definiteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9g-q13b",
+    "prompt": "$\\displaystyle\\int_{0}^{\\sqrt{3}} \\frac{x^3-8}{(x-2)(x^2+1)}\\,dx$",
+    "answer": "$\\pi + \\sqrt{3} + \\ln 4$",
+    "difficulty": 3,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9G Q13b",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["partialFractions", "log", "inverseTrig", "linearity", "definiteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9g-q13c",
+    "prompt": "$\\displaystyle\\int_{0}^{1} \\frac{x^2-1}{x^2+1}\\,dx$",
+    "answer": "$1 - \\dfrac{\\pi}{2}$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9G Q13c",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["partialFractions", "inverseTrig", "linearity", "definiteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9g-q13d",
+    "prompt": "$\\displaystyle\\int_{-\\frac{1}{2}}^{0} \\frac{6}{(x^2+x+1)(x-1)}\\,dx$",
+    "answer": "$-\\dfrac{\\sqrt{3}\\,\\pi}{3} - \\ln 3$",
+    "difficulty": 3,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9G Q13d",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["partialFractions", "log", "inverseTrig", "definiteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9h-q1a",
+    "prompt": "$\\displaystyle\\int xe^{-x}\\,dx$",
+    "answer": "$-(x+1)e^{-x}+C$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9H Q1a",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["integrationByParts", "exp", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9h-q1b",
+    "prompt": "$\\displaystyle\\int \\log_e x\\,dx$",
+    "answer": "$x(\\ln x - 1)+C$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9H Q1b",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["integrationByParts", "log", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9h-q1c",
+    "prompt": "$\\displaystyle\\int x\\sin x\\,dx$",
+    "answer": "$\\sin x - x\\cos x+C$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9H Q1c",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["integrationByParts", "trig", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9h-q1d",
+    "prompt": "$\\displaystyle\\int \\arccos x\\,dx$",
+    "answer": "$x\\arccos x - \\sqrt{1-x^2}+C$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9H Q1d",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["integrationByParts", "inverseTrig", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9h-q1e",
+    "prompt": "$\\displaystyle\\int x\\cos(3x)\\,dx$",
+    "answer": "$\\dfrac{x\\sin(3x)}{3}+\\dfrac{\\cos(3x)}{9}+C$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9H Q1e",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["integrationByParts", "trig", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9h-q1f",
+    "prompt": "$\\displaystyle\\int x\\sec^2 x\\,dx$",
+    "answer": "$x\\tan x + \\ln|\\cos x|+C$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9H Q1f",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["integrationByParts", "trig", "log", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9h-q1g",
+    "prompt": "$\\displaystyle\\int x\\tan^2 x\\,dx$",
+    "answer": "$x\\tan x + \\ln|\\cos x| - \\dfrac{x^2}{2}+C$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9H Q1g",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["integrationByParts", "trig", "log", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9h-q1h",
+    "prompt": "$\\displaystyle\\int \\arcsin(2x)\\,dx$",
+    "answer": "$x\\arcsin(2x)+\\dfrac{1}{2}\\sqrt{1-4x^2}+C$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9H Q1h",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["integrationByParts", "inverseTrig", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9h-q1i",
+    "prompt": "$\\displaystyle\\int \\arctan x\\,dx$",
+    "answer": "$x\\arctan x - \\dfrac{1}{2}\\ln(x^2+1)+C$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9H Q1i",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["integrationByParts", "inverseTrig", "log", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9h-q1j",
+    "prompt": "$\\displaystyle\\int (x+1)e^{-x}\\,dx$",
+    "answer": "$-(x+2)e^{-x}+C$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9H Q1j",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["integrationByParts", "exp", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9h-q1k",
+    "prompt": "$\\displaystyle\\int x\\arctan x\\,dx$",
+    "answer": "$\\dfrac{x^2+1}{2}\\arctan x - \\dfrac{x}{2}+C$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9H Q1k",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["integrationByParts", "inverseTrig", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9h-q1l",
+    "prompt": "$\\displaystyle\\int x\\log_e x\\,dx$",
+    "answer": "$\\dfrac{x^2}{4}(2\\ln x - 1)+C$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9H Q1l",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["integrationByParts", "log", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9h-q1m",
+    "prompt": "$\\displaystyle\\int x^2\\log_e x\\,dx$",
+    "answer": "$\\dfrac{x^3}{9}(3\\ln x - 1)+C$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9H Q1m",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["integrationByParts", "log", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9h-q1n",
+    "prompt": "$\\displaystyle\\int x^{-1/2}\\log_e x\\,dx$",
+    "answer": "$2\\sqrt{x}(\\ln x - 2)+C$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9H Q1n",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["integrationByParts", "log", "powerRule", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9h-q1o",
+    "prompt": "$\\displaystyle\\int (x+3)e^x\\,dx$",
+    "answer": "$(x+2)e^x+C$",
+    "difficulty": 1,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9H Q1o",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["integrationByParts", "exp", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9h-q1p",
+    "prompt": "$\\displaystyle\\int x^5\\log_e x\\,dx$",
+    "answer": "$\\dfrac{x^6}{36}(6\\ln x - 1)+C$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9H Q1p",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["integrationByParts", "log", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9h-q1q",
+    "prompt": "$\\displaystyle\\int xe^{2x+1}\\,dx$",
+    "answer": "$\\dfrac{(2x-1)e^{2x+1}}{4}+C$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9H Q1q",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["integrationByParts", "exp", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9h-q1r",
+    "prompt": "$\\displaystyle\\int x\\log_e(2x)\\,dx$",
+    "answer": "$\\dfrac{x^2}{4}(2\\ln(2x)-1)+C$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9H Q1r",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["integrationByParts", "log", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9h-q2a",
+    "prompt": "$\\displaystyle\\int x^2e^{-x}\\,dx$",
+    "answer": "$-(x^2+2x+2)e^{-x}+C$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9H Q2a",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["integrationByParts", "exp", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9h-q2b",
+    "prompt": "$\\displaystyle\\int x^2\\sin x\\,dx$",
+    "answer": "$(2-x^2)\\cos x + 2x\\sin x+C$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9H Q2b",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["integrationByParts", "trig", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9h-q3a",
+    "prompt": "$\\displaystyle\\int e^x\\sin x\\,dx$",
+    "answer": "$\\dfrac{e^x(\\sin x - \\cos x)}{2}+C$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9H Q3a",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["integrationByParts", "exp", "trig", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9h-q3b",
+    "prompt": "$\\displaystyle\\int e^{2x}\\cos(3x)\\,dx$",
+    "answer": "$\\dfrac{e^{2x}(2\\cos(3x)+3\\sin(3x))}{13}+C$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9H Q3b",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["integrationByParts", "exp", "trig", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9h-q3c",
+    "prompt": "$\\displaystyle\\int e^{3x}\\sin x\\,dx$",
+    "answer": "$\\dfrac{e^{3x}(3\\sin x - \\cos x)}{10}+C$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9H Q3c",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["integrationByParts", "exp", "trig", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9h-q3d",
+    "prompt": "$\\displaystyle\\int e^x\\sin\\!\\left(\\frac{x}{2}\\right)\\,dx$",
+    "answer": "$\\dfrac{2e^x\\left(2\\sin(x/2)-\\cos(x/2)\\right)}{5}+C$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9H Q3d",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["integrationByParts", "exp", "trig", "indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9h-q9a",
+    "prompt": "$\\displaystyle\\int_{0}^{2} xe^{2x}\\,dx$",
+    "answer": "$\\dfrac{1}{4}+\\dfrac{3e^4}{4}$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9H Q9a",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["integrationByParts", "exp", "definiteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9h-q9b",
+    "prompt": "$\\displaystyle\\int_{0}^{2\\pi} x\\sin(4x)\\,dx$",
+    "answer": "$-\\dfrac{\\pi}{2}$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9H Q9b",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["integrationByParts", "trig", "definiteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9h-q9c",
+    "prompt": "$\\displaystyle\\int_{0}^{\\frac{\\pi}{4}} x\\cos(4x)\\,dx$",
+    "answer": "$-\\dfrac{1}{8}$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9H Q9c",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["integrationByParts", "trig", "definiteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9h-q9d",
+    "prompt": "$\\displaystyle\\int_{0}^{1} 2xe^{3x}\\,dx$",
+    "answer": "$\\dfrac{2}{9}+\\dfrac{4e^3}{9}$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9H Q9d",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["integrationByParts", "exp", "definiteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9h-q9e",
+    "prompt": "$\\displaystyle\\int_{0}^{\\pi} (4x-3)\\sin\\!\\left(\\frac{x}{4}\\right)\\,dx$",
+    "answer": "$38\\sqrt{2}-8\\sqrt{2}\\,\\pi-12$",
+    "difficulty": 3,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9H Q9e",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["integrationByParts", "trig", "definiteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9h-q9f",
+    "prompt": "$\\displaystyle\\int_{0}^{1} x^2e^{3x-1}\\,dx$",
+    "answer": "$\\dfrac{5e^2-2}{27}$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9H Q9f",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["integrationByParts", "exp", "definiteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9h-q9g",
+    "prompt": "$\\displaystyle\\int_{1}^{2} \\log_e(3x)\\,dx$",
+    "answer": "$\\ln 12 - 1$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9H Q9g",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["integrationByParts", "log", "definiteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9h-q9h",
+    "prompt": "$\\displaystyle\\int_{0}^{2} x^2e^{2x}\\,dx$",
+    "answer": "$\\dfrac{5e^4-1}{4}$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9H Q9h",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["integrationByParts", "exp", "definiteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-9h-q9i",
+    "prompt": "$\\displaystyle\\int_{1}^{3} x^2\\log_e x\\,dx$",
+    "answer": "$9\\ln 3 - \\dfrac{26}{9}$",
+    "difficulty": 2,
+    "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9H Q9i",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["VCE-yr12", "VCE-specialist"],
+      "method": ["integrationByParts", "log", "definiteIntegral"],
+      "origin": ["public"]
+    }
   }
 ]
