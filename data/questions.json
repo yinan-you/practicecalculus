@@ -2830,5 +2830,1708 @@
       "method": ["integrationByParts", "log", "definiteIntegral"],
       "origin": ["public"]
     }
+  },
+  {
+    "id": "cam-methods-9b-q1a",
+    "prompt": "$\\dfrac{d}{dx}(x^5)$",
+    "answer": "$5x^4$",
+    "difficulty": 1,
+    "source": "Cambridge Mathematical Methods, Exercise 9B Q1a",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["polynomial", "powerRule", "simple"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9b-q1b",
+    "prompt": "$\\dfrac{d}{dx}(4x^7)$",
+    "answer": "$28x^6$",
+    "difficulty": 1,
+    "source": "Cambridge Mathematical Methods, Exercise 9B Q1b",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["polynomial", "powerRule", "simple"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9b-q1c",
+    "prompt": "$\\dfrac{d}{dx}(6x)$",
+    "answer": "$6$",
+    "difficulty": 1,
+    "source": "Cambridge Mathematical Methods, Exercise 9B Q1c",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["polynomial", "powerRule", "simple"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9b-q1d",
+    "prompt": "$\\dfrac{d}{dx}(5x^2-4x+3)$",
+    "answer": "$10x-4$",
+    "difficulty": 1,
+    "source": "Cambridge Mathematical Methods, Exercise 9B Q1d",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["polynomial", "powerRule", "linearity"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9b-q1e",
+    "prompt": "$\\dfrac{d}{dx}(4x^3+6x^2+2x-4)$",
+    "answer": "$12x^2+12x+2$",
+    "difficulty": 1,
+    "source": "Cambridge Mathematical Methods, Exercise 9B Q1e",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["polynomial", "powerRule", "linearity"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9b-q1f",
+    "prompt": "$\\dfrac{d}{dx}(5x^4+3x^3)$",
+    "answer": "$20x^3+9x^2$",
+    "difficulty": 1,
+    "source": "Cambridge Mathematical Methods, Exercise 9B Q1f",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["polynomial", "powerRule", "linearity"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9b-q1g",
+    "prompt": "$\\dfrac{d}{dx}(-2x^2+4x+6)$",
+    "answer": "$-4x+4$",
+    "difficulty": 1,
+    "source": "Cambridge Mathematical Methods, Exercise 9B Q1g",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["polynomial", "powerRule", "linearity"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9b-q1h",
+    "prompt": "$\\dfrac{d}{dx}(6x^3-2x^2+4x-6)$",
+    "answer": "$18x^2-4x+4$",
+    "difficulty": 1,
+    "source": "Cambridge Mathematical Methods, Exercise 9B Q1h",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["polynomial", "powerRule", "linearity"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9c-q4a",
+    "prompt": "$\\dfrac{d}{dx}(3x^{-2}+5x^{-1}+6)$",
+    "answer": "$-6x^{-3}-5x^{-2}$",
+    "difficulty": 1,
+    "source": "Cambridge Mathematical Methods, Exercise 9C Q4a",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["polynomial", "powerRule", "linearity"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9c-q4b",
+    "prompt": "$\\dfrac{d}{dx}\\left(\\frac{5}{x^3}+6x^2\\right)$",
+    "answer": "$-15x^{-4}+12x$",
+    "difficulty": 1,
+    "source": "Cambridge Mathematical Methods, Exercise 9C Q4b",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["powerRule", "linearity"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9c-q4c",
+    "prompt": "$\\dfrac{d}{dx}\\left(-\\frac{5}{x^3}+\\frac{4}{x^2}+1\\right)$",
+    "answer": "$15x^{-4}-8x^{-3}$",
+    "difficulty": 1,
+    "source": "Cambridge Mathematical Methods, Exercise 9C Q4c",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["powerRule", "linearity"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9c-q4d",
+    "prompt": "$\\dfrac{d}{dx}(6x^{-3}+3x^{-2})$",
+    "answer": "$-18x^{-4}-6x^{-3}$",
+    "difficulty": 1,
+    "source": "Cambridge Mathematical Methods, Exercise 9C Q4d",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["polynomial", "powerRule", "linearity"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9c-q4e",
+    "prompt": "$\\dfrac{d}{dx}\\left(\\frac{4x^2+2x}{x^2}\\right)$",
+    "answer": "$-2x^{-2}$",
+    "difficulty": 2,
+    "source": "Cambridge Mathematical Methods, Exercise 9C Q4e",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["quotientRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9c-q5a",
+    "prompt": "$\\dfrac{d}{dz}\\left(\\frac{2z^2-4z}{z^2}\\right)$",
+    "answer": "$\\frac{4}{z^2}$",
+    "difficulty": 2,
+    "source": "Cambridge Mathematical Methods, Exercise 9C Q5a",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["quotientRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9c-q5b",
+    "prompt": "$\\dfrac{d}{dz}\\left(\\frac{6+z}{z^3}\\right)$",
+    "answer": "$-2z^{-3}-18z^{-4}$",
+    "difficulty": 2,
+    "source": "Cambridge Mathematical Methods, Exercise 9C Q5b",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["quotientRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9c-q5c",
+    "prompt": "$\\dfrac{d}{dz}(16-z^{-3})$",
+    "answer": "$3z^{-4}$",
+    "difficulty": 1,
+    "source": "Cambridge Mathematical Methods, Exercise 9C Q5c",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["powerRule", "linearity"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9c-q5d",
+    "prompt": "$\\dfrac{d}{dz}\\left(\\frac{4z+z^3-z^4}{z^2}\\right)$",
+    "answer": "$-4z^{-2}+1-2z$",
+    "difficulty": 2,
+    "source": "Cambridge Mathematical Methods, Exercise 9C Q5d",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["quotientRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9c-q5e",
+    "prompt": "$\\dfrac{d}{dz}\\left(\\frac{6z^2-2z}{z^4}\\right)$",
+    "answer": "$-12z^{-3}+6z^{-4}$",
+    "difficulty": 2,
+    "source": "Cambridge Mathematical Methods, Exercise 9C Q5e",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["quotientRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9c-q5f",
+    "prompt": "$\\dfrac{d}{dx}\\left(\\frac{6}{x}-3x^2\\right)$",
+    "answer": "$-6x^{-2}-6x$",
+    "difficulty": 1,
+    "source": "Cambridge Mathematical Methods, Exercise 9C Q5f",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["powerRule", "linearity"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9e-q1a",
+    "prompt": "$\\dfrac{d}{dx}\\left((x^2+1)^4\\right)$",
+    "answer": "$8x(x^2+1)^3$",
+    "difficulty": 1,
+    "source": "Cambridge Mathematical Methods, Exercise 9E Q1a",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["powerRule", "chainRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9e-q1b",
+    "prompt": "$\\dfrac{d}{dx}\\left((2x^2-3)^5\\right)$",
+    "answer": "$20x(2x^2-3)^4$",
+    "difficulty": 1,
+    "source": "Cambridge Mathematical Methods, Exercise 9E Q1b",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["powerRule", "chainRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9e-q1c",
+    "prompt": "$\\dfrac{d}{dx}\\left((6x+1)^4\\right)$",
+    "answer": "$24(6x+1)^3$",
+    "difficulty": 1,
+    "source": "Cambridge Mathematical Methods, Exercise 9E Q1c",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["powerRule", "simpleChainRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9e-q1d",
+    "prompt": "$\\dfrac{d}{dx}\\left((ax+b)^n\\right)$",
+    "answer": "$an(ax+b)^{n-1}$",
+    "difficulty": 1,
+    "source": "Cambridge Mathematical Methods, Exercise 9E Q1d",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["powerRule", "simpleChainRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9e-q1e",
+    "prompt": "$\\dfrac{d}{dx}\\left((ax^2+b)^n\\right)$",
+    "answer": "$2anx(ax^2+b)^{n-1}$",
+    "difficulty": 1,
+    "source": "Cambridge Mathematical Methods, Exercise 9E Q1e",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["powerRule", "chainRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9e-q1f",
+    "prompt": "$\\dfrac{d}{dx}\\left((1-x^2)^{-3}\\right)$",
+    "answer": "$6x(1-x^2)^{-4}$",
+    "difficulty": 1,
+    "source": "Cambridge Mathematical Methods, Exercise 9E Q1f",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["powerRule", "chainRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9e-q1g",
+    "prompt": "$\\dfrac{d}{dx}\\left(\\left(x^2-\\dfrac{1}{x^2}\\right)^{-3}\\right)$",
+    "answer": "$-3\\left(x^2-x^{-2}\\right)^{-4}\\left(2x+2x^{-3}\\right)$",
+    "difficulty": 2,
+    "source": "Cambridge Mathematical Methods, Exercise 9E Q1g",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["powerRule", "chainRule", "linearity"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9e-q1h",
+    "prompt": "$\\dfrac{d}{dx}\\left((1-x)^{-1}\\right)$",
+    "answer": "$(1-x)^{-2}$",
+    "difficulty": 1,
+    "source": "Cambridge Mathematical Methods, Exercise 9E Q1h",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["powerRule", "simpleChainRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9e-q2a",
+    "prompt": "$\\dfrac{d}{dx}\\left((x^2+2x+1)^3\\right)$",
+    "answer": "$3(x^2+2x+1)^2(2x+2)$",
+    "difficulty": 1,
+    "source": "Cambridge Mathematical Methods, Exercise 9E Q2a",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["powerRule", "chainRule", "linearity"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9e-q2b",
+    "prompt": "$\\dfrac{d}{dx}\\left((x^3+2x^2+x)^4\\right)$",
+    "answer": "$4(x^3+2x^2+x)^3(3x^2+4x+1)$",
+    "difficulty": 1,
+    "source": "Cambridge Mathematical Methods, Exercise 9E Q2b",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["powerRule", "chainRule", "linearity"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9e-q2c",
+    "prompt": "$\\dfrac{d}{dx}\\left(\\left(6x^3+\\dfrac{2}{x}\\right)^4\\right)$",
+    "answer": "$4\\left(6x^3+\\frac{2}{x}\\right)^3\\left(18x^2-2x^{-2}\\right)$",
+    "difficulty": 2,
+    "source": "Cambridge Mathematical Methods, Exercise 9E Q2c",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["powerRule", "chainRule", "linearity"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9e-q2d",
+    "prompt": "$\\dfrac{d}{dx}\\left((x^2+2x+1)^{-2}\\right)$",
+    "answer": "$-2(x^2+2x+1)^{-3}(2x+2)$",
+    "difficulty": 1,
+    "source": "Cambridge Mathematical Methods, Exercise 9E Q2d",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["powerRule", "chainRule", "linearity"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9e-q6a",
+    "prompt": "$\\dfrac{d}{dx}\\left([f(x)]^n\\right)$",
+    "answer": "$nf(x)^{n-1}f'(x)$",
+    "difficulty": 2,
+    "source": "Cambridge Mathematical Methods, Exercise 9E Q6a",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["chainRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9e-q6b",
+    "prompt": "$\\dfrac{d}{dx}\\left(\\dfrac{1}{f(x)}\\right)$",
+    "answer": "$-\\dfrac{f'(x)}{[f(x)]^2}$",
+    "difficulty": 2,
+    "source": "Cambridge Mathematical Methods, Exercise 9E Q6b",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["chainRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9e-q8",
+    "prompt": "Let $h(x)=f(g(x))$. If $g(3)=4$, $g'(3)=6$ and $f'(4)=8$, find $h'(3)$.",
+    "answer": "$48$",
+    "difficulty": 2,
+    "source": "Cambridge Mathematical Methods, Exercise 9E Q8",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["chainRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-q2a",
+    "prompt": "$\\dfrac{d}{dx}\\left(x^{\\frac{1}{5}}\\right)$",
+    "answer": "$\\dfrac{1}{5}x^{-\\frac{4}{5}}$",
+    "difficulty": 1,
+    "source": "Cambridge Mathematical Methods",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["powerRule", "simple"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-q2b",
+    "prompt": "$\\dfrac{d}{dx}\\left(x^{\\frac{5}{2}}\\right)$",
+    "answer": "$\\dfrac{5}{2}x^{\\frac{3}{2}}$",
+    "difficulty": 1,
+    "source": "Cambridge Mathematical Methods",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["powerRule", "simple"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-q2c",
+    "prompt": "$\\dfrac{d}{dx}\\left(x^{\\frac{5}{2}}-x^{\\frac{3}{2}}\\right)$",
+    "answer": "$\\dfrac{5}{2}x^{\\frac{3}{2}}-\\dfrac{3}{2}x^{\\frac{1}{2}}$",
+    "difficulty": 1,
+    "source": "Cambridge Mathematical Methods",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["powerRule", "linearity"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-q2d",
+    "prompt": "$\\dfrac{d}{dx}\\left(3x^{\\frac{1}{2}}-4x^{\\frac{5}{3}}\\right)$",
+    "answer": "$\\dfrac{3}{2}x^{-\\frac{1}{2}}-\\dfrac{20}{3}x^{\\frac{2}{3}}$",
+    "difficulty": 1,
+    "source": "Cambridge Mathematical Methods",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["powerRule", "linearity"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-q2e",
+    "prompt": "$\\dfrac{d}{dx}\\left(x^{-\\frac{6}{7}}\\right)$",
+    "answer": "$-\\dfrac{6}{7}x^{-\\frac{13}{7}}$",
+    "difficulty": 1,
+    "source": "Cambridge Mathematical Methods",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["powerRule", "simple"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-q2f",
+    "prompt": "$\\dfrac{d}{dx}\\left(x^{-\\frac{1}{4}}+4x^{\\frac{1}{2}}\\right)$",
+    "answer": "$-\\dfrac{1}{4}x^{-\\frac{5}{4}}+2x^{-\\frac{1}{2}}$",
+    "difficulty": 1,
+    "source": "Cambridge Mathematical Methods",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["powerRule", "linearity"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-q4a",
+    "prompt": "$\\dfrac{d}{dx}\\left(\\sqrt{2x+1}\\right)$",
+    "answer": "$\\dfrac{1}{\\sqrt{2x+1}}$",
+    "difficulty": 1,
+    "source": "Cambridge Mathematical Methods",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["powerRule", "simpleChainRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-q4b",
+    "prompt": "$\\dfrac{d}{dx}\\left(\\sqrt{4-3x}\\right)$",
+    "answer": "$-\\dfrac{3}{2\\sqrt{4-3x}}$",
+    "difficulty": 1,
+    "source": "Cambridge Mathematical Methods",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["powerRule", "simpleChainRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-q4c",
+    "prompt": "$\\dfrac{d}{dx}\\left(\\sqrt{x^2+2}\\right)$",
+    "answer": "$\\dfrac{x}{\\sqrt{x^2+2}}$",
+    "difficulty": 1,
+    "source": "Cambridge Mathematical Methods",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["powerRule", "chainRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-q4d",
+    "prompt": "$\\dfrac{d}{dx}\\left(\\sqrt[3]{4-3x}\\right)$",
+    "answer": "$-(4-3x)^{-\\frac{2}{3}}$",
+    "difficulty": 1,
+    "source": "Cambridge Mathematical Methods",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["powerRule", "simpleChainRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-q4e",
+    "prompt": "$\\dfrac{d}{dx}\\left(\\dfrac{x^2+2}{\\sqrt{x}}\\right)$",
+    "answer": "$\\dfrac{3x^2-2}{2x^{3/2}}$",
+    "difficulty": 2,
+    "source": "Cambridge Mathematical Methods",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["powerRule", "linearity"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-q4f",
+    "prompt": "$\\dfrac{d}{dx}\\left(3\\sqrt{x}(x^2+2x)\\right)$",
+    "answer": "$\\dfrac{15}{2}x^{3/2}+9x^{1/2}$",
+    "difficulty": 2,
+    "source": "Cambridge Mathematical Methods",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["productRule", "powerRule", "linearity"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-q7a",
+    "prompt": "$\\dfrac{d}{dx}\\left(\\sqrt{x^2+2}\\right)$",
+    "answer": "$\\dfrac{x}{\\sqrt{x^2+2}}$",
+    "difficulty": 1,
+    "source": "Cambridge Mathematical Methods",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["powerRule", "chainRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-q7b",
+    "prompt": "$\\dfrac{d}{dx}\\left(\\sqrt[3]{x^2-5x}\\right)$",
+    "answer": "$\\dfrac{2x-5}{3(x^2-5x)^{2/3}}$",
+    "difficulty": 2,
+    "source": "Cambridge Mathematical Methods",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["powerRule", "chainRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-q7c",
+    "prompt": "$\\dfrac{d}{dx}\\left(\\sqrt[5]{x^2+2x}\\right)$",
+    "answer": "$\\dfrac{2x+2}{5(x^2+2x)^{4/5}}$",
+    "difficulty": 2,
+    "source": "Cambridge Mathematical Methods",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["powerRule", "chainRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9g-q1a",
+    "prompt": "$\\dfrac{d}{dx}(e^{5x})$",
+    "answer": "$5e^{5x}$",
+    "difficulty": 1,
+    "source": "Cambridge Mathematical Methods, Exercise 9G Q1a",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["exp", "simpleChainRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9g-q1b",
+    "prompt": "$\\dfrac{d}{dx}(7e^{-3x})$",
+    "answer": "$-21e^{-3x}$",
+    "difficulty": 1,
+    "source": "Cambridge Mathematical Methods, Exercise 9G Q1b",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["exp", "simpleChainRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9g-q1c",
+    "prompt": "$\\dfrac{d}{dx}(3e^{-4x}+e^x-x^2)$",
+    "answer": "$-12e^{-4x}+e^x-2x$",
+    "difficulty": 1,
+    "source": "Cambridge Mathematical Methods, Exercise 9G Q1c",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["exp", "simpleChainRule", "linearity", "powerRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9g-q1d",
+    "prompt": "$\\dfrac{d}{dx}\\left(\\dfrac{e^{2x}-e^x+1}{e^x}\\right)$",
+    "answer": "$e^x-e^{-x}$",
+    "difficulty": 2,
+    "source": "Cambridge Mathematical Methods, Exercise 9G Q1d",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["quotientRule", "exp"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9g-q1e",
+    "prompt": "$\\dfrac{d}{dx}\\left(\\dfrac{4e^{2x}-2e^x+1}{2e^{2x}}\\right)$",
+    "answer": "$e^{-x}-e^{-2x}$",
+    "difficulty": 2,
+    "source": "Cambridge Mathematical Methods, Exercise 9G Q1e",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["quotientRule", "exp"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9g-q1f",
+    "prompt": "$\\dfrac{d}{dx}(e^{2x}+e^4+e^{-2x})$",
+    "answer": "$2e^{2x}-2e^{-2x}$",
+    "difficulty": 1,
+    "source": "Cambridge Mathematical Methods, Exercise 9G Q1f",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["exp", "simpleChainRule", "linearity"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9g-q2a",
+    "prompt": "$\\dfrac{d}{dx}(e^{-2x^3})$",
+    "answer": "$-6x^2e^{-2x^3}$",
+    "difficulty": 2,
+    "source": "Cambridge Mathematical Methods, Exercise 9G Q2a",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["exp", "chainRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9g-q2b",
+    "prompt": "$\\dfrac{d}{dx}(e^{x^2}+3x+1)$",
+    "answer": "$2xe^{x^2}+3$",
+    "difficulty": 2,
+    "source": "Cambridge Mathematical Methods, Exercise 9G Q2b",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["exp", "chainRule", "linearity"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9g-q2c",
+    "prompt": "$\\dfrac{d}{dx}(e^{x^2-4x}+3x+1)$",
+    "answer": "$(2x-4)e^{x^2-4x}+3$",
+    "difficulty": 2,
+    "source": "Cambridge Mathematical Methods, Exercise 9G Q2c",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["exp", "chainRule", "linearity"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9g-q2d",
+    "prompt": "$\\dfrac{d}{dx}(e^{x^2-2x+3}-x)$",
+    "answer": "$(2x-2)e^{x^2-2x+3}-1$",
+    "difficulty": 2,
+    "source": "Cambridge Mathematical Methods, Exercise 9G Q2d",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["exp", "chainRule", "linearity"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9g-q2e",
+    "prompt": "$\\dfrac{d}{dx}(e^{1/x})$",
+    "answer": "$-\\dfrac{e^{1/x}}{x^2}$",
+    "difficulty": 2,
+    "source": "Cambridge Mathematical Methods, Exercise 9G Q2e",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["exp", "chainRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9g-q2f",
+    "prompt": "$\\dfrac{d}{dx}(e^{\\sqrt{x}})$",
+    "answer": "$\\dfrac{e^{\\sqrt{x}}}{2\\sqrt{x}}$",
+    "difficulty": 2,
+    "source": "Cambridge Mathematical Methods, Exercise 9G Q2f",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["exp", "chainRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9g-q5a",
+    "prompt": "$\\dfrac{d}{dx}(e^{2f(x)})$",
+    "answer": "$2f'(x)e^{2f(x)}$",
+    "difficulty": 2,
+    "source": "Cambridge Mathematical Methods, Exercise 9G Q5a",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["exp", "chainRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9g-q5b",
+    "prompt": "$\\dfrac{d}{dx}(f(e^{2x}))$",
+    "answer": "$2e^{2x}f'(e^{2x})$",
+    "difficulty": 2,
+    "source": "Cambridge Mathematical Methods, Exercise 9G Q5b",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["chainRule", "exp"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9g-q6a",
+    "prompt": "$\\dfrac{d}{dx}\\left((e^{2x}-1)^4\\right)$",
+    "answer": "$8e^{2x}(e^{2x}-1)^3$",
+    "difficulty": 2,
+    "source": "Cambridge Mathematical Methods, Exercise 9G Q6a",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["exp", "chainRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9g-q6b",
+    "prompt": "$\\dfrac{d}{dx}(e^{\\sqrt{x}})$",
+    "answer": "$\\dfrac{e^{\\sqrt{x}}}{2\\sqrt{x}}$",
+    "difficulty": 2,
+    "source": "Cambridge Mathematical Methods, Exercise 9G Q6b",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["exp", "chainRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9g-q6c",
+    "prompt": "$\\dfrac{d}{dx}\\left(\\sqrt{e^x-1}\\right)$",
+    "answer": "$\\dfrac{e^x}{2\\sqrt{e^x-1}}$",
+    "difficulty": 2,
+    "source": "Cambridge Mathematical Methods, Exercise 9G Q6c",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["exp", "chainRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9g-q6d",
+    "prompt": "$\\dfrac{d}{dx}(e^{x^{2/3}})$",
+    "answer": "$\\dfrac{2}{3}x^{-1/3}e^{x^{2/3}}$",
+    "difficulty": 2,
+    "source": "Cambridge Mathematical Methods, Exercise 9G Q6d",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["exp", "chainRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9g-q6e",
+    "prompt": "$\\dfrac{d}{dx}(e^{(x-1)(x-2)})$",
+    "answer": "$(2x-3)e^{(x-1)(x-2)}$",
+    "difficulty": 2,
+    "source": "Cambridge Mathematical Methods, Exercise 9G Q6e",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["exp", "chainRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9g-q6f",
+    "prompt": "$\\dfrac{d}{dx}(e^{e^x})$",
+    "answer": "$e^{e^x}e^x$",
+    "difficulty": 2,
+    "source": "Cambridge Mathematical Methods, Exercise 9G Q6f",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["exp", "chainRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9h-q1a",
+    "prompt": "$\\dfrac{d}{dx}(2\\log_e x)$",
+    "answer": "$\\dfrac{2}{x}$",
+    "difficulty": 1,
+    "source": "Cambridge Mathematical Methods, Exercise 9H Q1a",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["log", "simple"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9h-q1b",
+    "prompt": "$\\dfrac{d}{dx}(2\\log_e(2x))$",
+    "answer": "$\\dfrac{2}{x}$",
+    "difficulty": 1,
+    "source": "Cambridge Mathematical Methods, Exercise 9H Q1b",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["log", "simpleChainRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9h-q1c",
+    "prompt": "$\\dfrac{d}{dx}(x^2+3\\log_e(2x))$",
+    "answer": "$2x+\\dfrac{3}{x}$",
+    "difficulty": 1,
+    "source": "Cambridge Mathematical Methods, Exercise 9H Q1c",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["log", "powerRule", "linearity"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9h-q1d",
+    "prompt": "$\\dfrac{d}{dx}\\left(3\\log_e x+\\dfrac{1}{x}\\right)$",
+    "answer": "$\\dfrac{3}{x}-\\dfrac{1}{x^2}$",
+    "difficulty": 1,
+    "source": "Cambridge Mathematical Methods, Exercise 9H Q1d",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["log", "powerRule", "linearity"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9h-q1e",
+    "prompt": "$\\dfrac{d}{dx}(3\\log_e(4x)+x)$",
+    "answer": "$\\dfrac{3}{x}+1$",
+    "difficulty": 1,
+    "source": "Cambridge Mathematical Methods, Exercise 9H Q1e",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["log", "simpleChainRule", "linearity"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9h-q1f",
+    "prompt": "$\\dfrac{d}{dx}(\\log_e(x+1))$",
+    "answer": "$\\dfrac{1}{x+1}$",
+    "difficulty": 1,
+    "source": "Cambridge Mathematical Methods, Exercise 9H Q1f",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["log", "simpleChainRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9h-q1g",
+    "prompt": "$\\dfrac{d}{dx}(\\log_e(2x+4))$",
+    "answer": "$\\dfrac{2}{2x+4}$",
+    "difficulty": 1,
+    "source": "Cambridge Mathematical Methods, Exercise 9H Q1g",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["log", "simpleChainRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9h-q1h",
+    "prompt": "$\\dfrac{d}{dx}(\\log_e(3x-1))$",
+    "answer": "$\\dfrac{3}{3x-1}$",
+    "difficulty": 1,
+    "source": "Cambridge Mathematical Methods, Exercise 9H Q1h",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["log", "simpleChainRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9h-q1i",
+    "prompt": "$\\dfrac{d}{dx}(\\log_e(6x-1))$",
+    "answer": "$\\dfrac{6}{6x-1}$",
+    "difficulty": 1,
+    "source": "Cambridge Mathematical Methods, Exercise 9H Q1i",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["log", "simpleChainRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9h-q2a",
+    "prompt": "$\\dfrac{d}{dx}(\\log_e(x^3))$",
+    "answer": "$\\dfrac{3}{x}$",
+    "difficulty": 1,
+    "source": "Cambridge Mathematical Methods, Exercise 9H Q2a",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["log", "chainRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9h-q2b",
+    "prompt": "$\\dfrac{d}{dx}\\left((\\log_e x)^3\\right)$",
+    "answer": "$\\dfrac{3(\\log_e x)^2}{x}$",
+    "difficulty": 2,
+    "source": "Cambridge Mathematical Methods, Exercise 9H Q2b",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["log", "chainRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9h-q2c",
+    "prompt": "$\\dfrac{d}{dx}(\\log_e(x^2+x-1))$",
+    "answer": "$\\dfrac{2x+1}{x^2+x-1}$",
+    "difficulty": 2,
+    "source": "Cambridge Mathematical Methods, Exercise 9H Q2c",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["log", "chainRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9h-q2d",
+    "prompt": "$\\dfrac{d}{dx}(\\log_e(x^3+x^2))$",
+    "answer": "$\\dfrac{3x^2+2x}{x^3+x^2}$",
+    "difficulty": 2,
+    "source": "Cambridge Mathematical Methods, Exercise 9H Q2d",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["log", "chainRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9h-q2e",
+    "prompt": "$\\dfrac{d}{dx}(\\log_e((2x+3)^2))$",
+    "answer": "$\\dfrac{4}{2x+3}$",
+    "difficulty": 2,
+    "source": "Cambridge Mathematical Methods, Exercise 9H Q2e",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["log", "chainRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9h-q2f",
+    "prompt": "$\\dfrac{d}{dx}(\\log_e((3-2x)^2))$",
+    "answer": "$-\\dfrac{4}{3-2x}$",
+    "difficulty": 2,
+    "source": "Cambridge Mathematical Methods, Exercise 9H Q2f",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["log", "chainRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9h-q3a",
+    "prompt": "$\\dfrac{d}{dx}(\\log_e(x^2+1))$",
+    "answer": "$\\dfrac{2x}{x^2+1}$",
+    "difficulty": 2,
+    "source": "Cambridge Mathematical Methods, Exercise 9H Q3a",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["log", "chainRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9h-q3b",
+    "prompt": "$\\dfrac{d}{dx}(\\log_e(e^x))$",
+    "answer": "$1$",
+    "difficulty": 1,
+    "source": "Cambridge Mathematical Methods, Exercise 9H Q3b",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["log", "exp", "chainRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9h-q6",
+    "prompt": "$\\dfrac{d}{dx}(\\log_e(1+x+x^2))$",
+    "answer": "$\\dfrac{1+2x}{1+x+x^2}$",
+    "difficulty": 2,
+    "source": "Cambridge Mathematical Methods, Exercise 9H Q6",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["log", "chainRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9i-q1a",
+    "prompt": "$\\dfrac{d}{dx}(\\sin(5x))$",
+    "answer": "$5\\cos(5x)$",
+    "difficulty": 1,
+    "source": "Cambridge Mathematical Methods, Exercise 9I Q1a",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["trig", "simpleChainRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9i-q1b",
+    "prompt": "$\\dfrac{d}{dx}(\\cos(5x))$",
+    "answer": "$-5\\sin(5x)$",
+    "difficulty": 1,
+    "source": "Cambridge Mathematical Methods, Exercise 9I Q1b",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["trig", "simpleChainRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9i-q1c",
+    "prompt": "$\\dfrac{d}{dx}(\\tan(5x))$",
+    "answer": "$5\\sec^2(5x)$",
+    "difficulty": 1,
+    "source": "Cambridge Mathematical Methods, Exercise 9I Q1c",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["trig", "simpleChainRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9i-q1d",
+    "prompt": "$\\dfrac{d}{dx}(\\sin^2 x)$",
+    "answer": "$2\\sin x\\cos x$",
+    "difficulty": 1,
+    "source": "Cambridge Mathematical Methods, Exercise 9I Q1d",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["trig", "chainRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9i-q1e",
+    "prompt": "$\\dfrac{d}{dx}(\\tan(3x+1))$",
+    "answer": "$3\\sec^2(3x+1)$",
+    "difficulty": 1,
+    "source": "Cambridge Mathematical Methods, Exercise 9I Q1e",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["trig", "simpleChainRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9i-q1f",
+    "prompt": "$\\dfrac{d}{dx}(\\cos(x^2+1))$",
+    "answer": "$-2x\\sin(x^2+1)$",
+    "difficulty": 2,
+    "source": "Cambridge Mathematical Methods, Exercise 9I Q1f",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["trig", "chainRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9i-q1g",
+    "prompt": "$\\dfrac{d}{dx}\\left(\\sin^2\\left(x-\\dfrac{\\pi}{4}\\right)\\right)$",
+    "answer": "$2\\sin\\left(x-\\dfrac{\\pi}{4}\\right)\\cos\\left(x-\\dfrac{\\pi}{4}\\right)$",
+    "difficulty": 2,
+    "source": "Cambridge Mathematical Methods, Exercise 9I Q1g",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["trig", "chainRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9i-q1h",
+    "prompt": "$\\dfrac{d}{dx}\\left(\\cos^2\\left(x-\\dfrac{\\pi}{3}\\right)\\right)$",
+    "answer": "$-2\\cos\\left(x-\\dfrac{\\pi}{3}\\right)\\sin\\left(x-\\dfrac{\\pi}{3}\\right)$",
+    "difficulty": 2,
+    "source": "Cambridge Mathematical Methods, Exercise 9I Q1h",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["trig", "chainRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9i-q1i",
+    "prompt": "$\\dfrac{d}{dx}\\left(\\sin^3\\left(2x+\\dfrac{\\pi}{6}\\right)\\right)$",
+    "answer": "$6\\sin^2\\left(2x+\\dfrac{\\pi}{6}\\right)\\cos\\left(2x+\\dfrac{\\pi}{6}\\right)$",
+    "difficulty": 2,
+    "source": "Cambridge Mathematical Methods, Exercise 9I Q1i",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["trig", "chainRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9i-q1j",
+    "prompt": "$\\dfrac{d}{dx}\\left(\\cos^3\\left(2x-\\dfrac{\\pi}{4}\\right)\\right)$",
+    "answer": "$-6\\cos^2\\left(2x-\\dfrac{\\pi}{4}\\right)\\sin\\left(2x-\\dfrac{\\pi}{4}\\right)$",
+    "difficulty": 2,
+    "source": "Cambridge Mathematical Methods, Exercise 9I Q1j",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["trig", "chainRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9i-q3a",
+    "prompt": "$\\dfrac{d}{dx}(5\\cos x-2\\sin(3x))$",
+    "answer": "$-5\\sin x-6\\cos(3x)$",
+    "difficulty": 1,
+    "source": "Cambridge Mathematical Methods, Exercise 9I Q3a",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["trig", "simpleChainRule", "linearity"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9i-q3b",
+    "prompt": "$\\dfrac{d}{dx}(\\cos x+\\sin x)$",
+    "answer": "$-\\sin x+\\cos x$",
+    "difficulty": 1,
+    "source": "Cambridge Mathematical Methods, Exercise 9I Q3b",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["trig", "linearity"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9i-q3c",
+    "prompt": "$\\dfrac{d}{dx}(\\sin x+\\tan x)$",
+    "answer": "$\\cos x+\\sec^2 x$",
+    "difficulty": 1,
+    "source": "Cambridge Mathematical Methods, Exercise 9I Q3c",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["trig", "linearity"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9i-q3d",
+    "prompt": "$\\dfrac{d}{dx}(\\tan^2 x)$",
+    "answer": "$2\\tan x\\sec^2 x$",
+    "difficulty": 1,
+    "source": "Cambridge Mathematical Methods, Exercise 9I Q3d",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["trig", "chainRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9i-q5a",
+    "prompt": "$\\dfrac{d}{dx}(-\\log_e(\\cos x))$",
+    "answer": "$\\tan x$",
+    "difficulty": 2,
+    "source": "Cambridge Mathematical Methods, Exercise 9I Q5a",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["log", "trig", "chainRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9i-q5b",
+    "prompt": "$\\dfrac{d}{dx}(-\\log_e(\\tan x))$",
+    "answer": "$-\\dfrac{\\sec^2 x}{\\tan x}$",
+    "difficulty": 2,
+    "source": "Cambridge Mathematical Methods, Exercise 9I Q5b",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["log", "trig", "chainRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9i-q6a",
+    "prompt": "$\\dfrac{d}{dx}(e^{2\\sin x})$",
+    "answer": "$2\\cos x\\,e^{2\\sin x}$",
+    "difficulty": 2,
+    "source": "Cambridge Mathematical Methods, Exercise 9I Q6a",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["exp", "trig", "chainRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9i-q6b",
+    "prompt": "$\\dfrac{d}{dx}(e^{\\cos(2x)})$",
+    "answer": "$-2\\sin(2x)e^{\\cos(2x)}$",
+    "difficulty": 2,
+    "source": "Cambridge Mathematical Methods, Exercise 9I Q6b",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["exp", "trig", "chainRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9j-q1a",
+    "prompt": "$\\dfrac{d}{dx}\\left((2x^2+6)(2x^3+1)\\right)$",
+    "answer": "$4x(2x^3+1)+6x^2(2x^2+6)$",
+    "difficulty": 2,
+    "source": "Cambridge Mathematical Methods, Exercise 9J Q1a",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["productRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9j-q1b",
+    "prompt": "$\\dfrac{d}{dx}\\left(3x^{1/2}(2x+1)\\right)$",
+    "answer": "$\\dfrac{3}{2}x^{-1/2}(2x+1)+6x^{1/2}$",
+    "difficulty": 2,
+    "source": "Cambridge Mathematical Methods, Exercise 9J Q1b",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["productRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9j-q1c",
+    "prompt": "$\\dfrac{d}{dx}\\left(3x(2x-1)^3\\right)$",
+    "answer": "$3(2x-1)^3+18x(2x-1)^2$",
+    "difficulty": 2,
+    "source": "Cambridge Mathematical Methods, Exercise 9J Q1c",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["productRule", "chainRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9j-q1d",
+    "prompt": "$\\dfrac{d}{dx}\\left(4x^2(2x^2+1)^2\\right)$",
+    "answer": "$8x(2x^2+1)^2+32x^3(2x^2+1)$",
+    "difficulty": 2,
+    "source": "Cambridge Mathematical Methods, Exercise 9J Q1d",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["productRule", "chainRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9j-q1e",
+    "prompt": "$\\dfrac{d}{dx}\\left((3x+1)^{3/2}(2x+4)\\right)$",
+    "answer": "$\\dfrac{9}{2}(3x+1)^{1/2}(2x+4)+2(3x+1)^{3/2}$",
+    "difficulty": 2,
+    "source": "Cambridge Mathematical Methods, Exercise 9J Q1e",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["productRule", "chainRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9j-q1f",
+    "prompt": "$\\dfrac{d}{dx}\\left((x^2+1)\\sqrt{2x-4}\\right)$",
+    "answer": "$2x\\sqrt{2x-4}+\\dfrac{x^2+1}{\\sqrt{2x-4}}$",
+    "difficulty": 2,
+    "source": "Cambridge Mathematical Methods, Exercise 9J Q1f",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["productRule", "chainRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9j-q1g",
+    "prompt": "$\\dfrac{d}{dx}\\left(x^3(3x^2+2x+1)^{-1}\\right)$",
+    "answer": "$\\dfrac{3x^2}{3x^2+2x+1}-\\dfrac{x^3(6x+2)}{(3x^2+2x+1)^2}$",
+    "difficulty": 3,
+    "source": "Cambridge Mathematical Methods, Exercise 9J Q1g",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["productRule", "chainRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9j-q1h",
+    "prompt": "$\\dfrac{d}{dx}\\left(x^4\\sqrt{2x^2-1}\\right)$",
+    "answer": "$4x^3\\sqrt{2x^2-1}+\\dfrac{2x^5}{\\sqrt{2x^2-1}}$",
+    "difficulty": 2,
+    "source": "Cambridge Mathematical Methods, Exercise 9J Q1h",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["productRule", "chainRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9j-q1i",
+    "prompt": "$\\dfrac{d}{dx}\\left(x^2\\sqrt[3]{x^2+2x}\\right)$",
+    "answer": "$2x(x^2+2x)^{1/3}+\\dfrac{x^2(2x+2)}{3(x^2+2x)^{2/3}}$",
+    "difficulty": 3,
+    "source": "Cambridge Mathematical Methods, Exercise 9J Q1i",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["productRule", "chainRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9j-q1j",
+    "prompt": "$\\dfrac{d}{dx}\\left(x^{-2}(5x^2-4)^3\\right)$",
+    "answer": "$-2x^{-3}(5x^2-4)^3+30x^{-1}(5x^2-4)^2$",
+    "difficulty": 3,
+    "source": "Cambridge Mathematical Methods, Exercise 9J Q1j",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["productRule", "chainRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9j-q1k",
+    "prompt": "$\\dfrac{d}{dx}\\left(x^{-3}(x^3-4)^2\\right)$",
+    "answer": "$-3x^{-4}(x^3-4)^2+6x^{-1}(x^3-4)$",
+    "difficulty": 3,
+    "source": "Cambridge Mathematical Methods, Exercise 9J Q1k",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["productRule", "chainRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9j-q1l",
+    "prompt": "$\\dfrac{d}{dx}\\left(x^3\\sqrt[5]{x^3-x}\\right)$",
+    "answer": "$3x^2(x^3-x)^{1/5}+\\dfrac{x^3(3x^2-1)}{5(x^3-x)^{4/5}}$",
+    "difficulty": 3,
+    "source": "Cambridge Mathematical Methods, Exercise 9J Q1l",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["productRule", "chainRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9j-q2a",
+    "prompt": "$\\dfrac{d}{dx}\\left(e^x(x^2+1)\\right)$",
+    "answer": "$e^x(x^2+1)+2xe^x$",
+    "difficulty": 2,
+    "source": "Cambridge Mathematical Methods, Exercise 9J Q2a",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["productRule", "exp"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9j-q2b",
+    "prompt": "$\\dfrac{d}{dx}\\left(e^{2x}(x^3+3x+1)\\right)$",
+    "answer": "$2e^{2x}(x^3+3x+1)+e^{2x}(3x^2+3)$",
+    "difficulty": 2,
+    "source": "Cambridge Mathematical Methods, Exercise 9J Q2b",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["productRule", "exp", "chainRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9j-q2c",
+    "prompt": "$\\dfrac{d}{dx}\\left(e^{4x+1}(x+1)^2\\right)$",
+    "answer": "$4e^{4x+1}(x+1)^2+2e^{4x+1}(x+1)$",
+    "difficulty": 2,
+    "source": "Cambridge Mathematical Methods, Exercise 9J Q2c",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["productRule", "exp", "chainRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9j-q2d",
+    "prompt": "$\\dfrac{d}{dx}\\left(e^{-4x}\\sqrt{x+1}\\right)$",
+    "answer": "$-4e^{-4x}\\sqrt{x+1}+\\dfrac{e^{-4x}}{2\\sqrt{x+1}}$",
+    "difficulty": 2,
+    "source": "Cambridge Mathematical Methods, Exercise 9J Q2d",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["productRule", "exp", "chainRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9j-q3a",
+    "prompt": "$\\dfrac{d}{dx}(x\\log_e x)$",
+    "answer": "$\\log_e x+1$",
+    "difficulty": 2,
+    "source": "Cambridge Mathematical Methods, Exercise 9J Q3a",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["productRule", "log"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9j-q3b",
+    "prompt": "$\\dfrac{d}{dx}(2x^2\\log_e x)$",
+    "answer": "$4x\\log_e x+2x$",
+    "difficulty": 2,
+    "source": "Cambridge Mathematical Methods, Exercise 9J Q3b",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["productRule", "log"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9j-q3c",
+    "prompt": "$\\dfrac{d}{dx}(e^x\\log_e x)$",
+    "answer": "$e^x\\log_e x+\\dfrac{e^x}{x}$",
+    "difficulty": 2,
+    "source": "Cambridge Mathematical Methods, Exercise 9J Q3c",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["productRule", "exp", "log"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9j-q3d",
+    "prompt": "$\\dfrac{d}{dx}(x\\log_e(-x))$",
+    "answer": "$\\log_e(-x)+1$",
+    "difficulty": 2,
+    "source": "Cambridge Mathematical Methods, Exercise 9J Q3d",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["productRule", "log"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9j-q4a",
+    "prompt": "$\\dfrac{d}{dx}(x^4e^{-2x})$",
+    "answer": "$4x^3e^{-2x}-2x^4e^{-2x}$",
+    "difficulty": 2,
+    "source": "Cambridge Mathematical Methods, Exercise 9J Q4a",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["productRule", "exp"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9j-q4b",
+    "prompt": "$\\dfrac{d}{dx}(e^{2x+3})$",
+    "answer": "$2e^{2x+3}$",
+    "difficulty": 1,
+    "source": "Cambridge Mathematical Methods, Exercise 9J Q4b",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["exp", "chainRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9j-q4c",
+    "prompt": "$\\dfrac{d}{dx}\\left((e^{2x}+x)^{3/2}\\right)$",
+    "answer": "$\\dfrac{3}{2}(e^{2x}+x)^{1/2}(2e^{2x}+1)$",
+    "difficulty": 2,
+    "source": "Cambridge Mathematical Methods, Exercise 9J Q4c",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["chainRule", "exp"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9j-q4d",
+    "prompt": "$\\dfrac{d}{dx}\\left(\\dfrac{e^x}{x}\\right)$",
+    "answer": "$\\dfrac{e^x}{x}-\\dfrac{e^x}{x^2}$",
+    "difficulty": 2,
+    "source": "Cambridge Mathematical Methods, Exercise 9J Q4d",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["quotientRule", "exp"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9j-q4e",
+    "prompt": "$\\dfrac{d}{dx}(e^{x^2/2})$",
+    "answer": "$xe^{x^2/2}$",
+    "difficulty": 2,
+    "source": "Cambridge Mathematical Methods, Exercise 9J Q4e",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["exp", "chainRule"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "cam-methods-9j-q4f",
+    "prompt": "$\\dfrac{d}{dx}\\left((x^2+2x+2)e^{-x}\\right)$",
+    "answer": "$(2x+2)e^{-x}-(x^2+2x+2)e^{-x}$",
+    "difficulty": 2,
+    "source": "Cambridge Mathematical Methods, Exercise 9J Q4f",
+    "tags": {
+      "topic": ["differentiation"],
+      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "method": ["productRule", "exp"],
+      "origin": ["public"]
+    }
   }
 ]
