@@ -4,6 +4,10 @@ import {
   type CoreDimensionId,
   type Question,
 } from "@/lib/questions";
+import {
+  compileFiltersToRequirement,
+  getMatchingByRequirement,
+} from "@/lib/requirements";
 
 /** Selected values per dimension, keyed by dimension id. */
 export type Filters = Partial<Record<CoreDimensionId, string[]>>;
@@ -65,7 +69,10 @@ export function getMatchingQuestions(
   questions: Question[],
   filters: Filters,
 ): Question[] {
-  return questions.filter((question) => matchesFilters(question, filters));
+  return getMatchingByRequirement(
+    questions,
+    compileFiltersToRequirement(filters),
+  );
 }
 
 function uniqueInOrder<T>(canonicalOrder: T[], values: T[]): T[] {

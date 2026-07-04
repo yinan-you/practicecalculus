@@ -9,9 +9,17 @@ import {
   toggleFilter,
   type Filters,
 } from "@/lib/filters";
+import {
+  getMatchingByRequirement,
+  type Requirement,
+} from "@/lib/requirements";
 import { pickNextQuestion } from "@/lib/session";
 import { FilterControls } from "@/components/filter-controls";
 import { QuestionCard } from "@/components/question-card";
+import { ActiveFilterBanner } from "@/components/active-filter-banner";
+import { CustomFilterInput } from "@/components/custom-filter-input";
+
+type CustomFilter = { query: string; requirement: Requirement };
 
 type PracticeSessionProps = {
   questions: Question[];
@@ -19,6 +27,7 @@ type PracticeSessionProps = {
 
 export function PracticeSession({ questions }: PracticeSessionProps) {
   const [filters, setFilters] = useState<Filters>(EMPTY_FILTERS);
+  const [customFilter, setCustomFilter] = useState<CustomFilter | null>(null);
   const [currentQuestion, setCurrentQuestion] = useState<Question | null>(null);
   const [isSolutionOpen, setIsSolutionOpen] = useState(false);
 
@@ -28,14 +37,17 @@ export function PracticeSession({ questions }: PracticeSessionProps) {
   );
 
   const matchingQuestions = useMemo(
-    () => getMatchingQuestions(questions, filters),
-    [questions, filters],
+    () =>
+      customFilter
+        ? getMatchingByRequirement(questions, customFilter.requirement)
+        : getMatchingQuestions(questions, filters),
+    [questions, filters, customFilter],
   );
 
   useEffect(() => {
     setCurrentQuestion(null);
     setIsSolutionOpen(false);
-  }, [filters]);
+  }, [filters, customFilter]);
 
   const generateNextQuestion = useCallback(() => {
     const next = pickNextQuestion(matchingQuestions, currentQuestion);
@@ -78,23 +90,45 @@ export function PracticeSession({ questions }: PracticeSessionProps) {
   }, [generateNextQuestion, currentQuestion]);
 
   const handleToggle = useCallback(
-    (dimensionId: CoreDimensionId, value: string) =>
-      setFilters((prev) => toggleFilter(questions, prev, dimensionId, value)),
+    (dimensionId: CoreDimensionId, value: string) => {
+      setCustomFilter(null);
+      setFilters((prev) => toggleFilter(questions, prev, dimensionId, value));
+    },
     [questions],
   );
 
-  const handleClear = () => setFilters(EMPTY_FILTERS);
+  const handleClear = () => {
+    setCustomFilter(null);
+    setFilters(EMPTY_FILTERS);
+  };
+
+  const handleApplyCustomFilter = useCallback((next: CustomFilter) => {
+    setCustomFilter(next);
+  }, []);
+
+  const handleClearCustomFilter = useCallback(() => {
+    setCustomFilter(null);
+  }, []);
 
   const hasNoMatches = matchingQuestions.length === 0;
 
   return (
     <div className="w-full space-y-8">
+      {customFilter && (
+        <ActiveFilterBanner
+          query={customFilter.query}
+          onClear={handleClearCustomFilter}
+        />
+      )}
+
       <FilterControls
         filters={filters}
         visibleValues={visibleValues}
         onToggle={handleToggle}
         onClear={handleClear}
       />
+
+      <CustomFilterInput onApply={handleApplyCustomFilter} />
 
       <div className="flex items-center gap-4">
         <button
