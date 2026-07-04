@@ -17,7 +17,7 @@ import { pickNextQuestion } from "@/lib/session";
 import { FilterControls } from "@/components/filter-controls";
 import { QuestionCard } from "@/components/question-card";
 import { ActiveFilterBanner } from "@/components/active-filter-banner";
-import { CustomFilterInput } from "@/components/custom-filter-input";
+import { CustomFilterChat } from "@/components/custom-filter-chat";
 
 type CustomFilter = { query: string; requirement: Requirement };
 
@@ -128,7 +128,7 @@ export function PracticeSession({ questions }: PracticeSessionProps) {
         onClear={handleClear}
       />
 
-      <CustomFilterInput onApply={handleApplyCustomFilter} />
+      <CustomFilterChat onApply={handleApplyCustomFilter} />
 
       <div className="flex items-center gap-4">
         <button
