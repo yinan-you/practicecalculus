@@ -56,10 +56,7 @@ export function CustomFilterChat({ onApply }: CustomFilterChatProps) {
   };
 
   return (
-    <div className="space-y-2">
-      <label className="text-xs font-semibold uppercase tracking-wide text-zinc-500">
-        Describe what you want to practice
-      </label>
+    <div className="space-y-2 pl-5">
       <textarea
         value={text}
         onChange={(event) => setText(event.target.value)}

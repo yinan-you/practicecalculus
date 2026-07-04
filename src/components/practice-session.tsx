@@ -18,6 +18,7 @@ import { FilterControls } from "@/components/filter-controls";
 import { QuestionCard } from "@/components/question-card";
 import { ActiveFilterBanner } from "@/components/active-filter-banner";
 import { CustomFilterChat } from "@/components/custom-filter-chat";
+import { CollapsibleSection } from "@/components/collapsible-section";
 
 type CustomFilter = { query: string; requirement: Requirement };
 
@@ -112,6 +113,22 @@ export function PracticeSession({ questions }: PracticeSessionProps) {
 
   const hasNoMatches = matchingQuestions.length === 0;
 
+  const selectedChipCount = useMemo(
+    () =>
+      Object.values(filters).reduce(
+        (count, values) => count + (values?.length ?? 0),
+        0,
+      ),
+    [filters],
+  );
+
+  const chipCollapsedHint =
+    selectedChipCount > 0
+      ? `${selectedChipCount} selected`
+      : undefined;
+
+  const customCollapsedHint = customFilter?.query;
+
   return (
     <div className="w-full space-y-8">
       {customFilter && (
@@ -121,14 +138,25 @@ export function PracticeSession({ questions }: PracticeSessionProps) {
         />
       )}
 
-      <FilterControls
-        filters={filters}
-        visibleValues={visibleValues}
-        onToggle={handleToggle}
-        onClear={handleClear}
-      />
+      <CollapsibleSection
+        title="Filter by tags"
+        collapsedHint={chipCollapsedHint}
+      >
+        <FilterControls
+          filters={filters}
+          visibleValues={visibleValues}
+          onToggle={handleToggle}
+          onClear={handleClear}
+        />
+      </CollapsibleSection>
 
-      <CustomFilterChat onApply={handleApplyCustomFilter} />
+      <CollapsibleSection
+        title="Describe what you want to practice"
+        defaultExpanded={false}
+        collapsedHint={customCollapsedHint}
+      >
+        <CustomFilterChat onApply={handleApplyCustomFilter} />
+      </CollapsibleSection>
 
       <div className="flex items-center gap-4">
         <button
