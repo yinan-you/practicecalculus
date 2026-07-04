@@ -11,7 +11,6 @@ export function CustomFilterChat({ onApply }: CustomFilterChatProps) {
   const [text, setText] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const [preview, setPreview] = useState<Requirement | null>(null);
 
   const handleSubmit = async () => {
     const utterance = text.trim();
@@ -39,7 +38,6 @@ export function CustomFilterChat({ onApply }: CustomFilterChatProps) {
         return;
       }
 
-      setPreview(data.requirement);
       onApply({ query: utterance, requirement: data.requirement });
     } catch {
       setError("Network error. Please try again.");
@@ -74,17 +72,6 @@ export function CustomFilterChat({ onApply }: CustomFilterChatProps) {
       >
         {isLoading ? "Interpreting…" : "Build filter"}
       </button>
-
-      {preview && (
-        <details className="mt-2 rounded-2xl border border-black/[.08] bg-zinc-50 px-4 py-3 dark:border-white/[.12] dark:bg-zinc-900/50">
-          <summary className="cursor-pointer text-xs font-semibold uppercase tracking-wide text-zinc-500">
-            Interpreted requirement (dev)
-          </summary>
-          <pre className="mt-2 overflow-x-auto whitespace-pre-wrap break-words font-mono text-xs text-zinc-700 dark:text-zinc-300">
-            {JSON.stringify(preview, null, 2)}
-          </pre>
-        </details>
-      )}
     </div>
   );
 }

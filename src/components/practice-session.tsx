@@ -152,6 +152,7 @@ export function PracticeSession({ questions }: PracticeSessionProps) {
           {customFilter && (
             <ActiveFilterBanner
               query={customFilter.query}
+              requirement={customFilter.requirement}
               onClear={handleClearCustomFilter}
             />
           )}
