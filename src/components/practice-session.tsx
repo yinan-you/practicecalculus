@@ -149,6 +149,7 @@ export function PracticeSession({ questions }: PracticeSessionProps) {
         collapsedHint={customCollapsedHint}
       >
         <div className="space-y-4 pl-5">
+          <CustomFilterChat onApply={handleApplyCustomFilter} />
           {customFilter && (
             <ActiveFilterBanner
               query={customFilter.query}
@@ -156,7 +157,6 @@ export function PracticeSession({ questions }: PracticeSessionProps) {
               onClear={handleClearCustomFilter}
             />
           )}
-          <CustomFilterChat onApply={handleApplyCustomFilter} />
         </div>
       </CollapsibleSection>
 
