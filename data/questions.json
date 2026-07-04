@@ -6,8 +6,8 @@
     "source": "VCE 2025 Mathematical Methods Exam 1, Q1a",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["VCE-yr12", "VCE-methods"],
-      "method": ["productRule", "trig"],
+      "course": ["calc2","VCE-yr12","VCE-methods"],
+      "method": ["productRule","trig"],
       "origin": ["public"]
     }
   },
@@ -18,8 +18,8 @@
     "source": "VCE 2025 Mathematical Methods Exam 1, Q1b",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["VCE-yr12", "VCE-methods"],
-      "method": ["powerRule", "simpleChainRule"],
+      "course": ["calc2","VCE-yr12","VCE-methods"],
+      "method": ["powerRule","simpleChainRule"],
       "origin": ["public"]
     }
   },
@@ -30,8 +30,8 @@
     "source": "VCE 2025 Mathematical Methods Exam 1, Q2",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-methods"],
-      "method": ["log", "simpleUSub", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-methods"],
+      "method": ["log","simpleUSub","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -42,8 +42,8 @@
     "source": "VCE 2023 Mathematical Methods Exam 1, Q1a",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["VCE-yr12", "VCE-methods"],
-      "method": ["quotientRule", "powerRule", "exp"],
+      "course": ["calc2","VCE-yr12","VCE-methods"],
+      "method": ["quotientRule","powerRule","exp"],
       "origin": ["public"]
     }
   },
@@ -54,8 +54,8 @@
     "source": "VCE 2023 Mathematical Methods Exam 1, Q1b",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["VCE-yr12", "VCE-methods"],
-      "method": ["productRule", "simpleChainRule", "trig", "exp"],
+      "course": ["calc2","VCE-yr12","VCE-methods"],
+      "method": ["productRule","simpleChainRule","trig","exp"],
       "origin": ["public"]
     }
   },
@@ -66,8 +66,8 @@
     "source": "VCE 2023 Mathematical Methods Exam 1, Q5a",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-methods"],
-      "method": ["trig", "simple", "definiteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-methods"],
+      "method": ["trig","simple","definiteIntegral"],
       "origin": ["public"]
     }
   },
@@ -78,8 +78,8 @@
     "source": "VCE (NHT) 2024 Mathematical Methods Exam 1, Q1a",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["VCE-yr12", "VCE-methods"],
-      "method": ["productRule", "chainRule", "exp"],
+      "course": ["calc2","VCE-yr12","VCE-methods"],
+      "method": ["productRule","chainRule","exp"],
       "origin": ["public"]
     }
   },
@@ -90,8 +90,8 @@
     "source": "VCE (NHT) 2024 Mathematical Methods Exam 1, Q1b",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["VCE-yr12", "VCE-methods"],
-      "method": ["quotientRule", "powerRule", "log"],
+      "course": ["calc2","VCE-yr12","VCE-methods"],
+      "method": ["quotientRule","powerRule","log"],
       "origin": ["public"]
     }
   },
@@ -102,8 +102,8 @@
     "source": "VCE (NHT) 2024 Mathematical Methods Exam 1, Q8a",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-methods"],
-      "method": ["powerRule", "simpleUSub", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-methods"],
+      "method": ["powerRule","simpleUSub","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -114,8 +114,8 @@
     "source": "VCE 2024 Mathematical Methods Exam 1, Q1a",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["VCE-yr12", "VCE-methods"],
-      "method": ["productRule", "simpleChainRule", "exp", "trig"],
+      "course": ["calc2","VCE-yr12","VCE-methods"],
+      "method": ["productRule","simpleChainRule","exp","trig"],
       "origin": ["public"]
     }
   },
@@ -126,8 +126,8 @@
     "source": "VCE 2024 Mathematical Methods Exam 1, Q1b",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["VCE-yr12", "VCE-methods"],
-      "method": ["log", "chainRule"],
+      "course": ["calc2","VCE-yr12","VCE-methods"],
+      "method": ["log","chainRule"],
       "origin": ["public"]
     }
   },
@@ -138,8 +138,8 @@
     "source": "VCE (NHT) 2026 Mathematical Methods Exam 1, Q1a",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["VCE-yr12", "VCE-methods"],
-      "method": ["productRule", "powerRule", "log"],
+      "course": ["calc2","VCE-yr12","VCE-methods"],
+      "method": ["productRule","powerRule","log"],
       "origin": ["public"]
     }
   },
@@ -150,8 +150,8 @@
     "source": "VCE (NHT) 2026 Mathematical Methods Exam 1, Q1b",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-methods"],
-      "method": ["powerRule", "simpleUSub", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-methods"],
+      "method": ["powerRule","simpleUSub","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -162,8 +162,8 @@
     "source": "VCE (NHT) 2026 Mathematical Methods Exam 1, Q5b",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["VCE-yr12", "VCE-methods"],
-      "method": ["trig", "simpleChainRule"],
+      "course": ["calc2","VCE-yr12","VCE-methods"],
+      "method": ["trig","simpleChainRule"],
       "origin": ["public"]
     }
   },
@@ -174,8 +174,8 @@
     "source": "VCE (NHT) 2026 Mathematical Methods Exam 1, Q5c",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-methods"],
-      "method": ["trig", "simpleUSub", "definiteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-methods"],
+      "method": ["trig","simpleUSub","definiteIntegral"],
       "origin": ["public"]
     }
   },
@@ -187,8 +187,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9A Q1a",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-methods", "VCE-specialist"],
-      "method": ["trig", "simpleUSub", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-methods","VCE-specialist"],
+      "method": ["trig","simpleUSub","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -200,8 +200,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9A Q1b",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-methods", "VCE-specialist"],
-      "method": ["trig", "simpleUSub", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-methods","VCE-specialist"],
+      "method": ["trig","simpleUSub","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -213,8 +213,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9A Q1c",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-methods", "VCE-specialist"],
-      "method": ["trig", "simpleUSub", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-methods","VCE-specialist"],
+      "method": ["trig","simpleUSub","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -226,8 +226,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9A Q1d",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-methods", "VCE-specialist"],
-      "method": ["exp", "simpleUSub", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-methods","VCE-specialist"],
+      "method": ["exp","simpleUSub","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -239,8 +239,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9A Q1e",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-methods", "VCE-specialist"],
-      "method": ["exp", "simpleUSub", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-methods","VCE-specialist"],
+      "method": ["exp","simpleUSub","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -252,8 +252,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9A Q1f",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-methods", "VCE-specialist"],
-      "method": ["powerRule", "simple", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-methods","VCE-specialist"],
+      "method": ["powerRule","simple","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -265,8 +265,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9A Q1g",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-methods", "VCE-specialist"],
-      "method": ["polynomial", "powerRule", "linearity", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-methods","VCE-specialist"],
+      "method": ["polynomial","powerRule","linearity","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -278,8 +278,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9A Q2a",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-methods", "VCE-specialist"],
-      "method": ["exp", "linearity", "definiteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-methods","VCE-specialist"],
+      "method": ["exp","linearity","definiteIntegral"],
       "origin": ["public"]
     }
   },
@@ -291,8 +291,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9A Q2b",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-methods", "VCE-specialist"],
-      "method": ["polynomial", "powerRule", "linearity", "definiteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-methods","VCE-specialist"],
+      "method": ["polynomial","powerRule","linearity","definiteIntegral"],
       "origin": ["public"]
     }
   },
@@ -304,8 +304,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9A Q2c",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-methods", "VCE-specialist"],
-      "method": ["trig", "simpleUSub", "definiteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-methods","VCE-specialist"],
+      "method": ["trig","simpleUSub","definiteIntegral"],
       "origin": ["public"]
     }
   },
@@ -317,8 +317,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9A Q2d",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-methods", "VCE-specialist"],
-      "method": ["powerRule", "simple", "definiteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-methods","VCE-specialist"],
+      "method": ["powerRule","simple","definiteIntegral"],
       "origin": ["public"]
     }
   },
@@ -330,8 +330,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9A Q2e",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-methods", "VCE-specialist"],
-      "method": ["trig", "powerRule", "linearity", "definiteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-methods","VCE-specialist"],
+      "method": ["trig","powerRule","linearity","definiteIntegral"],
       "origin": ["public"]
     }
   },
@@ -343,8 +343,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9A Q2f",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-methods", "VCE-specialist"],
-      "method": ["exp", "simpleUSub", "powerRule", "linearity", "definiteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-methods","VCE-specialist"],
+      "method": ["exp","simpleUSub","powerRule","linearity","definiteIntegral"],
       "origin": ["public"]
     }
   },
@@ -356,8 +356,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9A Q2g",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-methods", "VCE-specialist"],
-      "method": ["trig", "simpleUSub", "definiteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-methods","VCE-specialist"],
+      "method": ["trig","simpleUSub","definiteIntegral"],
       "origin": ["public"]
     }
   },
@@ -369,8 +369,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9A Q2h",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-methods", "VCE-specialist"],
-      "method": ["trig", "simpleUSub", "definiteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-methods","VCE-specialist"],
+      "method": ["trig","simpleUSub","definiteIntegral"],
       "origin": ["public"]
     }
   },
@@ -382,8 +382,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9A Q2i",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-methods", "VCE-specialist"],
-      "method": ["trig", "simple", "definiteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-methods","VCE-specialist"],
+      "method": ["trig","simple","definiteIntegral"],
       "origin": ["public"]
     }
   },
@@ -395,8 +395,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9A Q3a",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-methods", "VCE-specialist"],
-      "method": ["log", "simpleUSub", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-methods","VCE-specialist"],
+      "method": ["log","simpleUSub","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -408,8 +408,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9A Q3b",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-methods", "VCE-specialist"],
-      "method": ["log", "simpleUSub", "definiteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-methods","VCE-specialist"],
+      "method": ["log","simpleUSub","definiteIntegral"],
       "origin": ["public"]
     }
   },
@@ -421,8 +421,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9A Q3c",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-methods", "VCE-specialist"],
-      "method": ["log", "simpleUSub", "definiteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-methods","VCE-specialist"],
+      "method": ["log","simpleUSub","definiteIntegral"],
       "origin": ["public"]
     }
   },
@@ -434,8 +434,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9A Q4a",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-methods", "VCE-specialist"],
-      "method": ["log", "simpleUSub", "definiteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-methods","VCE-specialist"],
+      "method": ["log","simpleUSub","definiteIntegral"],
       "origin": ["public"]
     }
   },
@@ -447,8 +447,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9A Q4b",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-methods", "VCE-specialist"],
-      "method": ["log", "simpleUSub", "definiteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-methods","VCE-specialist"],
+      "method": ["log","simpleUSub","definiteIntegral"],
       "origin": ["public"]
     }
   },
@@ -460,8 +460,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9A Q4c",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-methods", "VCE-specialist"],
-      "method": ["log", "simpleUSub", "definiteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-methods","VCE-specialist"],
+      "method": ["log","simpleUSub","definiteIntegral"],
       "origin": ["public"]
     }
   },
@@ -473,8 +473,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9A Q5a",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-methods", "VCE-specialist"],
-      "method": ["powerRule", "simpleUSub", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-methods","VCE-specialist"],
+      "method": ["powerRule","simpleUSub","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -486,8 +486,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9A Q5b",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-methods", "VCE-specialist"],
-      "method": ["log", "simpleUSub", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-methods","VCE-specialist"],
+      "method": ["log","simpleUSub","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -499,8 +499,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9A Q5c",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-methods", "VCE-specialist"],
-      "method": ["powerRule", "simpleUSub", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-methods","VCE-specialist"],
+      "method": ["powerRule","simpleUSub","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -512,8 +512,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9A Q5d",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-methods", "VCE-specialist"],
-      "method": ["powerRule", "simpleUSub", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-methods","VCE-specialist"],
+      "method": ["powerRule","simpleUSub","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -525,8 +525,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9A Q5e",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-methods", "VCE-specialist"],
-      "method": ["log", "linearity", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-methods","VCE-specialist"],
+      "method": ["log","linearity","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -538,8 +538,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9A Q5f",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-methods", "VCE-specialist"],
-      "method": ["trig", "simpleUSub", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-methods","VCE-specialist"],
+      "method": ["trig","simpleUSub","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -551,8 +551,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9A Q5g",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-methods", "VCE-specialist"],
-      "method": ["powerRule", "simpleUSub", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-methods","VCE-specialist"],
+      "method": ["powerRule","simpleUSub","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -564,8 +564,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9A Q5h",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-methods", "VCE-specialist"],
-      "method": ["log", "linearity", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-methods","VCE-specialist"],
+      "method": ["log","linearity","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -577,8 +577,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9B Q1a",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["inverseTrig", "simple", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["inverseTrig","simple","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -590,8 +590,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9B Q1b",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["inverseTrig", "simple", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["inverseTrig","simple","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -603,8 +603,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9B Q1c",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["inverseTrig", "simple", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["inverseTrig","simple","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -616,8 +616,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9B Q1d",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["inverseTrig", "simple", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["inverseTrig","simple","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -629,8 +629,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9B Q1e",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["inverseTrig", "simple", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["inverseTrig","simple","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -642,8 +642,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9B Q1f",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["inverseTrig", "simpleUSub", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["inverseTrig","simpleUSub","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -655,8 +655,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9B Q1g",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["inverseTrig", "simple", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["inverseTrig","simple","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -668,8 +668,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9B Q1h",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["inverseTrig", "simpleUSub", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["inverseTrig","simpleUSub","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -681,8 +681,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9B Q1i",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["inverseTrig", "simpleUSub", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["inverseTrig","simpleUSub","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -694,8 +694,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9B Q1j",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["inverseTrig", "simple", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["inverseTrig","simple","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -707,8 +707,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9B Q2a",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["inverseTrig", "simple", "definiteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["inverseTrig","simple","definiteIntegral"],
       "origin": ["public"]
     }
   },
@@ -720,8 +720,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9B Q2b",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["inverseTrig", "simple", "definiteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["inverseTrig","simple","definiteIntegral"],
       "origin": ["public"]
     }
   },
@@ -733,8 +733,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9B Q2c",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["inverseTrig", "simple", "definiteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["inverseTrig","simple","definiteIntegral"],
       "origin": ["public"]
     }
   },
@@ -746,8 +746,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9B Q2d",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["inverseTrig", "simple", "definiteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["inverseTrig","simple","definiteIntegral"],
       "origin": ["public"]
     }
   },
@@ -759,8 +759,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9B Q2e",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["inverseTrig", "simpleUSub", "definiteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["inverseTrig","simpleUSub","definiteIntegral"],
       "origin": ["public"]
     }
   },
@@ -772,8 +772,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9B Q2f",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["inverseTrig", "simpleUSub", "definiteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["inverseTrig","simpleUSub","definiteIntegral"],
       "origin": ["public"]
     }
   },
@@ -785,8 +785,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9B Q2g",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["inverseTrig", "simple", "definiteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["inverseTrig","simple","definiteIntegral"],
       "origin": ["public"]
     }
   },
@@ -798,8 +798,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9B Q2h",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["inverseTrig", "simpleUSub", "definiteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["inverseTrig","simpleUSub","definiteIntegral"],
       "origin": ["public"]
     }
   },
@@ -811,8 +811,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9B Q2i",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["inverseTrig", "simpleUSub", "definiteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["inverseTrig","simpleUSub","definiteIntegral"],
       "origin": ["public"]
     }
   },
@@ -824,8 +824,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9B Q2j",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["inverseTrig", "simpleUSub", "definiteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["inverseTrig","simpleUSub","definiteIntegral"],
       "origin": ["public"]
     }
   },
@@ -837,8 +837,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9C Q1a",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["powerRule", "uSubstitution", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["powerRule","uSubstitution","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -850,8 +850,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9C Q1b",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["powerRule", "uSubstitution", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["powerRule","uSubstitution","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -863,8 +863,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9C Q1c",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["trig", "uSubstitution", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["trig","uSubstitution","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -876,8 +876,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9C Q1d",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["trig", "uSubstitution", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["trig","uSubstitution","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -889,8 +889,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9C Q1e",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["powerRule", "simpleUSub", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["powerRule","simpleUSub","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -902,8 +902,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9C Q1f",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["powerRule", "uSubstitution", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["powerRule","uSubstitution","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -915,8 +915,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9C Q1g",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["powerRule", "uSubstitution", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["powerRule","uSubstitution","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -928,8 +928,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9C Q1h",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["powerRule", "uSubstitution", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["powerRule","uSubstitution","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -941,8 +941,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9C Q1i",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["powerRule", "simpleUSub", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["powerRule","simpleUSub","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -954,8 +954,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9C Q1j",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["powerRule", "simple", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["powerRule","simple","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -967,8 +967,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9C Q1k",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["powerRule", "uSubstitution", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["powerRule","uSubstitution","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -980,8 +980,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9C Q1l",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["log", "uSubstitution", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["log","uSubstitution","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -993,8 +993,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9C Q1m",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["log", "uSubstitution", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["log","uSubstitution","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -1006,8 +1006,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9C Q1n",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["log", "uSubstitution", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["log","uSubstitution","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -1019,8 +1019,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9C Q1o",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["exp", "uSubstitution", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["exp","uSubstitution","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -1032,8 +1032,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9C Q2a",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["inverseTrig", "uSubstitution", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["inverseTrig","uSubstitution","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -1045,8 +1045,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9C Q2b",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["inverseTrig", "uSubstitution", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["inverseTrig","uSubstitution","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -1058,8 +1058,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9C Q2c",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["inverseTrig", "uSubstitution", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["inverseTrig","uSubstitution","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -1071,8 +1071,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9C Q2d",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["inverseTrig", "uSubstitution", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["inverseTrig","uSubstitution","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -1084,8 +1084,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9C Q2e",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["inverseTrig", "uSubstitution", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["inverseTrig","uSubstitution","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -1097,8 +1097,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9C Q2f",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["inverseTrig", "uSubstitution", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["inverseTrig","uSubstitution","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -1110,8 +1110,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9C Q4a",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["powerRule", "uSubstitution", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["powerRule","uSubstitution","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -1123,8 +1123,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9C Q4b",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["powerRule", "uSubstitution", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["powerRule","uSubstitution","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -1136,8 +1136,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9C Q4c",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["powerRule", "uSubstitution", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["powerRule","uSubstitution","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -1149,8 +1149,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9C Q4d",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["powerRule", "uSubstitution", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["powerRule","uSubstitution","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -1162,8 +1162,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9C Q4e",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["log", "powerRule", "partialFractions", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["log","powerRule","partialFractions","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -1175,8 +1175,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9C Q4f",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["powerRule", "uSubstitution", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["powerRule","uSubstitution","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -1188,8 +1188,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9C Q4g",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["powerRule", "uSubstitution", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["powerRule","uSubstitution","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -1201,8 +1201,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9C Q4h",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["log", "powerRule", "partialFractions", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["log","powerRule","partialFractions","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -1214,8 +1214,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9C Q4i",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["powerRule", "uSubstitution", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["powerRule","uSubstitution","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -1227,8 +1227,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9C Q4j",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["powerRule", "uSubstitution", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["powerRule","uSubstitution","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -1240,8 +1240,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9D Q1a",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["powerRule", "uSubstitution", "definiteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["powerRule","uSubstitution","definiteIntegral"],
       "origin": ["public"]
     }
   },
@@ -1253,8 +1253,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9D Q1b",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["trig", "uSubstitution", "definiteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["trig","uSubstitution","definiteIntegral"],
       "origin": ["public"]
     }
   },
@@ -1266,8 +1266,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9D Q1c",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["trig", "uSubstitution", "definiteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["trig","uSubstitution","definiteIntegral"],
       "origin": ["public"]
     }
   },
@@ -1279,8 +1279,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9D Q1d",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["powerRule", "uSubstitution", "definiteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["powerRule","uSubstitution","definiteIntegral"],
       "origin": ["public"]
     }
   },
@@ -1292,8 +1292,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9D Q1e",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["powerRule", "uSubstitution", "definiteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["powerRule","uSubstitution","definiteIntegral"],
       "origin": ["public"]
     }
   },
@@ -1305,8 +1305,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9D Q1f",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["log", "uSubstitution", "definiteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["log","uSubstitution","definiteIntegral"],
       "origin": ["public"]
     }
   },
@@ -1318,8 +1318,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9D Q1g",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["powerRule", "simpleUSub", "definiteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["powerRule","simpleUSub","definiteIntegral"],
       "origin": ["public"]
     }
   },
@@ -1331,8 +1331,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9D Q1h",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["exp", "uSubstitution", "definiteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["exp","uSubstitution","definiteIntegral"],
       "origin": ["public"]
     }
   },
@@ -1344,8 +1344,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9D Q1i",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["trig", "uSubstitution", "definiteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["trig","uSubstitution","definiteIntegral"],
       "origin": ["public"]
     }
   },
@@ -1357,8 +1357,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9D Q1j",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["log", "uSubstitution", "definiteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["log","uSubstitution","definiteIntegral"],
       "origin": ["public"]
     }
   },
@@ -1370,8 +1370,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9D Q1k",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["trig", "uSubstitution", "definiteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["trig","uSubstitution","definiteIntegral"],
       "origin": ["public"]
     }
   },
@@ -1383,8 +1383,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9D Q1l",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["log", "uSubstitution", "definiteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["log","uSubstitution","definiteIntegral"],
       "origin": ["public"]
     }
   },
@@ -1396,8 +1396,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9D Q1m",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["exp", "uSubstitution", "definiteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["exp","uSubstitution","definiteIntegral"],
       "origin": ["public"]
     }
   },
@@ -1409,8 +1409,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9D Q2",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["trig", "uSubstitution", "definiteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["trig","uSubstitution","definiteIntegral"],
       "origin": ["public"]
     }
   },
@@ -1422,8 +1422,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9E Q1a",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["trig", "trigIdentity", "simpleUSub", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["trig","trigIdentity","simpleUSub","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -1435,8 +1435,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9E Q1b",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["trig", "trigIdentity", "simpleUSub", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["trig","trigIdentity","simpleUSub","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -1448,8 +1448,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9E Q1c",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["trig", "trigIdentity", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["trig","trigIdentity","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -1461,8 +1461,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9E Q1d",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["trig", "trigIdentity", "simpleUSub", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["trig","trigIdentity","simpleUSub","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -1474,8 +1474,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9E Q1e",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["trig", "trigIdentity", "simpleUSub", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["trig","trigIdentity","simpleUSub","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -1487,8 +1487,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9E Q1f",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["trig", "trigIdentity", "simpleUSub", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["trig","trigIdentity","simpleUSub","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -1500,8 +1500,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9E Q1g",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["trig", "trigIdentity", "simpleUSub", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["trig","trigIdentity","simpleUSub","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -1513,8 +1513,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9E Q1h",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["trig", "trigIdentity", "simpleUSub", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["trig","trigIdentity","simpleUSub","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -1526,8 +1526,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9E Q1i",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["trig", "trigIdentity", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["trig","trigIdentity","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -1539,8 +1539,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9E Q1j",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["trig", "uSubstitution", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["trig","uSubstitution","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -1552,8 +1552,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9E Q2a",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["trig", "simple", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["trig","simple","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -1565,8 +1565,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9E Q2b",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["trig", "simpleUSub", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["trig","simpleUSub","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -1578,8 +1578,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9E Q2c",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["trig", "simpleUSub", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["trig","simpleUSub","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -1591,8 +1591,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9E Q2d",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["trig", "simpleUSub", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["trig","simpleUSub","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -1604,8 +1604,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9E Q2e",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["trig", "trigIdentity", "simpleUSub", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["trig","trigIdentity","simpleUSub","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -1617,8 +1617,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9E Q2f",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["trig", "trigIdentity", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["trig","trigIdentity","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -1630,8 +1630,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9E Q2g",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["trig", "trigIdentity", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["trig","trigIdentity","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -1643,8 +1643,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9E Q2h",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["trig", "simple", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["trig","simple","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -1656,8 +1656,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9E Q3a",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["trig", "trigIdentity", "simpleUSub", "definiteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["trig","trigIdentity","simpleUSub","definiteIntegral"],
       "origin": ["public"]
     }
   },
@@ -1669,8 +1669,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9E Q3b",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["trig", "trigIdentity", "uSubstitution", "definiteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["trig","trigIdentity","uSubstitution","definiteIntegral"],
       "origin": ["public"]
     }
   },
@@ -1682,8 +1682,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9E Q3c",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["trig", "uSubstitution", "definiteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["trig","uSubstitution","definiteIntegral"],
       "origin": ["public"]
     }
   },
@@ -1695,8 +1695,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9E Q3d",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["trig", "trigIdentity", "simpleUSub", "definiteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["trig","trigIdentity","simpleUSub","definiteIntegral"],
       "origin": ["public"]
     }
   },
@@ -1708,8 +1708,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9E Q3e",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["trig", "uSubstitution", "definiteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["trig","uSubstitution","definiteIntegral"],
       "origin": ["public"]
     }
   },
@@ -1721,8 +1721,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9E Q3f",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["trig", "trigIdentity", "simpleUSub", "definiteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["trig","trigIdentity","simpleUSub","definiteIntegral"],
       "origin": ["public"]
     }
   },
@@ -1734,8 +1734,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9E Q3g",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["trig", "trigIdentity", "simpleUSub", "definiteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["trig","trigIdentity","simpleUSub","definiteIntegral"],
       "origin": ["public"]
     }
   },
@@ -1747,8 +1747,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9E Q3h",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["trig", "trigIdentity", "definiteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["trig","trigIdentity","definiteIntegral"],
       "origin": ["public"]
     }
   },
@@ -1760,8 +1760,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9E Q4a",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["trig", "uSubstitution", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["trig","uSubstitution","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -1773,8 +1773,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9E Q4b",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["trig", "uSubstitution", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["trig","uSubstitution","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -1786,8 +1786,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9E Q4c",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["trig", "trigIdentity", "simpleUSub", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["trig","trigIdentity","simpleUSub","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -1799,8 +1799,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9E Q4d",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["trig", "uSubstitution", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["trig","uSubstitution","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -1812,8 +1812,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9E Q4e",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["trig", "uSubstitution", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["trig","uSubstitution","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -1825,8 +1825,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9E Q4f",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["trig", "trigIdentity", "simpleUSub", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["trig","trigIdentity","simpleUSub","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -1838,8 +1838,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9E Q4g",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["trig", "trigIdentity", "simpleUSub", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["trig","trigIdentity","simpleUSub","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -1851,8 +1851,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9E Q4h",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["trig", "uSubstitution", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["trig","uSubstitution","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -1864,8 +1864,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9E Q5a",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["trig", "trigIdentity", "simpleUSub", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["trig","trigIdentity","simpleUSub","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -1877,8 +1877,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9E Q5b",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["trig", "trigIdentity", "simpleUSub", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["trig","trigIdentity","simpleUSub","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -1890,8 +1890,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9E Q5c",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["trig", "trigIdentity", "simpleUSub", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["trig","trigIdentity","simpleUSub","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -1903,8 +1903,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9E Q5d",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["trig", "trigIdentity", "simpleUSub", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["trig","trigIdentity","simpleUSub","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -1916,8 +1916,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9E Q5e",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["trig", "trigIdentity", "simpleUSub", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["trig","trigIdentity","simpleUSub","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -1929,8 +1929,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9E Q5f",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["trig", "trigIdentity", "simpleUSub", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["trig","trigIdentity","simpleUSub","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -1942,8 +1942,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9E Q6a",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["trig", "trigIdentity", "simpleUSub", "definiteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["trig","trigIdentity","simpleUSub","definiteIntegral"],
       "origin": ["public"]
     }
   },
@@ -1955,8 +1955,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9E Q6b",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["trig", "trigIdentity", "simpleUSub", "definiteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["trig","trigIdentity","simpleUSub","definiteIntegral"],
       "origin": ["public"]
     }
   },
@@ -1968,8 +1968,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9E Q6c",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["trig", "trigIdentity", "simpleUSub", "definiteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["trig","trigIdentity","simpleUSub","definiteIntegral"],
       "origin": ["public"]
     }
   },
@@ -1981,8 +1981,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9F Q9a",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["partialFractions", "log", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["partialFractions","log","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -1994,8 +1994,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9F Q9b",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["partialFractions", "log", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["partialFractions","log","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -2007,8 +2007,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9F Q9c",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["partialFractions", "log", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["partialFractions","log","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -2020,8 +2020,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9F Q9d",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["partialFractions", "log", "linearity", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["partialFractions","log","linearity","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -2033,8 +2033,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9F Q9e",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["partialFractions", "log", "powerRule", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["partialFractions","log","powerRule","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -2046,8 +2046,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9F Q9f",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["partialFractions", "log", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["partialFractions","log","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -2059,8 +2059,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9F Q10a",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["partialFractions", "log", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["partialFractions","log","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -2072,8 +2072,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9F Q10b",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["partialFractions", "log", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["partialFractions","log","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -2085,8 +2085,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9F Q10c",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["partialFractions", "log", "polynomial", "linearity", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["partialFractions","log","polynomial","linearity","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -2098,8 +2098,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9F Q10d",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["partialFractions", "log", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["partialFractions","log","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -2111,8 +2111,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9F Q10e",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["partialFractions", "log", "polynomial", "linearity", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["partialFractions","log","polynomial","linearity","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -2124,8 +2124,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9F Q10f",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["partialFractions", "log", "polynomial", "linearity", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["partialFractions","log","polynomial","linearity","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -2137,8 +2137,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9G Q11a",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["partialFractions", "log", "inverseTrig", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["partialFractions","log","inverseTrig","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -2150,8 +2150,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9G Q11b",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["partialFractions", "log", "powerRule", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["partialFractions","log","powerRule","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -2163,8 +2163,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9G Q11c",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["partialFractions", "log", "inverseTrig", "linearity", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["partialFractions","log","inverseTrig","linearity","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -2176,8 +2176,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9G Q11d",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["partialFractions", "log", "inverseTrig", "powerRule", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["partialFractions","log","inverseTrig","powerRule","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -2189,8 +2189,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9G Q11e",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["partialFractions", "log", "inverseTrig", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["partialFractions","log","inverseTrig","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -2202,8 +2202,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9G Q11f",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["partialFractions", "log", "powerRule", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["partialFractions","log","powerRule","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -2215,8 +2215,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9G Q12a",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["partialFractions", "log", "definiteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["partialFractions","log","definiteIntegral"],
       "origin": ["public"]
     }
   },
@@ -2228,8 +2228,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9G Q12b",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["partialFractions", "log", "definiteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["partialFractions","log","definiteIntegral"],
       "origin": ["public"]
     }
   },
@@ -2241,8 +2241,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9G Q12c",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["partialFractions", "log", "definiteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["partialFractions","log","definiteIntegral"],
       "origin": ["public"]
     }
   },
@@ -2254,8 +2254,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9G Q12d",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["partialFractions", "log", "linearity", "definiteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["partialFractions","log","linearity","definiteIntegral"],
       "origin": ["public"]
     }
   },
@@ -2267,8 +2267,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9G Q12e",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["partialFractions", "log", "definiteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["partialFractions","log","definiteIntegral"],
       "origin": ["public"]
     }
   },
@@ -2280,8 +2280,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9G Q12f",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["partialFractions", "log", "powerRule", "definiteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["partialFractions","log","powerRule","definiteIntegral"],
       "origin": ["public"]
     }
   },
@@ -2293,8 +2293,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9G Q12g",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["partialFractions", "log", "definiteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["partialFractions","log","definiteIntegral"],
       "origin": ["public"]
     }
   },
@@ -2306,8 +2306,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9G Q12h",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["partialFractions", "log", "definiteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["partialFractions","log","definiteIntegral"],
       "origin": ["public"]
     }
   },
@@ -2319,8 +2319,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9G Q12i",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["partialFractions", "log", "definiteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["partialFractions","log","definiteIntegral"],
       "origin": ["public"]
     }
   },
@@ -2332,8 +2332,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9G Q12j",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["partialFractions", "log", "definiteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["partialFractions","log","definiteIntegral"],
       "origin": ["public"]
     }
   },
@@ -2345,8 +2345,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9G Q12k",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["partialFractions", "log", "inverseTrig", "definiteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["partialFractions","log","inverseTrig","definiteIntegral"],
       "origin": ["public"]
     }
   },
@@ -2358,8 +2358,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9G Q13a",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["partialFractions", "log", "inverseTrig", "definiteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["partialFractions","log","inverseTrig","definiteIntegral"],
       "origin": ["public"]
     }
   },
@@ -2371,8 +2371,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9G Q13b",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["partialFractions", "log", "inverseTrig", "linearity", "definiteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["partialFractions","log","inverseTrig","linearity","definiteIntegral"],
       "origin": ["public"]
     }
   },
@@ -2384,8 +2384,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9G Q13c",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["partialFractions", "inverseTrig", "linearity", "definiteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["partialFractions","inverseTrig","linearity","definiteIntegral"],
       "origin": ["public"]
     }
   },
@@ -2397,8 +2397,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9G Q13d",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["partialFractions", "log", "inverseTrig", "definiteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["partialFractions","log","inverseTrig","definiteIntegral"],
       "origin": ["public"]
     }
   },
@@ -2410,8 +2410,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9H Q1a",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["integrationByParts", "exp", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["integrationByParts","exp","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -2423,8 +2423,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9H Q1b",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["integrationByParts", "log", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["integrationByParts","log","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -2436,8 +2436,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9H Q1c",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["integrationByParts", "trig", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["integrationByParts","trig","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -2449,8 +2449,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9H Q1d",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["integrationByParts", "inverseTrig", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["integrationByParts","inverseTrig","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -2462,8 +2462,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9H Q1e",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["integrationByParts", "trig", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["integrationByParts","trig","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -2475,8 +2475,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9H Q1f",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["integrationByParts", "trig", "log", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["integrationByParts","trig","log","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -2488,8 +2488,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9H Q1g",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["integrationByParts", "trig", "log", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["integrationByParts","trig","log","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -2501,8 +2501,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9H Q1h",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["integrationByParts", "inverseTrig", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["integrationByParts","inverseTrig","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -2514,8 +2514,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9H Q1i",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["integrationByParts", "inverseTrig", "log", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["integrationByParts","inverseTrig","log","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -2527,8 +2527,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9H Q1j",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["integrationByParts", "exp", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["integrationByParts","exp","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -2540,8 +2540,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9H Q1k",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["integrationByParts", "inverseTrig", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["integrationByParts","inverseTrig","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -2553,8 +2553,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9H Q1l",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["integrationByParts", "log", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["integrationByParts","log","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -2566,8 +2566,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9H Q1m",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["integrationByParts", "log", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["integrationByParts","log","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -2579,8 +2579,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9H Q1n",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["integrationByParts", "log", "powerRule", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["integrationByParts","log","powerRule","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -2592,8 +2592,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9H Q1o",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["integrationByParts", "exp", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["integrationByParts","exp","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -2605,8 +2605,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9H Q1p",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["integrationByParts", "log", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["integrationByParts","log","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -2618,8 +2618,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9H Q1q",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["integrationByParts", "exp", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["integrationByParts","exp","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -2631,8 +2631,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9H Q1r",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["integrationByParts", "log", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["integrationByParts","log","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -2644,8 +2644,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9H Q2a",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["integrationByParts", "exp", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["integrationByParts","exp","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -2657,8 +2657,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9H Q2b",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["integrationByParts", "trig", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["integrationByParts","trig","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -2670,8 +2670,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9H Q3a",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["integrationByParts", "exp", "trig", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["integrationByParts","exp","trig","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -2683,8 +2683,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9H Q3b",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["integrationByParts", "exp", "trig", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["integrationByParts","exp","trig","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -2696,8 +2696,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9H Q3c",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["integrationByParts", "exp", "trig", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["integrationByParts","exp","trig","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -2709,8 +2709,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9H Q3d",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["integrationByParts", "exp", "trig", "indefiniteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["integrationByParts","exp","trig","indefiniteIntegral"],
       "origin": ["public"]
     }
   },
@@ -2722,8 +2722,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9H Q9a",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["integrationByParts", "exp", "definiteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["integrationByParts","exp","definiteIntegral"],
       "origin": ["public"]
     }
   },
@@ -2735,8 +2735,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9H Q9b",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["integrationByParts", "trig", "definiteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["integrationByParts","trig","definiteIntegral"],
       "origin": ["public"]
     }
   },
@@ -2748,8 +2748,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9H Q9c",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["integrationByParts", "trig", "definiteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["integrationByParts","trig","definiteIntegral"],
       "origin": ["public"]
     }
   },
@@ -2761,8 +2761,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9H Q9d",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["integrationByParts", "exp", "definiteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["integrationByParts","exp","definiteIntegral"],
       "origin": ["public"]
     }
   },
@@ -2774,8 +2774,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9H Q9e",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["integrationByParts", "trig", "definiteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["integrationByParts","trig","definiteIntegral"],
       "origin": ["public"]
     }
   },
@@ -2787,8 +2787,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9H Q9f",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["integrationByParts", "exp", "definiteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["integrationByParts","exp","definiteIntegral"],
       "origin": ["public"]
     }
   },
@@ -2800,8 +2800,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9H Q9g",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["integrationByParts", "log", "definiteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["integrationByParts","log","definiteIntegral"],
       "origin": ["public"]
     }
   },
@@ -2813,8 +2813,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9H Q9h",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["integrationByParts", "exp", "definiteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["integrationByParts","exp","definiteIntegral"],
       "origin": ["public"]
     }
   },
@@ -2826,8 +2826,8 @@
     "source": "Cambridge Specialist Mathematics 3&4 (Evans et al., 2023), Exercise 9H Q9i",
     "tags": {
       "topic": ["integration"],
-      "course": ["VCE-yr12", "VCE-specialist"],
-      "method": ["integrationByParts", "log", "definiteIntegral"],
+      "course": ["calc2","VCE-yr12","VCE-specialist"],
+      "method": ["integrationByParts","log","definiteIntegral"],
       "origin": ["public"]
     }
   },
@@ -2839,8 +2839,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9B Q1a",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["polynomial", "powerRule", "simple"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["polynomial","powerRule","simple"],
       "origin": ["public"]
     }
   },
@@ -2852,8 +2852,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9B Q1b",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["polynomial", "powerRule", "simple"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["polynomial","powerRule","simple"],
       "origin": ["public"]
     }
   },
@@ -2865,8 +2865,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9B Q1c",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["polynomial", "powerRule", "simple"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["polynomial","powerRule","simple"],
       "origin": ["public"]
     }
   },
@@ -2878,8 +2878,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9B Q1d",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["polynomial", "powerRule", "linearity"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["polynomial","powerRule","linearity"],
       "origin": ["public"]
     }
   },
@@ -2891,8 +2891,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9B Q1e",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["polynomial", "powerRule", "linearity"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["polynomial","powerRule","linearity"],
       "origin": ["public"]
     }
   },
@@ -2904,8 +2904,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9B Q1f",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["polynomial", "powerRule", "linearity"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["polynomial","powerRule","linearity"],
       "origin": ["public"]
     }
   },
@@ -2917,8 +2917,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9B Q1g",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["polynomial", "powerRule", "linearity"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["polynomial","powerRule","linearity"],
       "origin": ["public"]
     }
   },
@@ -2930,8 +2930,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9B Q1h",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["polynomial", "powerRule", "linearity"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["polynomial","powerRule","linearity"],
       "origin": ["public"]
     }
   },
@@ -2943,8 +2943,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9C Q4a",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["polynomial", "powerRule", "linearity"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["polynomial","powerRule","linearity"],
       "origin": ["public"]
     }
   },
@@ -2956,8 +2956,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9C Q4b",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["powerRule", "linearity"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["powerRule","linearity"],
       "origin": ["public"]
     }
   },
@@ -2969,8 +2969,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9C Q4c",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["powerRule", "linearity"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["powerRule","linearity"],
       "origin": ["public"]
     }
   },
@@ -2982,8 +2982,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9C Q4d",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["polynomial", "powerRule", "linearity"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["polynomial","powerRule","linearity"],
       "origin": ["public"]
     }
   },
@@ -2995,7 +2995,7 @@
     "source": "Cambridge Mathematical Methods, Exercise 9C Q4e",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
       "method": ["quotientRule"],
       "origin": ["public"]
     }
@@ -3008,7 +3008,7 @@
     "source": "Cambridge Mathematical Methods, Exercise 9C Q5a",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
       "method": ["quotientRule"],
       "origin": ["public"]
     }
@@ -3021,7 +3021,7 @@
     "source": "Cambridge Mathematical Methods, Exercise 9C Q5b",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
       "method": ["quotientRule"],
       "origin": ["public"]
     }
@@ -3034,8 +3034,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9C Q5c",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["powerRule", "linearity"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["powerRule","linearity"],
       "origin": ["public"]
     }
   },
@@ -3047,7 +3047,7 @@
     "source": "Cambridge Mathematical Methods, Exercise 9C Q5d",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
       "method": ["quotientRule"],
       "origin": ["public"]
     }
@@ -3060,7 +3060,7 @@
     "source": "Cambridge Mathematical Methods, Exercise 9C Q5e",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
       "method": ["quotientRule"],
       "origin": ["public"]
     }
@@ -3073,8 +3073,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9C Q5f",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["powerRule", "linearity"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["powerRule","linearity"],
       "origin": ["public"]
     }
   },
@@ -3086,8 +3086,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9E Q1a",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["powerRule", "chainRule"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["powerRule","chainRule"],
       "origin": ["public"]
     }
   },
@@ -3099,8 +3099,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9E Q1b",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["powerRule", "chainRule"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["powerRule","chainRule"],
       "origin": ["public"]
     }
   },
@@ -3112,8 +3112,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9E Q1c",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["powerRule", "simpleChainRule"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["powerRule","simpleChainRule"],
       "origin": ["public"]
     }
   },
@@ -3125,8 +3125,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9E Q1d",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["powerRule", "simpleChainRule"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["powerRule","simpleChainRule"],
       "origin": ["public"]
     }
   },
@@ -3138,8 +3138,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9E Q1e",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["powerRule", "chainRule"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["powerRule","chainRule"],
       "origin": ["public"]
     }
   },
@@ -3151,8 +3151,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9E Q1f",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["powerRule", "chainRule"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["powerRule","chainRule"],
       "origin": ["public"]
     }
   },
@@ -3164,8 +3164,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9E Q1g",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["powerRule", "chainRule", "linearity"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["powerRule","chainRule","linearity"],
       "origin": ["public"]
     }
   },
@@ -3177,8 +3177,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9E Q1h",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["powerRule", "simpleChainRule"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["powerRule","simpleChainRule"],
       "origin": ["public"]
     }
   },
@@ -3190,8 +3190,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9E Q2a",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["powerRule", "chainRule", "linearity"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["powerRule","chainRule","linearity"],
       "origin": ["public"]
     }
   },
@@ -3203,8 +3203,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9E Q2b",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["powerRule", "chainRule", "linearity"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["powerRule","chainRule","linearity"],
       "origin": ["public"]
     }
   },
@@ -3216,8 +3216,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9E Q2c",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["powerRule", "chainRule", "linearity"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["powerRule","chainRule","linearity"],
       "origin": ["public"]
     }
   },
@@ -3229,8 +3229,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9E Q2d",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["powerRule", "chainRule", "linearity"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["powerRule","chainRule","linearity"],
       "origin": ["public"]
     }
   },
@@ -3242,7 +3242,7 @@
     "source": "Cambridge Mathematical Methods, Exercise 9E Q6a",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
       "method": ["chainRule"],
       "origin": ["public"]
     }
@@ -3255,7 +3255,7 @@
     "source": "Cambridge Mathematical Methods, Exercise 9E Q6b",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
       "method": ["chainRule"],
       "origin": ["public"]
     }
@@ -3268,7 +3268,7 @@
     "source": "Cambridge Mathematical Methods, Exercise 9E Q8",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
       "method": ["chainRule"],
       "origin": ["public"]
     }
@@ -3281,8 +3281,8 @@
     "source": "Cambridge Mathematical Methods",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["powerRule", "simple"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["powerRule","simple"],
       "origin": ["public"]
     }
   },
@@ -3294,8 +3294,8 @@
     "source": "Cambridge Mathematical Methods",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["powerRule", "simple"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["powerRule","simple"],
       "origin": ["public"]
     }
   },
@@ -3307,8 +3307,8 @@
     "source": "Cambridge Mathematical Methods",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["powerRule", "linearity"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["powerRule","linearity"],
       "origin": ["public"]
     }
   },
@@ -3320,8 +3320,8 @@
     "source": "Cambridge Mathematical Methods",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["powerRule", "linearity"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["powerRule","linearity"],
       "origin": ["public"]
     }
   },
@@ -3333,8 +3333,8 @@
     "source": "Cambridge Mathematical Methods",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["powerRule", "simple"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["powerRule","simple"],
       "origin": ["public"]
     }
   },
@@ -3346,8 +3346,8 @@
     "source": "Cambridge Mathematical Methods",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["powerRule", "linearity"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["powerRule","linearity"],
       "origin": ["public"]
     }
   },
@@ -3359,8 +3359,8 @@
     "source": "Cambridge Mathematical Methods",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["powerRule", "simpleChainRule"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["powerRule","simpleChainRule"],
       "origin": ["public"]
     }
   },
@@ -3372,8 +3372,8 @@
     "source": "Cambridge Mathematical Methods",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["powerRule", "simpleChainRule"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["powerRule","simpleChainRule"],
       "origin": ["public"]
     }
   },
@@ -3385,8 +3385,8 @@
     "source": "Cambridge Mathematical Methods",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["powerRule", "chainRule"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["powerRule","chainRule"],
       "origin": ["public"]
     }
   },
@@ -3398,8 +3398,8 @@
     "source": "Cambridge Mathematical Methods",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["powerRule", "simpleChainRule"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["powerRule","simpleChainRule"],
       "origin": ["public"]
     }
   },
@@ -3411,8 +3411,8 @@
     "source": "Cambridge Mathematical Methods",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["powerRule", "linearity"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["powerRule","linearity"],
       "origin": ["public"]
     }
   },
@@ -3424,8 +3424,8 @@
     "source": "Cambridge Mathematical Methods",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["productRule", "powerRule", "linearity"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["productRule","powerRule","linearity"],
       "origin": ["public"]
     }
   },
@@ -3437,8 +3437,8 @@
     "source": "Cambridge Mathematical Methods",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["powerRule", "chainRule"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["powerRule","chainRule"],
       "origin": ["public"]
     }
   },
@@ -3450,8 +3450,8 @@
     "source": "Cambridge Mathematical Methods",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["powerRule", "chainRule"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["powerRule","chainRule"],
       "origin": ["public"]
     }
   },
@@ -3463,8 +3463,8 @@
     "source": "Cambridge Mathematical Methods",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["powerRule", "chainRule"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["powerRule","chainRule"],
       "origin": ["public"]
     }
   },
@@ -3476,8 +3476,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9G Q1a",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["exp", "simpleChainRule"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["exp","simpleChainRule"],
       "origin": ["public"]
     }
   },
@@ -3489,8 +3489,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9G Q1b",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["exp", "simpleChainRule"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["exp","simpleChainRule"],
       "origin": ["public"]
     }
   },
@@ -3502,8 +3502,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9G Q1c",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["exp", "simpleChainRule", "linearity", "powerRule"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["exp","simpleChainRule","linearity","powerRule"],
       "origin": ["public"]
     }
   },
@@ -3515,8 +3515,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9G Q1d",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["quotientRule", "exp"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["quotientRule","exp"],
       "origin": ["public"]
     }
   },
@@ -3528,8 +3528,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9G Q1e",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["quotientRule", "exp"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["quotientRule","exp"],
       "origin": ["public"]
     }
   },
@@ -3541,8 +3541,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9G Q1f",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["exp", "simpleChainRule", "linearity"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["exp","simpleChainRule","linearity"],
       "origin": ["public"]
     }
   },
@@ -3554,8 +3554,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9G Q2a",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["exp", "chainRule"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["exp","chainRule"],
       "origin": ["public"]
     }
   },
@@ -3567,8 +3567,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9G Q2b",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["exp", "chainRule", "linearity"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["exp","chainRule","linearity"],
       "origin": ["public"]
     }
   },
@@ -3580,8 +3580,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9G Q2c",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["exp", "chainRule", "linearity"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["exp","chainRule","linearity"],
       "origin": ["public"]
     }
   },
@@ -3593,8 +3593,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9G Q2d",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["exp", "chainRule", "linearity"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["exp","chainRule","linearity"],
       "origin": ["public"]
     }
   },
@@ -3606,8 +3606,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9G Q2e",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["exp", "chainRule"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["exp","chainRule"],
       "origin": ["public"]
     }
   },
@@ -3619,8 +3619,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9G Q2f",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["exp", "chainRule"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["exp","chainRule"],
       "origin": ["public"]
     }
   },
@@ -3632,8 +3632,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9G Q5a",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["exp", "chainRule"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["exp","chainRule"],
       "origin": ["public"]
     }
   },
@@ -3645,8 +3645,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9G Q5b",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["chainRule", "exp"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["chainRule","exp"],
       "origin": ["public"]
     }
   },
@@ -3658,8 +3658,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9G Q6a",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["exp", "chainRule"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["exp","chainRule"],
       "origin": ["public"]
     }
   },
@@ -3671,8 +3671,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9G Q6b",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["exp", "chainRule"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["exp","chainRule"],
       "origin": ["public"]
     }
   },
@@ -3684,8 +3684,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9G Q6c",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["exp", "chainRule"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["exp","chainRule"],
       "origin": ["public"]
     }
   },
@@ -3697,8 +3697,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9G Q6d",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["exp", "chainRule"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["exp","chainRule"],
       "origin": ["public"]
     }
   },
@@ -3710,8 +3710,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9G Q6e",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["exp", "chainRule"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["exp","chainRule"],
       "origin": ["public"]
     }
   },
@@ -3723,8 +3723,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9G Q6f",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["exp", "chainRule"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["exp","chainRule"],
       "origin": ["public"]
     }
   },
@@ -3736,8 +3736,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9H Q1a",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["log", "simple"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["log","simple"],
       "origin": ["public"]
     }
   },
@@ -3749,8 +3749,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9H Q1b",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["log", "simpleChainRule"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["log","simpleChainRule"],
       "origin": ["public"]
     }
   },
@@ -3762,8 +3762,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9H Q1c",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["log", "powerRule", "linearity"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["log","powerRule","linearity"],
       "origin": ["public"]
     }
   },
@@ -3775,8 +3775,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9H Q1d",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["log", "powerRule", "linearity"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["log","powerRule","linearity"],
       "origin": ["public"]
     }
   },
@@ -3788,8 +3788,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9H Q1e",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["log", "simpleChainRule", "linearity"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["log","simpleChainRule","linearity"],
       "origin": ["public"]
     }
   },
@@ -3801,8 +3801,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9H Q1f",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["log", "simpleChainRule"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["log","simpleChainRule"],
       "origin": ["public"]
     }
   },
@@ -3814,8 +3814,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9H Q1g",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["log", "simpleChainRule"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["log","simpleChainRule"],
       "origin": ["public"]
     }
   },
@@ -3827,8 +3827,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9H Q1h",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["log", "simpleChainRule"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["log","simpleChainRule"],
       "origin": ["public"]
     }
   },
@@ -3840,8 +3840,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9H Q1i",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["log", "simpleChainRule"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["log","simpleChainRule"],
       "origin": ["public"]
     }
   },
@@ -3853,8 +3853,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9H Q2a",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["log", "chainRule"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["log","chainRule"],
       "origin": ["public"]
     }
   },
@@ -3866,8 +3866,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9H Q2b",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["log", "chainRule"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["log","chainRule"],
       "origin": ["public"]
     }
   },
@@ -3879,8 +3879,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9H Q2c",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["log", "chainRule"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["log","chainRule"],
       "origin": ["public"]
     }
   },
@@ -3892,8 +3892,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9H Q2d",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["log", "chainRule"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["log","chainRule"],
       "origin": ["public"]
     }
   },
@@ -3905,8 +3905,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9H Q2e",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["log", "chainRule"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["log","chainRule"],
       "origin": ["public"]
     }
   },
@@ -3918,8 +3918,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9H Q2f",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["log", "chainRule"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["log","chainRule"],
       "origin": ["public"]
     }
   },
@@ -3931,8 +3931,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9H Q3a",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["log", "chainRule"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["log","chainRule"],
       "origin": ["public"]
     }
   },
@@ -3944,8 +3944,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9H Q3b",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["log", "exp", "chainRule"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["log","exp","chainRule"],
       "origin": ["public"]
     }
   },
@@ -3957,8 +3957,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9H Q6",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["log", "chainRule"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["log","chainRule"],
       "origin": ["public"]
     }
   },
@@ -3970,8 +3970,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9I Q1a",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["trig", "simpleChainRule"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["trig","simpleChainRule"],
       "origin": ["public"]
     }
   },
@@ -3983,8 +3983,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9I Q1b",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["trig", "simpleChainRule"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["trig","simpleChainRule"],
       "origin": ["public"]
     }
   },
@@ -3996,8 +3996,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9I Q1c",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["trig", "simpleChainRule"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["trig","simpleChainRule"],
       "origin": ["public"]
     }
   },
@@ -4009,8 +4009,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9I Q1d",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["trig", "chainRule"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["trig","chainRule"],
       "origin": ["public"]
     }
   },
@@ -4022,8 +4022,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9I Q1e",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["trig", "simpleChainRule"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["trig","simpleChainRule"],
       "origin": ["public"]
     }
   },
@@ -4035,8 +4035,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9I Q1f",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["trig", "chainRule"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["trig","chainRule"],
       "origin": ["public"]
     }
   },
@@ -4048,8 +4048,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9I Q1g",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["trig", "chainRule"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["trig","chainRule"],
       "origin": ["public"]
     }
   },
@@ -4061,8 +4061,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9I Q1h",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["trig", "chainRule"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["trig","chainRule"],
       "origin": ["public"]
     }
   },
@@ -4074,8 +4074,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9I Q1i",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["trig", "chainRule"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["trig","chainRule"],
       "origin": ["public"]
     }
   },
@@ -4087,8 +4087,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9I Q1j",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["trig", "chainRule"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["trig","chainRule"],
       "origin": ["public"]
     }
   },
@@ -4100,8 +4100,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9I Q3a",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["trig", "simpleChainRule", "linearity"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["trig","simpleChainRule","linearity"],
       "origin": ["public"]
     }
   },
@@ -4113,8 +4113,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9I Q3b",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["trig", "linearity"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["trig","linearity"],
       "origin": ["public"]
     }
   },
@@ -4126,8 +4126,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9I Q3c",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["trig", "linearity"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["trig","linearity"],
       "origin": ["public"]
     }
   },
@@ -4139,8 +4139,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9I Q3d",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["trig", "chainRule"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["trig","chainRule"],
       "origin": ["public"]
     }
   },
@@ -4152,8 +4152,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9I Q5a",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["log", "trig", "chainRule"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["log","trig","chainRule"],
       "origin": ["public"]
     }
   },
@@ -4165,8 +4165,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9I Q5b",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["log", "trig", "chainRule"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["log","trig","chainRule"],
       "origin": ["public"]
     }
   },
@@ -4178,8 +4178,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9I Q6a",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["exp", "trig", "chainRule"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["exp","trig","chainRule"],
       "origin": ["public"]
     }
   },
@@ -4191,8 +4191,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9I Q6b",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["exp", "trig", "chainRule"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["exp","trig","chainRule"],
       "origin": ["public"]
     }
   },
@@ -4204,7 +4204,7 @@
     "source": "Cambridge Mathematical Methods, Exercise 9J Q1a",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
       "method": ["productRule"],
       "origin": ["public"]
     }
@@ -4217,7 +4217,7 @@
     "source": "Cambridge Mathematical Methods, Exercise 9J Q1b",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
       "method": ["productRule"],
       "origin": ["public"]
     }
@@ -4230,8 +4230,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9J Q1c",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["productRule", "chainRule"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["productRule","chainRule"],
       "origin": ["public"]
     }
   },
@@ -4243,8 +4243,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9J Q1d",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["productRule", "chainRule"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["productRule","chainRule"],
       "origin": ["public"]
     }
   },
@@ -4256,8 +4256,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9J Q1e",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["productRule", "chainRule"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["productRule","chainRule"],
       "origin": ["public"]
     }
   },
@@ -4269,8 +4269,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9J Q1f",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["productRule", "chainRule"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["productRule","chainRule"],
       "origin": ["public"]
     }
   },
@@ -4282,8 +4282,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9J Q1g",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["productRule", "chainRule"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["productRule","chainRule"],
       "origin": ["public"]
     }
   },
@@ -4295,8 +4295,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9J Q1h",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["productRule", "chainRule"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["productRule","chainRule"],
       "origin": ["public"]
     }
   },
@@ -4308,8 +4308,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9J Q1i",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["productRule", "chainRule"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["productRule","chainRule"],
       "origin": ["public"]
     }
   },
@@ -4321,8 +4321,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9J Q1j",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["productRule", "chainRule"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["productRule","chainRule"],
       "origin": ["public"]
     }
   },
@@ -4334,8 +4334,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9J Q1k",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["productRule", "chainRule"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["productRule","chainRule"],
       "origin": ["public"]
     }
   },
@@ -4347,8 +4347,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9J Q1l",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["productRule", "chainRule"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["productRule","chainRule"],
       "origin": ["public"]
     }
   },
@@ -4360,8 +4360,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9J Q2a",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["productRule", "exp"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["productRule","exp"],
       "origin": ["public"]
     }
   },
@@ -4373,8 +4373,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9J Q2b",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["productRule", "exp", "chainRule"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["productRule","exp","chainRule"],
       "origin": ["public"]
     }
   },
@@ -4386,8 +4386,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9J Q2c",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["productRule", "exp", "chainRule"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["productRule","exp","chainRule"],
       "origin": ["public"]
     }
   },
@@ -4399,8 +4399,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9J Q2d",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["productRule", "exp", "chainRule"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["productRule","exp","chainRule"],
       "origin": ["public"]
     }
   },
@@ -4412,8 +4412,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9J Q3a",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["productRule", "log"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["productRule","log"],
       "origin": ["public"]
     }
   },
@@ -4425,8 +4425,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9J Q3b",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["productRule", "log"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["productRule","log"],
       "origin": ["public"]
     }
   },
@@ -4438,8 +4438,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9J Q3c",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["productRule", "exp", "log"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["productRule","exp","log"],
       "origin": ["public"]
     }
   },
@@ -4451,8 +4451,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9J Q3d",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["productRule", "log"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["productRule","log"],
       "origin": ["public"]
     }
   },
@@ -4464,8 +4464,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9J Q4a",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["productRule", "exp"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["productRule","exp"],
       "origin": ["public"]
     }
   },
@@ -4477,8 +4477,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9J Q4b",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["exp", "chainRule"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["exp","chainRule"],
       "origin": ["public"]
     }
   },
@@ -4490,8 +4490,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9J Q4c",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["chainRule", "exp"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["chainRule","exp"],
       "origin": ["public"]
     }
   },
@@ -4503,8 +4503,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9J Q4d",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["quotientRule", "exp"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["quotientRule","exp"],
       "origin": ["public"]
     }
   },
@@ -4516,8 +4516,8 @@
     "source": "Cambridge Mathematical Methods, Exercise 9J Q4e",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["exp", "chainRule"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["exp","chainRule"],
       "origin": ["public"]
     }
   },
@@ -4529,8 +4529,658 @@
     "source": "Cambridge Mathematical Methods, Exercise 9J Q4f",
     "tags": {
       "topic": ["differentiation"],
-      "course": ["calc1", "VCE-yr11", "VCE-methods"],
-      "method": ["productRule", "exp"],
+      "course": ["calc1","calc2","VCE-yr11","VCE-methods"],
+      "method": ["productRule","exp"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "mast10006-s4-4.1a",
+    "prompt": "$\\displaystyle\\int_1^2 (2x-5)^3\\,dx$.",
+    "answer": "$-10$",
+    "difficulty": 2,
+    "source": "University of Melbourne MAST10006 Calculus 2, Problem Sheet 4, Q4.1(a)",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["calc2"],
+      "method": ["powerRule","simpleUSub","definiteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "mast10006-s4-4.1b",
+    "prompt": "$\\displaystyle\\int \\frac{1}{x^2+4x+13}\\,dx$.",
+    "answer": "$\\dfrac{1}{3}\\arctan\\!\\left(\\dfrac{x+2}{3}\\right) + C$",
+    "difficulty": 2,
+    "source": "University of Melbourne MAST10006 Calculus 2, Problem Sheet 4, Q4.1(b)",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["calc2"],
+      "method": ["inverseTrig","uSubstitution","indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "mast10006-s4-4.1c",
+    "prompt": "$\\displaystyle\\int_0^{\\pi/2} \\cos^2(7x)\\,dx$.",
+    "answer": "$\\dfrac{\\pi}{4}$",
+    "difficulty": 2,
+    "source": "University of Melbourne MAST10006 Calculus 2, Problem Sheet 4, Q4.1(c)",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["calc2"],
+      "method": ["trig","trigIdentity","linearity","simpleUSub","definiteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "mast10006-s4-4.1d",
+    "prompt": "$\\displaystyle\\int \\frac{3x}{(x-2)(x+4)}\\,dx$.",
+    "answer": "$\\ln|x-2| + 2\\ln|x+4| + C$",
+    "difficulty": 2,
+    "source": "University of Melbourne MAST10006 Calculus 2, Problem Sheet 4, Q4.1(d)",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["calc2"],
+      "method": ["partialFractions","log","indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "mast10006-s4-4.1e",
+    "prompt": "$\\displaystyle\\int \\frac{1}{x\\log x}\\,dx$.",
+    "answer": "$\\ln|\\ln x| + C$",
+    "difficulty": 1,
+    "source": "University of Melbourne MAST10006 Calculus 2, Problem Sheet 4, Q4.1(e)",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["calc2"],
+      "method": ["log","uSubstitution","indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "mast10006-s4-4.1f",
+    "prompt": "$\\displaystyle\\int \\frac{e^x}{e^x+1}\\,dx$.",
+    "answer": "$\\ln(e^x+1) + C$",
+    "difficulty": 1,
+    "source": "University of Melbourne MAST10006 Calculus 2, Problem Sheet 4, Q4.1(f)",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["calc2"],
+      "method": ["exp","uSubstitution","indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "mast10006-s4-4.1g",
+    "prompt": "$\\displaystyle\\int \\frac{4x+17}{x^2+10x+25}\\,dx$.",
+    "answer": "$4\\ln|x+5| + \\dfrac{3}{x+5} + C$",
+    "difficulty": 2,
+    "source": "University of Melbourne MAST10006 Calculus 2, Problem Sheet 4, Q4.1(g)",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["calc2"],
+      "method": ["partialFractions","log","simpleUSub","indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "mast10006-s4-4.1h",
+    "prompt": "$\\displaystyle\\int \\sin^6 x \\cos^3 x\\,dx$.",
+    "answer": "$\\dfrac{\\sin^7 x}{7} - \\dfrac{\\sin^9 x}{9} + C$",
+    "difficulty": 2,
+    "source": "University of Melbourne MAST10006 Calculus 2, Problem Sheet 4, Q4.1(h)",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["calc2"],
+      "method": ["trig","trigIdentity","uSubstitution","indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "mast10006-s4-4.2a",
+    "prompt": "$\\displaystyle\\int \\operatorname{cosech}^2 x \\coth^2 x\\,dx$.",
+    "answer": "$-\\dfrac{\\coth^3 x}{3} + C$",
+    "difficulty": 2,
+    "source": "University of Melbourne MAST10006 Calculus 2, Problem Sheet 4, Q4.2(a)",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["calc2"],
+      "method": ["hyperbolic","uSubstitution","indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "mast10006-s4-4.2b",
+    "prompt": "$\\displaystyle\\int \\sinh(3x)\\exp[4\\cosh(3x)]\\,dx$.",
+    "answer": "$\\dfrac{1}{12}e^{4\\cosh(3x)} + C$",
+    "difficulty": 2,
+    "source": "University of Melbourne MAST10006 Calculus 2, Problem Sheet 4, Q4.2(b)",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["calc2"],
+      "method": ["hyperbolic","exp","uSubstitution","indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "mast10006-s4-4.2c",
+    "prompt": "$\\displaystyle\\int \\frac{2\\operatorname{arccosh} x}{\\sqrt{x^2-1}}\\,dx$.",
+    "answer": "$[\\operatorname{arccosh} x]^2 + C$",
+    "difficulty": 2,
+    "source": "University of Melbourne MAST10006 Calculus 2, Problem Sheet 4, Q4.2(c)",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["calc2"],
+      "method": ["inverseHyperbolic","uSubstitution","indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "mast10006-s4-4.2d",
+    "prompt": "$\\displaystyle\\int \\frac{\\operatorname{sech}^2(kx)}{2+\\tanh(kx)}\\,dx$, where $k \\in \\mathbb{R}$ is a constant.",
+    "answer": "$\\dfrac{1}{k}\\ln|2+\\tanh(kx)| + C$",
+    "difficulty": 2,
+    "source": "University of Melbourne MAST10006 Calculus 2, Problem Sheet 4, Q4.2(d)",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["calc2"],
+      "method": ["hyperbolic","uSubstitution","indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "mast10006-s4-4.3a",
+    "prompt": "Using an appropriate hyperbolic substitution, find $\\displaystyle\\int \\sqrt{1+4x^2}\\,dx$.",
+    "answer": "$\\dfrac{1}{4}\\operatorname{arcsinh}(2x) + \\dfrac{x}{2}\\sqrt{1+4x^2} + C$",
+    "difficulty": 3,
+    "source": "University of Melbourne MAST10006 Calculus 2, Problem Sheet 4, Q4.3(a)",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["calc2"],
+      "method": ["hyperbolic","trigIdentity","uSubstitution","indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "mast10006-s4-4.3b",
+    "prompt": "Using an appropriate trigonometric substitution, find $\\displaystyle\\int \\sqrt{4-x^2}\\,dx$.",
+    "answer": "$2\\arcsin\\!\\left(\\dfrac{x}{2}\\right) + \\dfrac{x\\sqrt{4-x^2}}{2} + C$",
+    "difficulty": 3,
+    "source": "University of Melbourne MAST10006 Calculus 2, Problem Sheet 4, Q4.3(b)",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["calc2"],
+      "method": ["trig","trigIdentity","uSubstitution","indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "mast10006-s4-4.3c",
+    "prompt": "Using an appropriate hyperbolic substitution, find $\\displaystyle\\int \\frac{1}{(x^2-1)^{3/2}}\\,dx$.",
+    "answer": "$-\\dfrac{x}{\\sqrt{x^2-1}} + C$",
+    "difficulty": 3,
+    "source": "University of Melbourne MAST10006 Calculus 2, Problem Sheet 4, Q4.3(c)",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["calc2"],
+      "method": ["hyperbolic","trigIdentity","uSubstitution","indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "mast10006-s4-4.4a",
+    "prompt": "Find $\\displaystyle\\int \\sinh^6 x \\cosh x\\,dx$.",
+    "answer": "$\\dfrac{\\sinh^7 x}{7} + C$",
+    "difficulty": 1,
+    "source": "University of Melbourne MAST10006 Calculus 2, Problem Sheet 4, Q4.4(a)",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["calc2"],
+      "method": ["hyperbolic","uSubstitution","indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "mast10006-s4-4.4b",
+    "prompt": "Find $\\displaystyle\\int \\cosh^2(3x)\\,dx$.",
+    "answer": "$\\dfrac{x}{2} + \\dfrac{\\sinh(6x)}{12} + C$",
+    "difficulty": 2,
+    "source": "University of Melbourne MAST10006 Calculus 2, Problem Sheet 4, Q4.4(b)",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["calc2"],
+      "method": ["hyperbolic","trigIdentity","simpleUSub","indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "mast10006-s4-4.4c",
+    "prompt": "Find $\\displaystyle\\int \\sinh^2 x \\cosh^3 x\\,dx$.",
+    "answer": "$\\dfrac{\\sinh^3 x}{3} + \\dfrac{\\sinh^5 x}{5} + C$",
+    "difficulty": 2,
+    "source": "University of Melbourne MAST10006 Calculus 2, Problem Sheet 4, Q4.4(c)",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["calc2"],
+      "method": ["hyperbolic","trigIdentity","uSubstitution","indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "mast10006-s4-4.4d",
+    "prompt": "Find $\\displaystyle\\int \\sinh^3(4x)\\,dx$.",
+    "answer": "$\\dfrac{\\cosh^3(4x)}{12} - \\dfrac{\\cosh(4x)}{4} + C$",
+    "difficulty": 2,
+    "source": "University of Melbourne MAST10006 Calculus 2, Problem Sheet 4, Q4.4(d)",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["calc2"],
+      "method": ["hyperbolic","trigIdentity","uSubstitution","indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "mast10006-s4-4.4e",
+    "prompt": "Find $\\displaystyle\\int \\cosh^4 x\\,dx$.",
+    "answer": "$\\dfrac{3x}{8} + \\dfrac{\\sinh(2x)}{4} + \\dfrac{\\sinh(4x)}{32} + C$",
+    "difficulty": 3,
+    "source": "University of Melbourne MAST10006 Calculus 2, Problem Sheet 4, Q4.4(e)",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["calc2"],
+      "method": ["hyperbolic","trigIdentity","linearity","simpleUSub","indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "mast10006-s4-4.5a",
+    "prompt": "$\\displaystyle\\int \\tanh x \\operatorname{sech}^2 x\\,dx$.",
+    "answer": "$\\dfrac{\\tanh^2 x}{2} + C$",
+    "difficulty": 1,
+    "source": "University of Melbourne MAST10006 Calculus 2, Problem Sheet 4, Q4.5(a)",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["calc2"],
+      "method": ["hyperbolic","uSubstitution","indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "mast10006-s4-4.5b",
+    "prompt": "$\\displaystyle\\int \\tanh^2(3x)\\,dx$.",
+    "answer": "$x - \\dfrac{1}{3}\\tanh(3x) + C$",
+    "difficulty": 2,
+    "source": "University of Melbourne MAST10006 Calculus 2, Problem Sheet 4, Q4.5(b)",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["calc2"],
+      "method": ["hyperbolic","trigIdentity","simpleUSub","indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "mast10006-s4-4.6a",
+    "prompt": "$\\displaystyle\\int x\\cos(3x)\\,dx$.",
+    "answer": "$\\dfrac{x\\sin(3x)}{3} + \\dfrac{\\cos(3x)}{9} + C$",
+    "difficulty": 2,
+    "source": "University of Melbourne MAST10006 Calculus 2, Problem Sheet 4, Q4.6(a)",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["calc2"],
+      "method": ["trig","integrationByParts","indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "mast10006-s4-4.6b",
+    "prompt": "$\\displaystyle\\int \\arcsin x\\,dx$.",
+    "answer": "$x\\arcsin x + \\sqrt{1-x^2} + C$",
+    "difficulty": 2,
+    "source": "University of Melbourne MAST10006 Calculus 2, Problem Sheet 4, Q4.6(b)",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["calc2"],
+      "method": ["inverseTrig","integrationByParts","indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "mast10006-s4-4.6c",
+    "prompt": "$\\displaystyle\\int_0^1 x\\arctan x\\,dx$.",
+    "answer": "$\\dfrac{\\pi}{4} - \\dfrac{1}{2}$",
+    "difficulty": 2,
+    "source": "University of Melbourne MAST10006 Calculus 2, Problem Sheet 4, Q4.6(c)",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["calc2"],
+      "method": ["inverseTrig","integrationByParts","definiteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "mast10006-s4-4.6d",
+    "prompt": "$\\displaystyle\\int x^2 \\cosh x\\,dx$.",
+    "answer": "$x^2\\sinh x - 2x\\cosh x + 2\\sinh x + C$",
+    "difficulty": 3,
+    "source": "University of Melbourne MAST10006 Calculus 2, Problem Sheet 4, Q4.6(d)",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["calc2"],
+      "method": ["hyperbolic","integrationByParts","indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "mast10006-s4-4.6e",
+    "prompt": "$\\displaystyle\\int \\operatorname{arcsinh} x\\,dx$.",
+    "answer": "$x\\operatorname{arcsinh} x - \\sqrt{1+x^2} + C$",
+    "difficulty": 2,
+    "source": "University of Melbourne MAST10006 Calculus 2, Problem Sheet 4, Q4.6(e)",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["calc2"],
+      "method": ["inverseHyperbolic","integrationByParts","indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "mast10006-s4-4.6f",
+    "prompt": "$\\displaystyle\\int x^7\\log x\\,dx$, where $x > 0$.",
+    "answer": "$\\dfrac{x^8\\ln x}{8} - \\dfrac{x^8}{64} + C$",
+    "difficulty": 2,
+    "source": "University of Melbourne MAST10006 Calculus 2, Problem Sheet 4, Q4.6(f)",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["calc2"],
+      "method": ["log","integrationByParts","indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "mast10006-s4-4.7a",
+    "prompt": "Using integration by parts twice, evaluate $\\displaystyle\\int e^x\\cos(3x)\\,dx$.",
+    "answer": "$\\dfrac{e^x(\\cos(3x) + 3\\sin(3x))}{10} + C$",
+    "difficulty": 3,
+    "source": "University of Melbourne MAST10006 Calculus 2, Problem Sheet 4, Q4.7(a)",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["calc2"],
+      "method": ["exp","trig","integrationByParts","indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "mast10006-s4-4.7b",
+    "prompt": "Using integration by parts twice, evaluate $\\displaystyle\\int e^{-2x}\\sin(11x)\\,dx$.",
+    "answer": "$-\\dfrac{e^{-2x}(2\\sin(11x)+11\\cos(11x))}{125} + C$",
+    "difficulty": 3,
+    "source": "University of Melbourne MAST10006 Calculus 2, Problem Sheet 4, Q4.7(b)",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["calc2"],
+      "method": ["exp","trig","integrationByParts","indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "mast10006-s4-4.7c",
+    "prompt": "Using integration by parts twice, evaluate $\\displaystyle\\int \\cos x\\cos(3x)\\,dx$.",
+    "answer": "$\\dfrac{\\sin(2x)}{4} + \\dfrac{\\sin(4x)}{8} + C$",
+    "difficulty": 2,
+    "source": "University of Melbourne MAST10006 Calculus 2, Problem Sheet 4, Q4.7(c)",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["calc2"],
+      "method": ["trig","integrationByParts","indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "mast10006-s4-4.7d",
+    "prompt": "Using integration by parts twice, evaluate $\\displaystyle\\int \\sin x\\sin(4x)\\,dx$.",
+    "answer": "$\\dfrac{\\sin(3x)}{6} - \\dfrac{\\sin(5x)}{10} + C$",
+    "difficulty": 2,
+    "source": "University of Melbourne MAST10006 Calculus 2, Problem Sheet 4, Q4.7(d)",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["calc2"],
+      "method": ["trig","integrationByParts","indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "mast10006-s4-4.8a",
+    "prompt": "Find $\\displaystyle\\int \\frac{1}{(x+2)(x^2+1)}\\,dx$.",
+    "answer": "$\\dfrac{1}{5}\\ln|x+2| - \\dfrac{1}{10}\\ln(x^2+1) + \\dfrac{2}{5}\\arctan x + C$",
+    "difficulty": 3,
+    "source": "University of Melbourne MAST10006 Calculus 2, Problem Sheet 4, Q4.8(a)",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["calc2"],
+      "method": ["partialFractions","log","inverseTrig","indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "mast10006-s4-4.8b",
+    "prompt": "Find $\\displaystyle\\int \\frac{37-11x}{(x+1)(x-2)(x-3)}\\,dx$.",
+    "answer": "$4\\ln|x+1| - 5\\ln|x-2| + \\ln|x-3| + C$",
+    "difficulty": 2,
+    "source": "University of Melbourne MAST10006 Calculus 2, Problem Sheet 4, Q4.8(b)",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["calc2"],
+      "method": ["partialFractions","log","indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "mast10006-s4-4.8c",
+    "prompt": "Find $\\displaystyle\\int \\frac{4x+3}{(x^2+1)(x^2+2)}\\,dx$.",
+    "answer": "$2\\ln(x^2+1) + 3\\arctan x - 2\\ln(x^2+2) - \\dfrac{3}{\\sqrt2}\\arctan\\!\\left(\\dfrac{x}{\\sqrt2}\\right) + C$",
+    "difficulty": 3,
+    "source": "University of Melbourne MAST10006 Calculus 2, Problem Sheet 4, Q4.8(c)",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["calc2"],
+      "method": ["partialFractions","inverseTrig","indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "mast10006-s4-4.8d",
+    "prompt": "Find $\\displaystyle\\int \\frac{x+13}{x^3+2x^2-5x-6}\\,dx$.",
+    "answer": "$\\ln|x-2| - 2\\ln|x+1| + \\ln|x+3| + C$",
+    "difficulty": 3,
+    "source": "University of Melbourne MAST10006 Calculus 2, Problem Sheet 4, Q4.8(d)",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["calc2"],
+      "method": ["partialFractions","log","indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "mast10006-s4-4.8e",
+    "prompt": "Find $\\displaystyle\\int \\frac{x^3+3x-2}{x^2-x}\\,dx$.",
+    "answer": "$\\dfrac{x^2}{2} + x + 2\\ln|x| + 2\\ln|x-1| + C$",
+    "difficulty": 3,
+    "source": "University of Melbourne MAST10006 Calculus 2, Problem Sheet 4, Q4.8(e)",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["calc2"],
+      "method": ["partialFractions","log","linearity","indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "mast10006-s4-4.8f",
+    "prompt": "Find $\\displaystyle\\int \\frac{9}{x(x+3)^2}\\,dx$.",
+    "answer": "$\\ln|x| - \\ln|x+3| + \\dfrac{3}{x+3} + C$",
+    "difficulty": 2,
+    "source": "University of Melbourne MAST10006 Calculus 2, Problem Sheet 4, Q4.8(f)",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["calc2"],
+      "method": ["partialFractions","log","indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "mast10006-s4-4.9a",
+    "prompt": "$\\displaystyle\\int \\cosh^3 x \\sinh^3 x\\,dx$.",
+    "answer": "$\\dfrac{\\sinh^4 x}{4} + \\dfrac{\\sinh^6 x}{6} + C$",
+    "difficulty": 2,
+    "source": "University of Melbourne MAST10006 Calculus 2, Problem Sheet 4, Q4.9(a)",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["calc2"],
+      "method": ["hyperbolic","uSubstitution","indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "mast10006-s4-4.9b",
+    "prompt": "$\\displaystyle\\int \\sqrt{x}\\log x\\,dx$, where $x > 0$.",
+    "answer": "$\\dfrac{2}{3}x^{3/2}\\ln x - \\dfrac{4}{9}x^{3/2} + C$",
+    "difficulty": 2,
+    "source": "University of Melbourne MAST10006 Calculus 2, Problem Sheet 4, Q4.9(b)",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["calc2"],
+      "method": ["log","integrationByParts","indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "mast10006-s4-4.9c",
+    "prompt": "$\\displaystyle\\int \\frac{x^2+3x+4}{x^2+x}\\,dx$.",
+    "answer": "$x + 4\\ln|x| - 2\\ln|x+1| + C$",
+    "difficulty": 2,
+    "source": "University of Melbourne MAST10006 Calculus 2, Problem Sheet 4, Q4.9(c)",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["calc2"],
+      "method": ["partialFractions","log","linearity","indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "mast10006-s4-4.9d",
+    "prompt": "$\\displaystyle\\int \\frac{x^2-2}{x^3-6x-2}\\,dx$.",
+    "answer": "$\\dfrac{1}{3}\\ln|x^3-6x-2| + C$",
+    "difficulty": 2,
+    "source": "University of Melbourne MAST10006 Calculus 2, Problem Sheet 4, Q4.9(d)",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["calc2"],
+      "method": ["log","uSubstitution","indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "mast10006-s4-4.9e",
+    "prompt": "$\\displaystyle\\int \\frac{1}{\\sqrt{9-4x^2}}\\,dx$.",
+    "answer": "$\\dfrac{1}{2}\\arcsin\\!\\left(\\dfrac{2x}{3}\\right) + C$",
+    "difficulty": 1,
+    "source": "University of Melbourne MAST10006 Calculus 2, Problem Sheet 4, Q4.9(e)",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["calc2"],
+      "method": ["inverseTrig","simpleUSub","indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "mast10006-s4-4.9f",
+    "prompt": "$\\displaystyle\\int_1^e \\log(x^4)\\,dx$.",
+    "answer": "$4$",
+    "difficulty": 2,
+    "source": "University of Melbourne MAST10006 Calculus 2, Problem Sheet 4, Q4.9(f)",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["calc2"],
+      "method": ["log","integrationByParts","linearity","definiteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "mast10006-s4-4.10a",
+    "prompt": "$\\displaystyle\\int \\sqrt{x^2-16}\\,dx$, where $x \\geq 4$.",
+    "answer": "$\\dfrac{x\\sqrt{x^2-16}}{2} - 8\\operatorname{arccosh}\\!\\left(\\dfrac{x}{4}\\right) + C$",
+    "difficulty": 3,
+    "source": "University of Melbourne MAST10006 Calculus 2, Problem Sheet 4, Q4.10(a)",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["calc2"],
+      "method": ["hyperbolic","trigIdentity","uSubstitution","indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "mast10006-s4-4.10b",
+    "prompt": "$\\displaystyle\\int x\\sinh(3x)\\,dx$.",
+    "answer": "$\\dfrac{x\\cosh(3x)}{3} - \\dfrac{\\sinh(3x)}{9} + C$",
+    "difficulty": 2,
+    "source": "University of Melbourne MAST10006 Calculus 2, Problem Sheet 4, Q4.10(b)",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["calc2"],
+      "method": ["hyperbolic","integrationByParts","indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "mast10006-s4-4.10c",
+    "prompt": "$\\displaystyle\\int \\frac{9}{(x+2)(x-1)^2}\\,dx$.",
+    "answer": "$\\ln|x+2| - \\ln|x-1| - \\dfrac{3}{x-1} + C$",
+    "difficulty": 2,
+    "source": "University of Melbourne MAST10006 Calculus 2, Problem Sheet 4, Q4.10(c)",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["calc2"],
+      "method": ["partialFractions","log","indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "mast10006-s4-4.10d",
+    "prompt": "$\\displaystyle\\int \\cosh^5 x\\sinh^4 x\\,dx$.",
+    "answer": "$\\dfrac{\\sinh^5 x}{5} + \\dfrac{2\\sinh^7 x}{7} + \\dfrac{\\sinh^9 x}{9} + C$",
+    "difficulty": 2,
+    "source": "University of Melbourne MAST10006 Calculus 2, Problem Sheet 4, Q4.10(d)",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["calc2"],
+      "method": ["hyperbolic","uSubstitution","indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "mast10006-s4-4.10e",
+    "prompt": "$\\displaystyle\\int \\cosh x\\sinh x \\sqrt[5]{\\cosh(2x)+55}\\,dx$.",
+    "answer": "$\\dfrac{5}{24}(\\cosh(2x)+55)^{6/5} + C$",
+    "difficulty": 3,
+    "source": "University of Melbourne MAST10006 Calculus 2, Problem Sheet 4, Q4.10(e)",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["calc2"],
+      "method": ["hyperbolic","trigIdentity","uSubstitution","indefiniteIntegral"],
+      "origin": ["public"]
+    }
+  },
+  {
+    "id": "mast10006-s4-4.10f",
+    "prompt": "$\\displaystyle\\int e^{2x}\\sin(3x)\\,dx$.",
+    "answer": "$\\dfrac{e^{2x}(2\\sin(3x) - 3\\cos(3x))}{13} + C$",
+    "difficulty": 2,
+    "source": "University of Melbourne MAST10006 Calculus 2, Problem Sheet 4, Q4.10(f)",
+    "tags": {
+      "topic": ["integration"],
+      "course": ["calc2"],
+      "method": ["exp","trig","integrationByParts","indefiniteIntegral"],
       "origin": ["public"]
     }
   }
