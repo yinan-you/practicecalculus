@@ -2,7 +2,7 @@
 
 **Primary audience:** agents and contributors who need fast, accurate context before editing code or data.
 
-Stack: **Next.js 16**, **React 19**, **TypeScript**, **Tailwind CSS 4**, **KaTeX** (via `remark-math` / `rehype-katex`).
+Stack: **Next.js 16**, **React 19**, **TypeScript**, **Tailwind CSS 4**, **KaTeX** (via `remark-math` / `rehype-katex`), **OpenAI** (natural-language filter recognition).
 
 <!-- BEGIN:nextjs-agent-rules -->
 ## This is NOT the Next.js you know
@@ -19,8 +19,12 @@ npm install
 npm run dev          # http://localhost:3000
 npm run build
 npm run lint
-npx tsx scripts/stability-check.ts   # filter engine regression check
+npx tsx scripts/stability-check.ts     # chip filter engine regression check
+npx tsx scripts/requirements-check.ts  # flexible requirement engine check
+npx tsx scripts/prompt-check.ts        # LLM prompt covers all tags/dimensions
 ```
+
+**Env:** the natural-language filter needs `OPENAI_API_KEY` (optional `OPENAI_MODEL`, default `gpt-4o-mini`) in `.env.local` (gitignored). The app runs without it; only the chatbox path returns a config error.
 
 ---
 
@@ -31,16 +35,22 @@ data/questions.json          ─┐
 data/solutions/*.md          ─┼─► loadQuestions() ─► Question[] ─► PracticeSession
 data/course-tags.md (docs)   ─┘         ▲
                                         │
-                              src/lib/questions.ts  (types, tag vocab, filter dimensions)
-                              src/lib/filters.ts    (generic filter engine)
-                              src/lib/session.ts    (random question pick)
+                              src/lib/questions.ts    (types, tag vocab, filter dimensions)
+                              src/lib/filters.ts      (chip filter state + visibility)
+                              src/lib/requirements.ts (flexible AND/OR/NOT match engine)
+                              src/lib/session.ts      (random question pick)
 ```
+
+**Two matching paths, one evaluator.** All matching goes through `evaluateRequirement` in `src/lib/requirements.ts`:
+
+- **Chip path (default):** `Filters` (flat per-dimension selections) → `compileFiltersToRequirement` → `Requirement` → evaluate. Preserves the fixed per-dimension match modes.
+- **Custom path (LLM):** natural language → `/api/filter-command` → validated `Requirement` (arbitrary union/intersection/negation, cross-dimension) → evaluate.
 
 **Runtime flow**
 
 1. `src/app/page.tsx` calls `loadQuestions()` at build/render time.
-2. `PracticeSession` holds filter state and derives matching questions via `getMatchingQuestions`.
-3. Filter chips show only **values that still have matches** (`getVisibleValues`) — empty tags never appear in the UI.
+2. `PracticeSession` holds `filters` (chips) and `customFilter` (`{ query, requirement } | null`). When `customFilter` is set it drives the pool; otherwise chip filters do. Any chip toggle clears `customFilter` (revert to chip mode).
+3. Filter chips show only **values that still have matches** (`getVisibleValues`) — empty tags never appear. Chip visibility/pruning stays flat and chip-only (not affected by the custom path).
 4. User presses Enter or clicks **Start practice** / **Next question** → `pickNextQuestion` picks randomly from the matching pool.
 
 **Not yet implemented (planned direction)**
@@ -48,6 +58,7 @@ data/course-tags.md (docs)   ─┘         ▲
 - User-imported questions stored client-side (merged at runtime with public bank).
 - Curator import pipeline (LLM + schema → validated JSON → git).
 - User preferences (default courses, collapsed curricula, saved filter presets).
+- Custom-filter UX polish (the chatbox + dev requirement preview exist; no persistence or multi-turn memory yet).
 
 ---
 
@@ -60,13 +71,20 @@ data/course-tags.md (docs)   ─┘         ▲
 | `data/course-tags.md` | Human guide for **course** tagging (curricula, examples) |
 | `src/lib/questions.ts` | Types, tag enums, `FILTER_DIMENSIONS` registry |
 | `src/lib/load-questions.ts` | Reads JSON + solution markdown, normalizes to `Question` |
-| `src/lib/filters.ts` | Generic multi-dimension filter engine |
+| `src/lib/filters.ts` | Chip filter state, visibility/pruning; `getMatchingQuestions` compiles to a requirement |
+| `src/lib/requirements.ts` | Flexible `Requirement` model, `evaluateRequirement`, `validateRequirement`, `compileFiltersToRequirement` |
+| `src/lib/ai/filter-command-prompt.ts` | Builds the LLM system prompt from tag registries |
 | `src/lib/session.ts` | Question selection logic |
-| `src/components/practice-session.tsx` | Main client UI: filters + question loop |
+| `src/app/api/filter-command/route.ts` | POST route: NL utterance → OpenAI → validated `Requirement` |
+| `src/components/practice-session.tsx` | Main client UI: chip + custom filters, question loop |
 | `src/components/filter-controls.tsx` | Renders filter chip groups per dimension |
+| `src/components/custom-filter-chat.tsx` | NL chatbox → `/api/filter-command`; dev requirement preview |
+| `src/components/active-filter-banner.tsx` | Banner shown when a custom filter is active |
 | `src/components/question-card.tsx` | Stem, parts, answer, solution display |
 | `src/components/markdown-math.tsx` | Markdown + LaTeX rendering |
-| `scripts/stability-check.ts` | Compares filter engine vs hardcoded reference impl |
+| `scripts/stability-check.ts` | Compares chip filter engine vs hardcoded reference impl |
+| `scripts/requirements-check.ts` | Verifies the flexible engine, validation, and chip-compile parity |
+| `scripts/prompt-check.ts` | Verifies the LLM prompt covers every dimension and tag |
 
 ---
 
@@ -182,9 +200,11 @@ Tags are grouped into **dimensions** (`TagMap = Record<string, string[]>`). Each
 | Topic | `topic` | **any** (OR) | `differentiation` \| `integration` |
 | Method | `method` | **all** (AND) | Technique tags (e.g. `chainRule`, `uSubstitution`) |
 
-**Match semantics:** When a dimension has selected chips, a question must satisfy that dimension's match mode. Across dimensions, requirements are **AND**ed together.
+**Match semantics (chip path):** When a dimension has selected chips, a question must satisfy that dimension's match mode. Across dimensions, requirements are **AND**ed together. These fixed modes apply **only** to the chip path; `compileFiltersToRequirement` encodes them as a restricted `Requirement`.
 
-**Visibility:** A chip appears only if at least one question matches *all other active filters* and carries that tag. Unpopulated tags are auto-hidden — no separate "hide empty courses" config needed.
+**Flexible match semantics (custom path):** the LLM/custom path is not bound by the per-dimension modes. A `Requirement` (`src/lib/requirements.ts`) is any nesting of `tag` / `and` / `or` / `not` over tag checks, so it can express arbitrary union/intersection/negation across dimensions (e.g. `(VCE-yr12 AND VCE-methods) OR (HSC-yr12 AND HSC-advanced)`). All input is grounded by `validateRequirement` against the closed vocabularies below.
+
+**Visibility:** A chip appears only if at least one question matches *all other active filters* and carries that tag. Unpopulated tags are auto-hidden — no separate "hide empty courses" config needed. Visibility is a chip-path concern; while a custom filter is active, chips remain fully visible and non-driving.
 
 ### Closed vocabularies (defined in `src/lib/questions.ts`)
 
@@ -231,7 +251,7 @@ Single source of truth for:
 - `FILTER_DIMENSIONS` — drives both filtering logic and UI chip groups
 - `FILTER_DIMENSION_REGISTRY` — lookup by dimension id
 
-When adding a filter dimension, update this file **and** `scripts/stability-check.ts` (reference impl + `DIMENSION_IDS`).
+When adding a filter dimension, update this file **and** `scripts/stability-check.ts` (reference impl + `DIMENSION_IDS`). New dimensions also flow into the LLM prompt automatically via the tag registries used by `src/lib/ai/filter-command-prompt.ts`.
 
 ### `src/lib/load-questions.ts`
 
@@ -242,13 +262,27 @@ When adding a filter dimension, update this file **and** `scripts/stability-chec
 
 ### `src/lib/filters.ts`
 
-Generic engine — do **not** hardcode dimension-specific logic here; it reads from `FILTER_DIMENSIONS`.
+Chip filter state + visibility. Do **not** hardcode dimension-specific logic here; it reads from `FILTER_DIMENSIONS`. `getMatchingQuestions` now delegates to the requirement engine via `compileFiltersToRequirement` + `getMatchingByRequirement` (behavior identical, guarded by `scripts/stability-check.ts`).
 
 Exports: `Filters`, `matchesFilters`, `getMatchingQuestions`, `getVisibleValues`, `getVisibleValuesByDimension`, `toggleFilter`, `pruneFilters`.
 
+### `src/lib/requirements.ts`
+
+The flexible, deterministic match engine — the single evaluator behind both paths.
+
+- `Requirement` / `TagCheck` types (`tag` / `and` / `or` / `not`).
+- `evaluateRequirement(requirement, question)` — pure recursion over `question.tags`.
+- `getMatchingByRequirement(questions, requirement)` — `null` requirement matches everything.
+- `validateRequirement(unknown)` — grounds untrusted input (LLM/JSON) against the closed vocabularies; throws on unknown ops/dimensions/tags. This is the trust boundary for the LLM path.
+- `compileFiltersToRequirement(filters)` — turns flat chip state into the equivalent restricted requirement (per-dimension `matchMode`, dimensions AND-ed).
+
+### `src/lib/ai/filter-command-prompt.ts` and `src/app/api/filter-command/route.ts`
+
+Prompt builder + POST route for the natural-language filter. The route calls OpenAI in JSON mode (`temperature: 0`), then either returns `{ requirement }` (after `validateRequirement`) or `{ error }` with an appropriate status (400 bad input, 422 unmappable/invalid, 500 missing key, 502 upstream). The prompt is assembled from the tag registries so it never drifts from the vocabularies.
+
 ### `src/components/practice-session.tsx`
 
-Client component owning filter state (`useState<Filters>`). Wires filters → matching pool → question picker. Enter key triggers next question (except when focus is in an input).
+Client component owning `filters` (`useState<Filters>`) and `customFilter` (`{ query, requirement } | null`). Wires the active path → matching pool → question picker. A chip toggle clears `customFilter`; Enter key triggers next question (except when focus is in an input).
 
 ---
 
@@ -277,6 +311,14 @@ Regression test for the filter engine. Exercises many filter states (single togg
 
 Run after any change to `filters.ts`, `questions.ts` filter config, or question tagging patterns.
 
+### `scripts/requirements-check.ts`
+
+Fixture checks for the flexible engine: nested AND/OR/NOT, cross-dimension OR, `validateRequirement` grounding (rejects unknown tags/ops), and parity between `compileFiltersToRequirement` + `getMatchingByRequirement` and the chip `getMatchingQuestions`. Run after any change to `requirements.ts` or the compile logic.
+
+### `scripts/prompt-check.ts`
+
+Asserts the LLM system prompt from `filter-command-prompt.ts` names every dimension and includes every canonical tag. Run after changing the prompt builder or adding tags/dimensions.
+
 ---
 
 ## UI conventions
@@ -301,9 +343,10 @@ These are **directional** — not all built yet. Prefer designs that keep one st
 
 **Flexibility boundaries (intended):**
 
-- **Keep rigid:** dimension set, canonical tag enums, filter match modes.
-- **Keep flexible:** which chips a user sees, default filters, import preview edits.
+- **Keep rigid:** dimension set, canonical tag enums, and the **chip-path** per-dimension match modes.
+- **Keep flexible:** which chips a user sees, default filters, import preview edits, and the **custom-path** boolean structure (arbitrary AND/OR/NOT via `Requirement`).
 - **Do not** remove broad course tags from public data to "hide" curricula — use user preferences instead.
+- **The LLM never filters.** It only recognizes intent and emits a `Requirement`; matching stays fully deterministic in `evaluateRequirement`. `validateRequirement` is the grounding boundary — extend it, not the evaluator, when tightening trust.
 
 ---
 
@@ -311,8 +354,10 @@ These are **directional** — not all built yet. Prefer designs that keep one st
 
 - **Missing `tags.topic`** — `loadQuestions()` throws at startup.
 - **Unknown tag strings** — won't match filters; may never appear as visible chips.
-- **Course AND semantics** — selecting `VCE-yr12` + `VCE-methods` requires a question to have **both** tags.
-- **Editing filters without updating stability check** — if you add/remove dimensions or change match modes, update `scripts/stability-check.ts`.
+- **Course AND semantics (chip path)** — selecting `VCE-yr12` + `VCE-methods` requires a question to have **both** tags. The custom path can instead OR them if the user asks.
+- **Editing filters without updating checks** — if you add/remove dimensions or change match modes, update `scripts/stability-check.ts`; if you touch `requirements.ts` or the compile logic, run `scripts/requirements-check.ts`.
+- **Trusting LLM output** — always pass parsed LLM JSON through `validateRequirement`; never feed raw model output to `evaluateRequirement`.
+- **Missing `OPENAI_API_KEY`** — the chatbox route returns a 500 config error; the rest of the app is unaffected.
 - **Next.js 16 API drift** — don't assume Next 13/14 patterns; check local docs.
 
 ---
