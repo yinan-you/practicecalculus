@@ -131,13 +131,6 @@ export function PracticeSession({ questions }: PracticeSessionProps) {
 
   return (
     <div className="w-full space-y-8">
-      {customFilter && (
-        <ActiveFilterBanner
-          query={customFilter.query}
-          onClear={handleClearCustomFilter}
-        />
-      )}
-
       <CollapsibleSection
         title="Filter by tags"
         collapsedHint={chipCollapsedHint}
@@ -155,7 +148,15 @@ export function PracticeSession({ questions }: PracticeSessionProps) {
         defaultExpanded={false}
         collapsedHint={customCollapsedHint}
       >
-        <CustomFilterChat onApply={handleApplyCustomFilter} />
+        <div className="space-y-4 pl-5">
+          {customFilter && (
+            <ActiveFilterBanner
+              query={customFilter.query}
+              onClear={handleClearCustomFilter}
+            />
+          )}
+          <CustomFilterChat onApply={handleApplyCustomFilter} />
+        </div>
       </CollapsibleSection>
 
       <div className="flex items-center gap-4">

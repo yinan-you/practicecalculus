@@ -56,7 +56,7 @@ export function CustomFilterChat({ onApply }: CustomFilterChatProps) {
   };
 
   return (
-    <div className="space-y-2 pl-5">
+    <div className="space-y-2">
       <textarea
         value={text}
         onChange={(event) => setText(event.target.value)}
