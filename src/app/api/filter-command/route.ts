@@ -36,7 +36,7 @@ export async function POST(request: Request) {
       model: process.env.OPENAI_MODEL ?? DEFAULT_MODEL,
       response_format: { type: "json_object" },
       temperature: 0,
-      max_tokens: 512,
+      max_tokens: 2048,
       messages: [
         { role: "system", content: buildFilterCommandSystemPrompt() },
         { role: "user", content: `Request: "${utterance.trim()}"` },
@@ -62,8 +62,12 @@ export async function POST(request: Request) {
   try {
     parsed = JSON.parse(content);
   } catch {
+    console.error("[filter-command] Unparseable model output:", content);
     return NextResponse.json(
-      { error: "The language model returned invalid JSON." },
+      {
+        error: "The language model returned invalid JSON.",
+        rawContent: content,
+      },
       { status: 422 },
     );
   }

@@ -20,6 +20,24 @@ function formatTagList(
 }
 
 /**
+ * Example requirement for exclusive requests like "only calc2, no other
+ * course": the kept tag AND NOT (OR of every other tag in the dimension).
+ * Generated from the real vocabulary so it never drifts.
+ */
+function buildExclusiveCourseExample(keep: string): string {
+  const others = COURSE_TAGS.filter((tag) => tag !== keep).map(
+    (tag) =>
+      `    { "op": "tag", "check": { "dimension": "course", "value": "${tag}" } }`,
+  );
+  return `{ "op": "and", "children": [
+  { "op": "tag", "check": { "dimension": "course", "value": "${keep}" } },
+  { "op": "not", "child": { "op": "or", "children": [
+${others.join(",\n")}
+  ] } }
+] }`;
+}
+
+/**
  * Build the system prompt for the natural-language filter recognizer. It
  * describes the Requirement JSON grammar, injects the canonical tag
  * vocabularies (so the model can only choose real tags), and gives concise
@@ -69,6 +87,7 @@ ${formatTagList("origin", ORIGIN_TAGS)}
 - Different requirement types the user mentions (topic vs method vs course) should generally be combined with "and" (all must hold), unless the user clearly means "or".
 - Words like "or", "either", "any of" imply "or"; "and", "both", "as well as" imply "and".
 - Words like "not", "no", "without", "except" imply "not".
+- Exclusive phrasing like "only X", "just X", "X and no other course" means: the X tag AND NOT (an "or" of EVERY other tag in that dimension). Enumerate all the remaining tags of that dimension inside the "or" — do not skip any.
 
 ## Output
 
@@ -94,6 +113,10 @@ Output:
   { "op": "tag", "check": { "dimension": "course", "value": "calc2" } },
   { "op": "not", "child": { "op": "tag", "check": { "dimension": "course", "value": "calc1" } } }
 ] }
+
+Request: "questions that are calc2 and no other course"
+Output:
+${buildExclusiveCourseExample("calc2")}
 
 Request: "chain rule questions for VCE Methods or HSC Advanced, but no integration"
 Output:

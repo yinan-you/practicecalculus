@@ -11,6 +11,7 @@ export function CustomFilterChat({ onApply }: CustomFilterChatProps) {
   const [text, setText] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [rawContent, setRawContent] = useState<string | null>(null);
 
   const handleSubmit = async () => {
     const utterance = text.trim();
@@ -20,6 +21,7 @@ export function CustomFilterChat({ onApply }: CustomFilterChatProps) {
 
     setIsLoading(true);
     setError(null);
+    setRawContent(null);
 
     try {
       const response = await fetch("/api/filter-command", {
@@ -31,10 +33,12 @@ export function CustomFilterChat({ onApply }: CustomFilterChatProps) {
       const data = (await response.json()) as {
         requirement?: Requirement;
         error?: string;
+        rawContent?: string;
       };
 
       if (!response.ok || !data.requirement) {
         setError(data.error ?? "Could not build a filter from that request.");
+        setRawContent(data.rawContent ?? null);
         return;
       }
 
@@ -64,6 +68,11 @@ export function CustomFilterChat({ onApply }: CustomFilterChatProps) {
         className="w-full rounded-2xl border border-black/[.12] bg-white px-4 py-3 text-sm text-zinc-800 outline-none placeholder:text-zinc-400 focus:border-black/[.3] dark:border-white/[.18] dark:bg-zinc-950 dark:text-zinc-200 dark:focus:border-white/[.4]"
       />
       {error && <p className="text-sm text-red-600 dark:text-red-400">{error}</p>}
+      {rawContent && (
+        <pre className="max-h-48 overflow-auto rounded-xl border border-red-200 bg-red-50 px-3 py-2 font-mono text-xs whitespace-pre-wrap break-words text-red-800 dark:border-red-900/50 dark:bg-red-950/30 dark:text-red-300">
+          {rawContent}
+        </pre>
+      )}
       <button
         type="button"
         onClick={() => void handleSubmit()}
