@@ -64,6 +64,8 @@ ${formatTagList("origin", ORIGIN_TAGS)}
 
 ## Combining rules
 
+- A requirement may use ANY subset of dimensions. Course-only, topic-only, method-only, and origin-only filters are all valid.
+- Do NOT return an error just because the user did not mention topic or method.
 - Different requirement types the user mentions (topic vs method vs course) should generally be combined with "and" (all must hold), unless the user clearly means "or".
 - Words like "or", "either", "any of" imply "or"; "and", "both", "as well as" imply "and".
 - Words like "not", "no", "without", "except" imply "not".
@@ -71,9 +73,27 @@ ${formatTagList("origin", ORIGIN_TAGS)}
 ## Output
 
 - On success, output the requirement object directly (its top-level key is "op").
-- If the request cannot be mapped to any valid tags, output exactly: { "error": "<short reason>" }.
+- Return { "error": "<short reason>" } ONLY when the request references concepts with no corresponding tag in the lists above (e.g. "limits", "multivariable"). If the user names valid tags — even a single course or topic tag — always output a requirement.
 
-## Example
+## Examples
+
+Request: "differentiation"
+Output:
+{ "op": "tag", "check": { "dimension": "topic", "value": "differentiation" } }
+
+Request: "VCE Methods"
+Output:
+{ "op": "and", "children": [
+  { "op": "tag", "check": { "dimension": "course", "value": "VCE-yr12" } },
+  { "op": "tag", "check": { "dimension": "course", "value": "VCE-methods" } }
+] }
+
+Request: "calc2 but not calc1"
+Output:
+{ "op": "and", "children": [
+  { "op": "tag", "check": { "dimension": "course", "value": "calc2" } },
+  { "op": "not", "child": { "op": "tag", "check": { "dimension": "course", "value": "calc1" } } }
+] }
 
 Request: "chain rule questions for VCE Methods or HSC Advanced, but no integration"
 Output:
