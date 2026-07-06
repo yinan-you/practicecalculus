@@ -40,10 +40,10 @@ export function CollapsibleSection({
         type="button"
         onClick={() => setExpanded((open) => !open)}
         aria-expanded={expanded}
-        className="mb-3 flex w-full items-center gap-1.5 text-left"
+        className="-mx-1 mb-3 flex w-[calc(100%+0.5rem)] items-center gap-1.5 rounded-lg px-1 py-1 text-left transition-colors hover:bg-black/[.03] dark:hover:bg-white/[.04]"
       >
         <Chevron expanded={expanded} />
-        <span className="text-xs font-semibold uppercase tracking-wide text-zinc-500">
+        <span className="text-xs font-semibold uppercase tracking-wide text-zinc-500 dark:text-zinc-400">
           {title}
         </span>
         {!expanded && collapsedHint && (
