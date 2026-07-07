@@ -136,6 +136,7 @@ export function PracticeSession({ questions }: PracticeSessionProps) {
           <CollapsibleSection
             title="Filter by tags"
             collapsedHint={chipCollapsedHint}
+            defaultExpanded={false}
           >
             <FilterControls
               filters={filters}
